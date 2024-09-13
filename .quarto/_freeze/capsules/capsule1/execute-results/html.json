@@ -1,0 +1,15 @@
+{
+  "hash": "33f4073294da104f523ca3ffeb76fa59",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Capsule 1\ndate: \"2024-08-26\"\ndate_end: \"2024-08-30\"\n---\n::: {.cell}\n\n:::\n\n\n::: {.cell}\n```{webr}\nfor (x in 1:5) {\n  print(x**2)\n}\n```\n:::\n\n::: {.cell autorun='false'}\n```{webr}\n#| autorun: false\nfor (x in 1:5) {\n  print(x**3)\n}\n```\n:::\n\n\n<iframe\n  src=\"https://www.youtube.com/embed/kXlZbDZpfR0\"\n  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n  allowfullscreen=\"\"\n  frameborder=\"0\"\n  width=\"800\"\n  height=\"450\"\n></iframe>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

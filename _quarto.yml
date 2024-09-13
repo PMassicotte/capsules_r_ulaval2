@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Capsule R ULAVAL"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Accueil
+      - text: "Capsules"
+        file: capsules/index.qmd
+
+  sidebar:
+    - title: "TODO"
+      style: "docked"
+      search: false
+      background: light
+      contents:
+        - section: "Géneralités"
+          contents:
+            - capsules/index.qmd
+        - section: "Capsules"
+          contents:
+            - text: "Capsule 1"
+              file: capsules/01-capsule.qmd
+            - text: "Capsule 2"
+              file: capsules/02-capsule.qmd
+            - text: "Capsule xxx"
+              file: capsules/03-capsule.qmd
+            - text: "Capsule xxx"
+              file: capsules/04-capsule.qmd
+            - text: "Capsule xxx"
+              file: capsules/05-capsule.qmd
+
+format:
+  html:
+    theme: styles.scss
+    toc: true

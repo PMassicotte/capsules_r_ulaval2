@@ -1,0 +1,20 @@
+---
+title: Capsule 2
+---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Code interactif
+
+```{webr}
+for (x in 1:5) {
+  print(x**2)
+}
+```
+
+```{webr}
+#| autorun: false
+for (x in 1:5) {
+  print(x**3)
+}
+```

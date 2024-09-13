@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "a5b4010a"
+  },
+  "about.qmd": {
+    "about.html": "41cd37c5"
+  },
+  "capsule1.qmd": {
+    "capsule1.html": "71c57ab8"
+  },
+  "capsules/capsule1.qmd": {
+    "capsule1.html": "7a44f149"
+  },
+  "capsules/01-capsule.qmd": {
+    "01-capsule.html": "b342007b"
+  },
+  "capsules/index.qmd": {
+    "index.html": "ed4d5c7b"
+  },
+  "capsules/05-capsule.qmd": {
+    "05-capsule.html": "f9ff20e6"
+  },
+  "capsules/03-capsule.qmd": {
+    "03-capsule.html": "df7a9d8c"
+  },
+  "capsules/02-capsule.qmd": {
+    "02-capsule.html": "abe5959c"
+  },
+  "capsules/04-capsule.qmd": {
+    "04-capsule.html": "510a4bc3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "615d0275b75391ad248ece0ca86cf133",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Capsule 1\nengine: knitr\nformat: live-html\nwebr:\n  packages:\n    - dplyr\n    - palmerpenguins\n    - ggplot2\n---\n::: {.cell}\n\n:::\n\n\n::: {.cell}\n```{webr}\nfor (x in 1:5) {\n  print(x**2)\n}\n```\n:::\n\n::: {.cell autorun='false'}\n```{webr}\n#| autorun: false\nfor (x in 1:5) {\n  print(x**3)\n}\n```\n:::\n\n\n<div class=\"ratio ratio-16x9\">\n<iframe src=\"https://www.youtube.com/embed/kXlZbDZpfR0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\"></iframe>\n</div>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

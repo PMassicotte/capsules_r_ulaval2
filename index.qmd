@@ -1,0 +1,15 @@
+---
+title: "Bienvenue sur le site des capsules R de l'Université Laval"
+---
+
+Bienvenue sur le site des capsules R de l'Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement.
+
+Voici les informations pour rejoindre les responsables du cours:
+
+{{< fa user >}} Nadia Aubin-Horth & Fréderic Maps
+
+{{< fa building >}} Département de biologie, Université Laval
+
+{{< fa map-marker-alt >}} 1045 Avenue de la Médecine, Québec, QC G1V 0A6
+
+{{< fa phone >}} 418-656-2131 poste 4076
