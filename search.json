@@ -1,0 +1,28 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "capsules_r_ulaval2",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "capsules/index.html",
+    "href": "capsules/index.html",
+    "title": "Mots de bienvenue",
+    "section": "",
+    "text": "Bienvenue sur le site de la formation capsules_r_ulaval2\nCe site est dédié à la formation capsules_r_ulaval2. Vous y trouverez des ressources pour vous aider à apprendre à utiliser R et RStudio.\nPour commencer, vous pouvez consulter les diapositives de la formation.\nPour en savoir plus sur les formations offertes par le Centre de services en technologies de l’information et en pédagogie (CSTIP) de l’Université Laval, visitez le site web du CSTIP.",
+    "crumbs": [
+      "Capsules",
+      "Overview",
+      "Mots de bienvenue"
+    ]
+  }
+]
