@@ -2,27 +2,75 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "capsules_r_ulaval2",
+    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Bienvenue sur le site des capsules R de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement.\nVoici les informations pour rejoindre les responsables du cours:\n Nadia Aubin-Horth & Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "capsules/01-capsule.html",
+    "href": "capsules/01-capsule.html",
+    "title": "Capsule 1",
     "section": "",
-    "text": "About this site"
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre ce qu’est R.\nInstaller R et RStudio.\nDémarrer RStudio et être prêt à travailler avec des données.\nInstallation et mise à jour de librairies.",
+    "crumbs": [
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#objectifs-de-la-capsule",
+    "href": "capsules/01-capsule.html#objectifs-de-la-capsule",
+    "title": "Capsule 1",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre ce qu’est R.\nInstaller R et RStudio.\nDémarrer RStudio et être prêt à travailler avec des données.\nInstallation et mise à jour de librairies.",
+    "crumbs": [
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#capsule-vidéo",
+    "href": "capsules/01-capsule.html#capsule-vidéo",
+    "title": "Capsule 1",
+    "section": "Capsule vidéo",
+    "text": "Capsule vidéo",
+    "crumbs": [
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#matériel-accompagnateur",
+    "href": "capsules/01-capsule.html#matériel-accompagnateur",
+    "title": "Capsule 1",
+    "section": "Matériel accompagnateur",
+    "text": "Matériel accompagnateur\n\nQu’est-ce que R?\nR est un langage (et un environnement) de programmation dédié à la manipulation, l’analyse statistique et la visualisation de données.\nIl y a plusieurs raisons pourquoi R est utilisé de plus en plus dans les domaines de la science des données massives.\n\nGratuit et open source.\nMultiplateformes (Windows, Mac et Linux).\nExcellentes capacités graphiques (idéal pour la préparation d’articles scientifiques).\nFacile de développer vos propres fonctions (automatisation).\nTrès grande communauté d’utilisateurs et de développeurs (beaucoup de librairies, aide, etc.).\n\n\n\nInstallation de R et RStudio\nPour installer R, il suffit de se rendre sur le site suivant et de télécharger la dernière version de R:\n\nTélécharger R https://cran.r-project.org/\n\nUne fois l’installation de R effectuée, nous pouvons procéder à l’installation de RStudio qui est offre un environnement de travail graphique et convivial. Le fichier d’installation de RStudio peut être téléchargé à l’adresse suivante:\n\nTélécharger RStudio: https://www.rstudio.com/products/rstudio/download/\n\n\n\n\n\n\n\nTip\n\n\n\nVisionnez la capsule vidéo portant sur l’installation de R et RStudio ainsi qu’un premier tour de l’interface de RStudio.\n\n\n\n\nInstallation de librairies\nL’une des grandes forces de R est sa très grande communauté d’utilisateurs qui développent régulièrement de nouvelles fonctionnalités (statistiques, graphiques, etc.). Ces fonctionnalités se regroupent dans des entités nommées library ou package. Pour installer une librairie, vous devez aller sur l’onglet Packages dans la fenêtre inférieure droite de RStudio. Par la suite il faut cliquer sur install et une nouvelle fenêtre s’ouvrira. Entrez le nom de la librairie à installer et cliquez sur install. Dans l’exemple ci-bas, la librairie MASS est installée.\n\nUne fois la librairie installée, il faut la charger en mémoire à l’aide de la fonction library(nom_de_la_library).\n\n\nCode\nlibrary(MASS) # Charger la librairie en mémoire\n?MASS # Accéder à l'aide de la librairie\n\n\n\n\n\n\n\n\nTip\n\n\n\nLes librairies doivent être chargées en mémoire à chaque démarrage de R ou RStudio. Il est conseillé de les charger au début de votre script R1.",
+    "crumbs": [
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#footnotes",
+    "href": "capsules/01-capsule.html#footnotes",
+    "title": "Capsule 1",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nVoir la capsule Le script Bonnes pratiques dans R et RStudio pour une explication plus complète sur l’utilisation de scripts.↩︎",
+    "crumbs": [
+      "Capsules",
+      "Capsule 1"
+    ]
   },
   {
     "objectID": "capsules/index.html",
     "href": "capsules/index.html",
-    "title": "Mots de bienvenue",
+    "title": "Capsules R Université Laval",
     "section": "",
-    "text": "Bienvenue sur le site de la formation capsules_r_ulaval2\nCe site est dédié à la formation capsules_r_ulaval2. Vous y trouverez des ressources pour vous aider à apprendre à utiliser R et RStudio.\nPour commencer, vous pouvez consulter les diapositives de la formation.\nPour en savoir plus sur les formations offertes par le Centre de services en technologies de l’information et en pédagogie (CSTIP) de l’Université Laval, visitez le site web du CSTIP.",
+    "text": "Ces capsules ont été réalisées par:\n\nNadia Aubin-Horth\nFréderic Maps\nPhilippe Massicotte",
     "crumbs": [
       "Capsules",
       "Géneralités",
-      "Mots de bienvenue"
+      "Capsules R Université Laval"
     ]
   }
 ]
