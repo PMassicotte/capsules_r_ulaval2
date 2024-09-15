@@ -41,6 +41,7 @@ $callout-border-color: rgba(0, 0, 0, 0.05) !default;
   font-size: 24px;
   font-weight: bold;
 }
+
 .sidebar-item .sidebar-item-container {
   font-size: 1.2rem;
 }
@@ -48,15 +49,12 @@ $callout-border-color: rgba(0, 0, 0, 0.05) !default;
 p code:not(.sourceCode),
 li code:not(.sourceCode),
 td code:not(.sourceCode) {
-  background-color: #f8f9fa;
-  padding: 0.2em;
-  font-size: 1.2rem;
+  background-color: #e6e0cf;
+  padding: 1px 2px;
   font-weight: bold;
   line-height: 1.2em;
   border-radius: 8px;
-  padding: 1px 2px 1px 2px;
   color: #4c4a4a;
-  background-color: #e6e0cf;
 }
 
 :root {
@@ -67,16 +65,16 @@ body {
   font-size: 1.4rem; /* This will make the font size 18px if $font-size-root is 16px */
 }
 
-.callout.callout-style-default div.callout-body {
-  font-size: var(--callout-text);
-}
-
-.callout.callout-style-default:not(.no-icon) div.callout-title-container {
-  font-size: var(--callout-text);
+.callout.callout-style-default {
+  div.callout-body,
+  div.callout-title-container {
+    font-size: var(--callout-text);
+  }
 }
 
 #quarto-sidebar > *,
 nav[role="doc-toc"] > * {
   font-family: "Baloo 2", sans-serif;
 }
+
 /* https://quarto.org/docs/output-formats/html-themes.html#sass-variables */
