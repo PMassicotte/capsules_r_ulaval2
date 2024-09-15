@@ -66,7 +66,43 @@
     "href": "capsules/index.html",
     "title": "Capsules R Université Laval",
     "section": "",
-    "text": "Ces capsules ont été réalisées par:\n\nNadia Aubin-Horth\nFréderic Maps\nPhilippe Massicotte",
+    "text": "Ces capsules ont été réalisées par:",
+    "crumbs": [
+      "Capsules",
+      "Géneralités",
+      "Capsules R Université Laval"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-1",
+    "href": "capsules/index.html#capsule-1",
+    "title": "Capsules R Université Laval",
+    "section": " Capsule 1",
+    "text": "Capsule 1\nCette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
+    "crumbs": [
+      "Capsules",
+      "Géneralités",
+      "Capsules R Université Laval"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-2",
+    "href": "capsules/index.html#capsule-2",
+    "title": "Capsules R Université Laval",
+    "section": " Capsule 2",
+    "text": "Capsule 2\nLes variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que numeric, character, logic, et factor, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction c(), permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D’autres classes d’objets, comme data.frame, list, lm, et date, sont également couramment utilisées pour des tâches plus complexes.",
+    "crumbs": [
+      "Capsules",
+      "Géneralités",
+      "Capsules R Université Laval"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-3",
+    "href": "capsules/index.html#capsule-3",
+    "title": "Capsules R Université Laval",
+    "section": " Capsule 3",
+    "text": "Capsule 3",
     "crumbs": [
       "Capsules",
       "Géneralités",

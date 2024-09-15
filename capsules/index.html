@@ -75,6 +75,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -219,8 +221,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#capsule-1" id="toc-capsule-1" class="nav-link active" data-scroll-target="#capsule-1"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> Capsule 1</a></li>
+  <li><a href="#capsule-2" id="toc-capsule-2" class="nav-link" data-scroll-target="#capsule-2"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> Capsule 2</a></li>
+  <li><a href="#capsule-3" id="toc-capsule-3" class="nav-link" data-scroll-target="#capsule-3"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> Capsule 3</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -250,6 +260,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Fréderic Maps</li>
 <li>Philippe Massicotte</li>
 </ul>
+<section id="capsule-1" class="level2">
+<h2 class="anchored" data-anchor-id="capsule-1"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> <a href="../capsules/01-capsule.html">Capsule 1</a></h2>
+<p>Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.</p>
+</section>
+<section id="capsule-2" class="level2">
+<h2 class="anchored" data-anchor-id="capsule-2"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> <a href="../capsules/02-capsule.html">Capsule 2</a></h2>
+<p>Les variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que <code>numeric</code>, <code>character</code>, <code>logic</code>, et <code>factor</code>, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction <code>c()</code>, permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D’autres classes d’objets, comme <code>data.frame</code>, <code>list</code>, <code>lm</code>, et <code>date</code>, sont également couramment utilisées pour des tâches plus complexes.</p>
+</section>
+<section id="capsule-3" class="level2">
+<h2 class="anchored" data-anchor-id="capsule-3"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> <a href="../capsules/03-capsule.html">Capsule 3</a></h2>
 
 
 <!-- -->
@@ -268,6 +288,7 @@ eyJjb250ZW50cyI6W119
 <script type="vfs-file">
 W10=
 </script>
+</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
@@ -760,7 +781,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nadia Aubin-Horth</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fréderic Maps</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Philippe Massicotte</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Philippe Massicotte</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## {{&lt; fa chalkboard-user &gt;}} [Capsule 1](01-capsule.qmd)</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu'est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l'installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l'installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## {{&lt; fa chalkboard-user &gt;}} [Capsule 2](02-capsule.qmd)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Les variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que <span class="in">`numeric`</span>, <span class="in">`character`</span>, <span class="in">`logic`</span>, et <span class="in">`factor`</span>, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction <span class="in">`c()`</span>, permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D'autres classes d'objets, comme <span class="in">`data.frame`</span>, <span class="in">`list`</span>, <span class="in">`lm`</span>, et <span class="in">`date`</span>, sont également couramment utilisées pour des tâches plus complexes.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## {{&lt; fa chalkboard-user &gt;}} [Capsule 3](03-capsule.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
