@@ -7,3 +7,13 @@ Ces capsules ont été réalisées par:
 - Nadia Aubin-Horth
 - Fréderic Maps
 - Philippe Massicotte
+
+## {{< fa chalkboard-user >}} [Capsule 1](01-capsule.qmd)
+
+Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu'est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l'installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l'installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.
+
+## {{< fa chalkboard-user >}} [Capsule 2](02-capsule.qmd)
+
+Les variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que `numeric`, `character`, `logic`, et `factor`, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction `c()`, permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D'autres classes d'objets, comme `data.frame`, `list`, `lm`, et `date`, sont également couramment utilisées pour des tâches plus complexes.
+
+## {{< fa chalkboard-user >}} [Capsule 3](03-capsule.qmd)
