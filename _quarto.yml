@@ -3,6 +3,7 @@ project:
   output-dir: _site
 
 website:
+  page-navigation: true
   title: "Capsule R ULAVAL"
   navbar:
     right:
@@ -10,30 +11,52 @@ website:
         text: Accueil
       - text: "Capsules"
         file: capsules/index.qmd
+      - icon: slack
+        href: "TODO"
+        aria-label: "TODO"
+      - icon: github
+        href: "TODO"
+        aria-label: "GitHub"
 
   sidebar:
-    - title: "TODO"
-      style: "docked"
-      search: false
-      background: light
-      contents:
-        - section: "Géneralités"
-          contents:
-            - capsules/index.qmd
-        - section: "Capsules"
-          contents:
-            - text: "Capsule 1"
-              file: capsules/01-capsule.qmd
-            - text: "Capsule 2"
-              file: capsules/02-capsule.qmd
-            - text: "Capsule xxx"
-              file: capsules/03-capsule.qmd
-            - text: "Capsule xxx"
-              file: capsules/04-capsule.qmd
-            - text: "Capsule xxx"
-              file: capsules/05-capsule.qmd
+    logo: "https://natalierousseau.ca/wp-content/uploads/2018/03/logo-ulaval-reseaux-sociaux.jpg"
+    pinned: true
+    align: center
+    # tools:
+    #   # https://icons.getbootstrap.com/
+    #   - icon: "browser-firefox"
+    #     href: https://www.ulaval.ca/
+    #     text: "Site de l'Université Laval"
+    #   - icon: "globe"
+    #     href: https://www.ulaval.ca/
+    #   - icon: "envelope-at"
+    #     href: https://www.ulaval.ca/
+    #     text: "Site de l'Université Laval"
+    style: "docked"
+    search: true
+    contents:
+      - section: "À propos"
+        contents:
+          - capsules/index.qmd
+      - section: "Capsules"
+        contents:
+          - text: "Capsule 1"
+            file: capsules/01-capsule.qmd
+          - text: "Capsule 2"
+            file: capsules/02-capsule.qmd
+          - text: "Capsule xxx"
+            file: capsules/03-capsule.qmd
+          - text: "Capsule xxx"
+            file: capsules/04-capsule.qmd
+          - text: "Capsule xxx"
+            file: capsules/05-capsule.qmd
+
+  page-footer:
+    right: "Cette page a été réalisée à l'aide de [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By xxx, 2024. Capsules réalisées par N. Aubin-Horth, F. Maps et P. Massicotte."
 
 format:
   html:
     theme: styles.scss
     toc: true
+    lang: fr

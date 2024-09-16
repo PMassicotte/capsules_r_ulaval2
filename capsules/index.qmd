@@ -1,12 +1,6 @@
 ---
-title: Capsules R Université Laval
+title: Capsules R
 ---
-
-Ces capsules ont été réalisées par:
-
-- Nadia Aubin-Horth
-- Fréderic Maps
-- Philippe Massicotte
 
 ## {{< fa chalkboard-user >}} [Capsule 1](01-capsule.qmd)
 

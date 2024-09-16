@@ -5,6 +5,8 @@ format:
     toc-depth: 4
     theme: ././styles.scss
     toc: true
+    lang: fr
+
 webr:
   packages:
     - dplyr

@@ -29,7 +29,7 @@ $code-block-bg-alpha: -0.8;
 $toc-color: $theme-pastel;
 
 // Sidebar on the right
-$toc-font-size: 1.2rem;
+$toc-font-size: 1rem;
 
 $sidebar-bg: $theme-bg;
 
@@ -43,7 +43,7 @@ $callout-border-color: rgba(0, 0, 0, 0.05) !default;
 }
 
 .sidebar-item .sidebar-item-container {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 p code:not(.sourceCode),
@@ -62,7 +62,7 @@ td code:not(.sourceCode) {
 }
 
 body {
-  font-size: 1.4rem; /* This will make the font size 18px if $font-size-root is 16px */
+  font-size: 1.2rem; /* This will make the font size 18px if $font-size-root is 16px */
 }
 
 .callout.callout-style-default {
