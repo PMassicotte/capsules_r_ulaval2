@@ -78,3 +78,13 @@ nav[role="doc-toc"] > * {
 }
 
 /* https://quarto.org/docs/output-formats/html-themes.html#sass-variables */
+
+.question {
+  input[type="submit"] {
+    margin-top: 0.75em;
+  }
+
+  input[type="submit"] + div {
+    margin-top: 10.5em;
+  }
+}

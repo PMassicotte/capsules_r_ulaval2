@@ -66,6 +66,11 @@
       ],
       "Hash": "cd9a672193789068eb5a2aad65a0dedf"
     },
+    "checkdown": {
+      "Package": "checkdown",
+      "Version": "0.0.12",
+      "Source": "Repository"
+    },
     "cli": {
       "Package": "cli",
       "Version": "3.6.3.9000",

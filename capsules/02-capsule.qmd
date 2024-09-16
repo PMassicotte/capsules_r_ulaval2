@@ -18,3 +18,27 @@ for (x in 1:5) {
   print(x**3)
 }
 ```
+
+## Choix de réponses
+
+```{r}
+library(checkdown)
+```
+
+Ceci est une question à choix de réponses. Quel format d'image est le plus approprié pour cette image?
+
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r atlanta-sign-question, echo=FALSE, results="asis"}
+check_question(
+  "JPG",
+  options = c("PNG", "JPG", "PDF"),
+  type = "radio",
+  button_label = "Vérifier",
+  # question_id = 1,
+  right = "Correct!",
+  wrong = "Faux"
+)
+```
+
+:::
