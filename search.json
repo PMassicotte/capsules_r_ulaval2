@@ -14,6 +14,18 @@
     "text": "Rejoindre les responsables du cours\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
   },
   {
+    "objectID": "capsules/02-capsule.html#choix-de-réponses",
+    "href": "capsules/02-capsule.html#choix-de-réponses",
+    "title": "Capsule 2",
+    "section": "Choix de réponses",
+    "text": "Choix de réponses\n\n\nCode\nlibrary(checkdown)\n\n\nCeci est une question à choix de réponses. Quel format d’image est le plus approprié pour cette image?\n\n\n\n\n\n\n\n\nPNG\n\n\nJPG\n\n\nPDF",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
     "objectID": "capsules/01-capsule.html",
     "href": "capsules/01-capsule.html",
     "title": "Capsule 1",
