@@ -18,7 +18,7 @@
     "href": "capsules/02-capsule.html#choix-de-réponses",
     "title": "Capsule 2",
     "section": "Choix de réponses",
-    "text": "Choix de réponses\n\n\nCode\nlibrary(checkdown)\n\n\nCeci est une question à choix de réponses. Quel format d’image est le plus approprié pour cette image?\n\n\n\n\n\n\n\n\nPNG\n\n\nJPG\n\n\nPDF",
+    "text": "Choix de réponses\n\n\n\n\n\n\n\n\nQuelle est la bonne réponse?\n\nBonne réponse\n\n\nMauvaise réponse",
     "crumbs": [
       "Accueil",
       "Capsules",
