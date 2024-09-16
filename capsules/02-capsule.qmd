@@ -4,6 +4,12 @@ title: Capsule 2
 
 {{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
 
+```{r}
+#| label: setup
+#| echo: false
+library(checkdown)
+```
+
 ## Code interactif
 
 ```{webr}
@@ -21,23 +27,21 @@ for (x in 1:5) {
 
 ## Choix de réponses
 
-```{r}
-library(checkdown)
-```
-
-Ceci est une question à choix de réponses. Quel format d'image est le plus approprié pour cette image?
-
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r atlanta-sign-question, echo=FALSE, results="asis"}
+```{r }
+#| label: atlanta-sign-question
+#| echo: false
+#| results: "asis"
 check_question(
-  "JPG",
-  options = c("PNG", "JPG", "PDF"),
+  "Bonne réponse",
+  options = c("Bonne réponse", "Mauvaise réponse"),
   type = "radio",
   button_label = "Vérifier",
   # question_id = 1,
-  right = "Correct!",
-  wrong = "Faux"
+  right = "C'est watatatow!",
+  wrong = "Faux",
+  title = "Quelle est la bonne réponse?"
 )
 ```
 

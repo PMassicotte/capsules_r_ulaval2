@@ -1,10 +1,29 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
+    "objectID": "capsules/02-capsule.html#choix-de-réponses",
+    "href": "capsules/02-capsule.html#choix-de-réponses",
+    "title": "Capsule 2",
+    "section": "Choix de réponses",
+    "text": "Choix de réponses\n\n\n\n\n\n\n\n\nQuelle est la bonne réponse?\n\nBonne réponse\n\n\nMauvaise réponse",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "TODO.html",
+    "href": "TODO.html",
+    "title": "Capsule R ULAVAL",
     "section": "",
-    "text": "Bienvenue sur le site des capsules  de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement."
+    "text": "https://cran.r-project.org/web/packages/checkdown/\nhttps://datavizf24.classes.andrewheiss.com/lesson/02-lesson.html#select-the-best-file-type\nhttps://github.com/andrewheiss/datavizf24.classes.andrewheiss.com/blob/e6ad108f9892cf31c53cf4a33aebe1499f912aeb/lesson/02-lesson.qmd#L43"
+  },
+  {
+    "objectID": "TODO.html#webr-and-checkdown",
+    "href": "TODO.html#webr-and-checkdown",
+    "title": "Capsule R ULAVAL",
+    "section": "",
+    "text": "https://cran.r-project.org/web/packages/checkdown/\nhttps://datavizf24.classes.andrewheiss.com/lesson/02-lesson.html#select-the-best-file-type\nhttps://github.com/andrewheiss/datavizf24.classes.andrewheiss.com/blob/e6ad108f9892cf31c53cf4a33aebe1499f912aeb/lesson/02-lesson.qmd#L43"
   },
   {
     "objectID": "capsules/01-capsule.html",
@@ -115,11 +134,11 @@
     ]
   },
   {
-    "objectID": "index.html#voici-les-informations-pour-rejoindre-les-responsables-du-cours",
-    "href": "index.html#voici-les-informations-pour-rejoindre-les-responsables-du-cours",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Bienvenue sur le site des capsules R de l’Université Laval",
-    "section": "Voici les informations pour rejoindre les responsables du cours:",
-    "text": "Voici les informations pour rejoindre les responsables du cours:\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Nadia Aubin-Horth & Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
+    "section": "",
+    "text": "Bienvenue sur le site des capsules  de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement."
   },
   {
     "objectID": "index.html#rejoindre-les-responsables-du-cours",
@@ -127,5 +146,29 @@
     "title": "Bienvenue sur le site des capsules R de l’Université Laval",
     "section": "Rejoindre les responsables du cours",
     "text": "Rejoindre les responsables du cours\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
+  },
+  {
+    "objectID": "capsules/02-capsule.html",
+    "href": "capsules/02-capsule.html",
+    "title": "Capsule 2",
+    "section": "",
+    "text": "for (x in 1:5) {\n  print(x**2)\n}\n\n\n#| autorun: false\nfor (x in 1:5) {\n  print(x**3)\n}",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#code-interactif",
+    "href": "capsules/02-capsule.html#code-interactif",
+    "title": "Capsule 2",
+    "section": "",
+    "text": "for (x in 1:5) {\n  print(x**2)\n}\n\n\n#| autorun: false\nfor (x in 1:5) {\n  print(x**3)\n}",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
   }
 ]
