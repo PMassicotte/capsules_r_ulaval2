@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
+    "objectID": "TODO.html",
+    "href": "TODO.html",
+    "title": "Capsule R ULAVAL",
     "section": "",
-    "text": "Bienvenue sur le site des capsules  de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement."
+    "text": "https://cran.r-project.org/web/packages/checkdown/\nhttps://datavizf24.classes.andrewheiss.com/lesson/02-lesson.html#select-the-best-file-type\nhttps://github.com/andrewheiss/datavizf24.classes.andrewheiss.com/blob/e6ad108f9892cf31c53cf4a33aebe1499f912aeb/lesson/02-lesson.qmd#L43"
   },
   {
-    "objectID": "index.html#rejoindre-les-responsables-du-cours",
-    "href": "index.html#rejoindre-les-responsables-du-cours",
-    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
-    "section": "Rejoindre les responsables du cours",
-    "text": "Rejoindre les responsables du cours\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
+    "objectID": "TODO.html#webr-and-checkdown",
+    "href": "TODO.html#webr-and-checkdown",
+    "title": "Capsule R ULAVAL",
+    "section": "",
+    "text": "https://cran.r-project.org/web/packages/checkdown/\nhttps://datavizf24.classes.andrewheiss.com/lesson/02-lesson.html#select-the-best-file-type\nhttps://github.com/andrewheiss/datavizf24.classes.andrewheiss.com/blob/e6ad108f9892cf31c53cf4a33aebe1499f912aeb/lesson/02-lesson.qmd#L43"
   },
   {
     "objectID": "capsules/02-capsule.html#choix-de-réponses",
@@ -24,6 +24,68 @@
       "Capsules",
       "Capsule 2"
     ]
+  },
+  {
+    "objectID": "capsules/index.html",
+    "href": "capsules/index.html",
+    "title": "Capsules R",
+    "section": "",
+    "text": "Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-1",
+    "href": "capsules/index.html#capsule-1",
+    "title": "Capsules R",
+    "section": "",
+    "text": "Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-2",
+    "href": "capsules/index.html#capsule-2",
+    "title": "Capsules R",
+    "section": " Capsule 2",
+    "text": "Capsule 2\nLes variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que numeric, character, logic, et factor, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction c(), permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D’autres classes d’objets, comme data.frame, list, lm, et date, sont également couramment utilisées pour des tâches plus complexes.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-3",
+    "href": "capsules/index.html#capsule-3",
+    "title": "Capsules R",
+    "section": " Capsule 3",
+    "text": "Capsule 3",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
+    "section": "",
+    "text": "Bienvenue sur le site des capsules  de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement."
+  },
+  {
+    "objectID": "index.html#rejoindre-les-responsables-du-cours",
+    "href": "index.html#rejoindre-les-responsables-du-cours",
+    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
+    "section": "Rejoindre les responsables du cours",
+    "text": "Rejoindre les responsables du cours\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
   },
   {
     "objectID": "capsules/01-capsule.html",
@@ -83,54 +145,6 @@
       "Accueil",
       "Capsules",
       "Capsule 1"
-    ]
-  },
-  {
-    "objectID": "capsules/index.html",
-    "href": "capsules/index.html",
-    "title": "Capsules R",
-    "section": "",
-    "text": "Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
-    "crumbs": [
-      "Accueil",
-      "À propos",
-      "Capsules R"
-    ]
-  },
-  {
-    "objectID": "capsules/index.html#capsule-1",
-    "href": "capsules/index.html#capsule-1",
-    "title": "Capsules R",
-    "section": "",
-    "text": "Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
-    "crumbs": [
-      "Accueil",
-      "À propos",
-      "Capsules R"
-    ]
-  },
-  {
-    "objectID": "capsules/index.html#capsule-2",
-    "href": "capsules/index.html#capsule-2",
-    "title": "Capsules R",
-    "section": " Capsule 2",
-    "text": "Capsule 2\nLes variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que numeric, character, logic, et factor, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction c(), permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D’autres classes d’objets, comme data.frame, list, lm, et date, sont également couramment utilisées pour des tâches plus complexes.",
-    "crumbs": [
-      "Accueil",
-      "À propos",
-      "Capsules R"
-    ]
-  },
-  {
-    "objectID": "capsules/index.html#capsule-3",
-    "href": "capsules/index.html#capsule-3",
-    "title": "Capsules R",
-    "section": " Capsule 3",
-    "text": "Capsule 3",
-    "crumbs": [
-      "Accueil",
-      "À propos",
-      "Capsules R"
     ]
   }
 ]

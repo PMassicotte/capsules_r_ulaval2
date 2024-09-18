@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/index.html</loc>
-    <lastmod>2024-09-16T14:15:05.471Z</lastmod>
+    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/TODO.html</loc>
+    <lastmod>2024-09-18T21:32:32.599Z</lastmod>
   </url>
   <url>
     <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/03-capsule.html</loc>
-    <lastmod>2024-09-16T14:15:05.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/04-capsule.html</loc>
-    <lastmod>2024-09-16T14:15:05.463Z</lastmod>
+    <lastmod>2024-09-18T21:32:32.633Z</lastmod>
   </url>
   <url>
     <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/02-capsule.html</loc>
-    <lastmod>2024-09-16T14:15:05.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/05-capsule.html</loc>
-    <lastmod>2024-09-16T14:15:05.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/01-capsule.html</loc>
-    <lastmod>2024-09-16T14:15:05.463Z</lastmod>
+    <lastmod>2024-09-18T21:32:32.633Z</lastmod>
   </url>
   <url>
     <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/index.html</loc>
-    <lastmod>2024-09-16T14:15:05.463Z</lastmod>
+    <lastmod>2024-09-18T21:32:32.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/index.html</loc>
+    <lastmod>2024-09-18T21:32:32.637Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/01-capsule.html</loc>
+    <lastmod>2024-09-18T21:32:32.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/04-capsule.html</loc>
+    <lastmod>2024-09-18T21:32:32.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PMassicotte.github.io/capsules_r_ulaval2/capsules/05-capsule.html</loc>
+    <lastmod>2024-09-18T21:32:32.633Z</lastmod>
   </url>
 </urlset>
