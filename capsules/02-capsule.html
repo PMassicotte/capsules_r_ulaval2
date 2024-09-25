@@ -248,8 +248,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#code-interactif" id="toc-code-interactif" class="nav-link active" data-scroll-target="#code-interactif">Code interactif</a></li>
-  <li><a href="#choix-de-réponses" id="toc-choix-de-réponses" class="nav-link" data-scroll-target="#choix-de-réponses">Choix de réponses</a></li>
+  <li><a href="#objectifs-de-la-capsule" id="toc-objectifs-de-la-capsule" class="nav-link active" data-scroll-target="#objectifs-de-la-capsule">Objectifs de la capsule</a></li>
+  <li><a href="#capsule-vidéo" id="toc-capsule-vidéo" class="nav-link" data-scroll-target="#capsule-vidéo">Capsule vidéo</a></li>
+  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices">Exercices</a>
+  <ul>
+  <li><a href="#classes-de-variables" id="toc-classes-de-variables" class="nav-link" data-scroll-target="#classes-de-variables">Classes de variables</a></li>
+  <li><a href="#noms-de-variable" id="toc-noms-de-variable" class="nav-link" data-scroll-target="#noms-de-variable">Noms de variable</a></li>
+  <li><a href="#les-vecteurs" id="toc-les-vecteurs" class="nav-link" data-scroll-target="#les-vecteurs">Les vecteurs</a></li>
+  </ul></li>
+  <li><a href="#matériel-accompagnateur" id="toc-matériel-accompagnateur" class="nav-link" data-scroll-target="#matériel-accompagnateur">Matériel accompagnateur</a>
+  <ul>
+  <li><a href="#classes-de-base" id="toc-classes-de-base" class="nav-link" data-scroll-target="#classes-de-base">Classes de base</a></li>
+  <li><a href="#noms-de-variables" id="toc-noms-de-variables" class="nav-link" data-scroll-target="#noms-de-variables">Noms de variables</a></li>
+  <li><a href="#les-vecteurs-1" id="toc-les-vecteurs-1" class="nav-link" data-scroll-target="#les-vecteurs-1">Les vecteurs</a></li>
+  <li><a href="#autres-types-de-classes" id="toc-autres-types-de-classes" class="nav-link" data-scroll-target="#autres-types-de-classes">Autres types de classes</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -258,7 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capsules/01-capsule.html">Capsules</a></li><li class="breadcrumb-item"><a href="../capsules/02-capsule.html">Capsule 2</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Capsule 2</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Capsule 2</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Montrer tout le code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Cacher tout le code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Voir les sources</a></li></ul></div></div>
 </div>
 
 
@@ -275,55 +288,504 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="code-interactif" class="level2">
-<h2 class="anchored" data-anchor-id="code-interactif">Code interactif</h2>
-<div class="cell">
-<div>
-<div id="webr-1">
-
-</div>
-<script type="webr-1-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZm9yICh4IGluIDE6NSkge1xuICBwcmludCh4KioyKVxufSJ9
-</script>
-</div>
-</div>
-<div class="cell" data-autorun="false">
-<div>
-<div id="webr-2">
-
-</div>
-<script type="webr-2-contents">
-eyJhdHRyIjp7ImV2YWwiOnRydWUsImVkaXQiOnRydWUsImF1dG9ydW4iOmZhbHNlfSwiY29kZSI6ImZvciAoeCBpbiAxOjUpIHtcbiAgcHJpbnQoeCoqMylcbn0ifQ==
-</script>
-</div>
-</div>
+<section id="objectifs-de-la-capsule" class="level2">
+<h2 class="anchored" data-anchor-id="objectifs-de-la-capsule">Objectifs de la capsule</h2>
+<p>À la fin de cette capsule, vous serez en mesure de:</p>
+<ol type="1">
+<li>Assigner une valeur à une variable.</li>
+<li>Nommer une variable de façon efficace.</li>
+<li>Connaître les principales classes de variables.</li>
+<li>Convertir une donnée d’une classe de variable à une autre.</li>
+<li>Savoir qu’il existe d’autres classes de variables.</li>
+</ol>
 </section>
-<section id="choix-de-réponses" class="level2">
-<h2 class="anchored" data-anchor-id="choix-de-réponses">Choix de réponses</h2>
+<section id="capsule-vidéo" class="level2">
+<h2 class="anchored" data-anchor-id="capsule-vidéo">Capsule vidéo</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/10aSWfg_lIE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="exercices" class="level2">
+<h2 class="anchored" data-anchor-id="exercices">Exercices</h2>
+<div class="callout-info">
+<p>Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint” est là pour être utilisé!</p>
+</div>
+<section id="classes-de-variables" class="level3">
+<h3 class="anchored" data-anchor-id="classes-de-variables">Classes de variables</h3>
 <div class="question callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_4141" onsubmit="return validate_form_4141()" method="post">
+<form name="form_43277" onsubmit="return validate_form_43277()" method="post">
 <fieldset>
-<legend>Quelle est la bonne réponse?</legend>
-<input type="radio" name="answer_4141" id="answer_4141_1" value="Bonne réponse">
-<label>Bonne réponse</label>
+<legend>Lesquelles des valeurs suivantes sont du type caractère?</legend>
+<input type="checkbox" id="answer_43277_1" value="12.34">
+<label>12.34</label>
 <br>
-<input type="radio" name="answer_4141" id="answer_4141_2" value="Mauvaise réponse">
-<label>Mauvaise réponse</label>
+<input type="checkbox" id="answer_43277_2" value="'banane'">
+<label>'banane'</label>
+<br>
+<input type="checkbox" id="answer_43277_3" value="'3.1415'">
+<label>'3.1415'</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_4141"></div>
+<div id="result_43277"></div>
 </fieldset>
 </form>
-<script>function validate_form_4141() {var x, text; var x = document.forms['form_4141']['answer_4141'].value;if (x == 'Bonne réponse'){text = 'C’est watatatow!';} else {text = 'Faux';} document.getElementById('result_4141').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_43277() {var text; var x1 = document.getElementById('answer_43277_1'); var x2 = document.getElementById('answer_43277_2'); var x3 = document.getElementById('answer_43277_3'); if (x1.checked == false&x2.checked == true&x3.checked == true){text = 'Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';} else {text = 'N’oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).';} document.getElementById('result_43277').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_4141').innerText == 'C’est watatatow!';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_43277').innerText == 'Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quiz</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Lesquelles des valeurs suivantes sont du type caractère?"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"12.34"</span>, <span class="at">message =</span> <span class="st">"12.34 est de type numérique."</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"'banane'"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"'3.1415'"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Les valeurs de `'banane'` et de `'3.1415'` sont entourées de guillemets ce qui indique des valeurs de type caractère."</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"N'oubliez pas que les caractères sont entourés de guillemets (simples ou doubles)."</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Quel est le bon opérateur à utiliser pour assigner une valeur à une variable?"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"&lt;-"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"L'opérateur ` &lt;- ` est recommandé en plus d'éviter la confusion avec l'opérateur logique `==`."</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">" = "</span>, <span class="at">message =</span> <span class="st">"L'opérateur `=` fonctionne, mais il est recommandé d'utiliser ` &lt;- ` pour éviter la confusion avec l'opérateur logique `==`."</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Comment peut-on déterminer la classe d'une variable nommée `x`?"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`class(x)`"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`Class(x)`"</span>, <span class="at">message =</span> <span class="st">"Attention à la casse (minuscule ou majuscule) des fonctions."</span>),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`type(x)`"</span>, <span class="at">message =</span> <span class="st">"`type()` n'est pas une fonction de base de R."</span>),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Quels types de variables serait préférables pour représenter les mois d'une année?"</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"numeric"</span>, <span class="at">message =</span> <span class="st">"Le type `numeric` ne peut pas être utilisé pour les chaînes de caractères."</span>),</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"factor"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide."</span>),</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"logical"</span>, <span class="at">message =</span> <span class="st">"Le type `logical` ne peut contenir que les valeurs `TRUE` ou `FALSE`."</span>),</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"character"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Le type `caracter` permet en effet de conserver des chaînes de caractères."</span>),</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Il y a peut-être plus d'une bonne réponse!"</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="noms-de-variable" class="level3">
+<h3 class="anchored" data-anchor-id="noms-de-variable">Noms de variable</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quiz</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"1x3"</span>, <span class="at">message =</span> <span class="st">"Un nom de variable ne doit pas commencer par une valeur numérique."</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"x2"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"`x2` est valide puisqu'il commence par une lettre, ne contient pas caractères spéciaux et/ou d'espaces."</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"ma variable"</span>, <span class="at">message =</span> <span class="st">"Un nom de variable ne doit pas contenir d'espace."</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"température"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="st">"`température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux."</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d'une voiture se déplacant à 50 km/h?"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"x &lt;- 50"</span>, <span class="at">message =</span> <span class="st">"Le nom de la variable (`x`) n'est pas très descriptif."</span>),</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"vitesse_km_h &lt;- 50"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Ce nom est descriptif en plus d'indiquer les unités."</span>),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"vitesse &lt;- 50"</span>, <span class="at">message =</span> <span class="st">"Ce choix n'est pas optimal, car on ne peut pas deviner les unités."</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pourquoi l'assignation suivante de devrait pas être utilisée? `c &lt;- 23`"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"Parce que `c()` est une fonction de base dans R."</span>),</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"Parce que `c` n'est pas suffisamment descriptif."</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"Toutes ces réponses"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"`c()` est la fonction pour cérer un vecteur en plus de ne pas être un nom de variable très descriptif."</span>),</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Attention, il y a peut-être plusieurs réponses vraies!"</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="les-vecteurs" class="level3">
+<h3 class="anchored" data-anchor-id="les-vecteurs">Les vecteurs</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quiz</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Quelle est la classe de `x &lt;- c(1, '2', 3)`?"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"numeric"</span>, <span class="at">message =</span> <span class="st">"Utilisez la fonction `class()` pour valider votre choix."</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"vecteur"</span>, <span class="at">message =</span> <span class="st">"Utilisez la fonction `class()` pour valider votre choix."</span>),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"charactère"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Puisqu'il y a une valeur texte dans le vecteur, `'2'`, le vecteur entier est de type `character`."</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Parmi les choix suivants, lesquelles représentent des vecteurs de type `logic`?"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`c(TRUE, FALSE)`"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`c(VRAI, FAUX)`"</span>, <span class="at">message =</span> <span class="st">"R n'utilise généralement pas des noms français."</span>),</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`c(0, 1)`"</span>, <span class="at">message =</span> <span class="st">"Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`."</span>),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[2]`?"</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"1"</span>),</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"42"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"42 est la valeur à la position 2 du vecteur `x`."</span>),</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"5"</span>),</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"4"</span>),</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Incorrect!. N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`."</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[-2]`?"</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"-42"</span>),</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"c(1, -42, 5, 4)"</span>),</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"c(1, 5, 4)"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"`x[-2]` supprime la valeur à la position 2 du vecteur `x`."</span>),</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Incorrect!, N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement."</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="matériel-accompagnateur" class="level2">
+<h2 class="anchored" data-anchor-id="matériel-accompagnateur">Matériel accompagnateur</h2>
+<section id="classes-de-base" class="level3">
+<h3 class="anchored" data-anchor-id="classes-de-base">Classes de base</h3>
+<p>Il existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.</p>
+<p><strong>La classe <code>numeric</code></strong></p>
+<p>La classe <code>numeric</code> sert à représenter les nombres (ex.: <code>1</code>, <code>3.14</code>, <code>-3324.56</code>).</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 12</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">1.45</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -1.45</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> pi</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6.141593</code></pre>
+</div>
+</div>
+<p><strong>La classe <code>character</code></strong></p>
+<p>La classe <code>character</code> sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples <code>'</code> ou doubles <code>"</code> guillemets.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "banane"</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "banane"</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>R est un langage de programmation dit <em>case sensitive</em>. C’est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères <code>banane</code> est différente de la chaîne de caractères <code>Banane</code>.</p>
+</div>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Est-ce que les deux chaînes sont identiques?</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span> <span class="sc">==</span> <span class="st">"Banane"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p><strong>La classe <code>logic</code></strong></p>
+<p>La classe <code>logic</code> sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs <code>logic</code> sont représentées soit à l’aide des valeurs <code>TRUE</code>, <code>FALSE</code> ou <code>T</code>, <code>F</code>. Il est cependant recommandé d’utiliser la forme longue (<code>TRUE</code>, <code>FALSE</code>).</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p><strong>La classe <code>factor</code></strong></p>
+<p>La classe <code>factor</code> sert à représenter les valeurs lorsqu’on connaît d’avance les différentes possibilités (ex. mois de l’année). Les facteurs sont généralement créés avec la fonction <code>factor()</code>.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"lundi"</span>, <span class="st">"mardi"</span>, <span class="st">"mercredi"</span>, <span class="st">"jeudi"</span>, <span class="st">"vendredi"</span>, <span class="st">"samedi"</span>, <span class="st">"dimanche"</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] lundi    mardi    mercredi jeudi    vendredi samedi   dimanche
+Levels: dimanche jeudi lundi mardi mercredi samedi vendredi</code></pre>
+</div>
+</div>
+<p>On peut utiliser la fonction <code>class()</code> pour connaître la classe d’une variable.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="dv">1</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "numeric"</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"banane"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"Banane"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">factor</span>(<span class="fl">123.1</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "factor"</code></pre>
+</div>
+</div>
+<p>Il est également possible de convertir les classes. Par exemple, on peut convertir une classe <code>character</code> en classe <code>numeric</code>.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"3.4"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">as.numeric</span>(<span class="st">"3.4"</span>))</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "numeric"</code></pre>
+</div>
+</div>
+</section>
+<section id="noms-de-variables" class="level3">
+<h3 class="anchored" data-anchor-id="noms-de-variables">Noms de variables</h3>
+<p>Il est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d’une opération dans d’autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l’assignement d’une valeur à une variable peut se faire à l’aide des opérateurs <code>&lt;-</code> et <code>=</code>. Cependant, il est préférable d’utiliser l’opérateur <code>&lt;-</code> plutôt que <code>=</code> pour l’assignation d’une variable. En plus, l’utilisation de <code>&lt;-</code> permet d’éviter la confusion avec l’opérateur logique <code>==</code>.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="co"># Assigner la valeur numérique 2 à la variable x</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">40</span> <span class="co"># Assigner la valeur numérique 40 à la variable y</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y <span class="co"># Somme de x et y</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 42</code></pre>
+</div>
+</div>
+<p>Un nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bon</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>x123 <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pas bon</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span>x <span class="ot">&lt;-</span> <span class="st">"R est vraiment trop cool!"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Il est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># x n'est pas assez descriptif</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>chla <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># mieux, mais on ne connaît pas les unités</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># idéal, on connaît la variable et son unité</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Il est important d’être consistent dans la casse des noms de variables. Par exemple, <code>chla_mg_m2</code> et <code>Chla_mg_m2</code> sont deux variables distinctes.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>Chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Il est important que vos noms de variables n’entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d’utiliser <code>cos</code>, <code>sin</code>, <code>min</code>, <code>median</code>, <code>pi</code>.</p>
+</div>
+</div>
+<p><code>{r echo=TRUE, eval=FALSE} cos &lt;- 3 # À ne pas faire!</code></p>
+</section>
+<section id="les-vecteurs-1" class="level3">
+<h3 class="anchored" data-anchor-id="les-vecteurs-1">Les vecteurs</h3>
+<p>Les vecteurs sont des tableaux d’éléments successifs. Les éléments d’un vecteur peuvent être, par exemple: <code>numeric</code>, <code>character</code>, <code>logic</code>. Dans R, les vecteurs sont créés à l’aide de la fonction <code>c()</code> (qui veut dire <em>combine</em>) et les valeurs sont séparées à l’aide de la virgule (<code>,</code>).</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d'un vecteur avec 6 valeurs numériques</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>v1</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 100 101 102 103 104 105</code></pre>
+</div>
+</div>
+<p>Pour accéder aux valeurs d’un vecteur, il suffit de spécifier l’index (position) à laquel nous voulons accéder.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span>] <span class="co"># 3ième élément du vecteur v</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 102</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>] <span class="co"># Positions 3,4,5 du vecteur v</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 102 103 104</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dans R il est possible de créer rapidement une séquence de nombre en utilisant l’opérateur <code>:</code>. Par exemple, la commande <code>3:5</code> retourne un vecteur numérique avec les valeurs 3, 4 et 5.</p>
+</div>
+</div>
+<p>Il est également possible de supprimer un élément d’un vecteur en utilisant l’opérateur <code>-</code> suivi de l’index à supprimer.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>v1[<span class="sc">-</span><span class="dv">3</span>] <span class="co"># Supprimer le 3ième élément du vecteur v</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 100 101 103 104 105</code></pre>
+</div>
+</div>
+<p>Des opérations arithmétiques sont également possibles avec les vecteurs.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>v2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>)</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>v1 <span class="sc">+</span> v2</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 110 121 132 143 154 165</code></pre>
+</div>
+</div>
+</section>
+<section id="autres-types-de-classes" class="level3">
+<h3 class="anchored" data-anchor-id="autres-types-de-classes">Autres types de classes</h3>
+<p>Il existe un très grand nombre d’objets dans R. Ainsi, d’autres classes d’objets vous seront utiles:</p>
+<ul>
+<li><code>data.frame</code>: Format habituel de tableau de données que vous importez.</li>
+<li><code>list</code>: Liste d’objets de classes différentes (texte, numérique, etc.).</li>
+<li><code>lm</code>: Résultat d’une analyse de modèle linéaire.</li>
+<li><code>date</code>: Pour représenter les dates.</li>
+</ul>
+<p>Dans l’exemple suivant, un modèle linéaire <code>model1</code> est créé avec la fonction <code>lm()</code>. Différentes fonctions génériques peuvent être utilisées avec la variable <code>model1</code>.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> hp, <span class="at">data =</span> mtcars) <span class="co"># Créer un modèle linéaire (lm)</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(model1) <span class="co"># Voir la classe de model1</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "lm"</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1) <span class="co"># Diagnostiques du modèle</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = mpg ~ hp, data = mtcars)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.7121 -2.1122 -0.8854  1.5819  8.2360 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 30.09886    1.63392  18.421  &lt; 2e-16 ***
+hp          -0.06823    0.01012  -6.742 1.79e-07 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.863 on 30 degrees of freedom
+Multiple R-squared:  0.6024,    Adjusted R-squared:  0.5892 
+F-statistic: 45.46 on 1 and 30 DF,  p-value: 1.788e-07</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model1) <span class="co"># Graphiques de diagnostic du modèle</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02-capsule_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02-capsule_files/figure-html/unnamed-chunk-19-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02-capsule_files/figure-html/unnamed-chunk-19-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02-capsule_files/figure-html/unnamed-chunk-19-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -331,11 +793,8 @@ eyJhdHRyIjp7ImV2YWwiOnRydWUsImVkaXQiOnRydWUsImF1dG9ydW4iOmZhbHNlfSwiY29kZSI6ImZv
 
 <!-- -->
 
-<script type="webr-data">
-eyJyZW5kZXJfZGYiOiJkZWZhdWx0IiwicGFja2FnZXMiOnsicGtncyI6WyJldmFsdWF0ZSIsImtuaXRyIiwiaHRtbHRvb2xzIiwiZHBseXIiLCJwYWxtZXJwZW5ndWlucyIsImdncGxvdDIiXSwicmVwb3MiOltdfSwib3B0aW9ucyI6eyJiYXNlVXJsIjoiaHR0cHM6Ly93ZWJyLnItd2FzbS5vcmcvdjAuNC4xLyJ9fQ==
-</script>
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0yIiwic291cmNlIjoie1xuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xuICBhd2FpdCBfd2Vicl92YWx1ZV8yO1xuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xuICB9XG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcbiAgfVxufVxuIiwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0IiwiaW5saW5lIjpmYWxzZX0seyJjZWxsTmFtZSI6IndlYnItMiIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfMiA9IHtcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTItY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0yLWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl93ZWJyX3ZhbHVlXzIgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzIsIHt9KTtcbiIsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOmZhbHNlfSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtMSIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMTtcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcbiAgfVxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XG4gIH1cbn1cbiIsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsImlubGluZSI6ZmFsc2V9LHsiY2VsbE5hbWUiOiJ3ZWJyLTEiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzEgPSB7XG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8xID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl8xLCB7fSk7XG4iLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjpmYWxzZX0seyJjZWxsTmFtZSI6IndlYnItcHJlbHVkZSIsInNvdXJjZSI6IndlYlJPanMgPSB7XG4gIGNvbnN0IHsgV2ViUiB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZS5XZWJSO1xuICBjb25zdCB7XG4gICAgV2ViUkV2YWx1YXRvcixcbiAgICBXZWJSRW52aXJvbm1lbnRNYW5hZ2VyLFxuICAgIHNldHVwUixcbiAgICBiNjREZWNvZGUsXG4gICAgY29sbGFwc2VQYXRoXG4gIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHN0YXR1c0NvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiZXhlcmNpc2UtbG9hZGluZy1zdGF0dXNcIik7XG4gIGNvbnN0IGluZGljYXRvckNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGluZGljYXRvckNvbnRhaW5lci5jbGFzc0xpc3QucmVtb3ZlKFwiZC1ub25lXCIpO1xuXG4gIGxldCBzdGF0dXNUZXh0ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKVxuICBzdGF0dXNUZXh0LmNsYXNzTGlzdCA9IFwiZXhlcmNpc2UtbG9hZGluZy1kZXRhaWxzXCI7XG4gIHN0YXR1c1RleHQgPSBzdGF0dXNDb250YWluZXIuYXBwZW5kQ2hpbGQoc3RhdHVzVGV4dCk7XG4gIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgSW5pdGlhbGlzZWA7XG5cbiAgLy8gSG9pc3QgaW5kaWNhdG9yIG91dCBmcm9tIGZpbmFsIHNsaWRlIHdoZW4gcnVubmluZyB1bmRlciByZXZlYWxcbiAgY29uc3QgcmV2ZWFsU3RhdHVzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgLmV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xuICBpZiAocmV2ZWFsU3RhdHVzKSB7XG4gICAgcmV2ZWFsU3RhdHVzLnJlbW92ZSgpO1xuICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsID4gLnNsaWRlc1wiKS5hcHBlbmRDaGlsZChyZXZlYWxTdGF0dXMpO1xuICB9XG5cbiAgLy8gd2ViUiBzdXBwbGVtZW50YWwgZGF0YSBhbmQgb3B0aW9uc1xuICBjb25zdCBkYXRhQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLWRhdGFcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBkYXRhID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZGF0YUNvbnRlbnQpKTtcblxuICAvLyBHcmFiIGxpc3Qgb2YgcmVzb3VyY2VzIHRvIGJlIGRvd25sb2FkZWRcbiAgY29uc3QgZmlsZXNDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInZmcy1maWxlXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZmlsZXMgPSBKU09OLnBhcnNlKGI2NERlY29kZShmaWxlc0NvbnRlbnQpKTtcblxuICAvLyBJbml0aWFsaXNlIHdlYlIgYW5kIHNldHVwIGZvciBSIGNvZGUgZXZhbHVhdGlvblxuICBsZXQgd2ViUlByb21pc2UgPSAoYXN5bmMgKHdlYlIpID0+IHtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHdlYlJgO1xuICAgIGF3YWl0IHdlYlIuaW5pdCgpO1xuXG4gICAgLy8gSW5zdGFsbCBwcm92aWRlZCBsaXN0IG9mIHBhY2thZ2VzXG4gICAgLy8gRW5zdXJlIHdlYlIgZGVmYXVsdCByZXBvIGlzIGluY2x1ZGVkXG4gICAgZGF0YS5wYWNrYWdlcy5yZXBvcy5wdXNoKFwiaHR0cHM6Ly9yZXBvLnItd2FzbS5vcmdcIilcbiAgICBhd2FpdCBkYXRhLnBhY2thZ2VzLnBrZ3MubWFwKChwa2cpID0+ICgpID0+IHtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogJHtwa2d9YDtcbiAgICAgIHJldHVybiB3ZWJSLmV2YWxSVm9pZChgXG4gICAgICAgIHdlYnI6Omluc3RhbGwocGtnLCByZXBvcyA9IHJlcG9zKVxuICAgICAgICBsaWJyYXJ5KHBrZywgY2hhcmFjdGVyLm9ubHkgPSBUUlVFKVxuICAgICAgYCwgeyBlbnY6IHtcbiAgICAgICAgcGtnOiBwa2csXG4gICAgICAgIHJlcG9zOiBkYXRhLnBhY2thZ2VzLnJlcG9zLFxuICAgICAgfX0pO1xuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuXG4gICAgLy8gRG93bmxvYWQgYW5kIGluc3RhbGwgcmVzb3VyY2VzXG4gICAgYXdhaXQgZmlsZXMubWFwKChmaWxlKSA9PiBhc3luYyAoKSA9PiB7XG4gICAgICBjb25zdCBuYW1lID0gZmlsZS5zdWJzdHJpbmcoZmlsZS5sYXN0SW5kZXhPZignLycpICsgMSk7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHJlc291cmNlOiAke25hbWV9YDtcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goZmlsZSk7XG4gICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2FuJ3QgZG93bmxvYWQgXFxgJHtmaWxlfVxcYC4gRXJyb3IgJHtyZXNwb25zZS5zdGF0dXN9OiBcIiR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1cIi5gKTtcbiAgICAgIH1cbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5hcnJheUJ1ZmZlcigpO1xuXG4gICAgICAvLyBTdG9yZSBVUkxzIGluIHRoZSBjd2Qgd2l0aG91dCBhbnkgc3ViZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgaWYgKGZpbGUuaW5jbHVkZXMoXCI6Ly9cIikpIHtcbiAgICAgICAgZmlsZSA9IG5hbWU7XG4gICAgICB9XG5cbiAgICAgIC8vIENvbGxhcHNlIGhpZ2hlciBkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBmaWxlID0gY29sbGFwc2VQYXRoKGZpbGUpO1xuXG4gICAgICAvLyBDcmVhdGUgZGlyZWN0b3J5IHRyZWUsIGlnbm9yaW5nIFwiZGlyZWN0b3J5IGV4aXN0c1wiIFZGUyBlcnJvcnNcbiAgICAgIGNvbnN0IHBhcnRzID0gZmlsZS5zcGxpdCgnLycpLnNsaWNlKDAsIC0xKTtcbiAgICAgIGxldCBwYXRoID0gJyc7XG4gICAgICB3aGlsZSAocGFydHMubGVuZ3RoID4gMCkge1xuICAgICAgICBwYXRoICs9IHBhcnRzLnNoaWZ0KCkgKyAnLyc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgYXdhaXQgd2ViUi5GUy5ta2RpcihwYXRoKTtcbiAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgIGlmICghZS5tZXNzYWdlLmluY2x1ZGVzKFwiRlMgZXJyb3JcIikpIHtcbiAgICAgICAgICAgIHRocm93IGU7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIC8vIFdyaXRlIHRoaXMgZmlsZSB0byB0aGUgVkZTXG4gICAgICByZXR1cm4gYXdhaXQgd2ViUi5GUy53cml0ZUZpbGUoZmlsZSwgbmV3IFVpbnQ4QXJyYXkoZGF0YSkpO1xuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbnN0YWxsaW5nIHdlYlIgc2hpbXNgO1xuICAgIGF3YWl0IHdlYlIuZXZhbFJWb2lkKGB3ZWJyOjpzaGltX2luc3RhbGwoKWApO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBXZWJSIGVudmlyb25tZW50IHNldHVwYDtcbiAgICBhd2FpdCBzZXR1cFIod2ViUiwgZGF0YSk7XG5cbiAgICBzdGF0dXNUZXh0LnJlbW92ZSgpO1xuICAgIGlmIChzdGF0dXNDb250YWluZXIuY2hpbGRyZW4ubGVuZ3RoID09IDApIHtcbiAgICAgIHN0YXR1c0NvbnRhaW5lci5wYXJlbnROb2RlLnJlbW92ZSgpO1xuICAgIH1cbiAgICByZXR1cm4gd2ViUjtcbiAgfSkobmV3IFdlYlIoZGF0YS5vcHRpb25zKSk7XG5cbiAgLy8gS2VlcCB0cmFjayBvZiBpbml0aWFsIE9KUyBibG9jayByZW5kZXJcbiAgY29uc3QgcmVuZGVyZWRPanMgPSB7fTtcblxuICBjb25zdCBwcm9jZXNzID0gYXN5bmMgKGNvbnRleHQsIGlucHV0cykgPT4ge1xuICAgIGNvbnN0IHdlYlIgPSBhd2FpdCB3ZWJSUHJvbWlzZTtcbiAgICBjb25zdCBldmFsdWF0b3IgPSBuZXcgV2ViUkV2YWx1YXRvcih3ZWJSLCBjb250ZXh0KVxuICAgIGF3YWl0IGV2YWx1YXRvci5wcm9jZXNzKGlucHV0cyk7XG4gICAgcmV0dXJuIGV2YWx1YXRvci5jb250YWluZXI7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIHByb2Nlc3MsXG4gICAgd2ViUlByb21pc2UsXG4gICAgcmVuZGVyZWRPanMsXG4gIH07XG59XG4iLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJpbmxpbmUiOmZhbHNlfV19
+eyJjb250ZW50cyI6W119
 </script>
 <div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
 <div id="exercise-loading-status" class="d-flex gap-2">
@@ -348,6 +807,7 @@ eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0yIiwic291cmNlIjoie1xuICAvLyBX
 <script type="vfs-file">
 W10=
 </script>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -845,54 +1305,361 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Code source</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Capsule 2</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../_extensions/r-wasm/live/_knitr.qmd &gt;}}</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: setup</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(checkdown)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Code interactif</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{webr}</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">for (x in 1:5) {</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">  print(x**2)</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">```{webr}</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="in">#| autorun: false</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in">for (x in 1:5) {</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">  print(x**3)</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Choix de réponses</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">```{r }</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: atlanta-sign-question</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">#| results: "asis"</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">check_question(</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">  "Bonne réponse",</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">  options = c("Bonne réponse", "Mauvaise réponse"),</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">  type = "radio",</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in">  button_label = "Vérifier",</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="in">  # question_id = 1,</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">  right = "C'est watatatow!",</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="in">  wrong = "Faux",</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="in">  title = "Quelle est la bonne réponse?"</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>:::</span>
+<div class="sourceCode" id="cb54" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Capsule 2</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../_extensions/r-wasm/live/_knitr.qmd &gt;}}</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: setup</span></span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(checkdown)</span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objectifs de la capsule</span></span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a>À la fin de cette capsule, vous serez en mesure de:</span>
+<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Assigner une valeur à une variable.</span>
+<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Nommer une variable de façon efficace.</span>
+<span id="cb54-21"><a href="#cb54-21" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Connaître les principales classes de variables.</span>
+<span id="cb54-22"><a href="#cb54-22" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Convertir une donnée d'une classe de variable à une autre.</span>
+<span id="cb54-23"><a href="#cb54-23" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Savoir qu'il existe d'autres classes de variables.</span>
+<span id="cb54-24"><a href="#cb54-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-25"><a href="#cb54-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Capsule vidéo</span></span>
+<span id="cb54-26"><a href="#cb54-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-27"><a href="#cb54-27" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://youtu.be/10aSWfg_lIE &gt;}}</span>
+<span id="cb54-28"><a href="#cb54-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-29"><a href="#cb54-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exercices</span></span>
+<span id="cb54-30"><a href="#cb54-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-31"><a href="#cb54-31" aria-hidden="true" tabindex="-1"></a>::: {.callout-info}</span>
+<span id="cb54-32"><a href="#cb54-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-33"><a href="#cb54-33" aria-hidden="true" tabindex="-1"></a>Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint" est là pour être utilisé!</span>
+<span id="cb54-34"><a href="#cb54-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-35"><a href="#cb54-35" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb54-36"><a href="#cb54-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-37"><a href="#cb54-37" aria-hidden="true" tabindex="-1"></a><span class="fu">### Classes de variables</span></span>
+<span id="cb54-38"><a href="#cb54-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-39"><a href="#cb54-39" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb54-40"><a href="#cb54-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-41"><a href="#cb54-41" aria-hidden="true" tabindex="-1"></a><span class="in">```{r }</span></span>
+<span id="cb54-42"><a href="#cb54-42" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: question1</span></span>
+<span id="cb54-43"><a href="#cb54-43" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
+<span id="cb54-44"><a href="#cb54-44" aria-hidden="true" tabindex="-1"></a><span class="in">#| results: "asis"</span></span>
+<span id="cb54-45"><a href="#cb54-45" aria-hidden="true" tabindex="-1"></a><span class="in">check_question(</span></span>
+<span id="cb54-46"><a href="#cb54-46" aria-hidden="true" tabindex="-1"></a><span class="in">  c("'banane'", "'3.1415'"),</span></span>
+<span id="cb54-47"><a href="#cb54-47" aria-hidden="true" tabindex="-1"></a><span class="in">  options = c("12.34", "'banane'", "'3.1415'"),</span></span>
+<span id="cb54-48"><a href="#cb54-48" aria-hidden="true" tabindex="-1"></a><span class="in">  type = "checkbox",</span></span>
+<span id="cb54-49"><a href="#cb54-49" aria-hidden="true" tabindex="-1"></a><span class="in">  button_label = "Vérifier",</span></span>
+<span id="cb54-50"><a href="#cb54-50" aria-hidden="true" tabindex="-1"></a><span class="in">  right = "Les valeurs de 'banane' et de '3.1415' sont entourées de guillemets ce qui indique des valeurs de type caractère.",</span></span>
+<span id="cb54-51"><a href="#cb54-51" aria-hidden="true" tabindex="-1"></a><span class="in">  wrong = "N'oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).",</span></span>
+<span id="cb54-52"><a href="#cb54-52" aria-hidden="true" tabindex="-1"></a><span class="in">  title = "Lesquelles des valeurs suivantes sont du type caractère?"</span></span>
+<span id="cb54-53"><a href="#cb54-53" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb54-54"><a href="#cb54-54" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-55"><a href="#cb54-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-56"><a href="#cb54-56" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb54-57"><a href="#cb54-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-58"><a href="#cb54-58" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
+<span id="cb54-59"><a href="#cb54-59" aria-hidden="true" tabindex="-1"></a><span class="fu">quiz</span>(</span>
+<span id="cb54-60"><a href="#cb54-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Lesquelles des valeurs suivantes sont du type caractère?"</span>,</span>
+<span id="cb54-61"><a href="#cb54-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"12.34"</span>, <span class="at">message =</span> <span class="st">"12.34 est de type numérique."</span>),</span>
+<span id="cb54-62"><a href="#cb54-62" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"'banane'"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb54-63"><a href="#cb54-63" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"'3.1415'"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Les valeurs de `'banane'` et de `'3.1415'` sont entourées de guillemets ce qui indique des valeurs de type caractère."</span>),</span>
+<span id="cb54-64"><a href="#cb54-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-65"><a href="#cb54-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-66"><a href="#cb54-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"N'oubliez pas que les caractères sont entourés de guillemets (simples ou doubles)."</span></span>
+<span id="cb54-67"><a href="#cb54-67" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-68"><a href="#cb54-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Quel est le bon opérateur à utiliser pour assigner une valeur à une variable?"</span>,</span>
+<span id="cb54-69"><a href="#cb54-69" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"&lt;-"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"L'opérateur ` &lt;- ` est recommandé en plus d'éviter la confusion avec l'opérateur logique `==`."</span>),</span>
+<span id="cb54-70"><a href="#cb54-70" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">" = "</span>, <span class="at">message =</span> <span class="st">"L'opérateur `=` fonctionne, mais il est recommandé d'utiliser ` &lt;- ` pour éviter la confusion avec l'opérateur logique `==`."</span>),</span>
+<span id="cb54-71"><a href="#cb54-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span></span>
+<span id="cb54-72"><a href="#cb54-72" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-73"><a href="#cb54-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Comment peut-on déterminer la classe d'une variable nommée `x`?"</span>,</span>
+<span id="cb54-74"><a href="#cb54-74" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`class(x)`"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb54-75"><a href="#cb54-75" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`Class(x)`"</span>, <span class="at">message =</span> <span class="st">"Attention à la casse (minuscule ou majuscule) des fonctions."</span>),</span>
+<span id="cb54-76"><a href="#cb54-76" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`type(x)`"</span>, <span class="at">message =</span> <span class="st">"`type()` n'est pas une fonction de base de R."</span>),</span>
+<span id="cb54-77"><a href="#cb54-77" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-78"><a href="#cb54-78" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb54-79"><a href="#cb54-79" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-80"><a href="#cb54-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Quels types de variables serait préférables pour représenter les mois d'une année?"</span>,</span>
+<span id="cb54-81"><a href="#cb54-81" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"numeric"</span>, <span class="at">message =</span> <span class="st">"Le type `numeric` ne peut pas être utilisé pour les chaînes de caractères."</span>),</span>
+<span id="cb54-82"><a href="#cb54-82" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"factor"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide."</span>),</span>
+<span id="cb54-83"><a href="#cb54-83" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"logical"</span>, <span class="at">message =</span> <span class="st">"Le type `logical` ne peut contenir que les valeurs `TRUE` ou `FALSE`."</span>),</span>
+<span id="cb54-84"><a href="#cb54-84" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"character"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Le type `caracter` permet en effet de conserver des chaînes de caractères."</span>),</span>
+<span id="cb54-85"><a href="#cb54-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-86"><a href="#cb54-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-87"><a href="#cb54-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Il y a peut-être plus d'une bonne réponse!"</span></span>
+<span id="cb54-88"><a href="#cb54-88" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb54-89"><a href="#cb54-89" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb54-90"><a href="#cb54-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-91"><a href="#cb54-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-92"><a href="#cb54-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Noms de variable</span></span>
+<span id="cb54-93"><a href="#cb54-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-94"><a href="#cb54-94" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
+<span id="cb54-95"><a href="#cb54-95" aria-hidden="true" tabindex="-1"></a><span class="fu">quiz</span>(</span>
+<span id="cb54-96"><a href="#cb54-96" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?"</span>,</span>
+<span id="cb54-97"><a href="#cb54-97" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"1x3"</span>, <span class="at">message =</span> <span class="st">"Un nom de variable ne doit pas commencer par une valeur numérique."</span>),</span>
+<span id="cb54-98"><a href="#cb54-98" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"x2"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"`x2` est valide puisqu'il commence par une lettre, ne contient pas caractères spéciaux et/ou d'espaces."</span>),</span>
+<span id="cb54-99"><a href="#cb54-99" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"ma variable"</span>, <span class="at">message =</span> <span class="st">"Un nom de variable ne doit pas contenir d'espace."</span>),</span>
+<span id="cb54-100"><a href="#cb54-100" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"température"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="st">"`température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux."</span>),</span>
+<span id="cb54-101"><a href="#cb54-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-102"><a href="#cb54-102" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb54-103"><a href="#cb54-103" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-104"><a href="#cb54-104" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d'une voiture se déplacant à 50 km/h?"</span>,</span>
+<span id="cb54-105"><a href="#cb54-105" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"x &lt;- 50"</span>, <span class="at">message =</span> <span class="st">"Le nom de la variable (`x`) n'est pas très descriptif."</span>),</span>
+<span id="cb54-106"><a href="#cb54-106" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"vitesse_km_h &lt;- 50"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Ce nom est descriptif en plus d'indiquer les unités."</span>),</span>
+<span id="cb54-107"><a href="#cb54-107" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"vitesse &lt;- 50"</span>, <span class="at">message =</span> <span class="st">"Ce choix n'est pas optimal, car on ne peut pas deviner les unités."</span>),</span>
+<span id="cb54-108"><a href="#cb54-108" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-109"><a href="#cb54-109" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb54-110"><a href="#cb54-110" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-111"><a href="#cb54-111" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(</span>
+<span id="cb54-112"><a href="#cb54-112" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pourquoi l'assignation suivante de devrait pas être utilisée? `c &lt;- 23`"</span>,</span>
+<span id="cb54-113"><a href="#cb54-113" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"Parce que `c()` est une fonction de base dans R."</span>),</span>
+<span id="cb54-114"><a href="#cb54-114" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"Parce que `c` n'est pas suffisamment descriptif."</span>),</span>
+<span id="cb54-115"><a href="#cb54-115" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"Toutes ces réponses"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"`c()` est la fonction pour cérer un vecteur en plus de ne pas être un nom de variable très descriptif."</span>),</span>
+<span id="cb54-116"><a href="#cb54-116" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb54-117"><a href="#cb54-117" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-118"><a href="#cb54-118" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Attention, il y a peut-être plusieurs réponses vraies!"</span></span>
+<span id="cb54-119"><a href="#cb54-119" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb54-120"><a href="#cb54-120" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb54-121"><a href="#cb54-121" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-122"><a href="#cb54-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-123"><a href="#cb54-123" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les vecteurs</span></span>
+<span id="cb54-124"><a href="#cb54-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-125"><a href="#cb54-125" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
+<span id="cb54-126"><a href="#cb54-126" aria-hidden="true" tabindex="-1"></a><span class="fu">quiz</span>(</span>
+<span id="cb54-127"><a href="#cb54-127" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Quelle est la classe de `x &lt;- c(1, '2', 3)`?"</span>,</span>
+<span id="cb54-128"><a href="#cb54-128" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"numeric"</span>, <span class="at">message =</span> <span class="st">"Utilisez la fonction `class()` pour valider votre choix."</span>),</span>
+<span id="cb54-129"><a href="#cb54-129" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"vecteur"</span>, <span class="at">message =</span> <span class="st">"Utilisez la fonction `class()` pour valider votre choix."</span>),</span>
+<span id="cb54-130"><a href="#cb54-130" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"charactère"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"Puisqu'il y a une valeur texte dans le vecteur, `'2'`, le vecteur entier est de type `character`."</span>),</span>
+<span id="cb54-131"><a href="#cb54-131" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-132"><a href="#cb54-132" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb54-133"><a href="#cb54-133" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-134"><a href="#cb54-134" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Parmi les choix suivants, lesquelles représentent des vecteurs de type `logic`?"</span>,</span>
+<span id="cb54-135"><a href="#cb54-135" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`c(TRUE, FALSE)`"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb54-136"><a href="#cb54-136" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`c(VRAI, FAUX)`"</span>, <span class="at">message =</span> <span class="st">"R n'utilise généralement pas des noms français."</span>),</span>
+<span id="cb54-137"><a href="#cb54-137" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"`c(0, 1)`"</span>, <span class="at">message =</span> <span class="st">"Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`."</span>),</span>
+<span id="cb54-138"><a href="#cb54-138" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-139"><a href="#cb54-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span></span>
+<span id="cb54-140"><a href="#cb54-140" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-141"><a href="#cb54-141" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[2]`?"</span>,</span>
+<span id="cb54-142"><a href="#cb54-142" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"1"</span>),</span>
+<span id="cb54-143"><a href="#cb54-143" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"42"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"42 est la valeur à la position 2 du vecteur `x`."</span>),</span>
+<span id="cb54-144"><a href="#cb54-144" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"5"</span>),</span>
+<span id="cb54-145"><a href="#cb54-145" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"4"</span>),</span>
+<span id="cb54-146"><a href="#cb54-146" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-147"><a href="#cb54-147" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-148"><a href="#cb54-148" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Incorrect!. N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`."</span></span>
+<span id="cb54-149"><a href="#cb54-149" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb54-150"><a href="#cb54-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">question</span>(<span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[-2]`?"</span>,</span>
+<span id="cb54-151"><a href="#cb54-151" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"-42"</span>),</span>
+<span id="cb54-152"><a href="#cb54-152" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"c(1, -42, 5, 4)"</span>),</span>
+<span id="cb54-153"><a href="#cb54-153" aria-hidden="true" tabindex="-1"></a>    <span class="fu">answer</span>(<span class="st">"c(1, 5, 4)"</span>, <span class="at">correct =</span> <span class="cn">TRUE</span>, <span class="at">message =</span> <span class="st">"`x[-2]` supprime la valeur à la position 2 du vecteur `x`."</span>),</span>
+<span id="cb54-154"><a href="#cb54-154" aria-hidden="true" tabindex="-1"></a>    <span class="at">random_answer_order =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-155"><a href="#cb54-155" aria-hidden="true" tabindex="-1"></a>    <span class="at">allow_retry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb54-156"><a href="#cb54-156" aria-hidden="true" tabindex="-1"></a>    <span class="at">incorrect =</span> <span class="st">"Incorrect!, N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement."</span></span>
+<span id="cb54-157"><a href="#cb54-157" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb54-158"><a href="#cb54-158" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb54-159"><a href="#cb54-159" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-160"><a href="#cb54-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-161"><a href="#cb54-161" aria-hidden="true" tabindex="-1"></a><span class="fu">## Matériel accompagnateur</span></span>
+<span id="cb54-162"><a href="#cb54-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-163"><a href="#cb54-163" aria-hidden="true" tabindex="-1"></a><span class="fu">### Classes de base</span></span>
+<span id="cb54-164"><a href="#cb54-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-165"><a href="#cb54-165" aria-hidden="true" tabindex="-1"></a>Il existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.</span>
+<span id="cb54-166"><a href="#cb54-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-167"><a href="#cb54-167" aria-hidden="true" tabindex="-1"></a>**La classe `numeric`**</span>
+<span id="cb54-168"><a href="#cb54-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-169"><a href="#cb54-169" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`numeric`</span> sert à représenter les nombres (ex.: <span class="in">`1`</span>, <span class="in">`3.14`</span>, <span class="in">`-3324.56`</span>).</span>
+<span id="cb54-170"><a href="#cb54-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-173"><a href="#cb54-173" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-174"><a href="#cb54-174" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-175"><a href="#cb54-175" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span></span>
+<span id="cb54-176"><a href="#cb54-176" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">1.45</span></span>
+<span id="cb54-177"><a href="#cb54-177" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> pi</span>
+<span id="cb54-178"><a href="#cb54-178" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-179"><a href="#cb54-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-180"><a href="#cb54-180" aria-hidden="true" tabindex="-1"></a>**La classe `character`**</span>
+<span id="cb54-181"><a href="#cb54-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-182"><a href="#cb54-182" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`character`</span> sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples <span class="in">`'`</span> ou doubles <span class="in">`"`</span> guillemets.</span>
+<span id="cb54-183"><a href="#cb54-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-186"><a href="#cb54-186" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-187"><a href="#cb54-187" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-188"><a href="#cb54-188" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span>
+<span id="cb54-189"><a href="#cb54-189" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span>
+<span id="cb54-190"><a href="#cb54-190" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-191"><a href="#cb54-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-192"><a href="#cb54-192" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb54-193"><a href="#cb54-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-194"><a href="#cb54-194" aria-hidden="true" tabindex="-1"></a>R est un langage de programmation dit _case sensitive_. C'est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères <span class="in">`banane`</span> est différente de la chaîne de caractères <span class="in">`Banane`</span>.</span>
+<span id="cb54-195"><a href="#cb54-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-196"><a href="#cb54-196" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb54-197"><a href="#cb54-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-200"><a href="#cb54-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-201"><a href="#cb54-201" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-202"><a href="#cb54-202" aria-hidden="true" tabindex="-1"></a><span class="co"># Est-ce que les deux chaînes sont identiques?</span></span>
+<span id="cb54-203"><a href="#cb54-203" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span> <span class="sc">==</span> <span class="st">"Banane"</span></span>
+<span id="cb54-204"><a href="#cb54-204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-205"><a href="#cb54-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-206"><a href="#cb54-206" aria-hidden="true" tabindex="-1"></a>**La classe `logic`**</span>
+<span id="cb54-207"><a href="#cb54-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-208"><a href="#cb54-208" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`logic`</span> sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs <span class="in">`logic`</span> sont représentées soit à l'aide des valeurs <span class="in">`TRUE`</span>, <span class="in">`FALSE`</span> ou <span class="in">`T`</span>, <span class="in">`F`</span>. Il est cependant recommandé d'utiliser la forme longue (<span class="in">`TRUE`</span>, <span class="in">`FALSE`</span>).</span>
+<span id="cb54-209"><a href="#cb54-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-212"><a href="#cb54-212" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-213"><a href="#cb54-213" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-214"><a href="#cb54-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-215"><a href="#cb54-215" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span></span>
+<span id="cb54-216"><a href="#cb54-216" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span></span>
+<span id="cb54-217"><a href="#cb54-217" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-218"><a href="#cb54-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-219"><a href="#cb54-219" aria-hidden="true" tabindex="-1"></a>**La classe `factor`**</span>
+<span id="cb54-220"><a href="#cb54-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-221"><a href="#cb54-221" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`factor`</span> sert à représenter les valeurs lorsqu'on connaît d'avance les différentes possibilités (ex. mois de l'année). Les facteurs sont généralement créés avec la fonction <span class="in">`factor()`</span>.</span>
+<span id="cb54-222"><a href="#cb54-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-225"><a href="#cb54-225" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-226"><a href="#cb54-226" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-227"><a href="#cb54-227" aria-hidden="true" tabindex="-1"></a><span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"lundi"</span>, <span class="st">"mardi"</span>, <span class="st">"mercredi"</span>, <span class="st">"jeudi"</span>, <span class="st">"vendredi"</span>, <span class="st">"samedi"</span>, <span class="st">"dimanche"</span>))</span>
+<span id="cb54-228"><a href="#cb54-228" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-229"><a href="#cb54-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-230"><a href="#cb54-230" aria-hidden="true" tabindex="-1"></a>On peut utiliser la fonction <span class="in">`class()`</span> pour connaître la classe d'une variable.</span>
+<span id="cb54-231"><a href="#cb54-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-234"><a href="#cb54-234" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-235"><a href="#cb54-235" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-236"><a href="#cb54-236" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-237"><a href="#cb54-237" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="dv">1</span>)</span>
+<span id="cb54-238"><a href="#cb54-238" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"banane"</span>)</span>
+<span id="cb54-239"><a href="#cb54-239" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"Banane"</span>)</span>
+<span id="cb54-240"><a href="#cb54-240" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">factor</span>(<span class="fl">123.1</span>))</span>
+<span id="cb54-241"><a href="#cb54-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-242"><a href="#cb54-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-243"><a href="#cb54-243" aria-hidden="true" tabindex="-1"></a>Il est également possible de convertir les classes. Par exemple, on peut convertir une classe <span class="in">`character`</span> en classe <span class="in">`numeric`</span>.</span>
+<span id="cb54-244"><a href="#cb54-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-247"><a href="#cb54-247" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-248"><a href="#cb54-248" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-249"><a href="#cb54-249" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-250"><a href="#cb54-250" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"3.4"</span>)</span>
+<span id="cb54-251"><a href="#cb54-251" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">as.numeric</span>(<span class="st">"3.4"</span>))</span>
+<span id="cb54-252"><a href="#cb54-252" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-253"><a href="#cb54-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-254"><a href="#cb54-254" aria-hidden="true" tabindex="-1"></a><span class="fu">### Noms de variables</span></span>
+<span id="cb54-255"><a href="#cb54-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-256"><a href="#cb54-256" aria-hidden="true" tabindex="-1"></a>Il est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d'une opération dans d'autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l'assignement d'une valeur à une variable peut se faire à l'aide des opérateurs <span class="in">`&lt;-`</span> et <span class="in">`=`</span>. Cependant, il est préférable d'utiliser l'opérateur <span class="in">`&lt;-`</span> plutôt que <span class="in">`=`</span> pour l'assignation d'une variable. En plus, l'utilisation de <span class="in">`&lt;-`</span> permet d'éviter la confusion avec l'opérateur logique <span class="in">`==`</span>.</span>
+<span id="cb54-257"><a href="#cb54-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-260"><a href="#cb54-260" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-261"><a href="#cb54-261" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-262"><a href="#cb54-262" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-263"><a href="#cb54-263" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="co"># Assigner la valeur numérique 2 à la variable x</span></span>
+<span id="cb54-264"><a href="#cb54-264" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">40</span> <span class="co"># Assigner la valeur numérique 40 à la variable y</span></span>
+<span id="cb54-265"><a href="#cb54-265" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y <span class="co"># Somme de x et y</span></span>
+<span id="cb54-266"><a href="#cb54-266" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-267"><a href="#cb54-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-268"><a href="#cb54-268" aria-hidden="true" tabindex="-1"></a>Un nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.</span>
+<span id="cb54-269"><a href="#cb54-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-272"><a href="#cb54-272" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-273"><a href="#cb54-273" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb54-274"><a href="#cb54-274" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-275"><a href="#cb54-275" aria-hidden="true" tabindex="-1"></a><span class="co"># Bon</span></span>
+<span id="cb54-276"><a href="#cb54-276" aria-hidden="true" tabindex="-1"></a>x123 <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb54-277"><a href="#cb54-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-278"><a href="#cb54-278" aria-hidden="true" tabindex="-1"></a><span class="co"># Pas bon</span></span>
+<span id="cb54-279"><a href="#cb54-279" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span>x <span class="ot">&lt;-</span> <span class="st">"R est vraiment trop cool!"</span></span>
+<span id="cb54-280"><a href="#cb54-280" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-281"><a href="#cb54-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-282"><a href="#cb54-282" aria-hidden="true" tabindex="-1"></a>Il est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.</span>
+<span id="cb54-283"><a href="#cb54-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-286"><a href="#cb54-286" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-287"><a href="#cb54-287" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb54-288"><a href="#cb54-288" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-289"><a href="#cb54-289" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># x n'est pas assez descriptif</span></span>
+<span id="cb54-290"><a href="#cb54-290" aria-hidden="true" tabindex="-1"></a>chla <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># mieux, mais on ne connaît pas les unités</span></span>
+<span id="cb54-291"><a href="#cb54-291" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># idéal, on connaît la variable et son unité</span></span>
+<span id="cb54-292"><a href="#cb54-292" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-293"><a href="#cb54-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-294"><a href="#cb54-294" aria-hidden="true" tabindex="-1"></a>Il est important d'être consistent dans la casse des noms de variables. Par exemple, <span class="in">`chla_mg_m2`</span> et <span class="in">`Chla_mg_m2`</span> sont deux variables distinctes.</span>
+<span id="cb54-295"><a href="#cb54-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-298"><a href="#cb54-298" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-299"><a href="#cb54-299" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb54-300"><a href="#cb54-300" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-301"><a href="#cb54-301" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb54-302"><a href="#cb54-302" aria-hidden="true" tabindex="-1"></a>Chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb54-303"><a href="#cb54-303" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-304"><a href="#cb54-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-305"><a href="#cb54-305" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb54-306"><a href="#cb54-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-307"><a href="#cb54-307" aria-hidden="true" tabindex="-1"></a>Il est important que vos noms de variables n'entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d'utiliser <span class="in">`cos`</span>, <span class="in">`sin`</span>, <span class="in">`min`</span>, <span class="in">`median`</span>, <span class="in">`pi`</span>.</span>
+<span id="cb54-308"><a href="#cb54-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-309"><a href="#cb54-309" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb54-310"><a href="#cb54-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-311"><a href="#cb54-311" aria-hidden="true" tabindex="-1"></a><span class="in">`{r echo=TRUE, eval=FALSE} cos &lt;- 3 # À ne pas faire! `</span></span>
+<span id="cb54-312"><a href="#cb54-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-313"><a href="#cb54-313" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les vecteurs</span></span>
+<span id="cb54-314"><a href="#cb54-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-315"><a href="#cb54-315" aria-hidden="true" tabindex="-1"></a>Les vecteurs sont des tableaux d'éléments successifs. Les éléments d'un vecteur peuvent être, par exemple: <span class="in">`numeric`</span>, <span class="in">`character`</span>, <span class="in">`logic`</span>. Dans R, les vecteurs sont créés à l'aide de la fonction <span class="in">`c()`</span> (qui veut dire _combine_) et les valeurs sont séparées à l'aide de la virgule (<span class="in">`,`</span>).</span>
+<span id="cb54-316"><a href="#cb54-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-319"><a href="#cb54-319" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-320"><a href="#cb54-320" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-321"><a href="#cb54-321" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-322"><a href="#cb54-322" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d'un vecteur avec 6 valeurs numériques</span></span>
+<span id="cb54-323"><a href="#cb54-323" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
+<span id="cb54-324"><a href="#cb54-324" aria-hidden="true" tabindex="-1"></a>v1</span>
+<span id="cb54-325"><a href="#cb54-325" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-326"><a href="#cb54-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-327"><a href="#cb54-327" aria-hidden="true" tabindex="-1"></a>Pour accéder aux valeurs d'un vecteur, il suffit de spécifier l'index (position) à laquel nous voulons accéder.</span>
+<span id="cb54-328"><a href="#cb54-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-331"><a href="#cb54-331" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-332"><a href="#cb54-332" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-333"><a href="#cb54-333" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-334"><a href="#cb54-334" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span>] <span class="co"># 3ième élément du vecteur v</span></span>
+<span id="cb54-335"><a href="#cb54-335" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>] <span class="co"># Positions 3,4,5 du vecteur v</span></span>
+<span id="cb54-336"><a href="#cb54-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-337"><a href="#cb54-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-338"><a href="#cb54-338" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb54-339"><a href="#cb54-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-340"><a href="#cb54-340" aria-hidden="true" tabindex="-1"></a>Dans R il est possible de créer rapidement une séquence de nombre en utilisant l'opérateur <span class="in">`:`</span>. Par exemple, la commande <span class="in">`3:5`</span> retourne un vecteur numérique avec les valeurs 3, 4 et 5.</span>
+<span id="cb54-341"><a href="#cb54-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-342"><a href="#cb54-342" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb54-343"><a href="#cb54-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-344"><a href="#cb54-344" aria-hidden="true" tabindex="-1"></a>Il est également possible de supprimer un élément d'un vecteur en utilisant</span>
+<span id="cb54-345"><a href="#cb54-345" aria-hidden="true" tabindex="-1"></a>l'opérateur <span class="in">`-`</span> suivi de l'index à supprimer.</span>
+<span id="cb54-346"><a href="#cb54-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-349"><a href="#cb54-349" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-350"><a href="#cb54-350" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-351"><a href="#cb54-351" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-352"><a href="#cb54-352" aria-hidden="true" tabindex="-1"></a>v1[<span class="sc">-</span><span class="dv">3</span>] <span class="co"># Supprimer le 3ième élément du vecteur v</span></span>
+<span id="cb54-353"><a href="#cb54-353" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-354"><a href="#cb54-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-355"><a href="#cb54-355" aria-hidden="true" tabindex="-1"></a>Des opérations arithmétiques sont également possibles avec les vecteurs.</span>
+<span id="cb54-356"><a href="#cb54-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-359"><a href="#cb54-359" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-360"><a href="#cb54-360" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb54-361"><a href="#cb54-361" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-362"><a href="#cb54-362" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
+<span id="cb54-363"><a href="#cb54-363" aria-hidden="true" tabindex="-1"></a>v2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>)</span>
+<span id="cb54-364"><a href="#cb54-364" aria-hidden="true" tabindex="-1"></a>v1 <span class="sc">+</span> v2</span>
+<span id="cb54-365"><a href="#cb54-365" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb54-366"><a href="#cb54-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-367"><a href="#cb54-367" aria-hidden="true" tabindex="-1"></a><span class="fu">### Autres types de classes</span></span>
+<span id="cb54-368"><a href="#cb54-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-369"><a href="#cb54-369" aria-hidden="true" tabindex="-1"></a>Il existe un très grand nombre d'objets dans R. Ainsi, d'autres classes d'objets vous seront utiles:</span>
+<span id="cb54-370"><a href="#cb54-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-371"><a href="#cb54-371" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data.frame`</span>: Format habituel de tableau de données que vous importez.</span>
+<span id="cb54-372"><a href="#cb54-372" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`list`</span>: Liste d'objets de classes différentes (texte, numérique, etc.).</span>
+<span id="cb54-373"><a href="#cb54-373" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`lm`</span>: Résultat d'une analyse de modèle linéaire.</span>
+<span id="cb54-374"><a href="#cb54-374" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`date`</span>: Pour représenter les dates.</span>
+<span id="cb54-375"><a href="#cb54-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-376"><a href="#cb54-376" aria-hidden="true" tabindex="-1"></a>Dans l'exemple suivant, un modèle linéaire <span class="in">`model1`</span> est créé avec la fonction <span class="in">`lm()`</span>. Différentes fonctions génériques peuvent être utilisées avec la variable <span class="in">`model1`</span>.</span>
+<span id="cb54-377"><a href="#cb54-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-380"><a href="#cb54-380" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb54-381"><a href="#cb54-381" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb54-382"><a href="#cb54-382" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> hp, <span class="at">data =</span> mtcars) <span class="co"># Créer un modèle linéaire (lm)</span></span>
+<span id="cb54-383"><a href="#cb54-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-384"><a href="#cb54-384" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(model1) <span class="co"># Voir la classe de model1</span></span>
+<span id="cb54-385"><a href="#cb54-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-386"><a href="#cb54-386" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1) <span class="co"># Diagnostiques du modèle</span></span>
+<span id="cb54-387"><a href="#cb54-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-388"><a href="#cb54-388" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model1) <span class="co"># Graphiques de diagnostic du modèle</span></span>
+<span id="cb54-389"><a href="#cb54-389" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copier vers le presse-papier" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

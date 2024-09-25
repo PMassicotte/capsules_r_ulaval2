@@ -14,16 +14,85 @@
     "text": "https://cran.r-project.org/web/packages/checkdown/\nhttps://datavizf24.classes.andrewheiss.com/lesson/02-lesson.html#select-the-best-file-type\nhttps://github.com/andrewheiss/datavizf24.classes.andrewheiss.com/blob/e6ad108f9892cf31c53cf4a33aebe1499f912aeb/lesson/02-lesson.qmd#L43"
   },
   {
-    "objectID": "capsules/02-capsule.html#choix-de-réponses",
-    "href": "capsules/02-capsule.html#choix-de-réponses",
+    "objectID": "capsules/02-capsule.html",
+    "href": "capsules/02-capsule.html",
     "title": "Capsule 2",
-    "section": "Choix de réponses",
-    "text": "Choix de réponses\n\n\n\n\n\n\n\n\nQuelle est la bonne réponse?\n\nBonne réponse\n\n\nMauvaise réponse",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nAssigner une valeur à une variable.\nNommer une variable de façon efficace.\nConnaître les principales classes de variables.\nConvertir une donnée d’une classe de variable à une autre.\nSavoir qu’il existe d’autres classes de variables.",
     "crumbs": [
       "Accueil",
       "Capsules",
       "Capsule 2"
     ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#objectifs-de-la-capsule",
+    "href": "capsules/02-capsule.html#objectifs-de-la-capsule",
+    "title": "Capsule 2",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nAssigner une valeur à une variable.\nNommer une variable de façon efficace.\nConnaître les principales classes de variables.\nConvertir une donnée d’une classe de variable à une autre.\nSavoir qu’il existe d’autres classes de variables.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#capsule-vidéo",
+    "href": "capsules/02-capsule.html#capsule-vidéo",
+    "title": "Capsule 2",
+    "section": "Capsule vidéo",
+    "text": "Capsule vidéo",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#exercices",
+    "href": "capsules/02-capsule.html#exercices",
+    "title": "Capsule 2",
+    "section": "Exercices",
+    "text": "Exercices\n\nVeuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint” est là pour être utilisé!\n\n\nClasses de variables\n\n\n\n\n\n\n\n\nLesquelles des valeurs suivantes sont du type caractère?\n\n12.34\n\n\n'banane'\n\n\n'3.1415'\n\n\n\n\n\n\n\n\n\nquiz(\n  question(\"Lesquelles des valeurs suivantes sont du type caractère?\",\n    answer(\"12.34\", message = \"12.34 est de type numérique.\"),\n    answer(\"'banane'\", correct = TRUE),\n    answer(\"'3.1415'\", correct = TRUE, message = \"Les valeurs de `'banane'` et de `'3.1415'` sont entourées de guillemets ce qui indique des valeurs de type caractère.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE,\n    incorrect = \"N'oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).\"\n  ),\n  question(\"Quel est le bon opérateur à utiliser pour assigner une valeur à une variable?\",\n    answer(\"&lt;-\", correct = TRUE, message = \"L'opérateur ` &lt;- ` est recommandé en plus d'éviter la confusion avec l'opérateur logique `==`.\"),\n    answer(\" = \", message = \"L'opérateur `=` fonctionne, mais il est recommandé d'utiliser ` &lt;- ` pour éviter la confusion avec l'opérateur logique `==`.\"),\n    random_answer_order = TRUE\n  ),\n  question(\"Comment peut-on déterminer la classe d'une variable nommée `x`?\",\n    answer(\"`class(x)`\", correct = TRUE),\n    answer(\"`Class(x)`\", message = \"Attention à la casse (minuscule ou majuscule) des fonctions.\"),\n    answer(\"`type(x)`\", message = \"`type()` n'est pas une fonction de base de R.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE\n  ),\n  question(\"Quels types de variables serait préférables pour représenter les mois d'une année?\",\n    answer(\"numeric\", message = \"Le type `numeric` ne peut pas être utilisé pour les chaînes de caractères.\"),\n    answer(\"factor\", correct = TRUE, message = \"Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide.\"),\n    answer(\"logical\", message = \"Le type `logical` ne peut contenir que les valeurs `TRUE` ou `FALSE`.\"),\n    answer(\"character\", correct = TRUE, message = \"Le type `caracter` permet en effet de conserver des chaînes de caractères.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE,\n    incorrect = \"Il y a peut-être plus d'une bonne réponse!\"\n  )\n)\n\n\nNoms de variable\nquiz(\n  question(\"Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?\",\n    answer(\"1x3\", message = \"Un nom de variable ne doit pas commencer par une valeur numérique.\"),\n    answer(\"x2\", correct = TRUE, message = \"`x2` est valide puisqu'il commence par une lettre, ne contient pas caractères spéciaux et/ou d'espaces.\"),\n    answer(\"ma variable\", message = \"Un nom de variable ne doit pas contenir d'espace.\"),\n    answer(\"température\", correct = TRUE, \"`température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE\n  ),\n  question(\"Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d'une voiture se déplacant à 50 km/h?\",\n    answer(\"x &lt;- 50\", message = \"Le nom de la variable (`x`) n'est pas très descriptif.\"),\n    answer(\"vitesse_km_h &lt;- 50\", correct = TRUE, message = \"Ce nom est descriptif en plus d'indiquer les unités.\"),\n    answer(\"vitesse &lt;- 50\", message = \"Ce choix n'est pas optimal, car on ne peut pas deviner les unités.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE\n  ),\n  question(\n    \"Pourquoi l'assignation suivante de devrait pas être utilisée? `c &lt;- 23`\",\n    answer(\"Parce que `c()` est une fonction de base dans R.\"),\n    answer(\"Parce que `c` n'est pas suffisamment descriptif.\"),\n    answer(\"Toutes ces réponses\", correct = TRUE, message = \"`c()` est la fonction pour cérer un vecteur en plus de ne pas être un nom de variable très descriptif.\"),\n    random_answer_order = FALSE,\n    allow_retry = TRUE,\n    incorrect = \"Attention, il y a peut-être plusieurs réponses vraies!\"\n  )\n)\n\n\nLes vecteurs\nquiz(\n  question(\"Quelle est la classe de `x &lt;- c(1, '2', 3)`?\",\n    answer(\"numeric\", message = \"Utilisez la fonction `class()` pour valider votre choix.\"),\n    answer(\"vecteur\", message = \"Utilisez la fonction `class()` pour valider votre choix.\"),\n    answer(\"charactère\", correct = TRUE, message = \"Puisqu'il y a une valeur texte dans le vecteur, `'2'`, le vecteur entier est de type `character`.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE\n  ),\n  question(\"Parmi les choix suivants, lesquelles représentent des vecteurs de type `logic`?\",\n    answer(\"`c(TRUE, FALSE)`\", correct = TRUE),\n    answer(\"`c(VRAI, FAUX)`\", message = \"R n'utilise généralement pas des noms français.\"),\n    answer(\"`c(0, 1)`\", message = \"Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE\n  ),\n  question(\"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[2]`?\",\n    answer(\"1\"),\n    answer(\"42\", correct = TRUE, message = \"42 est la valeur à la position 2 du vecteur `x`.\"),\n    answer(\"5\"),\n    answer(\"4\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE,\n    incorrect = \"Incorrect!. N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`.\"\n  ),\n  question(\"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[-2]`?\",\n    answer(\"-42\"),\n    answer(\"c(1, -42, 5, 4)\"),\n    answer(\"c(1, 5, 4)\", correct = TRUE, message = \"`x[-2]` supprime la valeur à la position 2 du vecteur `x`.\"),\n    random_answer_order = TRUE,\n    allow_retry = TRUE,\n    incorrect = \"Incorrect!, N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement.\"\n  )\n)",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#matériel-accompagnateur",
+    "href": "capsules/02-capsule.html#matériel-accompagnateur",
+    "title": "Capsule 2",
+    "section": "Matériel accompagnateur",
+    "text": "Matériel accompagnateur\n\nClasses de base\nIl existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.\nLa classe numeric\nLa classe numeric sert à représenter les nombres (ex.: 1, 3.14, -3324.56).\n\n\nCode\n12\n\n\n[1] 12\n\n\nCode\n-1.45\n\n\n[1] -1.45\n\n\nCode\n3 + pi\n\n\n[1] 6.141593\n\n\nLa classe character\nLa classe character sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples ' ou doubles \" guillemets.\n\n\nCode\n\"banane\"\n\n\n[1] \"banane\"\n\n\nCode\n\"banane\"\n\n\n[1] \"banane\"\n\n\n\n\n\n\n\n\nImportant\n\n\n\nR est un langage de programmation dit case sensitive. C’est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères banane est différente de la chaîne de caractères Banane.\n\n\n\n\nCode\n# Est-ce que les deux chaînes sont identiques?\n\"banane\" == \"Banane\"\n\n\n[1] FALSE\n\n\nLa classe logic\nLa classe logic sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs logic sont représentées soit à l’aide des valeurs TRUE, FALSE ou T, F. Il est cependant recommandé d’utiliser la forme longue (TRUE, FALSE).\n\n\nCode\nTRUE\n\n\n[1] TRUE\n\n\nCode\nFALSE\n\n\n[1] FALSE\n\n\nLa classe factor\nLa classe factor sert à représenter les valeurs lorsqu’on connaît d’avance les différentes possibilités (ex. mois de l’année). Les facteurs sont généralement créés avec la fonction factor().\n\n\nCode\nfactor(c(\"lundi\", \"mardi\", \"mercredi\", \"jeudi\", \"vendredi\", \"samedi\", \"dimanche\"))\n\n\n[1] lundi    mardi    mercredi jeudi    vendredi samedi   dimanche\nLevels: dimanche jeudi lundi mardi mercredi samedi vendredi\n\n\nOn peut utiliser la fonction class() pour connaître la classe d’une variable.\n\n\nCode\nclass(1)\n\n\n[1] \"numeric\"\n\n\nCode\nclass(\"banane\")\n\n\n[1] \"character\"\n\n\nCode\nclass(\"Banane\")\n\n\n[1] \"character\"\n\n\nCode\nclass(factor(123.1))\n\n\n[1] \"factor\"\n\n\nIl est également possible de convertir les classes. Par exemple, on peut convertir une classe character en classe numeric.\n\n\nCode\nclass(\"3.4\")\n\n\n[1] \"character\"\n\n\nCode\nclass(as.numeric(\"3.4\"))\n\n\n[1] \"numeric\"\n\n\n\n\nNoms de variables\nIl est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d’une opération dans d’autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l’assignement d’une valeur à une variable peut se faire à l’aide des opérateurs &lt;- et =. Cependant, il est préférable d’utiliser l’opérateur &lt;- plutôt que = pour l’assignation d’une variable. En plus, l’utilisation de &lt;- permet d’éviter la confusion avec l’opérateur logique ==.\n\n\nCode\nx &lt;- 2 # Assigner la valeur numérique 2 à la variable x\ny &lt;- 40 # Assigner la valeur numérique 40 à la variable y\nx + y # Somme de x et y\n\n\n[1] 42\n\n\nUn nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.\n\n\nCode\n# Bon\nx123 &lt;- TRUE\n\n# Pas bon\n123x &lt;- \"R est vraiment trop cool!\"\n\n\nIl est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.\n\n\nCode\nx &lt;- 200 # x n'est pas assez descriptif\nchla &lt;- 200 # mieux, mais on ne connaît pas les unités\nchla_mg_m2 &lt;- 200 # idéal, on connaît la variable et son unité\n\n\nIl est important d’être consistent dans la casse des noms de variables. Par exemple, chla_mg_m2 et Chla_mg_m2 sont deux variables distinctes.\n\n\nCode\nchla_mg_m2 &lt;- 200\nChla_mg_m2 &lt;- 200\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIl est important que vos noms de variables n’entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d’utiliser cos, sin, min, median, pi.\n\n\n{r echo=TRUE, eval=FALSE} cos &lt;- 3 # À ne pas faire!\n\n\nLes vecteurs\nLes vecteurs sont des tableaux d’éléments successifs. Les éléments d’un vecteur peuvent être, par exemple: numeric, character, logic. Dans R, les vecteurs sont créés à l’aide de la fonction c() (qui veut dire combine) et les valeurs sont séparées à l’aide de la virgule (,).\n\n\nCode\n# Création d'un vecteur avec 6 valeurs numériques\nv1 &lt;- c(100, 101, 102, 103, 104, 105)\nv1\n\n\n[1] 100 101 102 103 104 105\n\n\nPour accéder aux valeurs d’un vecteur, il suffit de spécifier l’index (position) à laquel nous voulons accéder.\n\n\nCode\nv1[3] # 3ième élément du vecteur v\n\n\n[1] 102\n\n\nCode\nv1[3:5] # Positions 3,4,5 du vecteur v\n\n\n[1] 102 103 104\n\n\n\n\n\n\n\n\nImportant\n\n\n\nDans R il est possible de créer rapidement une séquence de nombre en utilisant l’opérateur :. Par exemple, la commande 3:5 retourne un vecteur numérique avec les valeurs 3, 4 et 5.\n\n\nIl est également possible de supprimer un élément d’un vecteur en utilisant l’opérateur - suivi de l’index à supprimer.\n\n\nCode\nv1[-3] # Supprimer le 3ième élément du vecteur v\n\n\n[1] 100 101 103 104 105\n\n\nDes opérations arithmétiques sont également possibles avec les vecteurs.\n\n\nCode\nv1 &lt;- c(100, 101, 102, 103, 104, 105)\nv2 &lt;- c(10, 20, 30, 40, 50, 60)\nv1 + v2\n\n\n[1] 110 121 132 143 154 165\n\n\n\n\nAutres types de classes\nIl existe un très grand nombre d’objets dans R. Ainsi, d’autres classes d’objets vous seront utiles:\n\ndata.frame: Format habituel de tableau de données que vous importez.\nlist: Liste d’objets de classes différentes (texte, numérique, etc.).\nlm: Résultat d’une analyse de modèle linéaire.\ndate: Pour représenter les dates.\n\nDans l’exemple suivant, un modèle linéaire model1 est créé avec la fonction lm(). Différentes fonctions génériques peuvent être utilisées avec la variable model1.\n\n\nCode\nmodel1 &lt;- lm(mpg ~ hp, data = mtcars) # Créer un modèle linéaire (lm)\n\nclass(model1) # Voir la classe de model1\n\n\n[1] \"lm\"\n\n\nCode\nsummary(model1) # Diagnostiques du modèle\n\n\n\nCall:\nlm(formula = mpg ~ hp, data = mtcars)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-5.7121 -2.1122 -0.8854  1.5819  8.2360 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 30.09886    1.63392  18.421  &lt; 2e-16 ***\nhp          -0.06823    0.01012  -6.742 1.79e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 3.863 on 30 degrees of freedom\nMultiple R-squared:  0.6024,    Adjusted R-squared:  0.5892 \nF-statistic: 45.46 on 1 and 30 DF,  p-value: 1.788e-07\n\n\nCode\nplot(model1) # Graphiques de diagnostic du modèle",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/999-capsule.html#choix-de-réponses",
+    "href": "capsules/999-capsule.html#choix-de-réponses",
+    "title": "Capsule 2",
+    "section": "Choix de réponses",
+    "text": "Choix de réponses\n\n\n\n\n\n\n\n\nQuelle est la bonne réponse?\n\nBonne réponse\n\n\nMauvaise réponse"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
+    "section": "",
+    "text": "Bienvenue sur le site des capsules  de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement."
+  },
+  {
+    "objectID": "index.html#rejoindre-les-responsables-du-cours",
+    "href": "index.html#rejoindre-les-responsables-du-cours",
+    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
+    "section": "Rejoindre les responsables du cours",
+    "text": "Rejoindre les responsables du cours\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
   },
   {
     "objectID": "capsules/index.html",
@@ -72,20 +141,6 @@
       "À propos",
       "Capsules R"
     ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
-    "section": "",
-    "text": "Bienvenue sur le site des capsules  de l’Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement."
-  },
-  {
-    "objectID": "index.html#rejoindre-les-responsables-du-cours",
-    "href": "index.html#rejoindre-les-responsables-du-cours",
-    "title": "Bienvenue sur le site des capsules R de l’Université Laval",
-    "section": "Rejoindre les responsables du cours",
-    "text": "Rejoindre les responsables du cours\n\n\n Nadia Aubin-Horth\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076\n\n Fréderic Maps\n Département de biologie, Université Laval\n 1045 Avenue de la Médecine, Québec, QC G1V 0A6\n 418-656-2131 poste 4076"
   },
   {
     "objectID": "capsules/01-capsule.html",
