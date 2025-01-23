@@ -1,0 +1,317 @@
+---
+title: "Les scripts dans R et RStudio"
+author:
+  - Nadia Aubin-Horth
+  - Frédéric Maps
+  - Philippe Massicotte 
+tutorial:
+  id: "`r Sys.time()`"
+output:
+  html_document:
+    includes:
+      in_header: www/header.html
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    theme: flatly
+    highlight: pygments
+    df_print: paged
+    css: css/styles.css
+date: ""
+# output:
+#   learnr::tutorial:
+#     progressive: false
+#     theme: "flatly"
+#     highlight: pygments
+#     df_print: paged
+#     css: css/styles.css
+
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.startover = TRUE)
+```
+
+## Objectifs de la capsule
+
+À la fin de cette capsule, vous serez en mesure de:
+
+1. Comprendre ce qu’est un script et son utilité
+2. Comprendre la trinité du bon script: clair, organisé et commenté 
+3. Optimiser l’utilisation des panneaux de l’interface Rstudio.
+
+
+## Capsule vidéo
+
+![](https://youtu.be/6g4hjo5C8ME)
+
+[Télécharger le script R de la vidéo](www/capsule_5.R) (Faire bouton droit -> enregistrer sous...)
+
+## Exercices
+
+<small>
+*Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!*
+</small>
+
+### Les scripts dans R
+
+```{r quiz-1}
+quiz(
+  question("Quel est le bon signe à utiliser pour commenter du code en R?",
+  answer("`#`", correct = TRUE),
+  answer("`//`"),
+  answer("`$`"),
+  answer("`%`"),
+  random_answer_order = TRUE,
+  allow_retry = TRUE,
+  incorrect = "Il n'y a que le signe `#` qui permette de commenter du texte en R. Cela fait partie de la syntaxe propre à ce langage et il n'y a pas d'autre choix que de l'apprendre par coeur!"
+  ),
+  
+  
+  question("Quelles sont les utilités d’un script R?",
+  answer("Garder une trace de ce qui a été fait.", correct = TRUE),
+  answer("Assurer la reproductibilité de notre analyse.", correct = TRUE),
+  answer("Sauvegarder des résultats d’analyses."),
+  answer("Enregistrer des données à analyser.", message = "Un script ne devrait pas être utilisé pour sauvegarder des *valeurs* (à analyser ou issues de résultats d'analyses) !",
+  correct = "L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail."),
+  random_answer_order = TRUE,
+  allow_retry = TRUE,
+  correct = "L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail."
+  ),
+  
+  question("Quelle extension de fichier est généralement préférée pour sauvegarder les scripts R?",
+  answer(".R", correct = TRUE, message = "L'extension `.R` est la plus utilisée (et reconnue) pour sauvegarder des scripts R."),
+  answer(".r"),
+  answer(".txt"),
+  answer(".script"),
+  random_answer_order = TRUE,
+  allow_retry = TRUE,
+  incorrect = "Les extensions ne sont pas si importantes que ça pour des fichiers textes comme des scripts R, mais certaines applications très utiles comme RStudio vont reconnaitre automatiquement un fichier `*.R` comme étant un script. Cela nous facilite la tâche!"
+  ),
+  
+  question("Pourquoi est-il important de commenter son code?",
+  answer("Pour le complexifier", message = "C'est bien sûr ce qu'on cherche à éviter à tout prix!"),
+  answer("Pour le rendre plus clair.", correct = TRUE),
+  answer("Pour que R comprenne exactement ce que l’on veut faire.", message = "Le programme R ne tient en fait pas compte du tout des commentaires! Ce sont les instructions telles que les appelles à fonctions qui permettent à R de produire le résultat attendu."),
+  answer("Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes.", correct = TRUE),
+  random_answer_order = TRUE,
+  allow_retry = TRUE,
+  correct = "Clarifier la lecture du code et justifier nos choix sont les deux raisons principales pour commenter notre code. On peut également en profiter pour donner des exemples et des références, entre autres."
+  ),
+  
+  question("Peut-on récupérer facilement des lignes d’instructions déjà exécutées et les ajouter à un script dans RStudio?",
+  answer("Oui", correct = TRUE, message = "Il est facile de transférer des lignes de code déjà exécutées vers un script en utilisant le bouton *To Source* de la fenêtre d'historique de RStudio."),
+  answer("Non", message = "Il est facile de transférer des lignes de code déjà exécutées vers un script en utilisant le bouton *To Source* de la fenêtre d'historique de RStudio."),
+  random_answer_order = TRUE,
+  allow_retry = TRUE
+  ),
+  
+  question("Dans RStudio, quel est le raccourci clavier par défaut qui permet d’indenter automatiquement un bloc de code?",
+  answer("Ctrl + Shift + A", correct = TRUE, message = "Bien que ce ne soit pas obligatoire (contrairement à d'autres langages de programmation, comme python), c'est fortement conseillé pour la clarté del a lecture et de la compréhension du code."),
+  answer("Ctrl + C"),
+  answer("Alt + Ctrl + D"), 
+  random_answer_order = TRUE,
+  allow_retry = TRUE,
+  correct = "Vérifiez dans le menu *Code* de RStudio quel est le raccourci clavier pour indenter automatiquement un bloc de code."
+  )
+  
+  )
+```
+
+Modifier le code suivant pour qu'il fonctionne correctement.
+
+```{r add-comment, exercise=TRUE}
+# Générer 100 nombres aléatoirement
+x <- rnorm(100)
+
+# Calculer la moyenne du vecteur x
+mean(x)
+```
+
+```{r add-comment-hint-1}
+"Le signe # permet de commenter une ligne de commande."
+```
+
+## Matériel accompagnateur
+
+### Création d'un script
+
+Afin d'optimiser son travail dans R et de s'assurer au maximum de sa reproductibilité par quelqu'un d'autre, ou par soi-même dans le futur, le script est un outil essentiel! Un script R est simplement un fichier texte portant l'extension **.R** et peut être vu comme une recette: il regroupe, dans un ordre logique et précis, les différentes étapes à exécuter pour réaliser un ensemble de tâches dans le but d'obtenir un résultat identique à chaque fois. 
+
+Ainsi, un script permet d'organiser son travail, de le commenter, de le compléter de façon itérative et même de détecter facilement certaines erreurs. 
+
+Supposons les commandes R suivantes qui auraient été tapées dans la console pour explorer les résultats du sondage effectué dans le cours de biostatistiques BIO-1006 du programme de baccalauréat en Biologie de l’Université Laval.
+
+```{r, eval=FALSE, echo=TRUE, comment=NA}
+donnees <- read.table( file="BIO1006_H2018_Echantillon.csv", header=TRUE, sep=",", dec=".")
+names(donnees)
+summary(donnees)
+range(donnees$taille_cm)
+hist(donnees$taille_cm)
+if( min(donnees$taille_cm) < 100 ) { i <- which.min(donnees$taille_cm); data.new <- donnees[-i,] }
+donnees[i,]
+test <- aov(donnees$taille_cm[-i] ~ donnees$genre[-i])
+summary(test)
+donnees_new <- donnees[-i,]
+boxplot(donnees_new$taille_cm ~ donnees_new$genre)
+```
+
+Dans RStudio, l'historique de ces commandes est affiché dans la fenêtre *History*.
+
+![](www/historique.png)
+
+À ce stade, ces commandes ne font pas encore partie d'un script R. Pour créer un script à partir de notre historique de commandes:
+
+1. Créer un nouveau script (File -> New File -> R Script).
+2. Sélectionner les commandes de l'historique que nous désirons envoyer dans le script.
+3. Cliquer sur le bouton *To Source* pour copier les commandes dans le script qui été créé.
+4. Sauvegarder le script dans un fichier portant l'extension **.R**. Comme pour les noms de variables, il est important de choisir un nom de fichier représentatif. Cela vous aidera à vous retrouver lorsque votre projet contiendra plusieurs scripts. Par exemple, ici un bon choix aurait pu être `exploration_sondage_bio1006.R`.
+
+![](www/script.gif)
+
+### Indentation du code
+
+Indenter correctement le code d'un script fait partie des bonnes pratiques que vous devriez mettre en oeuvre lorsque vous développez du code R. Bien que l'indentation ne soit pas nécessaire d'un point de vue technique, elle vous aidera à mieux lire votre code et vous permettra de repérer les erreurs potentielles.
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Un bon style de codage équivaut à utiliser une ponctuation correcte. Vous pouvez vous en passer, mais cela rend les choses plus faciles à lire.[^1]
+</div>
+
+[^1]: http://r-pkgs.had.co.nz/style.html
+
+Dans l'exemple qui suit, on constate que la deuxième version est plus facile à lire, voire à comprendre!
+
+```{r, eval=FALSE, echo=TRUE, comment=NA}
+# Fonctionne, mais plus difficile à lire
+average<-mean(feet/12+inches,na.rm=TRUE)
+
+# Le code est maintenant plus aéré, ce qui facilite sa lecture
+average <- mean(feet / 12 + inches, na.rm = TRUE)
+```
+
+
+Reprenons le bloc de code lié à l'exploration des données du sondage.
+
+```{r, eval=FALSE, echo=TRUE, comment=NA}
+donnees <- read.table( file="BIO1006_H2018_Echantillon.csv", header=TRUE, sep=",", dec=".")
+names(donnees)
+summary(donnees)
+range(donnees$taille_cm)
+hist(donnees$taille_cm)
+if( min(donnees$taille_cm) < 100 ) { i <- which.min(donnees$taille_cm); data.new <- donnees[-i,] }
+donnees[i,]
+test <- aov(donnees$taille_cm[-i] ~ donnees$genre[-i])
+summary(test)
+donnees_new <- donnees[-i,]
+boxplot(donnees_new$taille_cm ~ donnees_new$genre)
+```
+
+On constate que le code est très compact et difficile à lire. Heureusement, RStudio peut nous aider à indenter correctement ce bloc de code. Pour ce faire, il suffit de sélectionner les lignes de code à indenter et d'utiliser la combinaison de touches *Ctrl + Shift + A*. 
+
+![](www/indentation.gif)
+
+Le code nouvellement formaté devrait ressembler à ceci.
+
+```{r, eval=FALSE, echo=TRUE, comment=NA}
+donnees <-
+  read.table(
+    file = "BIO1006_H2018_Echantillon.csv",
+    header = TRUE,
+    sep = ",",
+    dec = "."
+  )
+names(donnees)
+summary(donnees)
+range(donnees$taille_cm)
+hist(donnees$taille_cm)
+if (min(donnees$taille_cm) < 100) {
+  i <- which.min(donnees$taille_cm)
+  data.new <- donnees[-i, ]
+}
+donnees[i, ]
+test <- aov(donnees$taille_cm[-i] ~ donnees$genre[-i])
+summary(test)
+donnees_new <- donnees[-i, ]
+boxplot(donnees_new$taille_cm ~ donnees_new$genre)
+```
+
+### Commenter le code
+
+Les commentaires sont essentiels et rendent le code plus clair. Il est donc très important de commenter votre code afin de garder une trace de ce qui a été fait. Dans R, un commentaire est une ou plusieurs lignes de texte ignorée(s) lors de l'exécution du script. 
+
+Dans R, un commentaire est une ou plusieurs séquences de texte ignorée(s) lors de l'exécution du script qui débute par le signe `#`. Tout ce qui suit ce signe sera donc ignoré lors de l’exécution. Un commentaire peut soit être placé en haut ou à droite d’une ligne de commande.
+
+```{r, echo=TRUE}
+# Ceci est une ligne de commentaire et ne sera pas exécuté
+x <- 2
+
+x <- 2 # Ceci est aussi un commentaire. 
+```
+
+Un commentaire devrait posséder les caractéristiques suivantes:
+
+1. Faciliter la lecture du code.
+2. Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes).
+5. Donner un exemple pour permettre de mieux comprendre ce que fait le code.
+4. Être concis et ne pas décrire une évidence.
+5. Clarifier certaines sections complexes du code. C'est d'ailleurs une indication que votre code est peut-être trop complexe et mériterait d'être revu.
+
+En appliquant ces recommandations générales, le code d'exploration des données du sondage du cours biostasitiques devient plus clair.
+
+```{r, echo=TRUE, eval=TRUE, comment=NA}
+# Étape 1: Lire le fichier de données (voir capsule #4) Il s'agit du résultat
+# d'un sondage dans une classe d'étudiants de biostatistiques
+donnees <- read.table(file = "www/BIO1006_H2018_Echantillon.csv", header = TRUE, sep = ",", dec = ".")
+
+# Étape 2: Vérifier les types de données et leurs valeurs (voir capsule #2) On
+# remarque une valeur aberrante pour la taille en cm des individus!
+summary(donnees)
+
+range(donnees$taille_cm)
+
+# Étape 3: Faire un histogramme pour voir la distribution de fréquence des ces
+# valeurs numériques (voir capsule #6)
+hist(donnees$taille_cm)
+
+# Étape 4: Identifier l'indice de la taille minimale SI elle est INFÉRIEURE à
+# 100 cm, puis supprimer cette valeur des futures analyses
+if (min(donnees$taille_cm) < 100) {
+
+  # Retrouver l'indice de la valeur aberrante
+  i <- which.min(donnees$taille_cm)
+
+  # Créer un nouveau "data frame" sans les valeurs correspondantes
+  donnees_new <- donnees[-i, ]
+}
+
+# Étape 5: Faire une comparaison de moyennes entre les valeurs de tailles selon
+# le facteur "genre"
+
+# Boxplot exploratoire des données
+boxplot(donnees_new$taille_cm ~ donnees_new$genre)
+
+# analyse de variance
+res.anova <- aov(donnees_new$taille_cm ~ donnees_new$genre)
+
+# Visualisation des résultats de l'anova
+summary(res.anova)
+
+# Vérification visuelle des conditions d'application du test
+plot(res.anova)
+```
+
+### Téléchargement
+
+Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
+
+1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
+2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
+
+Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous...".
+
+- [Télécharger la documentation sous format PDF](www/capsule_5.pdf)
+- [Télécharger la documentation sous format HTML](www/capsule_5.html)

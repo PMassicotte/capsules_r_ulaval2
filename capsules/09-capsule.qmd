@@ -1,0 +1,397 @@
+---
+title: "Tests diagnostiques dans R"
+author:
+  - Nadia Aubin-Horth
+  - Frédéric Maps
+  - Philippe Massicotte 
+tutorial:
+  id: "`r Sys.time()`"
+output:
+  html_document:
+    includes:
+      in_header: www/header.html
+    toc: true
+    toc_depth: 5
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    theme: flatly
+    highlight: pygments
+    df_print: paged
+    css: css/styles.css
+date: ""
+
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.startover = TRUE)
+```
+
+## Objectifs de la capsule
+
+À la fin de cette capsule, vous serez en mesure de:
+
+1. Comprendre l'importance de **vérifier les conditions d'application** des tests statistiques paramétriques (normalité, homoscédasticité, etc.),  
+2. **Transformer des données** et ajouter ces nouvelles variables dans le jeu de données, si nécessaire,  
+3. Utiliser un **test diagnostique visuel** *a posteriori* avec la fonction `plot()`.
+
+## Capsule vidéo
+
+![](https://www.youtube.com/watch?v=W2PoUqLDwJg&feature=youtu.be)
+
+[Télécharger le script R de la vidéo](www/capsule_9.R) (Faire boutton droit -> enregistrer sous...)
+
+## Exercices
+
+<small>
+*Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!*
+</small>
+
+```{r quiz-1}
+quiz(
+  question("Choisissez l'affirmation FAUSSE à propos des **conditions d'application** des tests statistiques paramétriques :",
+    answer("Dans la grande majorité des tests statistiques, les échantillons doivent être **indépendants** et **aléatoires**.", correct = FALSE, message = "On oublie souvent cette condition essentielle en se focalisant sur les autres qu'on peut vérifier avec des tests (normalité, homogénéité des variances...). C'est une erreur a éviter absolument, car toute l'analyse statistique repose sur cette prémisse."),
+    answer("Les **tests paramétriques** imposent des conditions précises quant à la **distribution** de fréquences des données.", correct = FALSE, message = "Il faut vérifier que ces diverses conditions d'applications soient remplies avant d'interpréter les résultats de ces tests."),
+    answer("La présence de **valeurs extrêmes** (*outliers) parmi les données d'un échantillon pose en général un **problème** pour l'analyse statistique.", correct = FALSE, message = "Les valeurs extrêmes sont la plupart du temps le problème le plus sérieux à résoudre avant de pouvoir utiliser et interpréter correctement des tests statistiques paramétriques."),
+    answer("Lorsque les valeurs ne respectent pas toutes les conditions d'application, il n'y a rien à faire et le test ne peut pas être effectué. ", correct = TRUE, message = "Il y a plusieurs stratégies à essayer : 1. 'ne rien faire' et aller de l'avant si les violations ne sont pas trop importantes, 2. essayer de transformer mathématiquement les valeurs pour qu'elles se conforment aux conditions d'application, 3. utiliser des tests non-paramétriques qui ne requièrent pas des conditions d'application aussi strictes."),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "",
+    correct = ""
+  ),
+  
+  question("Sur un graphique représentant **la distribution de fréquence** de données d'échantillonnage (un histogramme), le **paramètre** le plus utile pour représenter leur **dispersion** est :",
+    answer("La variance", correct = FALSE, message = "La variance est une mesure de dispersion tout à fait légitime, mais l'utilisation d'un carré (^2) dans son calcul rend sa valeur impossible à comparer directement aux valeurs étudiées."),
+    answer("L'écart-type", correct = TRUE),
+    answer("L'écart des extrêmes", correct = FALSE),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "",
+    correct = ""
+  ),
+  
+  question("Votre sujet de stage concerne la capacité des bébés tortues à rejoindre la mer juste après leur éclosion. Comment y perviennent-elles ? La variable “direction des bébés tortues” est quantitative, continue et varie de 0° à 360°. Sachant que 0° = 360°, si la direction prise est aléatoire (hypothèse nulle), alors la distribution de fréquence des valeurs devrait être **uniforme**. Il n'existe **pas de transformation mathématique** adéquate pour *transformer* vos données de façon à ce qu'elles suivent une distribution Normale. Sachant cela, que devriez-vous faire pour identifier si les bébés tortues s'orientent différemment que le hasard ?",
+    answer("Utiliser un test non-paramétrique pour vérifier si la distribution des valeurs diffère significativement d'un distribution uniforme.", correct = TRUE, message = "Si les tortues choisissent une direction particulière, alors la distribution des valeurs d'orientation choisies sera très différente de la distribution uniforme de l'hypothèse nulle. Un test non-paramétrique qui ne requiert pas de conditions de Normalité des données serait utile ici !"),
+    answer("Utiliser un test de *t* pour comparer la moyenne de vos mesures à la valeur arbitraire de 180 degrés.", correct = FALSE, message = "Un test de comparaison de moyenne paramétrique de Student serait tout à fait inapproprié avec de telles données. Et pourquoi 180 degrés ici ? Ça n'a aucun sens..."),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "",
+    correct = ""
+  )
+
+)
+```
+
+---
+
+Même si vous n'êtes pas (encore) familier avec la régression linéaires, sachez que cette opération statistique doit respecter les mêmes conditions d'application que l'ANOVA, plus d'autres qui lui sont spécifiques.
+
+
+```{r echo=TRUE, eval=TRUE}
+data(ChickWeight)
+test <- lm(ChickWeight$weight ~ ChickWeight$Time)
+plot(test, which = 1)
+```
+
+```{r, quiz-2}
+quiz(
+  question("Vous devez donc être capable de décider d'après ce graphique diagnostique des résidus quelle condition d'application de la régression linéaire est violée :",
+    answer("Il y a un biais dans l'échantillonnage qui se reflète sur la relation entre les variables explicative (temps) et réponse (orientation des tortues).", correct = FALSE, message = "Un biais implique une déviation systématique des mesures à cause d'un problème méthodologique. Cela se traduirait sur notre graphique par une courbe rouge différente de l'horizontale qui marque des résidus répartis aléatoirement de part et d'autre de 0. Ce n'est pas le cas ici !"),
+    answer("Nous n'avons pas fait assez de mesures pour pouvoir conclure notre test statistique.", correct = FALSE, message = "Un échantillonnage trop faible conduirait simplement à un intervalle de confiance des paramètres estimés trop grand pour conclure à un effet/une différence. Cela n'a rien à voir avec les graphiques diagnostiques qui montrent le respect des conditions d'application du test."),
+    answer("Il y a un problème d'hétéroscédasticité (homogénéité des variances) : plus la valeur prédite par le modèle statistique est grande, plus la variabilité de la variable réponse est grande.", correct = TRUE, message = "Il y a clairement un problème d'homogénéité des variances ici ! Il est évident que la variabilité des résidus augmente avec la prédiction de la régression, ce qui ne DOIT PAS être le cas pour que la condition d'hétéroscédasticité soit respsectée."),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "",
+    correct = ""
+  )
+)
+```
+
+---
+
+Les valeurs de la variable réponse (dépendante) utilisée dans ce test suivent cette distribution de fréquence : 
+
+```{r echo=TRUE, eval=TRUE}
+hist( ChickWeight$weight, xlab = "Masse (g)", ylab = "Fréquence", main = "Masse des poussins" )
+```
+
+```{r, quiz-3}
+quiz(
+  question("D’après vous, de quel type de distribution de fréquence s’agit-il ?",
+    answer("Distribution Gamma", correct = FALSE, message = ""),
+    answer("Distribution Uniforme", correct = FALSE, message = ""),
+    answer("Distribution log-normale", correct = TRUE, message = "Il s'agit bien d'une distribution log-normale."),
+    answer("Distribution Binomiale", correct = FALSE, message = ""),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "Réessayez!",
+    correct = ""
+  ),
+  question("Quelle transformation mathématique pourrait-on essayer pour obtenir une distribution Normale de ces valeurs ?",
+    answer("Racine carrée", correct = FALSE, message = ""),
+    answer("Racine cubique", correct = FALSE, message = ""),
+    answer("Logarithmique", correct = TRUE, message = "Une transformation logarithmique pourrait effectivement permettre d'obtenir une distribution Normale de ces valeurs."),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "Réessayez! Pensez au nom de la distribution de la question précédente pour vous aider.",
+    correct = ""
+  )
+)
+```
+
+
+
+---
+
+Voici un *boxplot* de groupes de valeurs dont vous voulez comparer les moyennes au moyen d'une ANOVA à un facteur :
+
+```{r echo=TRUE, eval=TRUE}
+data("PlantGrowth")
+boxplot( PlantGrowth$weight ~ PlantGrowth$group, main = "",
+ylab = "Masse sèche des plantes (g) ", col = "lightgray")
+```
+
+```{r, quiz-4}
+quiz(
+  question("Parmi les fonctions suivantes, laquelle devez-vous utiliser pour tester l'homogénéité des variances entre les échantillons ?",
+    answer("`shapiro.test()`", correct = FALSE, message = ""),
+    answer("`t.test()`", correct = FALSE, message = ""),
+    answer("`TukeyHSD()`", correct = FALSE, message = ""),
+    answer("`bartlett.test()`", correct = TRUE, message = ""),
+    random_answer_order = TRUE,
+    allow_retry = TRUE,
+    incorrect = "",
+    correct = ""
+  )
+)
+```
+
+---
+
+Utilisez cette fonction pour faire le test d'homogénéité des variances en utilisant la variable réponse `PlantGrowth$weight` et le facteur de groupe `PlantGrowth$group`. N'oubliez pas que vous pouvez utiliser l'aide de la fonction...
+
+```{r bartlett, exercise=TRUE}
+
+```
+
+```{r, bartlett-solution}
+bartlett.test(PlantGrowth$weight ~ PlantGrowth$group)
+```
+
+
+## Matériel accompagnateur
+
+Voici un ensemble de commandes organisées en script (voir capsule #5).  
+  
+### Charger les données pour l'analyse  
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Tapez "InsectSprays" dans l'aide de R pour en savoir plus (voir capsule #1).
+</div>
+
+Il s'agit d'un jeu de données fourni avec R donnant les comptes d'insectes trouvés sur des parcelles traitées avec différents insecticides.  On va d'abord charger le jeu de données, puis le rendre accessible en premier plan dans la mémoire de R :
+  
+```{r, echo=TRUE, eval=TRUE}
+data("InsectSprays")
+
+InsectSprays
+```
+
+
+
+### Comparer les nombres moyens d'insectes
+
+Ici on veut comparer les nombres moyens d'insectes trouvés après les traitements C et F. Le but de ce test est de vérifier si ces deux types de traitement permettent d'éliminer une quantité d'insectes similaire en moyenne (comparer si les échantillons proviennent de la même "population" statistique).
+  
+```{r, echo=TRUE, eval=TRUE}
+# Création de groupes pour séparer nos données d'insectes ("count")
+T.C <- InsectSprays$spray == "C"
+T.F <- InsectSprays$spray == "F"
+```
+  
+- Vérifier *a priori* les conditions d'application d'un test de comparaison de moyenne paramétrique  
+  
+Afin de pouvoir se fier aux conclusions d'un test statistique, il faut s'assurer que nos données respectent les **conditions d'application** du test envisagé.  
+
+<div class="alert alert-info">
+  <strong>Info!</strong> La première condition à vérifier est toujours la même pour tous les tests de base : il faut que les échantillons soient aléatoires et indépendants !
+</div>
+
+Ensuite, d'autres conditions spécifiques à chaque test doivent être remplies.  La figure ci-dessous rappelle les vérifications à faire pour correctement choisir le test de comparaison de moyennes à effectuer sur nos données. Les losanges indiquent les étapes de vérification des conditions d'application de chaque test possible.  
+
+![](www/tests_flowchart.png)
+  
+Pour un test de comparaison de moyenne paramétrique standard (test de *t*), il faut ainsi vérifier
+(i) la **normalité** et (ii) **l'homogénéité des variances** des données de nos deux échantillons.  
+  
+- Vérifier la normalité des données  
+
+On vérifie d'abord visuellement la distribution de fréquence des données :
+
+```{r, echo=TRUE, eval=TRUE}
+# Histogrammes pour vérifier la normalité des distributions de valeurs de mass
+par(mfrow = c(1, 2))
+
+hist(
+  InsectSprays$count[T.C],
+  xlim = c(0, 15),
+  ylim = c(0, 8),
+  xlab = "Nombre d'insectes",
+  ylab = "Fréquence des parcelles",
+  main = "Traitement C"
+)
+
+hist(
+  InsectSprays$count[T.F],
+  xlim = c(0, 30),
+  ylim = c(0, 8),
+  xlab = "Nombre d'insectes",
+  ylab = "Fréquence des parcelles",
+  main = "Traitement F"
+)
+```
+  
+Il apparait évident à l'allure asymétrique des deux distributions de fréquence que les valeurs des deux échantillons ne sont pas normalement distribuées. De plus, la première distribution en particulier fait apparaitre des valeurs extrêmes, très éloignées des autres : ce sont des *outliers*; il faut y apporter une attention particulière (voir ci-dessous).  Nous pouvons le confirmer avec un test statistique de Shapiro-Wilk qui compare la distribution de l'échantillon à la distribution nulle Normale : ```shapiro.test()```  
+
+```{r, echo=TRUE, eval=TRUE}
+shapiro.test(InsectSprays$count[T.C])
+shapiro.test(InsectSprays$count[T.F])
+```
+  
+Dans le premier cas, la valeur de la *p*-values tout juste inférieure au seuil alpha de 0.05 indique que l'on peut rejeter l'hypothèse nulle testée que l'on peut formuler ainsi : "il n'y a pas de différence entre la distribution des valeurs échantillonnées et une distribution Normale". Par contre, malgré l'allure non symétrique de la distribution des valeurs pour le traitement "F", le test ne permet pas de rejeter l'hypothèse nulle. Ceci permet d'insister sur le fait que la vérification visuelle n'est pas toujours évidente; à l'inverse, un test formel n'est parfois pas assez **"puissant"** pour rejeter l'hypothèse nulle. Cela a souvent à voir avec le nombre de valeurs dans l'échantillon. En effet, plus il y a d'observations, plus le test est puissant.  
+  
+  
+- **Transformer** les valeurs des échantillons  
+
+Que peut-on faire lorsque les données ne sont pas distribuées normalement ?  
+
+1. Si les données ne dévient "pas trop" de la normalité, **rien**, est une option !  
+2. Sinon, essayer des **transformations mathématiques** des données, puis faire l'analyse envisagée sur ces données transformées.  
+
+Ici, nous travaillons avec des **données qui sont distribuées asymétriquement avec une dominance des faibles valeurs, et quelques fortes valeurs**. Ce type de distribution correspond typiquement à une distribution *log-normale*, c'est-à-dire que les valeurs transformées par un logarithme suivent une distribution Normale.  Ceci souvent le cas pour des jeux de données impliquant des masses, volumes, concentrations, taux, etc.  La transformation logarithmique a en plus l'avantage de réduire l'influence des valeurs extrêmes (*outliers* ci-dessus) et d'égaliser les variances (voir ci-dessous). Nous créons donc une nouvelle variable qui servira pour nos analyses de comparaison de moyenne :
+
+```{r, echo=TRUE, eval=TRUE}
+logCount <- log10(InsectSprays$count + 1)
+
+# Ajouter la nouvelle variable logCount dans le data frame InsectSprays
+InsectSprays$logCount <- logCount
+```
+
+<div class="alert alert-info">
+  <strong>ATTENTION #1</strong> N'oubliez pas que `log(0)` n'existe pas ! Donc si vous avez des valeurs nulles, la transformation à faire est `log( valeur + 1 )`. Soyez attentifs aux spécificités des fonctions mathématiques que vous utilisez.
+</div>
+
+<div class="alert alert-info">
+  <strong>ATTENTION #2</strong> N'oubliez pas de transformer toutes les valeurs de la même façon (pour chaque groupe) dans le cas de comparaisons de moyennes !
+</div>
+
+- Vérifier l'homogénéité des variances  
+
+Encore une fois, on peut se fier à l'allure des distributions de valeurs (d'après l'étendue des valeurs d'un boxplot, par exemple).  
+
+```{r, echo=TRUE, eval=TRUE}
+boxplot(InsectSprays$logCount ~ InsectSprays$spray, xlab = "Traitement", ylab = "Nombres d'insectes par parcelle")
+```
+
+On remarque sur ces boxplots que les distributions des valeurs semblent effectivement plus symétriques (Normales) après transformation, même s'il reste un *outlier* dans le groupe D.  De plus l'étendue des distributions de valeurs transformées semble plutôt similaire entre les groupes. Mais on peut également faire un test formel d'homogénéité des variances :  
+
+```{r, echo=TRUE, eval=TRUE}
+var.test(InsectSprays$logCount[T.C], InsectSprays$logCount[T.F])
+```
+  
+La *p*-value > seuil alpha de 0.05 indique que les variances des insectes dénombrés sur les parcelles traitées pour les deux traitements **ne** sont **pas** significativement différentes à un seuil de confiance de 95% (19 fois sur 20). Le résultat du test nous donne par ailleurs le ratio des variances F = 3.13 et sont intervalle de confiance (très large) à 95% (0.90 < F < 10.9) n'exclue pas la **valeur nulle de 1**.
+  
+  
+### Test de comparaison de moyennes
+
+Ici on veut faire le test de comparaison de moyennes de façon appropriée. Il faut maintenant prendre en compte les résultats de notre vérification *a priori* des conditions d'application du test, et faire ce test sur les valeurs transformées.  Il faut savoir qu'il y a plusieurs arguments (options) à la fonction ```t.test()``` pour lesquels nous pouvons préciser la valeur (voir capsule #3).  L'aide de la fonction qu'on peut obtenir en tapant `?t.test` dans l'invite de commande nous donne :  
+
+```r
+## Default S3 method:
+t.test(x, y = NULL,
+       alternative = c("two.sided", "less", "greater"),
+       mu = 0, paired = FALSE, var.equal = FALSE,
+       conf.level = 0.95, ...)
+```
+
+Ici il y a une (1) option directement reliée  à la condition **d'homoscédasticité** (égalité des variances) :  ```var.equal = ``` qui devra indiquer par les valeurs logiques ```TRUE``` ou ```FALSE``` si on considère que les variances des deux échantillons sont homogènes.  
+  
+<div class="alert alert-info">
+  <strong>ATTENTION!</strong> La valeur par défaut de cette option est ```FALSE```; donc R fait **par défaut un test corrigé de Welch** !
+</div>
+  
+Dans notre cas, les variances des groupes comparés **sont homogènes**, donc il faut spécifier la valeur suivante lors du test dans R :
+
+```{r, echo=TRUE, eval=TRUE}
+t.test(InsectSprays$logCount[T.C], InsectSprays$logCount[T.F], var.equal = TRUE)
+```
+  
+La *p*-value << 0.05 permet de conclure que ces deux types de traitement conduisent à des nombres d'insectes  moyens différents, 19 fois sur 20 (confiance à 95%).
+
+  
+### Vérification *a posteriori* des conditions d'application
+
+Il s'agit maintenant de vérifier *a posteriori* les conditions d'application du test statistique paramétrique.
+
+<div class="alert alert-info">
+  <strong>Info!</strong> La vérification des conditions d'application d'un test peut souvent se faire *a priori* (**avant** l'analyse), mais aussi *a posteriori* (**après** l'analyse) sur les **résidus**. 
+</div>
+
+Le terme résidus indique essentiellement les valeurs de **l'écart de chaque observation au modèle nul** défini pour le test paramétrique effectué.
+  
+Il existe plusieurs tests pour lesquels l'analyse des résidus *a posteriori* est la meilleure option, comme dans le cas d'une analyse de régression (voir capsule #11). Ici nous prendrons l'exemple d'une analyse de variance sur nos données **de masse des poussins**.
+
+- Comparaison de l'effet des six (6) types de traitement sur la présence d'insectes
+
+Il s'agit ici de comparer les quantités d'insectes moyennes retrouvées sur les parcelles traitées avec chacun des produits.  Nous faisons donc, **d'abord sur les données brutes** (non transformées), l'ANOVA suivante (voir capsule #8) :  
+
+```{r, echo=TRUE, eval=TRUE}
+model <- count ~ spray
+analyse <- aov(model, data = InsectSprays)
+summary(analyse)
+```
+  
+La conclusion de ce test **semble claire** : la très faible *p*-value indique que le nombre moyen d'insectes d'au moins un des groupes diffère des autres, 19 fois sur 20 (confiance à 95%). **MAIS POUVONS-NOUS NOUS FIER À CES RÉSULTATS ?** Nous allons évaluer le respect des conditions d'application *a posteriori* sur les résidus de l'analyse déjà effectuée.   
+  
+- Vérification **visuelle** des conditions d'application de l'ANOVA  
+  
+```{r, echo=TRUE, eval=TRUE}
+plot(analyse, which = c(1, 2, 4))
+```
+  
+La fonction `plot()` reconnait le type de la variable `analyse`, c'est-à-dire un résultat de test statistique, et elle produit automatiquement plusieurs graphiques diagnostiques (par défaut). On en a choisi trois ici.
+
+1. Le premier représente simplement les valeurs de chaque résidu (écart) en fonction de la valeur "prédite" par le modèle nul testé. Dans le cas de l'ANOVA, il s'agit simplement de la moyenne de groupe !  Ce premier graphique permet déjà de vérifier la normalité des résidus et donc des valeurs :  Sont-ils répartis symétriquement de part et d'autre du 0 ? **Ce n'est pas vraiment le cas ici !**  Il permet également d'avoir une idée de l'homogénéité des variances :  Les étendues des valeurs sont-elles comparables entre les groupes ? **Ça n'est pas le cas non plus**. Finalement, si la droite indicatrice rouge dévie notablement de l'horizontale, ceci indique d'autres problèmes tels que la non-linéarité des relations entre variables dans le cas d'une régression (voir capsule #11).
+
+2. Le deuxième représente spécifiquement la normalité des résidus en comparant la distribution de leur valeur standardisée à une droite théorique qui représente une distribution normale idéale. On voit encore une fois **que les valeurs ne sont pas normalement distribuées**.  
+
+3. Le troisième présente finalement la distance de Cook, c'est-à-dire le "poids" relatif de chaque valeur individuelle sur la conclusion de notre analyse; il permet **d'identifier des points qui influencent de façon disproportionnée nos conclusions**. Ce sont encore une fois des "outliers" dont il faut se méfier. Une valeur > 0.5 est problématique.  
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Consulter l'aide à propos de la fonction ```plot.lm()``` pour plus de détails sur ces graphiques. 
+</div>
+
+On peut voir la différence de résultats en refaisant ce **diagnostic visuel sur les résultats de l'analyse effectuée sur les valeurs transformées** pour satisfaire aux conditions d'application.  Les conclusions de cette inspection visuelle confirment les bienfaits de transformer nos données !  
+
+```{r, echo=TRUE, eval=TRUE}
+model <- logCount ~ spray
+analyse <- aov(model, data = InsectSprays)
+plot(analyse, which = c(1, 2, 4))
+```
+
+### Téléchargement
+
+Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
+
+1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
+2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
+
+Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous...".
+
+Télécharger la documentation sous format PDF
+
+- [Télécharger la documentation sous format PDF](www/capsule_9.pdf)
+- [Télécharger la documentation sous format HTML](www/capsule_9.html)
