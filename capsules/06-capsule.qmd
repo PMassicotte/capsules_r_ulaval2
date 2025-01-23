@@ -49,6 +49,8 @@ check_question(
 )
 ```
 
+:::
+
 ::: {.callout-note appearance="simple" icon=false .question}
 
 ```{r }
