@@ -225,5 +225,53 @@
     "title": "Capsule 2",
     "section": "Choix de réponses",
     "text": "Choix de réponses\n\n\n\n\n\n\n\n\nQuelle est la bonne réponse?\n\nBonne réponse\n\n\nMauvaise réponse"
+  },
+  {
+    "objectID": "capsules/06-capsule.html",
+    "href": "capsules/06-capsule.html",
+    "title": "Capsule 6",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre l’utilité d’explorer son jeu de données et comment le faire de façon visuelle.\nConnaître les 4 types de graphiques les plus utilisés selon les variables à représenter graphiquement.\nSauvegarder et exporter les graphiques sous différents formats.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 6"
+    ]
+  },
+  {
+    "objectID": "capsules/06-capsule.html#objectifs-de-la-capsule",
+    "href": "capsules/06-capsule.html#objectifs-de-la-capsule",
+    "title": "Capsule 6",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre l’utilité d’explorer son jeu de données et comment le faire de façon visuelle.\nConnaître les 4 types de graphiques les plus utilisés selon les variables à représenter graphiquement.\nSauvegarder et exporter les graphiques sous différents formats.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 6"
+    ]
+  },
+  {
+    "objectID": "capsules/06-capsule.html#capsule-vidéo",
+    "href": "capsules/06-capsule.html#capsule-vidéo",
+    "title": "Capsule 6",
+    "section": "Capsule vidéo",
+    "text": "Capsule vidéo\n\nTélécharger le script R de la vidéo (Faire bouton droit -&gt; enregistrer sous…)",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 6"
+    ]
+  },
+  {
+    "objectID": "capsules/06-capsule.html#exercices",
+    "href": "capsules/06-capsule.html#exercices",
+    "title": "Capsule 6",
+    "section": "Exercices",
+    "text": "Exercices\n\nVeuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint”” est là pour être utilisé!\n\n\n\n\n\n\n\n\n\nQuelle fonction permet de faire des histogrammes?\n\n`hist()`\n\n\n`histo()`\n\n\n`histgram()`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle est la classe de variable doit-on utiliser pour faire un histogramme?\n\nPeu importe la classe\n\n\n`character`\n\n\n`numeric`\n\n\n`factor`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?\n\n`nbins`\n\n\n`bins`\n\n\n`breaks`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?\n\n`scatterplot()`\n\n\n`graph()`\n\n\n`scatter()`\n\n\n`plot()`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle fonction permet de faire des diagrammes à bâtons (barplot)?\n\n`bar`\n\n\n`barplot()`\n\n\n`bplot`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle fonction permet de faire des diagrammes à bâtons (barplot)?\n\n`bar`\n\n\n`barplot()`\n\n\n`bplot`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Reponse negative a reformuler\n#| label: question7\n#| echo: false\n#| results: \"asis\"\ncheck_question(\n  c(\"`table()`\"),\n  options = c(\"`classify()`\", \"`count()`\", \"`sort()`\", \"`table()`\"),\n  type = \"checkbox\",\n  button_label = \"Vérifier\",\n  right = \"La fonction `table()` utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.\",\n  wrong = \"`classify()` et `count()` n'existent à la base dans R. `sort()` permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.\",\n  title = \"Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?\"\n)\n\n\n\nQuelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?\n\n`classify()`\n\n\n`count()`\n\n\n`sort()`\n\n\n`table()`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Reponse negative a reformuler\n#| label: question8\n#| echo: false\n#| results: \"asis\"\ncheck_question(\n  c(\"`boxplot()`\"),\n  options = c(\"`moust()`\", \"`boxplot()`\", \"`box()`\"),\n  type = \"checkbox\",\n  button_label = \"Vérifier\",\n  right = \"La fonction `boxplot()` permet de faire des graphiques à moustaches.\",\n  wrong = \"La fonction `moust()` n'existe à la base dans R. La fonction `box()` permet d'ajouter une bordure autours d'un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.\",\n  title = \"Quelle fonction permet de faire des graphiques à moustaches (*boxplot*)?\"\n)\n\n\n\nQuelle fonction permet de faire des graphiques à moustaches (boxplot)?\n\n`moust()`\n\n\n`boxplot()`\n\n\n`box()`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPour créer un graphique à moustache il faut utiliser la notation dite “par formule”. Quel est le signe (caractère) qui doit être utilisé pour cette notation?\n\n`~`\n\n\n`+`\n\n\n`|`\n\n\n`/`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIl existe deux grandes familles d’images, nommez-les.\n\nPNG et TIF\n\n\nJPEG et GIF\n\n\nMatriciel et vectoriel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelles sont les trois grandes étapes (dans l’ordre) pour sauvegarder un graphique localement sur votre ordinateur?\n\n(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.\n\n\n(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi devriez-vous utiliser le format d’image vectoriel lorsque possible?\n\nCe format permet de générer des fichiers de petite taille.\n\n\nCe format permet de modifier la taille de l’image sans perte de résolution.\n\n\nCe format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).\n\n\n\n\n\n\n\n\n\nIl est possible de faire un graphique nuage de points en utilisant cette commande:\n\nplot(iris$Petal.Length, iris$Petal.Width)\n\n\n\n\n\n\n\n\nRefaites le même graphique mais en utilisant la notation par formule.\n\n#| autorun: false\n\n# Pensez à utiliser l'opérateur tilde ~.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 6"
+    ]
   }
 ]

@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Capsule 6 – Capsule R ULAVAL</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capsules/07-capsule.qmd" rel="next">
+<link href="../capsules/05-capsule.qmd" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Capsule R ULAVAL</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../capsules/index.html"> 
+<span class="menu-text">Capsules</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../TODO"> <i class="bi bi-slack" role="img" aria-label="TODO">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../TODO"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capsules/01-capsule.html">Capsules</a></li><li class="breadcrumb-item"><a href="../capsules/06-capsule.html">Capsule 6</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Recherche" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="https://natalierousseau.ca/wp-content/uploads/2018/03/logo-ulaval-reseaux-sociaux.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">À propos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsules R</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Capsules</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/01-capsule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/02-capsule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/03-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/04-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/05-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/06-capsule.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Capsule 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/07-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/08-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/09-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/10-capsule.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 10</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#objectifs-de-la-capsule" id="toc-objectifs-de-la-capsule" class="nav-link active" data-scroll-target="#objectifs-de-la-capsule">Objectifs de la capsule</a></li>
+  <li><a href="#capsule-vidéo" id="toc-capsule-vidéo" class="nav-link" data-scroll-target="#capsule-vidéo">Capsule vidéo</a></li>
+  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices">Exercices</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capsules/01-capsule.html">Capsules</a></li><li class="breadcrumb-item"><a href="../capsules/06-capsule.html">Capsule 6</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Capsule 6</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objectifs-de-la-capsule" class="level2">
+<h2 class="anchored" data-anchor-id="objectifs-de-la-capsule">Objectifs de la capsule</h2>
+<p>À la fin de cette capsule, vous serez en mesure de:</p>
+<ol type="1">
+<li>Comprendre l’utilité d’explorer son jeu de données et comment le faire de façon visuelle.</li>
+<li>Connaître les 4 types de graphiques les plus utilisés selon les variables à représenter graphiquement.</li>
+<li>Sauvegarder et exporter les graphiques sous différents formats.</li>
+</ol>
+</section>
+<section id="capsule-vidéo" class="level2">
+<h2 class="anchored" data-anchor-id="capsule-vidéo">Capsule vidéo</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/PzMiODIA4VA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><a href="www/capsule_6.R">Télécharger le script R de la vidéo</a> (Faire bouton droit -&gt; enregistrer sous…)</p>
+</section>
+<section id="exercices" class="level2">
+<h2 class="anchored" data-anchor-id="exercices">Exercices</h2>
+<div class="callout-info">
+<p>Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint”” est là pour être utilisé!</p>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_90157" onsubmit="return validate_form_90157()" method="post">
+<fieldset>
+<legend>Quelle fonction permet de faire des histogrammes?</legend>
+<input type="checkbox" id="answer_90157_1" value="`hist()`">
+<label>`hist()`</label>
+<br>
+<input type="checkbox" id="answer_90157_2" value="`histo()`">
+<label>`histo()`</label>
+<br>
+<input type="checkbox" id="answer_90157_3" value="`histgram()`">
+<label>`histgram()`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_90157"></div>
+</fieldset>
+</form>
+<script>function validate_form_90157() {var text; var x1 = document.getElementById('answer_90157_1'); var x2 = document.getElementById('answer_90157_2'); var x3 = document.getElementById('answer_90157_3'); if (x1.checked == true&x2.checked == false&x3.checked == false){text = 'La fonction <code>hist()</code> permet de faire des histogrammes.';} else {text = 'Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_90157').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.';text = res1;element.innerHTML = text;
+         return false;
+         }}</script>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_69761" onsubmit="return validate_form_69761()" method="post">
+<fieldset>
+<legend>Quelle est la classe de variable doit-on utiliser pour faire un histogramme?</legend>
+<input type="checkbox" id="answer_69761_1" value="Peu importe la classe">
+<label>Peu importe la classe</label>
+<br>
+<input type="checkbox" id="answer_69761_2" value="`character`">
+<label>`character`</label>
+<br>
+<input type="checkbox" id="answer_69761_3" value="`numeric`">
+<label>`numeric`</label>
+<br>
+<input type="checkbox" id="answer_69761_4" value="`factor`">
+<label>`factor`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_69761"></div>
+</fieldset>
+</form>
+<script>function validate_form_69761() {var text; var x1 = document.getElementById('answer_69761_1'); var x2 = document.getElementById('answer_69761_2'); var x3 = document.getElementById('answer_69761_3'); var x4 = document.getElementById('answer_69761_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = 'Il faut que la variable soit de type numérique (continue).';} else {text = 'Rappelez-vous qu’un histogramme est une représentation graphique permettant de représenter la répartition d’une variable <strong>continue</strong>.';} document.getElementById('result_69761').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).';text = res1 + res2;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_84586" onsubmit="return validate_form_84586()" method="post">
+<fieldset>
+<legend>Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?</legend>
+<input type="checkbox" id="answer_84586_1" value="`nbins`">
+<label>`nbins`</label>
+<br>
+<input type="checkbox" id="answer_84586_2" value="`bins`">
+<label>`bins`</label>
+<br>
+<input type="checkbox" id="answer_84586_3" value="`breaks`">
+<label>`breaks`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_84586"></div>
+</fieldset>
+</form>
+<script>function validate_form_84586() {var text; var x1 = document.getElementById('answer_84586_1'); var x2 = document.getElementById('answer_84586_2'); var x3 = document.getElementById('answer_84586_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = 'Le paramètre <code>breaks</code> permet de contrôler le nombre <em>bins</em>.';} else {text = 'Consulter l’aide de la fonction avec la commande <code>?hist</code>.';} document.getElementById('result_84586').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.';text = res1 + res2 + res3;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_78220" onsubmit="return validate_form_78220()" method="post">
+<fieldset>
+<legend>Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?</legend>
+<input type="checkbox" id="answer_78220_1" value="`scatterplot()`">
+<label>`scatterplot()`</label>
+<br>
+<input type="checkbox" id="answer_78220_2" value="`graph()`">
+<label>`graph()`</label>
+<br>
+<input type="checkbox" id="answer_78220_3" value="`scatter()`">
+<label>`scatter()`</label>
+<br>
+<input type="checkbox" id="answer_78220_4" value="`plot()`">
+<label>`plot()`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_78220"></div>
+</fieldset>
+</form>
+<script>function validate_form_78220() {var text; var x1 = document.getElementById('answer_78220_1'); var x2 = document.getElementById('answer_78220_2'); var x3 = document.getElementById('answer_78220_3'); var x4 = document.getElementById('answer_78220_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = 'La fonction générique <code>plot()</code> permet de faire des graphiques nuage de points.';} else {text = 'Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_78220').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_37136" onsubmit="return validate_form_37136()" method="post">
+<fieldset>
+<legend>Quelle fonction permet de faire des diagrammes à bâtons (<em>barplot</em>)?</legend>
+<input type="checkbox" id="answer_37136_1" value="`bar`">
+<label>`bar`</label>
+<br>
+<input type="checkbox" id="answer_37136_2" value="`barplot()`">
+<label>`barplot()`</label>
+<br>
+<input type="checkbox" id="answer_37136_3" value="`bplot`">
+<label>`bplot`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_37136"></div>
+</fieldset>
+</form>
+<script>function validate_form_37136() {var text; var x1 = document.getElementById('answer_37136_1'); var x2 = document.getElementById('answer_37136_2'); var x3 = document.getElementById('answer_37136_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = 'La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = 'Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_37136').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_15072" onsubmit="return validate_form_15072()" method="post">
+<fieldset>
+<legend>Quelle fonction permet de faire des diagrammes à bâtons (<em>barplot</em>)?</legend>
+<input type="checkbox" id="answer_15072_1" value="`bar`">
+<label>`bar`</label>
+<br>
+<input type="checkbox" id="answer_15072_2" value="`barplot()`">
+<label>`barplot()`</label>
+<br>
+<input type="checkbox" id="answer_15072_3" value="`bplot`">
+<label>`bplot`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_15072"></div>
+</fieldset>
+</form>
+<script>function validate_form_15072() {var text; var x1 = document.getElementById('answer_15072_1'); var x2 = document.getElementById('answer_15072_2'); var x3 = document.getElementById('answer_15072_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = 'La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = 'Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_15072').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reponse negative a reformuler</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question7</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`table()`"</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`classify()`"</span>, <span class="st">"`count()`"</span>, <span class="st">"`sort()`"</span>, <span class="st">"`table()`"</span>),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"La fonction `table()` utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs."</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"`classify()` et `count()` n'existent à la base dans R. `sort()` permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<form name="form_86462" onsubmit="return validate_form_86462()" method="post">
+<fieldset>
+<legend>Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?</legend>
+<input type="checkbox" id="answer_86462_1" value="`classify()`">
+<label>`classify()`</label>
+<br>
+<input type="checkbox" id="answer_86462_2" value="`count()`">
+<label>`count()`</label>
+<br>
+<input type="checkbox" id="answer_86462_3" value="`sort()`">
+<label>`sort()`</label>
+<br>
+<input type="checkbox" id="answer_86462_4" value="`table()`">
+<label>`table()`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_86462"></div>
+</fieldset>
+</form>
+<script>function validate_form_86462() {var text; var x1 = document.getElementById('answer_86462_1'); var x2 = document.getElementById('answer_86462_2'); var x3 = document.getElementById('answer_86462_3'); var x4 = document.getElementById('answer_86462_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = 'La fonction <code>table()</code> utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';} else {text = '<code>classify()</code> et <code>count()</code> n’existent à la base dans R. <code>sort()</code> permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_86462').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_86462').innerText == 'La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reponse negative a reformuler</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question8</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`boxplot()`"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`moust()`"</span>, <span class="st">"`boxplot()`"</span>, <span class="st">"`box()`"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"La fonction `boxplot()` permet de faire des graphiques à moustaches."</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"La fonction `moust()` n'existe à la base dans R. La fonction `box()` permet d'ajouter une bordure autours d'un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction permet de faire des graphiques à moustaches (*boxplot*)?"</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<form name="form_34906" onsubmit="return validate_form_34906()" method="post">
+<fieldset>
+<legend>Quelle fonction permet de faire des graphiques à moustaches (<em>boxplot</em>)?</legend>
+<input type="checkbox" id="answer_34906_1" value="`moust()`">
+<label>`moust()`</label>
+<br>
+<input type="checkbox" id="answer_34906_2" value="`boxplot()`">
+<label>`boxplot()`</label>
+<br>
+<input type="checkbox" id="answer_34906_3" value="`box()`">
+<label>`box()`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_34906"></div>
+</fieldset>
+</form>
+<script>function validate_form_34906() {var text; var x1 = document.getElementById('answer_34906_1'); var x2 = document.getElementById('answer_34906_2'); var x3 = document.getElementById('answer_34906_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = 'La fonction <code>boxplot()</code> permet de faire des graphiques à moustaches.';} else {text = 'La fonction <code>moust()</code> n’existe à la base dans R. La fonction <code>box()</code> permet d’ajouter une bordure autours d’un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_34906').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_86462').innerText == 'La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_34906').innerText == 'La fonction boxplot() permet de faire des graphiques à moustaches.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_89143" onsubmit="return validate_form_89143()" method="post">
+<fieldset>
+<legend>Pour créer un graphique à moustache il faut utiliser la notation dite “par formule”. Quel est le signe (caractère) qui doit être utilisé pour cette notation?</legend>
+<input type="checkbox" id="answer_89143_1" value="`~`">
+<label>`~`</label>
+<br>
+<input type="checkbox" id="answer_89143_2" value="`+`">
+<label>`+`</label>
+<br>
+<input type="checkbox" id="answer_89143_3" value="`|`">
+<label>`|`</label>
+<br>
+<input type="checkbox" id="answer_89143_4" value="`/`">
+<label>`/`</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_89143"></div>
+</fieldset>
+</form>
+<script>function validate_form_89143() {var text; var x1 = document.getElementById('answer_89143_1'); var x2 = document.getElementById('answer_89143_2'); var x3 = document.getElementById('answer_89143_3'); var x4 = document.getElementById('answer_89143_4'); if (x1.checked == true&x2.checked == false&x3.checked == false&x4.checked == false){text = 'Le <em>tilde</em> se lit <em>en fonction de</em>.';} else {text = '<code>+</code> est l’opérateur d’addition. <code>|</code> est l’opétateur logique de comparaison <em>ou</em>. <code>/</code> est l’opérateur de division.';} document.getElementById('result_89143').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_86462').innerText == 'La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_34906').innerText == 'La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_89143').innerText == 'Le tilde se lit en fonction de.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_77971" onsubmit="return validate_form_77971()" method="post">
+<fieldset>
+<legend>Il existe deux grandes familles d’images, nommez-les.</legend>
+<input type="checkbox" id="answer_77971_1" value="PNG et TIF">
+<label>PNG et TIF</label>
+<br>
+<input type="checkbox" id="answer_77971_2" value="JPEG et GIF">
+<label>JPEG et GIF</label>
+<br>
+<input type="checkbox" id="answer_77971_3" value="Matriciel et vectoriel">
+<label>Matriciel et vectoriel</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_77971"></div>
+</fieldset>
+</form>
+<script>function validate_form_77971() {var text; var x1 = document.getElementById('answer_77971_1'); var x2 = document.getElementById('answer_77971_2'); var x3 = document.getElementById('answer_77971_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = 'Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';} else {text = 'Ceux-ci sont plutôt des formats de fichiers de type matriciel.';} document.getElementById('result_77971').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_86462').innerText == 'La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_34906').innerText == 'La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_89143').innerText == 'Le tilde se lit en fonction de.'; res10 = document.getElementById('result_77971').innerText == 'Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_68588" onsubmit="return validate_form_68588()" method="post">
+<fieldset>
+<legend>Quelles sont les trois grandes étapes (dans l’ordre) pour sauvegarder un graphique localement sur votre ordinateur?</legend>
+<input type="checkbox" id="answer_68588_1" value="(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.">
+<label>(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.</label>
+<br>
+<input type="checkbox" id="answer_68588_2" value="(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.">
+<label>(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_68588"></div>
+</fieldset>
+</form>
+<script>function validate_form_68588() {var text; var x1 = document.getElementById('answer_68588_1'); var x2 = document.getElementById('answer_68588_2'); if (x1.checked == true&x2.checked == false){text = 'Bravo!';} else {text = 'Il faut d’abord ouvrir le moteur graphique.';} document.getElementById('result_68588').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_86462').innerText == 'La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_34906').innerText == 'La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_89143').innerText == 'Le tilde se lit en fonction de.'; res10 = document.getElementById('result_77971').innerText == 'Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_68588').innerText == 'Bravo!';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<div class="question callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<form name="form_60081" onsubmit="return validate_form_60081()" method="post">
+<fieldset>
+<legend>Pourquoi devriez-vous utiliser le format d’image vectoriel lorsque possible?</legend>
+<input type="checkbox" id="answer_60081_1" value="Ce format permet de générer des fichiers de petite taille.">
+<label>Ce format permet de générer des fichiers de petite taille.</label>
+<br>
+<input type="checkbox" id="answer_60081_2" value="Ce format permet de modifier la taille de l’image sans perte de résolution.">
+<label>Ce format permet de modifier la taille de l’image sans perte de résolution.</label>
+<br>
+<input type="checkbox" id="answer_60081_3" value="Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).">
+<label>Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).</label>
+<br>
+<input type="submit" value="Vérifier">
+<div id="result_60081"></div>
+</fieldset>
+</form>
+<script>function validate_form_60081() {var text; var x1 = document.getElementById('answer_60081_1'); var x2 = document.getElementById('answer_60081_2'); var x3 = document.getElementById('answer_60081_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = 'Bravo!';} else {text = 'Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux).';} document.getElementById('result_60081').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+         element = document.getElementById('checkdown_final_score');
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_90157').innerText == 'La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_69761').innerText == 'Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_84586').innerText == 'Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_78220').innerText == 'La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_37136').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_15072').innerText == 'La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_86462').innerText == 'La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_34906').innerText == 'La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_89143').innerText == 'Le tilde se lit en fonction de.'; res10 = document.getElementById('result_77971').innerText == 'Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_68588').innerText == 'Bravo!'; res12 = document.getElementById('result_60081').innerText == 'Bravo!';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
+         return false;
+         }}</script>
+</div>
+</div>
+</div>
+<p>Il est possible de faire un graphique nuage de points en utilisant cette commande:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Petal.Length, iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="06-capsule_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Refaites le même graphique mais en utilisant la notation par formule.</p>
+<div class="cell" data-autorun="false">
+<pre class="{webr}"><code>#| autorun: false
+
+# Pensez à utiliser l'opérateur tilde ~.
+</code></pre>
+</div>
+<!-- ## Matériel accompagnateur -->
+<!-- ### Explorer son jeu de données: pourquoi et comment -->
+<!-- Lorsqu'on se familiarise avec un jeu de données que l'on vient d'obtenir, il est important  de l'explorer pour détecter  les erreurs qui peuvent s'être glissées lors de la saisie des données dans le fichier. Comme les humains sont visuels et qu'une image vaut mille mots, il est pratique d'utiliser la visualisation graphique pour explorer l'étendue de ces données, comment elles se comparent entre différents groupes et s'il y a des variables qui sont potentiellement corrélées. -->
+<!-- ### Les graphiques de base -->
+<!-- L'un des nombreux avantages de R est qu'il permet de créer des graphiques de haute qualité. Le tableau suivant présente les quatre types de graphiques fréquemment utilisés en biologie. -->
+<!-- |   Fonction   |                                                             Description                                                              | -->
+<!-- | :----------- | :----------------------------------------------------------------------------------------------------------------------------------- | -->
+<!-- | `hist(x)`    | Histogramme de la variable continue `x`.                                                                                             | -->
+<!-- | `plot(x, y)` | Nuage de points de la relation entre `x` (abscisse) et `y` (ordonnées).                                                              | -->
+<!-- | `pairs(df)`  | Permets de visualiser la relation entre toutes les variables continues d’une structure de données (tableau de données *data frame*). | -->
+<!-- | `barplot(x)` | Diagramme à bâtons du décompte de la variable `x`.                                                                                   | -->
+<!-- | `boxplot(x)` | Diagramme à boîte à moustaches de la variable continue `x`.                                                                          | -->
+<!-- Nous utiliserons un jeu de données biologiques intéressant afin de présenter les fonctions de base de chacun de ces types de graphiques. En effet, R contient des jeux de données qui ont été créés et intégrés à la version de base afin de nous permettre de tester ses différentes fonctions. Nous utiliserons le jeu de données *iris* qui contient de véritables mesures morphologiques sur trois espèces d'Iris (des fleurs), récoltées par le biologiste Edgar Anderson. Ce jeu de données est d'autant plus intéressant pour nous que deux des trois espèces étudiées proviennent de la Gaspésie (incluant l'emblème floral du Québec, l'*Iris versicolor*). Ce jeu de données est aussi très connu, car il a été utilisé par Ronald Fisher, un des pères fondateurs de la biostatistique, dans un de ses articles scientifiques. -->
+<!-- On importe le jeu de données avec la fonction `data()`. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- data(iris) -->
+<!-- ``` -->
+<!-- On peut utiliser la fonction `head()` pour vérifier le contenu de notre jeu de données. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- head(iris) -->
+<!-- ``` -->
+<!-- Nous avons 4 variables morphologiques mesurées en centimètres (`Sepal.Length`, `Sepal.Width`, `Petal.Length`  et `Petal.Width`) ainsi qu'une variable indiquant l'espèce d'iris (`Species`). Nous utilisons la fonction `str()` afin d’avoir des informations sur cet objet. -->
+<!-- ```{r,echo=TRUE} -->
+<!-- str(iris) -->
+<!-- ``` -->
+<!-- Nous apprenons que nous avons 150 observations dans notre tableau (*data frame*). Les données sur les sépales et les pétales sont numériques (*numeric*) alors que la variable décrivant les espèces est un facteur (*factor*). -->
+<!-- #### Les histogrammes -->
+<!-- Les histogrammes permettent de visualiser la **distribution de fréquence d'une variable continue**, comme on vient de le voir. La fonction de base pour créer un histogramme est `hist(x)` où x est un vecteur de valeurs numériques. Dans le cas de nos iris, toutes les variables morphologiques sont des données continues et peuvent donc être représentées à l'aide d'un histogramme. Si on visualise la longueur des sépales: -->
+<!-- ```{r,echo=TRUE} -->
+<!-- # Créer un histogramme de la longueur des sépales -->
+<!-- hist(iris$Sepal.Length) -->
+<!-- ``` -->
+<!-- Les sépales des 3 espèces confondues ont des longueurs incluses dans les **classes de taille** allant de 4 à 8 centimètres. La distribution est unimodale, c.-à-d. qu'elle est symétrique autour d'un seul pic d'abondance de données. Ce mode correspond à la classe de taille 6 à 6.5 cm. L'un des avantages des histogrammes est qu'ils permettent de rapidement identifier les valeurs aberrantes dans un jeu de données. Une valeur aberrante (*outlier*) est une valeur qui s'éloigne beaucoup des autres; elle peut être tout à fait justifiée (par exemple une brève et intense vague de chaleur dans une série temporelle de températures de l'air) ou le résultat d'un défaut de fonctionnement d'un appareil, d'une erreur d'interprétation ou de transcription humaine, etc. Dans notre série de mesures de sépales, il ne semble pas y avoir de valeur aberrante. -->
+<!-- Nous allons voir un excellent exemple de graphique qui permet de détecter une erreur humaine à l'aide du fichier de données `BIO1006_H2018_Echantillon.csv` qui présente le résultat d'un sondage effectué dans le cours de biostatistiques BIO-1006 du programme de baccalauréat en Biologie de l'Université Laval. Ce fichier peut-être téléchargé depuis la section [Téléchargement](#telechargement). -->
+<!-- La première étape consiste à ouvrir le fichier en utilisant la fonction `read.csv()`. -->
+<!-- ```{r echo=TRUE, eval=FALSE, comment=NA} -->
+<!-- sondage_bio1006 <- read.csv("BIO1006_H2018_Echantillon.csv") -->
+<!-- ``` -->
+<!-- ```{r echo=FALSE, eval=TRUE} -->
+<!-- sondage_bio1006 <- read.csv("www/BIO1006_H2018_Echantillon.csv") -->
+<!-- head(sondage_bio1006) -->
+<!-- ``` -->
+<!-- <div class="alert alert-info"> -->
+<!--   <strong>Info!</strong> N'oubliez de changer le chemin d'accès pour lire le fichier `BIO1006_H2018_Echantillon.csv` qui se trouve sur votre ordinateur. -->
+<!-- </div> -->
+<!-- L'histogramme suivant montre l'étendue des valeurs de la variable `taille_cm`. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Visualiser la distribution de fréquence des valeurs de la taille -->
+<!-- hist(sondage_bio1006$taille_cm) -->
+<!-- ``` -->
+<!-- Dans ce cas-ci, on voit bien qu'il y a une valeur de taille qui est beaucoup plus petite que les autres. En effet, on remarque qu'il y a une valeur de 1.53 qui a probablement été écrite par une personne qui pensait que la mesure était en mètres plutôt qu'en centimètres. On peut aussi vérifier l'étendue des données de taille à l'aide de la fonction `range()`. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Vérifier l’étendue des données de taille -->
+<!-- range(sondage_bio1006$taille_cm) -->
+<!-- ``` -->
+<!-- On peut maintenant refaire l'histogramme en supprimant cette valeur aberrante. Pour y arriver, nous pouvons utiliser la fonction `subset()` comme suit: utilisez la fonction d'aide `help(subset)` afin d'en apprendre plus sur cette fonction. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Supprimer la ligne du tableau de données qui contient la valeur aberrante -->
+<!-- sondage_bio1006 <- subset(sondage_bio1006, taille_cm > 100) -->
+<!-- # Refaire l'histogramme avec les nouvelles données -->
+<!-- hist(sondage_bio1006$taille_cm) -->
+<!-- ``` -->
+<!-- #### Les graphiques en nuage de points -->
+<!-- Les graphiques en nuage de points (*scatterplot*) permettent de visualiser la relation entre deux variables. ON est en effet en mesure de voir si cette relation est présente ou non, si elle est positive ou négative et si elle est linéaire ou non. La fonction de base en R pour créer ce type de graphique est `plot()`. Cette fonction demande au minimum deux paramètres: les valeurs en abscisse `x` et les valeurs en ordonnées `y`. La ligne de code suivante créer un graphique en nuage de points présentant la relation entre la longueur des pétales `Petal.Length` sur l'axe des `x` et la largeur de ceux-ci, `Petal.Width` sur l'axe des `y`, à partir du jeu de données `iris`. -->
+<!-- ```{r,echo=TRUE} -->
+<!-- # Créer un graphique en nuage de points avec les données iris de la longueur des -->
+<!-- # pétales et la largeur de ceux-ci -->
+<!-- plot(iris$Petal.Length, iris$Petal.Width) -->
+<!-- ``` -->
+<!-- En visualisant les données, on voit que ces deux mesures morphologiques semblent co-varier positivement et de façon linéaire pour l'ensemble du jeu de données sur ces trois espèces d'iris. Nous verrons dans une autre capsule comment modifier ce graphique, car de nombreux points de données ne sont pas visibles en ce moment et les trois espèces ne peuvent pas être distinguées. -->
+<!-- Il est également possible de créer ce graphique en utilisant la **notation par formule**. L'un des avantages de cette méthode est de simplifier l'écriture du code en utilisant le caractère `~` (*tilde*). Dans R, lorsque vous voyez ce caractère, vous devriez lire **en fonction de**. Ceci implique que la variable qui sera sur l'axe des `y` (en ordonnées) est nommée en premier. -->
+<!-- Dans l'exemple suivant, le même graphique est reproduit en illustrant la largeur des pétales **en fonction de** la longueur de ceux-ci. Notez qu'avec cette forme, il n'est pas nécessaire d'écrire le nom du tableau de données suivi du signe `$` puisqu'on le précise en utilisant le paramètre `data =` de la fonction `plot()`. Cette ligne de commande peut être lue comme suit: "faire un graphique en nuage de points de la variable `Petal.Width` **en fonction de** la variable `Petal.Length` qui sont contenues dans le tableau de données `iris`." -->
+<!-- ```{r,echo=TRUE} -->
+<!-- # Faire un graphique en nuage de points de la variable Petal.Width en fonction de -->
+<!-- # la variable Petal.Length qui sont contenues dans le data frame iris -->
+<!-- plot(Petal.Width ~ Petal.Length, data = iris) -->
+<!-- ``` -->
+<!-- La seule différence avec le graphique précédent est le nom des axes. Dans la seconde version (avec formule), le nom du tableau de données n'est pas indiqué, seuls les noms des variables sont visibles. -->
+<!-- #### Les graphiques en pairs -->
+<!-- Les graphiques en paires permettent de visualiser rapidement la relation entre toutes les variables continues du jeu de données grâce à la fonction `pairs()`. Dans notre jeu de données des iris, 4 des cinq variables peuvent être visualisées l'une par rapport à l'autre. Ici on spécifie donc de ne pas utiliser la colonne 5 qui contient la seule variable qui n'est pas continue, car elle contient le nom des espèces de fleurs; c'est une variable de classe `factor` et non `numeric`[^1]. -->
+<!-- [^1]: Voir la capsule intitulée *Les variables dans R*. -->
+<!-- ```{r,echo=TRUE} -->
+<!-- # Faire des graphiques en pair pour toutes les colonnes sauf la 5ième -->
+<!-- pairs(iris[-5]) -->
+<!-- ``` -->
+<!-- Les carrés contenant le nom des variables nous indiquent quelles données sont sur l'axe des `x` et des `y` dont ils forment l'intersection. Une variable est représentée sur sur l’axe des `x` sur la colonne où elle se trouve et sur l’axe des `y` sur la ligne où on la trouve. Si on regarde le premier graphique en haut à gauche (première colonne, deuxième ligne), il illustre comment la longueur des sépales (`Sepal.Length`) sur l’axe des abscisses (car c’est le titre de la colonne 1) covarie avec la largeur des sépales (`Sepal.Width`) sur l’axe des ordonnées (car c’est le titre de la ligne 2). De même, le graphique que nous avons créé précédemment avec la fonction `plot()` est représenté en bas à droite (troisième colonne, quatrième ligne), avec les variables `Petal.Length` en abscisses (titre de la colonne = axe des `x`) et `Petal.Width` en ordonnées (titre de la ligne = axe des `y`). -->
+<!-- Le jeu de données du botaniste Edgar Anderson porte sur 3 espèces. Il serait donc intéressant de pouvoir visualiser les 3 espèces d'iris séparément, ce qu'on peut faire en spécifiant la couleur à donner aux valeurs pour chaque espèce. -->
+<!-- ```{r,echo=TRUE} -->
+<!-- # Donner une couleur rouge, verte ou bleue à chaque espèce -->
+<!-- cols = c("red", "green", "blue") -->
+<!-- # Refaire le graphique avec ces couleurs -->
+<!-- pairs( iris[-5], col = cols[iris$Species]) -->
+<!-- ``` -->
+<!-- La variable Species étant de classe `factor`, les trois couleurs fournies dans le vecteur `cols` sont indexées selon la valeur de l'espèce, qui pour R se résume à 3 catégories! Les espèces sont maintenant illustrées en rouge, vert ou bleu. Tout d'un coup, on voit que la relation entre deux mesures morphologiques est très différente selon l'espèce d'iris. -->
+<!-- La librairie `languageR` et sa fonction `pairscor.fnc()` offre une version améliorée de la fonction `pairs()`. Cette fonction permet à la fois d'obtenir les histogrammes, les graphiques en pairs ainsi que les coefficients de corrélation Pearson et Spearman. -->
+<!-- <div class="alert alert-info"> -->
+<!--   <strong>Info!</strong> La librairie `languageR` n'est pas installée dans la version de base de R. Vous devrez l'installer vous-même[^3]. -->
+<!-- </div> -->
+<!-- [^3]: Voir la capsule intitulée "Introduction à R et RStudio: premiers pas". -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Charger la librairie dans R pour l’utiliser -->
+<!-- library(languageR) -->
+<!-- # Faire un graphique de type "paire" avec cette librairie -->
+<!-- pairscor.fnc(iris[-5], col.points = cols[iris$Species]) -->
+<!-- ``` -->
+<!-- #### Les diagrammes à bâtons -->
+<!-- Les diagrammes à bâtons (*barplots* en anglais) permettent de représenter des données catégorielles avec des barres rectangulaires dont les hauteurs sont proportionnelles aux fréquences  qu'elles représentent (nombre d'observations pour chaque catégorie). Les diagrammes à bâtons sont souvent utilisés conjointement avec la fonction `table()` qui permet de faire la classification croisée d'une variable pour créer un tableau de contingence selon les combinaisons possibles. Dans l'exemple suivant, nous voulons faire un diagrammes à bâtons de la variable `peur_des_biostats` contenu dans le tableau de données `sondage_bio1006`. La première étape consiste à dénombrer combien il y a d'observations pour chacune des réponses possibles (*Non*, *Oui*, *Pas_sur*). -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Faire le décompte de chaque réponse -->
+<!-- counts <- table(sondage_bio1006$peur_des_biostats) -->
+<!-- # Voir le tableau de décompte -->
+<!-- counts -->
+<!-- ``` -->
+<!-- Pour faire un diagramme à bâtons, il suffit d'utiliser la fonction `barplot()` avec la variable `counts` qui contient le résultat de notre décompte. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Faire un diagramme en bâton avec les valeurs du décompte -->
+<!-- barplot(counts) -->
+<!-- ``` -->
+<!-- Avec la fonction `table()`, il est également possible de faire un décompte croisé, c'est à dire selon plusieurs variables à la fois. Dans l'exemple suivant, nous faisons un décompte du nombre d'observations *Face* et *Pile* en groupant par `genre` et `piece_monnaie`. On peut ainsi constater immédiatement que les nombres de résultats *Face* et *Pile* sont presque égaux (comme on peut s'y attendre) aussi bien pour les `Filles` que les `Gars`. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- # Faire un décompte croisé avec deux variables -->
+<!-- counts <- table(sondage_bio1006$genre, sondage_bio1006$piece_monnaie) -->
+<!-- # Voir le tableau de décompte croisé -->
+<!-- counts -->
+<!-- ``` -->
+<!-- Le diagramme à bâton illustre de façon claire cette observation obtenue avec la fonction `table()`. Les paramètres `legend.text = rownames(counts)` et `beside = TRUE` servent à créer la légende à partir du nom des lignes et à placer les barres côte à côte, respectivement. -->
+<!-- ```{r, echo=TRUE} -->
+<!-- barplot(counts, legend.text = rownames(counts), beside = TRUE) -->
+<!-- ``` -->
+<!-- Vous pouvez consulter la seconde capsule sur les graphiques pour en apprendre plus sur la modification de l'apparence des graphiques. -->
+<!-- #### Les diagrammes en boîte à moustaches -->
+<!-- Les diagrammes en boîte à moustaches (*boxplot*, en anglais) offrent une représentation graphique permettant de visualiser la médiane et les quartiles inférieurs (< 25%) et supérieurs (> 75%) d'une variable. Les valeurs extrêmes de la distribution sont représentées par des points au-delà des “moustaches” (ce ne sont pas nécessairement des valeurs aberrantes!). À l'aide de la représentation par formule vue précédemment, il est possible de grouper les données selon une variable catégorielle (de classe `factor`) et de comparer ces valeurs de médiane et de quartiles pour deux groupes ou plus. Dans l'exemple suivant, un graphique de type *diagramme à boîte* présente la distribution de la longueur des sépales (`Sepal.Length`) en fonction de l'espèce d'iris (`Species`). -->
+<!-- ```{r,echo=TRUE} -->
+<!-- # Visualiser la distribution de la longueur des sépales en fonction de l’espèce d’iris -->
+<!-- boxplot(Sepal.Length ~ Species, data = iris) -->
+<!-- ``` -->
+<!-- La distribution des valeurs de  la longueur des sépales semble différer entre les trois espèces (`setosa`, `versicolor` et `virginica`). Nous pourrions utiliser une analyse de variance (ANOVA) pour déterminer statistiquement si cette différence est significative[^2]. -->
+<!-- [^2]: Voir la capsule sur les tests de comparaison de moyennes paramétriques. -->
+<!-- ### Exporter les graphiques -->
+<!-- À un certain moment pendant vos analyses, il vous faudra exporter vos graphiques pour les partager avec votre équipe ou votre superviseur, les inclure dans vos rapports de travaux pratiques ou les projeter pour une présentation orale. Il existe deux grandes familles d'images. -->
+<!-- 1. Le format vectoriel (*eps*, *pdf*, *svg*, *ps*, etc). -->
+<!-- 2. Le format matriciel (*bmp*, *jpeg*, *png*, *tif*, etc.) -->
+<!-- La plupart des journaux scientifiques préfèrent le format vectoriel lors du processus de soumission d'un article, car ce format de graphique a une meilleure qualité comparée au format matriciel et il peut s'agrandir indéfiniment **sans perte de résolution** (qualité). Les deux figures suivantes permettent de comparer la qualité graphique des formats *jpeg* (format matriciel) et *pdf* (format vectoriel). On voit qu'il y a de la pixellisation dans la version matricielle tandis que la version vectorielle est nettement plus claire. Si vous devez néanmoins utiliser le format matriciel, on vous recommande d'utiliser le format *png* qui offre un bon compromis entre la qualité de l'image et la taille de fichier. -->
+<!-- ```{r, eval=TRUE, message=FALSE, echo=FALSE, warning=FALSE, dev='jpeg', fig.width=6, fig.height=6, fig.align='center'} -->
+<!-- x <- rnorm(1000) -->
+<!-- hist(x, main = "Format matriciel", col = "cornflowerblue") -->
+<!-- ``` -->
+<!-- ```{r, eval=TRUE, message=FALSE, echo=FALSE, dev='svg', fig.width=6, fig.height=6, fig.align='center'} -->
+<!-- hist(x, main = "Format vectoriel", col = "cornflowerblue") -->
+<!-- ``` -->
+<!-- Dans R, pour exporter un graphique, il faut au minimum trois étapes: -->
+<!-- 1. Ouvrir le moteur graphique lié au format de fichier que l'on veut (*pdf*, *png*, *jpeg*, etc.). -->
+<!-- 2. Créer le graphique et potentiellement modifier son apparence. -->
+<!-- 3. Fermer le moteur graphique. -->
+<!-- Les lignes de code suivantes permettent de créer un simple graphique et de le sauvegarder dans un fichier pdf. -->
+<!-- ```{r, echo=TRUE, eval=FALSE, comment=NA} -->
+<!-- # Ouvrir le moteur graphique -->
+<!-- pdf(file = "/emplacement/nom_du_fichier.pdf") -->
+<!-- # Faire le graphique -->
+<!-- plot(1) -->
+<!-- # Fermer le moteur graphique -->
+<!-- dev.off() -->
+<!-- ``` -->
+<!-- Plutôt que d'exporter en format pdf, nous pourrions utiliser la fonction `png()` pour créer un graphique au format png. -->
+<!-- ```{r, echo=TRUE, eval=FALSE, comment=NA} -->
+<!-- # Ouvrir le moteur graphique -->
+<!-- png(file = "/emplacement/nom_du_fichier.png") -->
+<!-- # Faire le graphique -->
+<!-- plot(1) -->
+<!-- # Fermer le moteur graphique -->
+<!-- dev.off() -->
+<!-- ``` -->
+<!-- ### Téléchargement {#telechargement} -->
+<!-- Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents: -->
+<!-- 1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple. -->
+<!-- 2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.). -->
+<!-- Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous…". -->
+<!-- - [Télécharger la documentation sous format PDF](www/capsule_6.pdf) -->
+<!-- - [Télécharger la documentation sous format HTML](www/capsule_6.html) -->
+<!-- Vous pouvez aussi télécharger le fichier `BIO1006_H2018_Echantillon.csv` qui contient les données utilisées dans cette capsule. -->
+<!-- - [Télécharger le fichier de données sous format CSV](www/BIO1006_H2018_Echantillon.csv) -->
+
+
+</div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capsules/05-capsule.qmd" class="pagination-link" aria-label="Capsule 5">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Capsule 5</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capsules/07-capsule.qmd" class="pagination-link" aria-label="Capsule 7">
+        <span class="nav-page-text">Capsule 7</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By xxx, 2024. Capsules réalisées par N. Aubin-Horth, F. Maps et P. Massicotte.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Cette page a été réalisée à l’aide de <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
