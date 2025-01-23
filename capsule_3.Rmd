@@ -1,13 +1,42 @@
 ---
-title: Capsule 3
+title: "Les fonctions dans R"
+author:
+  - Nadia Aubin-Horth
+  - Frédéric Maps
+  - Philippe Massicotte 
+tutorial:
+  id: "`r Sys.time()`"
+output:
+  html_document:
+    includes:
+      in_header: www/header.html
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    theme: flatly
+    highlight: pygments
+    df_print: paged
+    css: css/styles.css
+date: "" 
+# output:
+#   learnr::tutorial:
+#     progressive: false
+#     theme: "flatly"
+#     highlight: pygments
+#     df_print: paged
+#     css: css/styles.css
+
+runtime: shiny_prerendered
 ---
 
-{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+```{r setup, include=FALSE}
+library(learnr)
+library(checkr)
+knitr::opts_chunk$set(echo = FALSE, tidy = FALSE)
 
-```{r}
-#| label: setup
-#| echo: false
-library(checkdown)
+# devtools::install_github("lionel-/redpen")
+# devtools::install_github("dtkaplan/checkr")
 ```
 ## Objectifs de la capsule
 
