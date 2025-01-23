@@ -458,7 +458,7 @@ boxplot(height ~ age, data = Loblolly, border = "darkorange")
 
 Voici un graphique aide-mémoire pour vous aider avec les différents paramètres de base pour modifier vos graphiques.
 
-```{r, fig.align='center', echo=FALSE}
+```{r}
 #| echo: False
 #| fig.align: 'center'
 
