@@ -37,7 +37,7 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question1
 #| echo: false
 #| results: "asis"
@@ -56,7 +56,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question2
 #| echo: false
 #| results: "asis"
@@ -75,7 +75,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question3
 #| echo: false
 #| results: "asis"
@@ -94,7 +94,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question4
 #| echo: false
 #| results: "asis"
@@ -113,7 +113,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question5
 #| echo: false
 #| results: "asis"
@@ -132,7 +132,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question6
 #| echo: false
 #| results: "asis"
@@ -151,7 +151,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question7
 #| echo: false
 #| results: "asis"
@@ -170,7 +170,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question8
 #| echo: false
 #| results: "asis"
@@ -189,7 +189,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question9
 #| echo: false
 #| results: "asis"
@@ -208,7 +208,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question10
 #| echo: false
 #| results: "asis"
