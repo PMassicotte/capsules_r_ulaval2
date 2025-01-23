@@ -209,7 +209,7 @@ check_question(
 ::: {.callout-note appearance="simple" icon=false .question}
 
 ```{r }
-#| label: question9
+#| label: question10
 #| echo: false
 #| results: "asis"
 check_question(
