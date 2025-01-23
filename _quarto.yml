@@ -44,12 +44,22 @@ website:
             file: capsules/01-capsule.qmd
           - text: "Capsule 2"
             file: capsules/02-capsule.qmd
-          - text: "Capsule xxx"
+          - text: "Capsule 3"
             file: capsules/03-capsule.qmd
-          - text: "Capsule xxx"
+          - text: "Capsule 4"
             file: capsules/04-capsule.qmd
-          - text: "Capsule xxx"
+          - text: "Capsule 5"
             file: capsules/05-capsule.qmd
+          - text: "Capsule 6"
+            file: capsules/06-capsule.qmd
+          - text: "Capsule 7"
+            file: capsules/07-capsule.qmd
+          - text: "Capsule 8"
+            file: capsules/08-capsule.qmd
+          - text: "Capsule 9"
+            file: capsules/09-capsule.qmd
+          - text: "Capsule 10"
+            file: capsules/10-capsule.qmd
 
   page-footer:
     right: "Cette page a été réalisée à l'aide de [Quarto](https://quarto.org/)."
