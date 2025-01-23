@@ -34,7 +34,7 @@ Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question1
 #| echo: false
 #| results: "asis"
@@ -53,7 +53,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question2
 #| echo: false
 #| results: "asis"
@@ -72,7 +72,7 @@ check_question(
   
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question3
 #| echo: false
 #| results: "asis"
@@ -91,7 +91,7 @@ check_question(
   
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question4
 #| echo: false
 #| results: "asis"
@@ -110,7 +110,7 @@ check_question(
   
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question5
 #| echo: false
 #| results: "asis"
@@ -129,7 +129,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question6
 #| echo: false
 #| results: "asis"
@@ -148,7 +148,7 @@ check_question(
   
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 # Reponse negative a reformuler
 #| label: question7
 #| echo: false
@@ -168,7 +168,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 # Reponse negative a reformuler
 #| label: question8
 #| echo: false
@@ -188,7 +188,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question9
 #| echo: false
 #| results: "asis"
@@ -207,7 +207,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question10
 #| echo: false
 #| results: "asis"
@@ -226,7 +226,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question11
 #| echo: false
 #| results: "asis"
@@ -245,7 +245,7 @@ check_question(
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-```{r }
+```{r}
 #| label: question12
 #| echo: false
 #| results: "asis"
@@ -489,7 +489,7 @@ counts
 
 Le diagramme à bâton illustre de façon claire cette observation obtenue avec la fonction `table()`. Les paramètres `legend.text = rownames(counts)` et `beside = TRUE` servent à créer la légende à partir du nom des lignes et à placer les barres côte à côte, respectivement.
 
-```{r, echo=TRUE}
+```{r}
 #| echo: true
 barplot(counts, legend.text = rownames(counts), beside = TRUE)
 ```
