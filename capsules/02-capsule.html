@@ -310,25 +310,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_48595" onsubmit="return validate_form_48595()" method="post">
+<form name="form_23" onsubmit="return validate_form_23()" method="post">
 <fieldset>
 <legend>Lesquelles des valeurs suivantes sont du type caractère?</legend>
-<input type="checkbox" id="answer_48595_1" value="12.34">
+<input type="checkbox" id="answer_23_1" value="12.34">
 <label>12.34</label>
 <br>
-<input type="checkbox" id="answer_48595_2" value="'banane'">
+<input type="checkbox" id="answer_23_2" value="'banane'">
 <label>'banane'</label>
 <br>
-<input type="checkbox" id="answer_48595_3" value="'3.1415'">
+<input type="checkbox" id="answer_23_3" value="'3.1415'">
 <label>'3.1415'</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_48595"></div>
+<div id="result_23"></div>
 </fieldset>
 </form>
-<script>function validate_form_48595() {var text; var x1 = document.getElementById('answer_48595_1'); var x2 = document.getElementById('answer_48595_2'); var x3 = document.getElementById('answer_48595_3'); if (x1.checked == false&x2.checked == true&x3.checked == true){text = '<strong>Bonne réponse!</strong> Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';} else {text = '<strong>Mauvaise réponse</strong> N’oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).';} document.getElementById('result_48595').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_23() {var text; var x1 = document.getElementById('answer_23_1'); var x2 = document.getElementById('answer_23_2'); var x3 = document.getElementById('answer_23_3'); if (x1.checked == false&x2.checked == true&x3.checked == true){text = '<strong>Bonne réponse!</strong> Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';} else {text = '<strong>Mauvaise réponse</strong> N’oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).';} document.getElementById('result_23').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -340,22 +340,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_23770" onsubmit="return validate_form_23770()" method="post">
+<form name="form_66181" onsubmit="return validate_form_66181()" method="post">
 <fieldset>
 <legend>Quel est le bon opérateur à utiliser pour assigner une valeur à une variable?</legend>
-<input type="radio" name="answer_23770" id="answer_23770_1" value="<-">
+<input type="radio" name="answer_66181" id="answer_66181_1" value="<-">
 <label>&lt;-</label>
 <br>
-<input type="radio" name="answer_23770" id="answer_23770_2" value=" = ">
+<input type="radio" name="answer_66181" id="answer_66181_2" value=" = ">
 <label> = </label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_23770"></div>
+<div id="result_66181"></div>
 </fieldset>
 </form>
-<script>function validate_form_23770() {var x, text; var x = document.forms['form_23770']['answer_23770'].value;if (x == '<-'){text = '<strong>Bonne réponse!</strong> L’opérateur <code>&lt;-</code> est recommandé en plus d’éviter la confusion avec l’opérateur logique <code>==</code>.';} else {text = '<strong>Mauvaise réponse</strong> L’opérateur <code>=</code> fonctionne, mais il est recommandé d’utiliser <code>&lt;-</code> pour éviter la confusion avec l’opérateur logique <code>==</code>.';} document.getElementById('result_23770').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_66181() {var x, text; var x = document.forms['form_66181']['answer_66181'].value;if (x == '<-'){text = '<strong>Bonne réponse!</strong> L’opérateur <code>&lt;-</code> est recommandé en plus d’éviter la confusion avec l’opérateur logique <code>==</code>.';} else {text = '<strong>Mauvaise réponse</strong> L’opérateur <code>=</code> fonctionne, mais il est recommandé d’utiliser <code>&lt;-</code> pour éviter la confusion avec l’opérateur logique <code>==</code>.';} document.getElementById('result_66181').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -367,27 +367,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_59121" onsubmit="return validate_form_59121()" method="post">
+<form name="form_50671" onsubmit="return validate_form_50671()" method="post">
 <fieldset>
 <legend>Comment peut-on déterminer la classe d’une variable nommée <code>x</code>?</legend>
-<input type="radio" name="answer_59121" id="answer_59121_1" value="`class(x)`">
+<input type="radio" name="answer_50671" id="answer_50671_1" value="`class(x)`">
 <label>`class(x)`</label>
 <br>
-<input type="radio" name="answer_59121" id="answer_59121_2" value="`Class(x)`">
+<input type="radio" name="answer_50671" id="answer_50671_2" value="`Class(x)`">
 <label>`Class(x)`</label>
 <br>
-<input type="radio" name="answer_59121" id="answer_59121_3" value="`type(x)`">
+<input type="radio" name="answer_50671" id="answer_50671_3" value="`type(x)`">
 <label>`type(x)`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_59121"></div>
+<div id="result_50671"></div>
 </fieldset>
 </form>
-<script>function validate_form_59121() {var x, text; var x = document.forms['form_59121']['answer_59121'].value;if (x == '`class(x)`'){text = 'Bonne réponse! <code>class()</code> est une fonction de base de R pour déterminer la classe d’une variable.';} else {text = '<code>type()</code> n’est pas une fonction de base de R. Attention à la casse (minuscule ou majuscule) des fonctions.';} document.getElementById('result_59121').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_50671() {var x, text; var x = document.forms['form_50671']['answer_50671'].value;if (x == '`class(x)`'){text = 'Bonne réponse! <code>class()</code> est une fonction de base de R pour déterminer la classe d’une variable.';} else {text = '<strong>Mauvaise réponse</strong> Essayez encore! Utilisez les indices si nécessaire au bas de la question.';} document.getElementById('result_50671').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
+<details>
+<summary><strong>ⓘ  Indice(s)</strong></summary>
+<div id="hint_25041" onclick="return show_hint_25041()">Cliquez ici pour obtenir un indice!</div>
+<div id="result_25041" onclick="return show_hint_25041()"></div>
+<script>function show_hint_25041(){var x = document.getElementById('result_25041').innerHTML; if(!x){document.getElementById('result_25041').innerHTML = 'Attention à la casse (minuscule ou majuscule) des fonctions.';} else {document.getElementById('result_25041').innerHTML = '';}}</script>
+<div id="hint_70557" onclick="return show_hint_70557()">Cliquez ici pour obtenir un indice!</div>
+<div id="result_70557" onclick="return show_hint_70557()"></div>
+<script>function show_hint_70557(){var x = document.getElementById('result_70557').innerHTML; if(!x){document.getElementById('result_70557').innerHTML = '<code>type()</code> n’est pas une fonction de base de R.';} else {document.getElementById('result_70557').innerHTML = '';}}</script>
+</details>
 </div>
 </div>
 </div>
@@ -397,28 +406,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_99672" onsubmit="return validate_form_99672()" method="post">
+<form name="form_94219" onsubmit="return validate_form_94219()" method="post">
 <fieldset>
 <legend>Quels types de variables seraient préférables pour représenter les mois d’une année?</legend>
-<input type="checkbox" id="answer_99672_1" value="numeric">
+<input type="checkbox" id="answer_94219_1" value="numeric">
 <label>numeric</label>
 <br>
-<input type="checkbox" id="answer_99672_2" value="factor">
+<input type="checkbox" id="answer_94219_2" value="factor">
 <label>factor</label>
 <br>
-<input type="checkbox" id="answer_99672_3" value="logical">
+<input type="checkbox" id="answer_94219_3" value="logical">
 <label>logical</label>
 <br>
-<input type="checkbox" id="answer_99672_4" value="character">
+<input type="checkbox" id="answer_94219_4" value="character">
 <label>character</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_99672"></div>
+<div id="result_94219"></div>
 </fieldset>
 </form>
-<script>function validate_form_99672() {var text; var x1 = document.getElementById('answer_99672_1'); var x2 = document.getElementById('answer_99672_2'); var x3 = document.getElementById('answer_99672_3'); var x4 = document.getElementById('answer_99672_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = 'Puisque les noms de mois sont fixes, le type <code>factor</code> est le meilleur choix. Le type <code>character</code> est également valide.';} else {text = 'Il y a peut-être plus d’une bonne réponse!';} document.getElementById('result_99672').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_94219() {var text; var x1 = document.getElementById('answer_94219_1'); var x2 = document.getElementById('answer_94219_2'); var x3 = document.getElementById('answer_94219_3'); var x4 = document.getElementById('answer_94219_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = 'Puisque les noms de mois sont fixes, le type <code>factor</code> est le meilleur choix. Le type <code>character</code> est également valide.';} else {text = 'Il y a peut-être plus d’une bonne réponse!';} document.getElementById('result_94219').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -433,28 +442,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_4123" onsubmit="return validate_form_4123()" method="post">
+<form name="form_86510" onsubmit="return validate_form_86510()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?</legend>
-<input type="checkbox" id="answer_4123_1" value="1x3">
+<input type="checkbox" id="answer_86510_1" value="1x3">
 <label>1x3</label>
 <br>
-<input type="checkbox" id="answer_4123_2" value="x2">
+<input type="checkbox" id="answer_86510_2" value="x2">
 <label>x2</label>
 <br>
-<input type="checkbox" id="answer_4123_3" value="ma variable">
+<input type="checkbox" id="answer_86510_3" value="ma variable">
 <label>ma variable</label>
 <br>
-<input type="checkbox" id="answer_4123_4" value="température">
+<input type="checkbox" id="answer_86510_4" value="température">
 <label>température</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_4123"></div>
+<div id="result_86510"></div>
 </fieldset>
 </form>
-<script>function validate_form_4123() {var text; var x1 = document.getElementById('answer_4123_1'); var x2 = document.getElementById('answer_4123_2'); var x3 = document.getElementById('answer_4123_3'); var x4 = document.getElementById('answer_4123_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = '<code>x2</code> est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. <code>température</code> est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';} else {text = 'Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d’espace.';} document.getElementById('result_4123').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_86510() {var text; var x1 = document.getElementById('answer_86510_1'); var x2 = document.getElementById('answer_86510_2'); var x3 = document.getElementById('answer_86510_3'); var x4 = document.getElementById('answer_86510_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = '<code>x2</code> est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. <code>température</code> est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';} else {text = 'Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d’espace.';} document.getElementById('result_86510').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -466,25 +475,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_23456" onsubmit="return validate_form_23456()" method="post">
+<form name="form_57404" onsubmit="return validate_form_57404()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d’une voiture se déplaçant à 50 km/h?</legend>
-<input type="radio" name="answer_23456" id="answer_23456_1" value="x <- 50">
+<input type="radio" name="answer_57404" id="answer_57404_1" value="x <- 50">
 <label>x &lt;- 50</label>
 <br>
-<input type="radio" name="answer_23456" id="answer_23456_2" value="vitesse_km_h <- 50">
+<input type="radio" name="answer_57404" id="answer_57404_2" value="vitesse_km_h <- 50">
 <label>vitesse_km_h &lt;- 50</label>
 <br>
-<input type="radio" name="answer_23456" id="answer_23456_3" value="vitesse <- 50">
+<input type="radio" name="answer_57404" id="answer_57404_3" value="vitesse <- 50">
 <label>vitesse &lt;- 50</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_23456"></div>
+<div id="result_57404"></div>
 </fieldset>
 </form>
-<script>function validate_form_23456() {var x, text; var x = document.forms['form_23456']['answer_23456'].value;if (x == 'vitesse_km_h <- 50'){text = 'Ce nom est descriptif en plus d’indiquer les unités.';} else {text = 'Le nom de la variable (<code>x</code>) n’est pas très descriptif ou les unités ne sont pas indiquées.';} document.getElementById('result_23456').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_57404() {var x, text; var x = document.forms['form_57404']['answer_57404'].value;if (x == 'vitesse_km_h <- 50'){text = 'Ce nom est descriptif en plus d’indiquer les unités.';} else {text = 'Le nom de la variable (<code>x</code>) n’est pas très descriptif ou les unités ne sont pas indiquées.';} document.getElementById('result_57404').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_23456').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_57404').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -496,25 +505,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_96725" onsubmit="return validate_form_96725()" method="post">
+<form name="form_75014" onsubmit="return validate_form_75014()" method="post">
 <fieldset>
 <legend>Pourquoi l’assignation suivante ne devrait pas être utilisée? <code>c &lt;- 23</code></legend>
-<input type="radio" name="answer_96725" id="answer_96725_1" value="Parce que `c()` est une fonction de base dans R.">
+<input type="radio" name="answer_75014" id="answer_75014_1" value="Parce que `c()` est une fonction de base dans R.">
 <label>Parce que `c()` est une fonction de base dans R.</label>
 <br>
-<input type="radio" name="answer_96725" id="answer_96725_2" value="Parce que `c` n'est pas suffisamment descriptif.">
+<input type="radio" name="answer_75014" id="answer_75014_2" value="Parce que `c` n'est pas suffisamment descriptif.">
 <label>Parce que `c` n'est pas suffisamment descriptif.</label>
 <br>
-<input type="radio" name="answer_96725" id="answer_96725_3" value="Toutes ces réponses">
+<input type="radio" name="answer_75014" id="answer_75014_3" value="Toutes ces réponses">
 <label>Toutes ces réponses</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_96725"></div>
+<div id="result_75014"></div>
 </fieldset>
 </form>
-<script>function validate_form_96725() {var x, text; var x = document.forms['form_96725']['answer_96725'].value;if (x == 'Toutes ces réponses'){text = '<code>c()</code> est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';} else {text = 'Attention, il y a peut-être plusieurs réponses vraies!';} document.getElementById('result_96725').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_75014() {var x, text; var x = document.forms['form_75014']['answer_75014'].value;if (x == 'Toutes ces réponses'){text = '<code>c()</code> est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';} else {text = 'Attention, il y a peut-être plusieurs réponses vraies!';} document.getElementById('result_75014').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_23456').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_96725').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_57404').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75014').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -529,25 +538,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_80550" onsubmit="return validate_form_80550()" method="post">
+<form name="form_64349" onsubmit="return validate_form_64349()" method="post">
 <fieldset>
 <legend>Quelle est la classe de <code>x &lt;- c(1, '2', 3)</code>?</legend>
-<input type="radio" name="answer_80550" id="answer_80550_1" value="numeric">
+<input type="radio" name="answer_64349" id="answer_64349_1" value="numeric">
 <label>numeric</label>
 <br>
-<input type="radio" name="answer_80550" id="answer_80550_2" value="vecteur">
+<input type="radio" name="answer_64349" id="answer_64349_2" value="vecteur">
 <label>vecteur</label>
 <br>
-<input type="radio" name="answer_80550" id="answer_80550_3" value="charactère">
+<input type="radio" name="answer_64349" id="answer_64349_3" value="charactère">
 <label>charactère</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_80550"></div>
+<div id="result_64349"></div>
 </fieldset>
 </form>
-<script>function validate_form_80550() {var x, text; var x = document.forms['form_80550']['answer_80550'].value;if (x == 'charactère'){text = 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,<code>2</code>, le vecteur entier est de type <code>charactère</code>.';} else {text = 'Utilisez la fonction <code>class()</code> pour valider votre choix.';} document.getElementById('result_80550').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_64349() {var x, text; var x = document.forms['form_64349']['answer_64349'].value;if (x == 'charactère'){text = 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,<code>2</code>, le vecteur entier est de type <code>charactère</code>.';} else {text = 'Utilisez la fonction <code>class()</code> pour valider votre choix.';} document.getElementById('result_64349').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_23456').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_96725').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_80550').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_57404').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75014').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_64349').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -559,25 +568,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_78866" onsubmit="return validate_form_78866()" method="post">
+<form name="form_93452" onsubmit="return validate_form_93452()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lesquelles représentent des vecteurs de type <code>logic</code>?</legend>
-<input type="radio" name="answer_78866" id="answer_78866_1" value="`c(TRUE, FALSE)`">
+<input type="radio" name="answer_93452" id="answer_93452_1" value="`c(TRUE, FALSE)`">
 <label>`c(TRUE, FALSE)`</label>
 <br>
-<input type="radio" name="answer_78866" id="answer_78866_2" value="`c(VRAI, FAUX)`">
+<input type="radio" name="answer_93452" id="answer_93452_2" value="`c(VRAI, FAUX)`">
 <label>`c(VRAI, FAUX)`</label>
 <br>
-<input type="radio" name="answer_78866" id="answer_78866_3" value="`c(0, 1)`">
+<input type="radio" name="answer_93452" id="answer_93452_3" value="`c(0, 1)`">
 <label>`c(0, 1)`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_78866"></div>
+<div id="result_93452"></div>
 </fieldset>
 </form>
-<script>function validate_form_78866() {var x, text; var x = document.forms['form_78866']['answer_78866'].value;if (x == '`c(TRUE, FALSE)`'){text = 'VRAI! R n’utilise généralement pas des noms français.';} else {text = 'Stictement parlant, <code>c(0, 1)</code> n’est pas <code>logic</code>. Essayez les commandes suivantes dans R: (1) <code>1 == TRUE</code> et (2) <code>0 == FALSE</code>.';} document.getElementById('result_78866').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_93452() {var x, text; var x = document.forms['form_93452']['answer_93452'].value;if (x == '`c(TRUE, FALSE)`'){text = 'VRAI! R n’utilise généralement pas des noms français.';} else {text = 'Stictement parlant, <code>c(0, 1)</code> n’est pas <code>logic</code>. Essayez les commandes suivantes dans R: (1) <code>1 == TRUE</code> et (2) <code>0 == FALSE</code>.';} document.getElementById('result_93452').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_23456').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_96725').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_80550').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_78866').innerText == 'VRAI! R n’utilise généralement pas des noms français.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_57404').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75014').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_64349').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_93452').innerText == 'VRAI! R n’utilise généralement pas des noms français.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -589,28 +598,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_4904" onsubmit="return validate_form_4904()" method="post">
+<form name="form_30656" onsubmit="return validate_form_30656()" method="post">
 <fieldset>
 <legend>Avec le vecteur suivant: <code>x &lt;- c(1, 42, 5, 4)</code>, quelle est la valeur de <code>x[2]</code>?</legend>
-<input type="radio" name="answer_4904" id="answer_4904_1" value="1">
+<input type="radio" name="answer_30656" id="answer_30656_1" value="1">
 <label>1</label>
 <br>
-<input type="radio" name="answer_4904" id="answer_4904_2" value="42">
+<input type="radio" name="answer_30656" id="answer_30656_2" value="42">
 <label>42</label>
 <br>
-<input type="radio" name="answer_4904" id="answer_4904_3" value="5">
+<input type="radio" name="answer_30656" id="answer_30656_3" value="5">
 <label>5</label>
 <br>
-<input type="radio" name="answer_4904" id="answer_4904_4" value="4">
+<input type="radio" name="answer_30656" id="answer_30656_4" value="4">
 <label>4</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_4904"></div>
+<div id="result_30656"></div>
 </fieldset>
 </form>
-<script>function validate_form_4904() {var x, text; var x = document.forms['form_4904']['answer_4904'].value;if (x == '42'){text = '42 est la valeur à la position 2 du vecteur <code>x</code>.';} else {text = 'Incorrect! N’oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l’intérieur du vecteur <code>x</code>.';} document.getElementById('result_4904').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_30656() {var x, text; var x = document.forms['form_30656']['answer_30656'].value;if (x == '42'){text = '42 est la valeur à la position 2 du vecteur <code>x</code>.';} else {text = 'Incorrect! N’oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l’intérieur du vecteur <code>x</code>.';} document.getElementById('result_30656').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_23456').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_96725').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_80550').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_78866').innerText == 'VRAI! R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_4904').innerText == '42 est la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_57404').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75014').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_64349').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_93452').innerText == 'VRAI! R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_30656').innerText == '42 est la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -622,25 +631,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_67840" onsubmit="return validate_form_67840()" method="post">
+<form name="form_3181" onsubmit="return validate_form_3181()" method="post">
 <fieldset>
 <legend>Avec le vecteur suivant: <code>x &lt;- c(1, 42, 5, 4)</code>, quelle est la valeur de <code>x[-2]</code>?</legend>
-<input type="radio" name="answer_67840" id="answer_67840_1" value="-42">
+<input type="radio" name="answer_3181" id="answer_3181_1" value="-42">
 <label>-42</label>
 <br>
-<input type="radio" name="answer_67840" id="answer_67840_2" value="c(1, -42, 5, 4)">
+<input type="radio" name="answer_3181" id="answer_3181_2" value="c(1, -42, 5, 4)">
 <label>c(1, -42, 5, 4)</label>
 <br>
-<input type="radio" name="answer_67840" id="answer_67840_3" value="c(1, 5, 4)">
+<input type="radio" name="answer_3181" id="answer_3181_3" value="c(1, 5, 4)">
 <label>c(1, 5, 4)</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_67840"></div>
+<div id="result_3181"></div>
 </fieldset>
 </form>
-<script>function validate_form_67840() {var x, text; var x = document.forms['form_67840']['answer_67840'].value;if (x == 'c(1, 5, 4)'){text = '<code>x[-2]</code> supprime la valeur à la position 2 du vecteur <code>x</code>.';} else {text = 'Incorrect! N’oubliez pas qu’un indice négatif à l’intérieur des [] supprime la valeur à cet emplacement.';} document.getElementById('result_67840').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_3181() {var x, text; var x = document.forms['form_3181']['answer_3181'].value;if (x == 'c(1, 5, 4)'){text = '<code>x[-2]</code> supprime la valeur à la position 2 du vecteur <code>x</code>.';} else {text = 'Incorrect! N’oubliez pas qu’un indice négatif à l’intérieur des [] supprime la valeur à cet emplacement.';} document.getElementById('result_3181').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_48595').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_23770').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_59121').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_99672').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_4123').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_23456').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_96725').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_80550').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_78866').innerText == 'VRAI! R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_4904').innerText == '42 est la valeur à la position 2 du vecteur x.'; res11 = document.getElementById('result_67840').innerText == 'x[-2] supprime la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_23').innerText == 'Bonne réponse! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_66181').innerText == 'Bonne réponse! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_50671').innerText == 'Bonne réponse! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_94219').innerText == 'Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_86510').innerText == 'x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_57404').innerText == 'Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75014').innerText == 'c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_64349').innerText == 'VRAI! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_93452').innerText == 'VRAI! R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_30656').innerText == '42 est la valeur à la position 2 du vecteur x.'; res11 = document.getElementById('result_3181').innerText == 'x[-2] supprime la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -1603,370 +1612,378 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb52-92"><a href="#cb52-92" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
 <span id="cb52-93"><a href="#cb52-93" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
 <span id="cb52-94"><a href="#cb52-94" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"Bonne réponse! `class()` est une fonction de base de R pour déterminer la classe d'une variable."</span>,</span>
-<span id="cb52-95"><a href="#cb52-95" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"`type()` n'est pas une fonction de base de R. Attention à la casse (minuscule ou majuscule) des fonctions."</span>,</span>
+<span id="cb52-95"><a href="#cb52-95" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"**Mauvaise réponse** Essayez encore! Utilisez les indices si nécessaire au bas de la question."</span>,</span>
 <span id="cb52-96"><a href="#cb52-96" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Comment peut-on déterminer la classe d'une variable nommée `x`?"</span></span>
 <span id="cb52-97"><a href="#cb52-97" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-98"><a href="#cb52-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-99"><a href="#cb52-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-100"><a href="#cb52-100" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-101"><a href="#cb52-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-102"><a href="#cb52-102" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-103"><a href="#cb52-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-106"><a href="#cb52-106" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-107"><a href="#cb52-107" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question4</span></span>
-<span id="cb52-108"><a href="#cb52-108" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-109"><a href="#cb52-109" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-110"><a href="#cb52-110" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-111"><a href="#cb52-111" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"factor"</span>, <span class="st">"character"</span>),</span>
-<span id="cb52-112"><a href="#cb52-112" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"numeric"</span>, <span class="st">"factor"</span>, <span class="st">"logical"</span>, <span class="st">"character"</span>),</span>
-<span id="cb52-113"><a href="#cb52-113" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb52-114"><a href="#cb52-114" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-115"><a href="#cb52-115" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide."</span>,</span>
-<span id="cb52-116"><a href="#cb52-116" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Il y a peut-être plus d'une bonne réponse!"</span>,</span>
-<span id="cb52-117"><a href="#cb52-117" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quels types de variables seraient préférables pour représenter les mois d'une année?"</span></span>
-<span id="cb52-118"><a href="#cb52-118" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-119"><a href="#cb52-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-120"><a href="#cb52-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-121"><a href="#cb52-121" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-122"><a href="#cb52-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-123"><a href="#cb52-123" aria-hidden="true" tabindex="-1"></a><span class="fu">### Noms de variable</span></span>
-<span id="cb52-124"><a href="#cb52-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-125"><a href="#cb52-125" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-126"><a href="#cb52-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-129"><a href="#cb52-129" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-130"><a href="#cb52-130" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question5</span></span>
-<span id="cb52-131"><a href="#cb52-131" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-132"><a href="#cb52-132" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-133"><a href="#cb52-133" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-134"><a href="#cb52-134" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"x2"</span>, <span class="st">"température"</span>),</span>
-<span id="cb52-135"><a href="#cb52-135" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"1x3"</span>, <span class="st">"x2"</span>, <span class="st">"ma variable"</span>, <span class="st">"température"</span>),</span>
-<span id="cb52-136"><a href="#cb52-136" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb52-137"><a href="#cb52-137" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-138"><a href="#cb52-138" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"`x2` est valide puisqu'il commence par une lettre, ne contient pas de caractères spéciaux et/ou d'espaces. `température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux."</span>,</span>
-<span id="cb52-139"><a href="#cb52-139" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d'espace."</span>,</span>
-<span id="cb52-140"><a href="#cb52-140" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?"</span></span>
-<span id="cb52-141"><a href="#cb52-141" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-142"><a href="#cb52-142" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-143"><a href="#cb52-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-144"><a href="#cb52-144" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-145"><a href="#cb52-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-146"><a href="#cb52-146" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-147"><a href="#cb52-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-150"><a href="#cb52-150" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-151"><a href="#cb52-151" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question6</span></span>
-<span id="cb52-152"><a href="#cb52-152" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-153"><a href="#cb52-153" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-154"><a href="#cb52-154" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-155"><a href="#cb52-155" aria-hidden="true" tabindex="-1"></a>  <span class="st">"vitesse_km_h &lt;- 50"</span>,</span>
-<span id="cb52-156"><a href="#cb52-156" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"x &lt;- 50"</span>, <span class="st">"vitesse_km_h &lt;- 50"</span>, <span class="st">"vitesse &lt;- 50"</span>),</span>
-<span id="cb52-157"><a href="#cb52-157" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
-<span id="cb52-158"><a href="#cb52-158" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-159"><a href="#cb52-159" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"Ce nom est descriptif en plus d'indiquer les unités."</span>,</span>
-<span id="cb52-160"><a href="#cb52-160" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Le nom de la variable (`x`) n'est pas très descriptif ou les unités ne sont pas indiquées."</span>,</span>
-<span id="cb52-161"><a href="#cb52-161" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d'une voiture se déplaçant à 50 km/h?"</span></span>
-<span id="cb52-162"><a href="#cb52-162" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-163"><a href="#cb52-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-164"><a href="#cb52-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-165"><a href="#cb52-165" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-166"><a href="#cb52-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-167"><a href="#cb52-167" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-168"><a href="#cb52-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-171"><a href="#cb52-171" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-172"><a href="#cb52-172" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question7</span></span>
-<span id="cb52-173"><a href="#cb52-173" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-174"><a href="#cb52-174" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-175"><a href="#cb52-175" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-176"><a href="#cb52-176" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Toutes ces réponses"</span>,</span>
-<span id="cb52-177"><a href="#cb52-177" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"Parce que `c()` est une fonction de base dans R."</span>, <span class="st">"Parce que `c` n'est pas suffisamment descriptif."</span>, <span class="st">"Toutes ces réponses"</span>),</span>
-<span id="cb52-178"><a href="#cb52-178" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
-<span id="cb52-179"><a href="#cb52-179" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-180"><a href="#cb52-180" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"`c()` est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif."</span>,</span>
-<span id="cb52-181"><a href="#cb52-181" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Attention, il y a peut-être plusieurs réponses vraies!"</span>,</span>
-<span id="cb52-182"><a href="#cb52-182" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Pourquoi l'assignation suivante ne devrait pas être utilisée? `c &lt;- 23`"</span></span>
-<span id="cb52-183"><a href="#cb52-183" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-184"><a href="#cb52-184" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-185"><a href="#cb52-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-186"><a href="#cb52-186" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-187"><a href="#cb52-187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-188"><a href="#cb52-188" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les vecteurs</span></span>
-<span id="cb52-189"><a href="#cb52-189" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-190"><a href="#cb52-190" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-191"><a href="#cb52-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-194"><a href="#cb52-194" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-195"><a href="#cb52-195" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question8</span></span>
-<span id="cb52-196"><a href="#cb52-196" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-197"><a href="#cb52-197" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-198"><a href="#cb52-198" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-199"><a href="#cb52-199" aria-hidden="true" tabindex="-1"></a>  <span class="st">"charactère"</span>,</span>
-<span id="cb52-200"><a href="#cb52-200" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"numeric"</span>, <span class="st">"vecteur"</span>, <span class="st">"charactère"</span>),</span>
-<span id="cb52-201"><a href="#cb52-201" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
-<span id="cb52-202"><a href="#cb52-202" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-203"><a href="#cb52-203" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"VRAI! Puisqu'il y a une valeur texte dans le vecteur,`2`, le vecteur entier est de type `charactère`."</span>,</span>
-<span id="cb52-204"><a href="#cb52-204" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Utilisez la fonction `class()` pour valider votre choix."</span>,</span>
-<span id="cb52-205"><a href="#cb52-205" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle est la classe de `x &lt;- c(1, '2', 3)`?"</span></span>
-<span id="cb52-206"><a href="#cb52-206" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-207"><a href="#cb52-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-208"><a href="#cb52-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-209"><a href="#cb52-209" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-210"><a href="#cb52-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-211"><a href="#cb52-211" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-212"><a href="#cb52-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-215"><a href="#cb52-215" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-216"><a href="#cb52-216" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question9</span></span>
-<span id="cb52-217"><a href="#cb52-217" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-218"><a href="#cb52-218" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-219"><a href="#cb52-219" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-220"><a href="#cb52-220" aria-hidden="true" tabindex="-1"></a>  <span class="st">"`c(TRUE, FALSE)`"</span>,</span>
-<span id="cb52-221"><a href="#cb52-221" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`c(TRUE, FALSE)`"</span>, <span class="st">"`c(VRAI, FAUX)`"</span>, <span class="st">"`c(0, 1)`"</span>),</span>
-<span id="cb52-222"><a href="#cb52-222" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
-<span id="cb52-223"><a href="#cb52-223" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-224"><a href="#cb52-224" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"VRAI! R n'utilise généralement pas des noms français."</span>,</span>
-<span id="cb52-225"><a href="#cb52-225" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`."</span>,</span>
-<span id="cb52-226"><a href="#cb52-226" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Parmi les choix suivants, lesquelles représentent des vecteurs de type `logic`?"</span></span>
-<span id="cb52-227"><a href="#cb52-227" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-228"><a href="#cb52-228" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-229"><a href="#cb52-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-230"><a href="#cb52-230" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-231"><a href="#cb52-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-232"><a href="#cb52-232" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-233"><a href="#cb52-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-236"><a href="#cb52-236" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-237"><a href="#cb52-237" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question10</span></span>
-<span id="cb52-238"><a href="#cb52-238" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-239"><a href="#cb52-239" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-240"><a href="#cb52-240" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-241"><a href="#cb52-241" aria-hidden="true" tabindex="-1"></a>  <span class="st">"42"</span>,</span>
-<span id="cb52-242"><a href="#cb52-242" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"1"</span>, <span class="st">"42"</span>, <span class="st">"5"</span>, <span class="st">"4"</span>),</span>
-<span id="cb52-243"><a href="#cb52-243" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
-<span id="cb52-244"><a href="#cb52-244" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-245"><a href="#cb52-245" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"42 est la valeur à la position 2 du vecteur `x`."</span>,</span>
-<span id="cb52-246"><a href="#cb52-246" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Incorrect! N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`."</span>,</span>
-<span id="cb52-247"><a href="#cb52-247" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[2]`?"</span></span>
-<span id="cb52-248"><a href="#cb52-248" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-249"><a href="#cb52-249" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-250"><a href="#cb52-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-251"><a href="#cb52-251" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-252"><a href="#cb52-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-253"><a href="#cb52-253" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb52-254"><a href="#cb52-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-257"><a href="#cb52-257" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-258"><a href="#cb52-258" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question11</span></span>
-<span id="cb52-259"><a href="#cb52-259" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb52-260"><a href="#cb52-260" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb52-261"><a href="#cb52-261" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb52-262"><a href="#cb52-262" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c(1, 5, 4)"</span>,</span>
-<span id="cb52-263"><a href="#cb52-263" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"-42"</span>, <span class="st">"c(1, -42, 5, 4)"</span>, <span class="st">"c(1, 5, 4)"</span>),</span>
-<span id="cb52-264"><a href="#cb52-264" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
-<span id="cb52-265"><a href="#cb52-265" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb52-266"><a href="#cb52-266" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"`x[-2]` supprime la valeur à la position 2 du vecteur `x`."</span>,</span>
-<span id="cb52-267"><a href="#cb52-267" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Incorrect! N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement."</span>,</span>
-<span id="cb52-268"><a href="#cb52-268" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[-2]`?"</span></span>
-<span id="cb52-269"><a href="#cb52-269" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb52-270"><a href="#cb52-270" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-271"><a href="#cb52-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-272"><a href="#cb52-272" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-273"><a href="#cb52-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-274"><a href="#cb52-274" aria-hidden="true" tabindex="-1"></a><span class="fu">## Matériel accompagnateur</span></span>
-<span id="cb52-275"><a href="#cb52-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-276"><a href="#cb52-276" aria-hidden="true" tabindex="-1"></a><span class="fu">### Classes de base</span></span>
-<span id="cb52-277"><a href="#cb52-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-278"><a href="#cb52-278" aria-hidden="true" tabindex="-1"></a>Il existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.</span>
+<span id="cb52-98"><a href="#cb52-98" aria-hidden="true" tabindex="-1"></a><span class="fu">check_hints</span>(</span>
+<span id="cb52-99"><a href="#cb52-99" aria-hidden="true" tabindex="-1"></a>  <span class="at">hint_text =</span> <span class="fu">c</span>(</span>
+<span id="cb52-100"><a href="#cb52-100" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Attention à la casse (minuscule ou majuscule) des fonctions."</span>,</span>
+<span id="cb52-101"><a href="#cb52-101" aria-hidden="true" tabindex="-1"></a>    <span class="st">"`type()` n'est pas une fonction de base de R."</span></span>
+<span id="cb52-102"><a href="#cb52-102" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb52-103"><a href="#cb52-103" aria-hidden="true" tabindex="-1"></a>  <span class="at">hint_title =</span> <span class="st">"Cliquez ici pour obtenir un indice!"</span>,</span>
+<span id="cb52-104"><a href="#cb52-104" aria-hidden="true" tabindex="-1"></a>  <span class="at">list_title =</span> <span class="st">"&lt;strong&gt;ⓘ  Indice(s)&lt;/strong&gt;"</span></span>
+<span id="cb52-105"><a href="#cb52-105" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-106"><a href="#cb52-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-107"><a href="#cb52-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-108"><a href="#cb52-108" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-109"><a href="#cb52-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-110"><a href="#cb52-110" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-111"><a href="#cb52-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-114"><a href="#cb52-114" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-115"><a href="#cb52-115" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question4</span></span>
+<span id="cb52-116"><a href="#cb52-116" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-117"><a href="#cb52-117" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-118"><a href="#cb52-118" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-119"><a href="#cb52-119" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"factor"</span>, <span class="st">"character"</span>),</span>
+<span id="cb52-120"><a href="#cb52-120" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"numeric"</span>, <span class="st">"factor"</span>, <span class="st">"logical"</span>, <span class="st">"character"</span>),</span>
+<span id="cb52-121"><a href="#cb52-121" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
+<span id="cb52-122"><a href="#cb52-122" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-123"><a href="#cb52-123" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide."</span>,</span>
+<span id="cb52-124"><a href="#cb52-124" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Il y a peut-être plus d'une bonne réponse!"</span>,</span>
+<span id="cb52-125"><a href="#cb52-125" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quels types de variables seraient préférables pour représenter les mois d'une année?"</span></span>
+<span id="cb52-126"><a href="#cb52-126" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-127"><a href="#cb52-127" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-128"><a href="#cb52-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-129"><a href="#cb52-129" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-130"><a href="#cb52-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-131"><a href="#cb52-131" aria-hidden="true" tabindex="-1"></a><span class="fu">### Noms de variable</span></span>
+<span id="cb52-132"><a href="#cb52-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-133"><a href="#cb52-133" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-134"><a href="#cb52-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-137"><a href="#cb52-137" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-138"><a href="#cb52-138" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question5</span></span>
+<span id="cb52-139"><a href="#cb52-139" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-140"><a href="#cb52-140" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-141"><a href="#cb52-141" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-142"><a href="#cb52-142" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"x2"</span>, <span class="st">"température"</span>),</span>
+<span id="cb52-143"><a href="#cb52-143" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"1x3"</span>, <span class="st">"x2"</span>, <span class="st">"ma variable"</span>, <span class="st">"température"</span>),</span>
+<span id="cb52-144"><a href="#cb52-144" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
+<span id="cb52-145"><a href="#cb52-145" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-146"><a href="#cb52-146" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"`x2` est valide puisqu'il commence par une lettre, ne contient pas de caractères spéciaux et/ou d'espaces. `température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux."</span>,</span>
+<span id="cb52-147"><a href="#cb52-147" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d'espace."</span>,</span>
+<span id="cb52-148"><a href="#cb52-148" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?"</span></span>
+<span id="cb52-149"><a href="#cb52-149" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-150"><a href="#cb52-150" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-151"><a href="#cb52-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-152"><a href="#cb52-152" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-153"><a href="#cb52-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-154"><a href="#cb52-154" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-155"><a href="#cb52-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-158"><a href="#cb52-158" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-159"><a href="#cb52-159" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question6</span></span>
+<span id="cb52-160"><a href="#cb52-160" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-161"><a href="#cb52-161" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-162"><a href="#cb52-162" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-163"><a href="#cb52-163" aria-hidden="true" tabindex="-1"></a>  <span class="st">"vitesse_km_h &lt;- 50"</span>,</span>
+<span id="cb52-164"><a href="#cb52-164" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"x &lt;- 50"</span>, <span class="st">"vitesse_km_h &lt;- 50"</span>, <span class="st">"vitesse &lt;- 50"</span>),</span>
+<span id="cb52-165"><a href="#cb52-165" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
+<span id="cb52-166"><a href="#cb52-166" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-167"><a href="#cb52-167" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"Ce nom est descriptif en plus d'indiquer les unités."</span>,</span>
+<span id="cb52-168"><a href="#cb52-168" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Le nom de la variable (`x`) n'est pas très descriptif ou les unités ne sont pas indiquées."</span>,</span>
+<span id="cb52-169"><a href="#cb52-169" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d'une voiture se déplaçant à 50 km/h?"</span></span>
+<span id="cb52-170"><a href="#cb52-170" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-171"><a href="#cb52-171" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-172"><a href="#cb52-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-173"><a href="#cb52-173" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-174"><a href="#cb52-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-175"><a href="#cb52-175" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-176"><a href="#cb52-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-179"><a href="#cb52-179" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-180"><a href="#cb52-180" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question7</span></span>
+<span id="cb52-181"><a href="#cb52-181" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-182"><a href="#cb52-182" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-183"><a href="#cb52-183" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-184"><a href="#cb52-184" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Toutes ces réponses"</span>,</span>
+<span id="cb52-185"><a href="#cb52-185" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"Parce que `c()` est une fonction de base dans R."</span>, <span class="st">"Parce que `c` n'est pas suffisamment descriptif."</span>, <span class="st">"Toutes ces réponses"</span>),</span>
+<span id="cb52-186"><a href="#cb52-186" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
+<span id="cb52-187"><a href="#cb52-187" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-188"><a href="#cb52-188" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"`c()` est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif."</span>,</span>
+<span id="cb52-189"><a href="#cb52-189" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Attention, il y a peut-être plusieurs réponses vraies!"</span>,</span>
+<span id="cb52-190"><a href="#cb52-190" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Pourquoi l'assignation suivante ne devrait pas être utilisée? `c &lt;- 23`"</span></span>
+<span id="cb52-191"><a href="#cb52-191" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-192"><a href="#cb52-192" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-193"><a href="#cb52-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-194"><a href="#cb52-194" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-195"><a href="#cb52-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-196"><a href="#cb52-196" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les vecteurs</span></span>
+<span id="cb52-197"><a href="#cb52-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-198"><a href="#cb52-198" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-199"><a href="#cb52-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-202"><a href="#cb52-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-203"><a href="#cb52-203" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question8</span></span>
+<span id="cb52-204"><a href="#cb52-204" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-205"><a href="#cb52-205" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-206"><a href="#cb52-206" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-207"><a href="#cb52-207" aria-hidden="true" tabindex="-1"></a>  <span class="st">"charactère"</span>,</span>
+<span id="cb52-208"><a href="#cb52-208" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"numeric"</span>, <span class="st">"vecteur"</span>, <span class="st">"charactère"</span>),</span>
+<span id="cb52-209"><a href="#cb52-209" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
+<span id="cb52-210"><a href="#cb52-210" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-211"><a href="#cb52-211" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"VRAI! Puisqu'il y a une valeur texte dans le vecteur,`2`, le vecteur entier est de type `charactère`."</span>,</span>
+<span id="cb52-212"><a href="#cb52-212" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Utilisez la fonction `class()` pour valider votre choix."</span>,</span>
+<span id="cb52-213"><a href="#cb52-213" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle est la classe de `x &lt;- c(1, '2', 3)`?"</span></span>
+<span id="cb52-214"><a href="#cb52-214" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-215"><a href="#cb52-215" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-216"><a href="#cb52-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-217"><a href="#cb52-217" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-218"><a href="#cb52-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-219"><a href="#cb52-219" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-220"><a href="#cb52-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-223"><a href="#cb52-223" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-224"><a href="#cb52-224" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question9</span></span>
+<span id="cb52-225"><a href="#cb52-225" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-226"><a href="#cb52-226" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-227"><a href="#cb52-227" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-228"><a href="#cb52-228" aria-hidden="true" tabindex="-1"></a>  <span class="st">"`c(TRUE, FALSE)`"</span>,</span>
+<span id="cb52-229"><a href="#cb52-229" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`c(TRUE, FALSE)`"</span>, <span class="st">"`c(VRAI, FAUX)`"</span>, <span class="st">"`c(0, 1)`"</span>),</span>
+<span id="cb52-230"><a href="#cb52-230" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
+<span id="cb52-231"><a href="#cb52-231" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-232"><a href="#cb52-232" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"VRAI! R n'utilise généralement pas des noms français."</span>,</span>
+<span id="cb52-233"><a href="#cb52-233" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`."</span>,</span>
+<span id="cb52-234"><a href="#cb52-234" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Parmi les choix suivants, lesquelles représentent des vecteurs de type `logic`?"</span></span>
+<span id="cb52-235"><a href="#cb52-235" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-236"><a href="#cb52-236" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-237"><a href="#cb52-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-238"><a href="#cb52-238" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-239"><a href="#cb52-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-240"><a href="#cb52-240" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-241"><a href="#cb52-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-244"><a href="#cb52-244" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-245"><a href="#cb52-245" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question10</span></span>
+<span id="cb52-246"><a href="#cb52-246" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-247"><a href="#cb52-247" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-248"><a href="#cb52-248" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-249"><a href="#cb52-249" aria-hidden="true" tabindex="-1"></a>  <span class="st">"42"</span>,</span>
+<span id="cb52-250"><a href="#cb52-250" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"1"</span>, <span class="st">"42"</span>, <span class="st">"5"</span>, <span class="st">"4"</span>),</span>
+<span id="cb52-251"><a href="#cb52-251" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
+<span id="cb52-252"><a href="#cb52-252" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-253"><a href="#cb52-253" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"42 est la valeur à la position 2 du vecteur `x`."</span>,</span>
+<span id="cb52-254"><a href="#cb52-254" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Incorrect! N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`."</span>,</span>
+<span id="cb52-255"><a href="#cb52-255" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[2]`?"</span></span>
+<span id="cb52-256"><a href="#cb52-256" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-257"><a href="#cb52-257" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-258"><a href="#cb52-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-259"><a href="#cb52-259" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-260"><a href="#cb52-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-261"><a href="#cb52-261" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
+<span id="cb52-262"><a href="#cb52-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-265"><a href="#cb52-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-266"><a href="#cb52-266" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question11</span></span>
+<span id="cb52-267"><a href="#cb52-267" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb52-268"><a href="#cb52-268" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
+<span id="cb52-269"><a href="#cb52-269" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
+<span id="cb52-270"><a href="#cb52-270" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c(1, 5, 4)"</span>,</span>
+<span id="cb52-271"><a href="#cb52-271" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"-42"</span>, <span class="st">"c(1, -42, 5, 4)"</span>, <span class="st">"c(1, 5, 4)"</span>),</span>
+<span id="cb52-272"><a href="#cb52-272" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"radio"</span>,</span>
+<span id="cb52-273"><a href="#cb52-273" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
+<span id="cb52-274"><a href="#cb52-274" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"`x[-2]` supprime la valeur à la position 2 du vecteur `x`."</span>,</span>
+<span id="cb52-275"><a href="#cb52-275" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"Incorrect! N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement."</span>,</span>
+<span id="cb52-276"><a href="#cb52-276" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Avec le vecteur suivant: `x &lt;- c(1, 42, 5, 4)`, quelle est la valeur de `x[-2]`?"</span></span>
+<span id="cb52-277"><a href="#cb52-277" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-278"><a href="#cb52-278" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb52-279"><a href="#cb52-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-280"><a href="#cb52-280" aria-hidden="true" tabindex="-1"></a>**La classe `numeric`**</span>
+<span id="cb52-280"><a href="#cb52-280" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb52-281"><a href="#cb52-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-282"><a href="#cb52-282" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`numeric`</span> sert à représenter les nombres (ex.: <span class="in">`1`</span>, <span class="in">`3.14`</span>, <span class="in">`-3324.56`</span>).</span>
+<span id="cb52-282"><a href="#cb52-282" aria-hidden="true" tabindex="-1"></a><span class="fu">## Matériel accompagnateur</span></span>
 <span id="cb52-283"><a href="#cb52-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-286"><a href="#cb52-286" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-287"><a href="#cb52-287" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-288"><a href="#cb52-288" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span></span>
-<span id="cb52-289"><a href="#cb52-289" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">1.45</span></span>
-<span id="cb52-290"><a href="#cb52-290" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> pi</span>
-<span id="cb52-291"><a href="#cb52-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-292"><a href="#cb52-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-293"><a href="#cb52-293" aria-hidden="true" tabindex="-1"></a>**La classe `character`**</span>
-<span id="cb52-294"><a href="#cb52-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-295"><a href="#cb52-295" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`character`</span> sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples <span class="in">`'`</span> ou doubles <span class="in">`"`</span> guillemets.</span>
-<span id="cb52-296"><a href="#cb52-296" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-299"><a href="#cb52-299" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-300"><a href="#cb52-300" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-301"><a href="#cb52-301" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span>
-<span id="cb52-302"><a href="#cb52-302" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span>
-<span id="cb52-303"><a href="#cb52-303" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-284"><a href="#cb52-284" aria-hidden="true" tabindex="-1"></a><span class="fu">### Classes de base</span></span>
+<span id="cb52-285"><a href="#cb52-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-286"><a href="#cb52-286" aria-hidden="true" tabindex="-1"></a>Il existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.</span>
+<span id="cb52-287"><a href="#cb52-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-288"><a href="#cb52-288" aria-hidden="true" tabindex="-1"></a>**La classe `numeric`**</span>
+<span id="cb52-289"><a href="#cb52-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-290"><a href="#cb52-290" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`numeric`</span> sert à représenter les nombres (ex.: <span class="in">`1`</span>, <span class="in">`3.14`</span>, <span class="in">`-3324.56`</span>).</span>
+<span id="cb52-291"><a href="#cb52-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-294"><a href="#cb52-294" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-295"><a href="#cb52-295" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-296"><a href="#cb52-296" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span></span>
+<span id="cb52-297"><a href="#cb52-297" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">1.45</span></span>
+<span id="cb52-298"><a href="#cb52-298" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> pi</span>
+<span id="cb52-299"><a href="#cb52-299" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-300"><a href="#cb52-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-301"><a href="#cb52-301" aria-hidden="true" tabindex="-1"></a>**La classe `character`**</span>
+<span id="cb52-302"><a href="#cb52-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-303"><a href="#cb52-303" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`character`</span> sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples <span class="in">`'`</span> ou doubles <span class="in">`"`</span> guillemets.</span>
 <span id="cb52-304"><a href="#cb52-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-305"><a href="#cb52-305" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb52-306"><a href="#cb52-306" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-307"><a href="#cb52-307" aria-hidden="true" tabindex="-1"></a>R est un langage de programmation dit _case sensitive_. C'est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères <span class="in">`banane`</span> est différente de la chaîne de caractères <span class="in">`Banane`</span>.</span>
-<span id="cb52-308"><a href="#cb52-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-309"><a href="#cb52-309" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-310"><a href="#cb52-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-313"><a href="#cb52-313" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-314"><a href="#cb52-314" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-315"><a href="#cb52-315" aria-hidden="true" tabindex="-1"></a><span class="co"># Est-ce que les deux chaînes sont identiques?</span></span>
-<span id="cb52-316"><a href="#cb52-316" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span> <span class="sc">==</span> <span class="st">"Banane"</span></span>
-<span id="cb52-317"><a href="#cb52-317" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-307"><a href="#cb52-307" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-308"><a href="#cb52-308" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-309"><a href="#cb52-309" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span>
+<span id="cb52-310"><a href="#cb52-310" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span></span>
+<span id="cb52-311"><a href="#cb52-311" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-312"><a href="#cb52-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-313"><a href="#cb52-313" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb52-314"><a href="#cb52-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-315"><a href="#cb52-315" aria-hidden="true" tabindex="-1"></a>R est un langage de programmation dit _case sensitive_. C'est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères <span class="in">`banane`</span> est différente de la chaîne de caractères <span class="in">`Banane`</span>.</span>
+<span id="cb52-316"><a href="#cb52-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-317"><a href="#cb52-317" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb52-318"><a href="#cb52-318" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-319"><a href="#cb52-319" aria-hidden="true" tabindex="-1"></a>**La classe `logic`**</span>
-<span id="cb52-320"><a href="#cb52-320" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-321"><a href="#cb52-321" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`logic`</span> sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs <span class="in">`logic`</span> sont représentées soit à l'aide des valeurs <span class="in">`TRUE`</span>, <span class="in">`FALSE`</span> ou <span class="in">`T`</span>, <span class="in">`F`</span>. Il est cependant recommandé d'utiliser la forme longue (<span class="in">`TRUE`</span>, <span class="in">`FALSE`</span>).</span>
-<span id="cb52-322"><a href="#cb52-322" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-325"><a href="#cb52-325" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-326"><a href="#cb52-326" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-327"><a href="#cb52-327" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-328"><a href="#cb52-328" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span></span>
-<span id="cb52-329"><a href="#cb52-329" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span></span>
-<span id="cb52-330"><a href="#cb52-330" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-331"><a href="#cb52-331" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-332"><a href="#cb52-332" aria-hidden="true" tabindex="-1"></a>**La classe `factor`**</span>
-<span id="cb52-333"><a href="#cb52-333" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-334"><a href="#cb52-334" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`factor`</span> sert à représenter les valeurs lorsqu'on connaît d'avance les différentes possibilités (ex. mois de l'année). Les facteurs sont généralement créés avec la fonction <span class="in">`factor()`</span>.</span>
+<span id="cb52-321"><a href="#cb52-321" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-322"><a href="#cb52-322" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-323"><a href="#cb52-323" aria-hidden="true" tabindex="-1"></a><span class="co"># Est-ce que les deux chaînes sont identiques?</span></span>
+<span id="cb52-324"><a href="#cb52-324" aria-hidden="true" tabindex="-1"></a><span class="st">"banane"</span> <span class="sc">==</span> <span class="st">"Banane"</span></span>
+<span id="cb52-325"><a href="#cb52-325" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-326"><a href="#cb52-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-327"><a href="#cb52-327" aria-hidden="true" tabindex="-1"></a>**La classe `logic`**</span>
+<span id="cb52-328"><a href="#cb52-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-329"><a href="#cb52-329" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`logic`</span> sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs <span class="in">`logic`</span> sont représentées soit à l'aide des valeurs <span class="in">`TRUE`</span>, <span class="in">`FALSE`</span> ou <span class="in">`T`</span>, <span class="in">`F`</span>. Il est cependant recommandé d'utiliser la forme longue (<span class="in">`TRUE`</span>, <span class="in">`FALSE`</span>).</span>
+<span id="cb52-330"><a href="#cb52-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-333"><a href="#cb52-333" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-334"><a href="#cb52-334" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
 <span id="cb52-335"><a href="#cb52-335" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-338"><a href="#cb52-338" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-339"><a href="#cb52-339" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-340"><a href="#cb52-340" aria-hidden="true" tabindex="-1"></a><span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"lundi"</span>, <span class="st">"mardi"</span>, <span class="st">"mercredi"</span>, <span class="st">"jeudi"</span>, <span class="st">"vendredi"</span>, <span class="st">"samedi"</span>, <span class="st">"dimanche"</span>))</span>
-<span id="cb52-341"><a href="#cb52-341" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-342"><a href="#cb52-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-343"><a href="#cb52-343" aria-hidden="true" tabindex="-1"></a>On peut utiliser la fonction <span class="in">`class()`</span> pour connaître la classe d'une variable.</span>
-<span id="cb52-344"><a href="#cb52-344" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-347"><a href="#cb52-347" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-348"><a href="#cb52-348" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-349"><a href="#cb52-349" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-350"><a href="#cb52-350" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="dv">1</span>)</span>
-<span id="cb52-351"><a href="#cb52-351" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"banane"</span>)</span>
-<span id="cb52-352"><a href="#cb52-352" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"Banane"</span>)</span>
-<span id="cb52-353"><a href="#cb52-353" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">factor</span>(<span class="fl">123.1</span>))</span>
-<span id="cb52-354"><a href="#cb52-354" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-355"><a href="#cb52-355" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-356"><a href="#cb52-356" aria-hidden="true" tabindex="-1"></a>Il est également possible de convertir les classes. Par exemple, on peut convertir une classe <span class="in">`character`</span> en classe <span class="in">`numeric`</span>.</span>
-<span id="cb52-357"><a href="#cb52-357" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-360"><a href="#cb52-360" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-361"><a href="#cb52-361" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-362"><a href="#cb52-362" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-363"><a href="#cb52-363" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"3.4"</span>)</span>
-<span id="cb52-364"><a href="#cb52-364" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">as.numeric</span>(<span class="st">"3.4"</span>))</span>
-<span id="cb52-365"><a href="#cb52-365" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-366"><a href="#cb52-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-367"><a href="#cb52-367" aria-hidden="true" tabindex="-1"></a><span class="fu">### Noms de variables</span></span>
-<span id="cb52-368"><a href="#cb52-368" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-369"><a href="#cb52-369" aria-hidden="true" tabindex="-1"></a>Il est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d'une opération dans d'autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l'assignement d'une valeur à une variable peut se faire à l'aide des opérateurs <span class="in">`&lt;-`</span> et <span class="in">`=`</span>. Cependant, il est préférable d'utiliser l'opérateur <span class="in">`&lt;-`</span> plutôt que <span class="in">`=`</span> pour l'assignation d'une variable. En plus, l'utilisation de <span class="in">`&lt;-`</span> permet d'éviter la confusion avec l'opérateur logique <span class="in">`==`</span>.</span>
-<span id="cb52-370"><a href="#cb52-370" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-373"><a href="#cb52-373" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-374"><a href="#cb52-374" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-375"><a href="#cb52-375" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-376"><a href="#cb52-376" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="co"># Assigner la valeur numérique 2 à la variable x</span></span>
-<span id="cb52-377"><a href="#cb52-377" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">40</span> <span class="co"># Assigner la valeur numérique 40 à la variable y</span></span>
-<span id="cb52-378"><a href="#cb52-378" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y <span class="co"># Somme de x et y</span></span>
-<span id="cb52-379"><a href="#cb52-379" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-380"><a href="#cb52-380" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-381"><a href="#cb52-381" aria-hidden="true" tabindex="-1"></a>Un nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.</span>
-<span id="cb52-382"><a href="#cb52-382" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-385"><a href="#cb52-385" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-386"><a href="#cb52-386" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb52-387"><a href="#cb52-387" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-388"><a href="#cb52-388" aria-hidden="true" tabindex="-1"></a><span class="co"># Bon</span></span>
-<span id="cb52-389"><a href="#cb52-389" aria-hidden="true" tabindex="-1"></a>x123 <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb52-336"><a href="#cb52-336" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span></span>
+<span id="cb52-337"><a href="#cb52-337" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span></span>
+<span id="cb52-338"><a href="#cb52-338" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-339"><a href="#cb52-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-340"><a href="#cb52-340" aria-hidden="true" tabindex="-1"></a>**La classe `factor`**</span>
+<span id="cb52-341"><a href="#cb52-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-342"><a href="#cb52-342" aria-hidden="true" tabindex="-1"></a>La classe <span class="in">`factor`</span> sert à représenter les valeurs lorsqu'on connaît d'avance les différentes possibilités (ex. mois de l'année). Les facteurs sont généralement créés avec la fonction <span class="in">`factor()`</span>.</span>
+<span id="cb52-343"><a href="#cb52-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-346"><a href="#cb52-346" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-347"><a href="#cb52-347" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-348"><a href="#cb52-348" aria-hidden="true" tabindex="-1"></a><span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"lundi"</span>, <span class="st">"mardi"</span>, <span class="st">"mercredi"</span>, <span class="st">"jeudi"</span>, <span class="st">"vendredi"</span>, <span class="st">"samedi"</span>, <span class="st">"dimanche"</span>))</span>
+<span id="cb52-349"><a href="#cb52-349" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-350"><a href="#cb52-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-351"><a href="#cb52-351" aria-hidden="true" tabindex="-1"></a>On peut utiliser la fonction <span class="in">`class()`</span> pour connaître la classe d'une variable.</span>
+<span id="cb52-352"><a href="#cb52-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-355"><a href="#cb52-355" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-356"><a href="#cb52-356" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-357"><a href="#cb52-357" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-358"><a href="#cb52-358" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="dv">1</span>)</span>
+<span id="cb52-359"><a href="#cb52-359" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"banane"</span>)</span>
+<span id="cb52-360"><a href="#cb52-360" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"Banane"</span>)</span>
+<span id="cb52-361"><a href="#cb52-361" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">factor</span>(<span class="fl">123.1</span>))</span>
+<span id="cb52-362"><a href="#cb52-362" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-363"><a href="#cb52-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-364"><a href="#cb52-364" aria-hidden="true" tabindex="-1"></a>Il est également possible de convertir les classes. Par exemple, on peut convertir une classe <span class="in">`character`</span> en classe <span class="in">`numeric`</span>.</span>
+<span id="cb52-365"><a href="#cb52-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-368"><a href="#cb52-368" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-369"><a href="#cb52-369" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-370"><a href="#cb52-370" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-371"><a href="#cb52-371" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"3.4"</span>)</span>
+<span id="cb52-372"><a href="#cb52-372" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">as.numeric</span>(<span class="st">"3.4"</span>))</span>
+<span id="cb52-373"><a href="#cb52-373" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-374"><a href="#cb52-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-375"><a href="#cb52-375" aria-hidden="true" tabindex="-1"></a><span class="fu">### Noms de variables</span></span>
+<span id="cb52-376"><a href="#cb52-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-377"><a href="#cb52-377" aria-hidden="true" tabindex="-1"></a>Il est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d'une opération dans d'autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l'assignement d'une valeur à une variable peut se faire à l'aide des opérateurs <span class="in">`&lt;-`</span> et <span class="in">`=`</span>. Cependant, il est préférable d'utiliser l'opérateur <span class="in">`&lt;-`</span> plutôt que <span class="in">`=`</span> pour l'assignation d'une variable. En plus, l'utilisation de <span class="in">`&lt;-`</span> permet d'éviter la confusion avec l'opérateur logique <span class="in">`==`</span>.</span>
+<span id="cb52-378"><a href="#cb52-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-381"><a href="#cb52-381" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-382"><a href="#cb52-382" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-383"><a href="#cb52-383" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-384"><a href="#cb52-384" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="co"># Assigner la valeur numérique 2 à la variable x</span></span>
+<span id="cb52-385"><a href="#cb52-385" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">40</span> <span class="co"># Assigner la valeur numérique 40 à la variable y</span></span>
+<span id="cb52-386"><a href="#cb52-386" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y <span class="co"># Somme de x et y</span></span>
+<span id="cb52-387"><a href="#cb52-387" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-388"><a href="#cb52-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-389"><a href="#cb52-389" aria-hidden="true" tabindex="-1"></a>Un nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.</span>
 <span id="cb52-390"><a href="#cb52-390" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-391"><a href="#cb52-391" aria-hidden="true" tabindex="-1"></a><span class="co"># Pas bon</span></span>
-<span id="cb52-392"><a href="#cb52-392" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span>x <span class="ot">&lt;-</span> <span class="st">"R est vraiment trop cool!"</span></span>
-<span id="cb52-393"><a href="#cb52-393" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-394"><a href="#cb52-394" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-395"><a href="#cb52-395" aria-hidden="true" tabindex="-1"></a>Il est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.</span>
-<span id="cb52-396"><a href="#cb52-396" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-399"><a href="#cb52-399" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-400"><a href="#cb52-400" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb52-401"><a href="#cb52-401" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-402"><a href="#cb52-402" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># x n'est pas assez descriptif</span></span>
-<span id="cb52-403"><a href="#cb52-403" aria-hidden="true" tabindex="-1"></a>chla <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># mieux, mais on ne connaît pas les unités</span></span>
-<span id="cb52-404"><a href="#cb52-404" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># idéal, on connaît la variable et son unité</span></span>
-<span id="cb52-405"><a href="#cb52-405" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-406"><a href="#cb52-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-407"><a href="#cb52-407" aria-hidden="true" tabindex="-1"></a>Il est important d'être consistent dans la casse des noms de variables. Par exemple, <span class="in">`chla_mg_m2`</span> et <span class="in">`Chla_mg_m2`</span> sont deux variables distinctes.</span>
-<span id="cb52-408"><a href="#cb52-408" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-411"><a href="#cb52-411" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-412"><a href="#cb52-412" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb52-413"><a href="#cb52-413" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-414"><a href="#cb52-414" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
-<span id="cb52-415"><a href="#cb52-415" aria-hidden="true" tabindex="-1"></a>Chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
-<span id="cb52-416"><a href="#cb52-416" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-417"><a href="#cb52-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-418"><a href="#cb52-418" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb52-419"><a href="#cb52-419" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-420"><a href="#cb52-420" aria-hidden="true" tabindex="-1"></a>Il est important que vos noms de variables n'entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d'utiliser <span class="in">`cos`</span>, <span class="in">`sin`</span>, <span class="in">`min`</span>, <span class="in">`median`</span>, <span class="in">`pi`</span>.</span>
-<span id="cb52-421"><a href="#cb52-421" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-422"><a href="#cb52-422" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-423"><a href="#cb52-423" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-426"><a href="#cb52-426" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-427"><a href="#cb52-427" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb52-428"><a href="#cb52-428" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-429"><a href="#cb52-429" aria-hidden="true" tabindex="-1"></a>cos <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="co"># À ne pas faire!</span></span>
-<span id="cb52-430"><a href="#cb52-430" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-393"><a href="#cb52-393" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-394"><a href="#cb52-394" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb52-395"><a href="#cb52-395" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-396"><a href="#cb52-396" aria-hidden="true" tabindex="-1"></a><span class="co"># Bon</span></span>
+<span id="cb52-397"><a href="#cb52-397" aria-hidden="true" tabindex="-1"></a>x123 <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb52-398"><a href="#cb52-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-399"><a href="#cb52-399" aria-hidden="true" tabindex="-1"></a><span class="co"># Pas bon</span></span>
+<span id="cb52-400"><a href="#cb52-400" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span>x <span class="ot">&lt;-</span> <span class="st">"R est vraiment trop cool!"</span></span>
+<span id="cb52-401"><a href="#cb52-401" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-402"><a href="#cb52-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-403"><a href="#cb52-403" aria-hidden="true" tabindex="-1"></a>Il est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.</span>
+<span id="cb52-404"><a href="#cb52-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-407"><a href="#cb52-407" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-408"><a href="#cb52-408" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb52-409"><a href="#cb52-409" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-410"><a href="#cb52-410" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># x n'est pas assez descriptif</span></span>
+<span id="cb52-411"><a href="#cb52-411" aria-hidden="true" tabindex="-1"></a>chla <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># mieux, mais on ne connaît pas les unités</span></span>
+<span id="cb52-412"><a href="#cb52-412" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span> <span class="co"># idéal, on connaît la variable et son unité</span></span>
+<span id="cb52-413"><a href="#cb52-413" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-414"><a href="#cb52-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-415"><a href="#cb52-415" aria-hidden="true" tabindex="-1"></a>Il est important d'être consistent dans la casse des noms de variables. Par exemple, <span class="in">`chla_mg_m2`</span> et <span class="in">`Chla_mg_m2`</span> sont deux variables distinctes.</span>
+<span id="cb52-416"><a href="#cb52-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-419"><a href="#cb52-419" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-420"><a href="#cb52-420" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb52-421"><a href="#cb52-421" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-422"><a href="#cb52-422" aria-hidden="true" tabindex="-1"></a>chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb52-423"><a href="#cb52-423" aria-hidden="true" tabindex="-1"></a>Chla_mg_m2 <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb52-424"><a href="#cb52-424" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-425"><a href="#cb52-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-426"><a href="#cb52-426" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb52-427"><a href="#cb52-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-428"><a href="#cb52-428" aria-hidden="true" tabindex="-1"></a>Il est important que vos noms de variables n'entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d'utiliser <span class="in">`cos`</span>, <span class="in">`sin`</span>, <span class="in">`min`</span>, <span class="in">`median`</span>, <span class="in">`pi`</span>.</span>
+<span id="cb52-429"><a href="#cb52-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-430"><a href="#cb52-430" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb52-431"><a href="#cb52-431" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-432"><a href="#cb52-432" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les vecteurs</span></span>
-<span id="cb52-433"><a href="#cb52-433" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-434"><a href="#cb52-434" aria-hidden="true" tabindex="-1"></a>Les vecteurs sont des tableaux d'éléments successifs. Les éléments d'un vecteur peuvent être, par exemple: <span class="in">`numeric`</span>, <span class="in">`character`</span>, <span class="in">`logic`</span>. Dans R, les vecteurs sont créés à l'aide de la fonction <span class="in">`c()`</span> (qui veut dire _combine_) et les valeurs sont séparées à l'aide de la virgule (<span class="in">`,`</span>).</span>
-<span id="cb52-435"><a href="#cb52-435" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-438"><a href="#cb52-438" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-439"><a href="#cb52-439" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-440"><a href="#cb52-440" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-441"><a href="#cb52-441" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d'un vecteur avec 6 valeurs numériques</span></span>
-<span id="cb52-442"><a href="#cb52-442" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
-<span id="cb52-443"><a href="#cb52-443" aria-hidden="true" tabindex="-1"></a>v1</span>
-<span id="cb52-444"><a href="#cb52-444" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-445"><a href="#cb52-445" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-446"><a href="#cb52-446" aria-hidden="true" tabindex="-1"></a>Pour accéder aux valeurs d'un vecteur, il suffit de spécifier l'index (position) à laquel nous voulons accéder.</span>
-<span id="cb52-447"><a href="#cb52-447" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-450"><a href="#cb52-450" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-451"><a href="#cb52-451" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-452"><a href="#cb52-452" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-453"><a href="#cb52-453" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span>] <span class="co"># 3ième élément du vecteur v</span></span>
-<span id="cb52-454"><a href="#cb52-454" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>] <span class="co"># Positions 3,4,5 du vecteur v</span></span>
-<span id="cb52-455"><a href="#cb52-455" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-456"><a href="#cb52-456" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-457"><a href="#cb52-457" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
-<span id="cb52-458"><a href="#cb52-458" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-459"><a href="#cb52-459" aria-hidden="true" tabindex="-1"></a>Dans R il est possible de créer rapidement une séquence de nombre en utilisant l'opérateur <span class="in">`:`</span>. Par exemple, la commande <span class="in">`3:5`</span> retourne un vecteur numérique avec les valeurs 3, 4 et 5.</span>
-<span id="cb52-460"><a href="#cb52-460" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-461"><a href="#cb52-461" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb52-462"><a href="#cb52-462" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-463"><a href="#cb52-463" aria-hidden="true" tabindex="-1"></a>Il est également possible de supprimer un élément d'un vecteur en utilisant</span>
-<span id="cb52-464"><a href="#cb52-464" aria-hidden="true" tabindex="-1"></a>l'opérateur <span class="in">`-`</span> suivi de l'index à supprimer.</span>
-<span id="cb52-465"><a href="#cb52-465" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-468"><a href="#cb52-468" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-469"><a href="#cb52-469" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-470"><a href="#cb52-470" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-471"><a href="#cb52-471" aria-hidden="true" tabindex="-1"></a>v1[<span class="sc">-</span><span class="dv">3</span>] <span class="co"># Supprimer le 3ième élément du vecteur v</span></span>
-<span id="cb52-472"><a href="#cb52-472" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-434"><a href="#cb52-434" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-435"><a href="#cb52-435" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb52-436"><a href="#cb52-436" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-437"><a href="#cb52-437" aria-hidden="true" tabindex="-1"></a>cos <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="co"># À ne pas faire!</span></span>
+<span id="cb52-438"><a href="#cb52-438" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-439"><a href="#cb52-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-440"><a href="#cb52-440" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les vecteurs</span></span>
+<span id="cb52-441"><a href="#cb52-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-442"><a href="#cb52-442" aria-hidden="true" tabindex="-1"></a>Les vecteurs sont des tableaux d'éléments successifs. Les éléments d'un vecteur peuvent être, par exemple: <span class="in">`numeric`</span>, <span class="in">`character`</span>, <span class="in">`logic`</span>. Dans R, les vecteurs sont créés à l'aide de la fonction <span class="in">`c()`</span> (qui veut dire _combine_) et les valeurs sont séparées à l'aide de la virgule (<span class="in">`,`</span>).</span>
+<span id="cb52-443"><a href="#cb52-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-446"><a href="#cb52-446" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-447"><a href="#cb52-447" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-448"><a href="#cb52-448" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-449"><a href="#cb52-449" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d'un vecteur avec 6 valeurs numériques</span></span>
+<span id="cb52-450"><a href="#cb52-450" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
+<span id="cb52-451"><a href="#cb52-451" aria-hidden="true" tabindex="-1"></a>v1</span>
+<span id="cb52-452"><a href="#cb52-452" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-453"><a href="#cb52-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-454"><a href="#cb52-454" aria-hidden="true" tabindex="-1"></a>Pour accéder aux valeurs d'un vecteur, il suffit de spécifier l'index (position) à laquel nous voulons accéder.</span>
+<span id="cb52-455"><a href="#cb52-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-458"><a href="#cb52-458" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-459"><a href="#cb52-459" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-460"><a href="#cb52-460" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-461"><a href="#cb52-461" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span>] <span class="co"># 3ième élément du vecteur v</span></span>
+<span id="cb52-462"><a href="#cb52-462" aria-hidden="true" tabindex="-1"></a>v1[<span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>] <span class="co"># Positions 3,4,5 du vecteur v</span></span>
+<span id="cb52-463"><a href="#cb52-463" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-464"><a href="#cb52-464" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-465"><a href="#cb52-465" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb52-466"><a href="#cb52-466" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-467"><a href="#cb52-467" aria-hidden="true" tabindex="-1"></a>Dans R il est possible de créer rapidement une séquence de nombre en utilisant l'opérateur <span class="in">`:`</span>. Par exemple, la commande <span class="in">`3:5`</span> retourne un vecteur numérique avec les valeurs 3, 4 et 5.</span>
+<span id="cb52-468"><a href="#cb52-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-469"><a href="#cb52-469" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb52-470"><a href="#cb52-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-471"><a href="#cb52-471" aria-hidden="true" tabindex="-1"></a>Il est également possible de supprimer un élément d'un vecteur en utilisant</span>
+<span id="cb52-472"><a href="#cb52-472" aria-hidden="true" tabindex="-1"></a>l'opérateur <span class="in">`-`</span> suivi de l'index à supprimer.</span>
 <span id="cb52-473"><a href="#cb52-473" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-474"><a href="#cb52-474" aria-hidden="true" tabindex="-1"></a>Des opérations arithmétiques sont également possibles avec les vecteurs.</span>
-<span id="cb52-475"><a href="#cb52-475" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-478"><a href="#cb52-478" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-479"><a href="#cb52-479" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb52-480"><a href="#cb52-480" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-481"><a href="#cb52-481" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
-<span id="cb52-482"><a href="#cb52-482" aria-hidden="true" tabindex="-1"></a>v2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>)</span>
-<span id="cb52-483"><a href="#cb52-483" aria-hidden="true" tabindex="-1"></a>v1 <span class="sc">+</span> v2</span>
-<span id="cb52-484"><a href="#cb52-484" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb52-485"><a href="#cb52-485" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-486"><a href="#cb52-486" aria-hidden="true" tabindex="-1"></a><span class="fu">### Autres types de classes</span></span>
-<span id="cb52-487"><a href="#cb52-487" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-488"><a href="#cb52-488" aria-hidden="true" tabindex="-1"></a>Il existe un très grand nombre d'objets dans R. Ainsi, d'autres classes d'objets vous seront utiles:</span>
-<span id="cb52-489"><a href="#cb52-489" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-490"><a href="#cb52-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data.frame`</span>: Format habituel de tableau de données que vous importez.</span>
-<span id="cb52-491"><a href="#cb52-491" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`list`</span>: Liste d'objets de classes différentes (texte, numérique, etc.).</span>
-<span id="cb52-492"><a href="#cb52-492" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`lm`</span>: Résultat d'une analyse de modèle linéaire.</span>
-<span id="cb52-493"><a href="#cb52-493" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`date`</span>: Pour représenter les dates.</span>
-<span id="cb52-494"><a href="#cb52-494" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-495"><a href="#cb52-495" aria-hidden="true" tabindex="-1"></a>Dans l'exemple suivant, un modèle linéaire <span class="in">`model1`</span> est créé avec la fonction <span class="in">`lm()`</span>. Différentes fonctions génériques peuvent être utilisées avec la variable <span class="in">`model1`</span>.</span>
-<span id="cb52-496"><a href="#cb52-496" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-499"><a href="#cb52-499" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb52-500"><a href="#cb52-500" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb52-501"><a href="#cb52-501" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> hp, <span class="at">data =</span> mtcars) <span class="co"># Créer un modèle linéaire (lm)</span></span>
+<span id="cb52-476"><a href="#cb52-476" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-477"><a href="#cb52-477" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-478"><a href="#cb52-478" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-479"><a href="#cb52-479" aria-hidden="true" tabindex="-1"></a>v1[<span class="sc">-</span><span class="dv">3</span>] <span class="co"># Supprimer le 3ième élément du vecteur v</span></span>
+<span id="cb52-480"><a href="#cb52-480" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-481"><a href="#cb52-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-482"><a href="#cb52-482" aria-hidden="true" tabindex="-1"></a>Des opérations arithmétiques sont également possibles avec les vecteurs.</span>
+<span id="cb52-483"><a href="#cb52-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-486"><a href="#cb52-486" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-487"><a href="#cb52-487" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb52-488"><a href="#cb52-488" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-489"><a href="#cb52-489" aria-hidden="true" tabindex="-1"></a>v1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>)</span>
+<span id="cb52-490"><a href="#cb52-490" aria-hidden="true" tabindex="-1"></a>v2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>)</span>
+<span id="cb52-491"><a href="#cb52-491" aria-hidden="true" tabindex="-1"></a>v1 <span class="sc">+</span> v2</span>
+<span id="cb52-492"><a href="#cb52-492" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-493"><a href="#cb52-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-494"><a href="#cb52-494" aria-hidden="true" tabindex="-1"></a><span class="fu">### Autres types de classes</span></span>
+<span id="cb52-495"><a href="#cb52-495" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-496"><a href="#cb52-496" aria-hidden="true" tabindex="-1"></a>Il existe un très grand nombre d'objets dans R. Ainsi, d'autres classes d'objets vous seront utiles:</span>
+<span id="cb52-497"><a href="#cb52-497" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-498"><a href="#cb52-498" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data.frame`</span>: Format habituel de tableau de données que vous importez.</span>
+<span id="cb52-499"><a href="#cb52-499" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`list`</span>: Liste d'objets de classes différentes (texte, numérique, etc.).</span>
+<span id="cb52-500"><a href="#cb52-500" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`lm`</span>: Résultat d'une analyse de modèle linéaire.</span>
+<span id="cb52-501"><a href="#cb52-501" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`date`</span>: Pour représenter les dates.</span>
 <span id="cb52-502"><a href="#cb52-502" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-503"><a href="#cb52-503" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(model1) <span class="co"># Voir la classe de model1</span></span>
+<span id="cb52-503"><a href="#cb52-503" aria-hidden="true" tabindex="-1"></a>Dans l'exemple suivant, un modèle linéaire <span class="in">`model1`</span> est créé avec la fonction <span class="in">`lm()`</span>. Différentes fonctions génériques peuvent être utilisées avec la variable <span class="in">`model1`</span>.</span>
 <span id="cb52-504"><a href="#cb52-504" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-505"><a href="#cb52-505" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1) <span class="co"># Diagnostiques du modèle</span></span>
-<span id="cb52-506"><a href="#cb52-506" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-507"><a href="#cb52-507" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model1) <span class="co"># Graphiques de diagnostic du modèle</span></span>
-<span id="cb52-508"><a href="#cb52-508" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb52-507"><a href="#cb52-507" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb52-508"><a href="#cb52-508" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb52-509"><a href="#cb52-509" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> hp, <span class="at">data =</span> mtcars) <span class="co"># Créer un modèle linéaire (lm)</span></span>
+<span id="cb52-510"><a href="#cb52-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-511"><a href="#cb52-511" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(model1) <span class="co"># Voir la classe de model1</span></span>
+<span id="cb52-512"><a href="#cb52-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-513"><a href="#cb52-513" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1) <span class="co"># Diagnostiques du modèle</span></span>
+<span id="cb52-514"><a href="#cb52-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-515"><a href="#cb52-515" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model1) <span class="co"># Graphiques de diagnostic du modèle</span></span>
+<span id="cb52-516"><a href="#cb52-516" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copier vers le presse-papier" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
