@@ -44,8 +44,8 @@ website:
             file: capsules/01-capsule.qmd
           - text: "Capsule 2"
             file: capsules/02-capsule.qmd
-          # - text: "Capsule 3"
-          #   file: capsules/03-capsule.qmd
+          - text: "Capsule 3"
+            file: capsules/03-capsule.qmd
           - text: "Capsule 4"
             file: capsules/04-capsule.qmd
           # - text: "Capsule 5"
