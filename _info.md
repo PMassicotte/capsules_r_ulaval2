@@ -26,6 +26,6 @@ check_hints(
     "`type()` n'est pas une fonction de base de R."
   ),
   hint_title = "Cliquez ici pour obtenir un indice!",
-  list_title = "<strong>ⓘ  Indice(s)</strong>"
+  list_title = "<strong>ⓘ  Indices</strong>"
 )
 ```
