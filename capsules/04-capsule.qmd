@@ -167,7 +167,7 @@ Imaginons que vous devez faire le recensement de certaines espèces animales à 
 
 Le problème avec cette structure est qu'il y a trois colonnes pour représenter les espèces. Les colonnes espece1, espece2 et espece3 ne sont pas des variables, _mais plutôt des valeurs_ d'une variable/colonne que l'on pourrait nommer tout simplement _espece_. Pour créer un jeu de données bien organisé, il faut retenir que chaque colonne représente une variable. C’est ce qu’on appelle le _format long_ (_long layout_ en anglais).
 
-::: {.callout-tip title="Info!"}
+::: {.callout-tip}
 N'oubliez pas qu'il faut éviter d'utiliser des caractères accentués dans les noms de variables. C'est pourquoi on nommera la colonne `espece` et non `espèce`.
 :::
 
@@ -203,7 +203,7 @@ Microsoft Windows
 c:/Users/nom_utilisateur/Desktop/nom_du_fichier.txt
 ```
 
-::: {.callout-tip title="Info!"}
+::: {.callout-tip}
 
 La fonction `read.table()` est une fonction générique qui peut lire la majorité des fichiers _texte_. Il existe cependant certaines variantes avec des valeurs de paramètres déjà spécifiées pour lire différents types de fichiers afin de nous faciliter la vie. Les deux fonctions les plus souvent utilisées sont:
 
@@ -270,7 +270,7 @@ Il est important de comprendre que chaque variable (colonne) d'un data frame est
 df$taille_cm
 ```
 
-::: {.callout-tip title="Info!"}
+::: {.callout-tip}
 Dans RStudio, une fois que vous avez tapé le nom du _data frame_ et le signe dollar (`df$`), vous pouvez appuyer sur la touche tabulation (TAB; -> |) de votre clavier pour afficher la liste complète des variables contenues dans le data frame.
 :::
 
