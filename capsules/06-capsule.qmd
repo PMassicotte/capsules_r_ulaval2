@@ -274,10 +274,13 @@ Refaites le même graphique mais en utilisant la notation par formule.
 ```{webr}
 #| autorun: false
 
-# Pensez à utiliser l'opérateur tilde ~.
-
-
 ```
+
+::: {.callout-info}
+
+Pensez à utiliser l'opérateur tilde ~.
+
+:::
 
 ## Matériel accompagnateur
 

@@ -332,9 +332,11 @@ Une première stratégie pour éviter ce problème est de **corriger** *a priori
 
 Toutefois, une façon plus efficace de vérifier en **un seul calcul** si tous les échétantillons ont la même moyenne estimée à un seuil de confiance de 95% est **l'analyse de variance !*  
 
-<div class="alert alert-info">
-  <strong>ATTENTION!</strong> L'analyse de **variance** (ANOVA) est bien une méthode pour comparer des **moyennes** !.
-</div>
+::: {.callout-info}
+
+ATTENTION : L'analyse de **variance** (ANOVA) est bien une méthode pour comparer des **moyennes** !.
+
+:::
 
 L'ANOVA se sert en effet de la **dispersion** des valeurs de plusieurs groupes pour en déduire si, statistiquement, elles ont **tendance** à être distinctes les unes des autres. Rappelez-vous que la **moyenne** est une valeur de tendance centrale, alors que la **variance** est une mesure de dispersion.  
   
