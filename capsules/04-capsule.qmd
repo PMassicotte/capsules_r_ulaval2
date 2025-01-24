@@ -37,9 +37,7 @@ Le jeux de données suivant (produit par le _Pew Research Center_) explore la re
 
 ```{r quiz1, message=FALSE}
 #| echo: false
-library(tidyverse)
-
-messy <- read_csv("../data/pew.csv")
+messy <- read.csv("../data/pew.csv")
 knitr::kable(messy[1:6, 1:5])
 ```
 
