@@ -84,8 +84,16 @@ check_question(
   type = "radio",
   button_label = "Vérifier",
   right = "Bonne réponse! `class()` est une fonction de base de R pour déterminer la classe d'une variable.",
-  wrong = "`type()` n'est pas une fonction de base de R. Attention à la casse (minuscule ou majuscule) des fonctions.",
+  wrong = "**Mauvaise réponse** Essayez encore! Utilisez les indices si nécessaire au bas de la question.",
   title = "Comment peut-on déterminer la classe d'une variable nommée `x`?"
+)
+check_hints(
+  hint_text = c(
+    "Attention à la casse (minuscule ou majuscule) des fonctions.",
+    "`type()` n'est pas une fonction de base de R."
+  ),
+  hint_title = "Cliquez ici pour obtenir un indice!",
+  list_title = "<strong>ⓘ  Indice(s)</strong>"
 )
 ```
 

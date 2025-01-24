@@ -16,3 +16,16 @@
 ::: {.callout-tip}
 N'oubliez pas qu'il faut éviter d'utiliser des caractères accentués dans les noms de variables. C'est pourquoi on nommera la colonne `espece` et non `espèce`.
 :::
+
+## Hints for the exercises
+
+```r
+check_hints(
+  hint_text = c(
+    "Attention à la casse (minuscule ou majuscule) des fonctions.",
+    "`type()` n'est pas une fonction de base de R."
+  ),
+  hint_title = "Cliquez ici pour obtenir un indice!",
+  list_title = "<strong>ⓘ  Indice(s)</strong>"
+)
+```
