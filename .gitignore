@@ -1,2 +1,16 @@
 /.quarto/
 .Rproj.user
+
+
+
+########### Esther Update ###########
+
+# Fichiers spécifiques à R
+.Rhistory
+.gitignore.save
+
+# Exclure tous les dossiers de capsules générés
+*_capsule_files/
+
+# Exclure les fichiers htmls
+*.html
