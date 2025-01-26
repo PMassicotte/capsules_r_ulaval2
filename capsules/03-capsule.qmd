@@ -9,6 +9,7 @@ title: Capsule 3
 #| echo: false
 library(checkdown)
 ```
+
 ## Objectifs de la capsule
 
 À la fin de cette capsule, vous serez en mesure de:
@@ -20,7 +21,7 @@ library(checkdown)
 
 ## Capsule vidéo
 
-![](https://youtu.be/KBkVAx2YW9E)
+{{< video https://youtu.be/KBkVAx2YW9E >}}
 
 [Télécharger le script R de la vidéo](www/capsule_3.R) (Faire bouton droit -> enregistrer sous...)
 
@@ -38,105 +39,163 @@ library(checkdown)
 
 ```
 
-```{r quiz1}
-quiz(
-  question("Quelle fonction devriez-vous utiliser pour calculer la moyenne des valeurs du vecteur suivant `x <- c(1, 2, 3)`",
-    answer("`mean(x)`", correct = TRUE),
-    answer("`average(x)`", message = "Vous êtes proche!"), 
-    answer("`moyenne(x)`", message = "Les fonctions ont rarement un nom en français."),
-    random_answer_order = TRUE,
-    allow_retry = TRUE
-  )
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: quiz1
+#| echo: false
+#| results: "asis"
+check_question(
+  "`mean(x)`",
+  options = c(
+    "`mean(x)`",
+    "`average(x)`",
+    "`moyenne(x)`"
+  ),
+  type = "radio",
+  button_label = "Vérifier",
+  right = "**Correct!**",
+  wrong = "Vous êtes proche! Les fonctions ont rarement un nom en français.",
+  title = "Quelle fonction devriez-vous utiliser pour calculer la moyenne des valeurs du vecteur suivant `x <- c(1, 2, 3)`"
 )
 ```
 
+:::
+
 Compléter le code suivant pour calculer la moyenne du vecteur `x`.
 
-```{r mean-with-na, exercise=TRUE}
+```{webr}
 x <- c(1, 2, NA, 3)
 ```
 
 La fonction `seq()` permet de générer des valeurs séquentielles. Utilisez cette fonction pour créer un vecteur contenant les valeurs suivantes:
 
 ```{r}
+#| echo: false
 (x <- seq(1, 13, by = 2))
 ```
 
-```{r seq, exercise=TRUE}
-
+```{webr}
+seq()
 ```
 
 ### Paramètres des fonctions
 
 Dans l'aide de R, on peut voir que la fonction `mean()` a la structure suivante.
 
-```{r, echo=TRUE, eval=FALSE}
+```{r}
+#| eval: false
+#| echo: true
 mean(x, trim = 0, na.rm = FALSE, ...)
 ```
 
-```{r quiz2}
-quiz(
-  question("Indiquez les paramètres que l'utilisateur doit obligatoirement fournir à la fonction.",
-    answer("`x`", correct = TRUE, message = "`x` est un paramètre obligatoire de la fonction `mean()` puisque que ce paramètre ne possède pas de valeur par défaut."),
-    answer("`trim`", message = "Le paramètre `trim` à une valeur par défaut égale à `0`. Il n'est pas obligatoire de lui spécifier une valeur."),
-    answer("`na.rm`", message = "Le paramètre `na.rm` à une valeur par défaut égale à `FALSE`. Il n'est pas obligatoire de lui spécifier une valeur."),
-    random_answer_order = TRUE,
-    allow_retry = TRUE
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: quiz2
+#| echo: false
+#| results: "asis"
+check_question(
+  "`x`",
+  options = c(
+    "`x`",
+    "`trim`",
+    "`na.rm`"
   ),
-  question("Quelle est la valeur par défaut du paramètre `na.rm`?",
-    answer("`FALSE`", correct = TRUE, message = "La valeur par défaut est `FALSE` et il serait possible de la changer pour la valeur `TRUE` si l'on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne."),
-    answer("Il n'y en a pas."),
-    answer("Il n'est pas possible de le savoir."),
-    random_answer_order = TRUE,
-    allow_retry = TRUE,
-    incorrect = "Incorrect! Utilisez l'aide pour vérifier quelle est la valeur par défaut du paramètre `na.rm`."
-  )
+  type = "radio",
+  button_label = "Vérifier",
+  right = "**Correct!** `x` est un paramètre obligatoire de la fonction `mean()` puisque que ce paramètre ne possède pas de valeur par défaut.",
+  wrong = "Le paramètre `trim` à une valeur par défaut égale à `0`. Il n'est pas obligatoire de lui spécifier une valeur. Le paramètre `na.rm` à une valeur par défaut égale à `FALSE`. Il n'est pas obligatoire de lui spécifier une valeur.",
+  title = "Indiquez les paramètres que l'utilisateur doit obligatoirement fournir à la fonction."
 )
 ```
+
+:::
+
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: quiz3
+#| echo: false
+#| results: "asis"
+check_question(
+  "`FALSE`",
+  options = c(
+    "`FALSE`",
+    "Il n'y en a pas.",
+    "Il n'est pas possible de le savoir."
+  ),
+  type = "radio",
+  button_label = "Vérifier",
+  right = "**Correct!** La valeur par défaut est `FALSE` et il serait possible de la changer pour la valeur `TRUE` si l'on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.",
+  wrong = "Incorrect! Utilisez l'aide pour vérifier quelle est la valeur par défaut du paramètre `na.rm`.",
+  title = "Valeur par défaut de `na.rm`"
+)
+```
+
+:::
 
 La fonction `rnorm()` permet de générer aléatoirement une séquence de nombres suivant une loi de distribution Normale. Dans l'aide de R, on peut voir que la fonction a la structure suivante.
 
-```{r echo=TRUE, eval=FALSE}
+```{r}
+#| eval: false
+#| echo: true
 rnorm(n, mean = 0, sd = 1)
 ```
 
-```{r quiz3}
-quiz(
-  question("Parmi les chois suivant, lesquels permettent techniquement de générer une séquence de 100 nombres ayant un écart-type de 2 et une moyenne de 50?",
-    answer("`rnorm(100, 50, 2)`", correct = TRUE, message = "`rnorm(100, 50, 2)` est équivalent à `rnorm(n = 100, mean = 50, sd = 2)`."),
-    answer("`rnorm(sd = 2, mean = 50, 100)`", correct = TRUE, message = "`rnorm(sd = 2, mean = 50, 100)` est techniquement valide, mais non recommandée, car le dernier paramètre n'est pas nommé. Cet appel de fonction est équivalent à `rnorm(n = 100, mean = 50, sd = 2)`."),
-    answer("`rnorm(sd = 2, mean = 50, n = 100)`", correct = TRUE, message = "`rnorm(sd = 2, mean = 50, n = 100)` est équivalent à `rnorm(n = 100, mean = 50, sd = 2)`."),
-    answer("`rnorm(x = 100, sd = 2, mean = 50)`", message = "Le paramètre `x` ne fait pas partie de la liste des paramètres utilisables avec la fonction `rnorm()`."),
-    answer("`rnorm(100, mean = 50, sd = 2)`", correct = TRUE, message = "La forme `rnorm(100, mean = 50, sd = 2)` est la plus souvent utilisée. Le premier paramètre n'est pas nommé puisqu'il est obligatoire tandis que les paramètres optionnels le sont."),
-    # random_answer_order = TRUE,
-    allow_retry = TRUE,
-    incorrect = "Incorrect! Attention, il y a peut-être plusieurs choix possibles!"
-  )
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: quiz4
+#| echo: false
+#| results: "asis"
+check_question(
+  c(
+    "rnorm(100, 50, 2)",
+    "rnorm(sd = 2, mean = 50, 100)",
+    "rnorm(sd = 2, mean = 50, n = 100)",
+    "rnorm(100, mean = 50, sd = 2)"
+  ),
+  options = c(
+    "rnorm(100, 50, 2)",
+    "rnorm(sd = 2, mean = 50, 100)",
+    "rnorm(sd = 2, mean = 50, n = 100)",
+    "rnorm(x = 100, sd = 2, mean = 50)",
+    "rnorm(100, mean = 50, sd = 2)"
+  ),
+  type = "checkbox",
+  button_label = "Vérifier",
+  right = "**Correct!** `rnorm(100, 50, 2)` est équivalent à `rnorm(n = 100, mean = 50, sd = 2)`.",
+  wrong = "**Incorrect** Le paramètre `x` ne fait pas partie de la liste des paramètres utilisables avec la fonction `rnorm()`.",
+  title = "Parmi les choix suivants, lesquels permettent techniquement de générer une séquence de 100 nombres ayant un écart-type de 2 et une moyenne de 50?"
 )
 ```
+
+:::
 
 ## Matériel accompagnateur
 
 ### Principe et structure d'une fonction
 
-Un des nombreux intérêts de R est qu’il donne accès à  de nombreuses fonctions pour travailler avec nos données, en plus des opérateurs de base (+, -, *, /, ^). Les résultats des fonctions sont très variables, mais leur fonctionnement est toujours le même.
+Un des nombreux intérêts de R est qu’il donne accès à de nombreuses fonctions pour travailler avec nos données, en plus des opérateurs de base (+, -, \*, /, ^). Les résultats des fonctions sont très variables, mais leur fonctionnement est toujours le même.
 
 Une fonction suit toujours le même principe:
 
 1. Elle a un nom qui peut être très court, comme la fonction `c()`.
-2. Elle accepte des paramètres (aussi appelés *arguments*, surtout dans la documentation en anglais) entre les parenthèses qui suivent son nom.
+2. Elle accepte des paramètres (aussi appelés _arguments_, surtout dans la documentation en anglais) entre les parenthèses qui suivent son nom.
 3. Elle retourne toujours un résultat (objet), et produit parfois une action spécifique, comme dessiner un graphique par exemple.
 
-![](www/function.png)
+![](../images/function.png)
 
 ### Fonctions de base
 
 Il y a plusieurs fonctions de base que vous devriez connaître par coeur. Pour les démonstrations suivantes, nous utiliserons la fonction `c()` pour créer un vecteur [^1] `v` contenant les valeurs de 1 à 6.
 
-[^1]: Voir la capsule #2 *Les variables dans R* pour bien comprendre la notion de vecteur de données.
+[^1]: Voir la capsule #2 _Les variables dans R_ pour bien comprendre la notion de vecteur de données.
 
-```{r, eval=TRUE, echo=TRUE}
-
+```{r}
+#| eval: true
+#| echo: true
 # La fonction c() veut dire "combine"
 v <- c(1, 2, 3, 4, 5, 6)
 v
@@ -144,7 +203,9 @@ v
 
 Les fonctions suivantes retournent une seule valeur.
 
-```{r, eval=TRUE, echo=TRUE}
+```{r}
+#| eval: true
+#| echo: true
 min(v) # Valeur minimum du vecteur
 max(v) # Valeur maximum du vecteur
 mean(v) # Valeur moyenne du vecteur
@@ -155,27 +216,34 @@ sd(v) # Écart-type du vecteur
 
 Les fonctions suivantes retournent un vecteur de valeurs.
 
-```{r, eval=TRUE, echo=TRUE}
+```{r}
+#| eval: false
+#| echo: true
 range(v) # Étendu des valeurs du vecteur
 cos(v) # Cosinus des valeurs du vecteur
 log(v) # Le logarithme naturel (base e) du vecteur
 ```
 
-Finalement, les fonctions suivantes sont utilisées pour l’action qu’elles  accomplissent. Elles retournent aussi une valeur qui contient beaucoup d’information et que vous serez souvent appelés à utiliser pour des traitements de données un peu plus complexes.
+Finalement, les fonctions suivantes sont utilisées pour l’action qu’elles accomplissent. Elles retournent aussi une valeur qui contient beaucoup d’information et que vous serez souvent appelés à utiliser pour des traitements de données un peu plus complexes.
 
-```{r, eval=TRUE, echo=TRUE}
+```{r}
+#| eval: false
+#| echo: true
 plot(v) # Graphique à partir des valeurs du vecteur
 ```
 
-```{r, eval=FALSE, echo=TRUE, comment = NA}
+```{r}
+#| eval: false
+#| echo: true
+#| comment: NA
 write.csv(v, file = "monvecteur.csv") # Sauvegarde les valeurs du vecteur
 ```
 
 ### Paramètres des fonctions
 
-La plupart des fonctions de R utilisent des *paramètres*. Un paramètre est simplement une valeur que l’on fournit à une fonction pour contrôler certains aspects de son fonctionnement. Pour connaître les paramètres qu’il est possible de modifier pour une fonction, il faut aller consulter l’aide. Il existe deux moyens rapides pour accéder à l’aide d’une fonction. Par exemple, pour accéder à l’aide de la fonction `mean()`, on peut taper ces deux fonctions dans la console de RStudio [^2] (fenêtre de commande en bas à gauche):
+La plupart des fonctions de R utilisent des _paramètres_. Un paramètre est simplement une valeur que l’on fournit à une fonction pour contrôler certains aspects de son fonctionnement. Pour connaître les paramètres qu’il est possible de modifier pour une fonction, il faut aller consulter l’aide. Il existe deux moyens rapides pour accéder à l’aide d’une fonction. Par exemple, pour accéder à l’aide de la fonction `mean()`, on peut taper ces deux fonctions dans la console de RStudio [^2] (fenêtre de commande en bas à gauche):
 
-[^2]: Voir la capsule #1 *R et RStudio: premiers pas* pour se remémorer les fonctionnalités de l’environnement RStudio.
+[^2]: Voir la capsule #1 _R et RStudio: premiers pas_ pour se remémorer les fonctionnalités de l’environnement RStudio.
 
 1. `help(mean)`
 2. `?mean`
@@ -192,47 +260,59 @@ On peut y voir qu'il y a trois essentiels paramètres associés à cette fonctio
 
 Il existe deux types de paramètres:
 
-1. *Paramètres obligatoires*: L'utilisateur doit nécessairement fournir une valeur.
-2. *Paramètres optionnels*: Une valeur par défaut est déjà spécifiée. Dans l'aide de la fonction, les paramètres optionnels sont précédés par le signe "=".
+1. _Paramètres obligatoires_: L'utilisateur doit nécessairement fournir une valeur.
+2. _Paramètres optionnels_: Une valeur par défaut est déjà spécifiée. Dans l'aide de la fonction, les paramètres optionnels sont précédés par le signe "=".
 
 Par exemple, dans la fonction `mean()`, `x` est un paramètre obligatoire et `na.rm = FALSE` est un paramètre optionnel.
 
 Dans l'exemple suivant, on crée un vecteur `v` contenant une valeur manquante à la position 3.
 
-```{r, eval=TRUE, echo=TRUE}
+```{r}
+#| eval: true
+#| echo: true
 v <- c(1, 2, NA, 3)
 mean(v)
 ```
 
 Comme on le constate, R n'est pas capable de calculer spontanément la moyenne, car il y a une valeur manquante. Basé sur notre lecture de l'aide, on peut modifier la valeur du paramètre `na.rm` pour indiquer à la fonction `mean()` de supprimer les valeurs manquantes avant le calcul.
 
-```{r, eval=TRUE, echo=TRUE}
+```{r}
+#| eval: true
+#| echo: true
 v <- c(1, 2, NA, 3)
 mean(v, na.rm = TRUE)
 ```
 
 Le calcul revient donc à faire l'opération suivante:
 
-```{r, eval=TRUE, echo=TRUE}
+```{r}
+#| eval: true
+#| echo: true
 (1 + 2 + 3) / 3
 ```
 
 ### Ordre et nom des paramètres
 
-L'ordre des paramètres passés à une fonction R est important. Il existe deux façons de spécifier les paramètres d'une fonction. 
+L'ordre des paramètres passés à une fonction R est important. Il existe deux façons de spécifier les paramètres d'une fonction.
 
 1. Les paramètres nommés
 2. Les paramètres non nommés
 
 Si on revient à la fonction `mean()`, l'ordre des paramètres est `x`, `trim` et `na.rm`.
 
-```{r, echo=TRUE, eval=FALSE, comment=NA}
+```{r}
+#| eval: false
+#| echo: true
+#| comment: NA
 mean(x, trim = 0, na.rm = FALSE)
 ```
 
 L'appel de la fonction en utilisant les paramètres nommés veut simplement dire que nous sommes spécifiques sur les noms des paramètres utilisés. Dans ce cas, l'ordre des paramètres n'a pas d'importance. Dans l'exemple suivant, tous les appels de la fonction `mean()` sont équivalents. Notez qu'il est quand même recommandé de suivre l'ordre des paramètres présenté dans l'aide par souci de clarté du code.
 
-```{r, eval=FALSE, echo=TRUE, comment=NA}
+```{r}
+#| eval: false
+#| echo: true
+#| comment: NA
 v <- c(1, 2, 3)
 mean(x = v, trim = 0, na.rm = FALSE)
 mean(x = v, na.rm = FALSE, trim = 0)
@@ -242,7 +322,10 @@ mean(na.rm = FALSE, trim = 0, x = v)
 
 Avec la méthode des paramètres non nommés, il est possible d'omettre le nom des paramètres. Par exemple:
 
-```{r, eval=FALSE, echo=TRUE, comment=NA}
+```{r}
+#| eval: false
+#| echo: true
+#| comment: NA
 v <- c(1, 2, 3)
 mean(v, 0, FALSE)
 ```
@@ -252,7 +335,6 @@ Dans ce cas, il est obligatoire que l'ordre des paramètres suive celle de la si
 <div class="alert alert-info">
   <strong>Info!</strong> Bien que l'appel d'une fonction avec des paramètres non nommés soit techniquement valide, il est recommandé d'utiliser des paramètres nommés, car cela rend le code plus clair et plus explicite.
 </div>
-
 
 ### Téléchargement
 

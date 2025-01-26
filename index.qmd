@@ -2,7 +2,7 @@
 title: "Bienvenue sur le site des capsules R de l'Université Laval"
 ---
 
-Bienvenue sur le site des capsules {{< fa brands r-project >}} de l'Université Laval. Ce site a été créé pour accompagner les étudiants du cours xxxx. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement.
+Bienvenue sur le site des capsules {{< fa brands r-project >}} de l'Université Laval. Les capsules sont conçues pour être suivies en ordre, mais vous pouvez aussi les consulter individuellement.
 
 ## Rejoindre les responsables du cours
 
