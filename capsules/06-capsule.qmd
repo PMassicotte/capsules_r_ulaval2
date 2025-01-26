@@ -345,12 +345,12 @@ La première étape consiste à ouvrir le fichier en utilisant la fonction `read
 #| echo: true
 #| eval: FALSE
 #| comment: NA
-sondage_bio1006 <- read.csv("BIO1006_H2018_Echantillon.csv")
+sondage_bio1006 <- read.csv("../data/BIO1006_H2018_Echantillon.csv")
 ```
 
 ```{r}
 #| echo: true
-sondage_bio1006 <- read.csv("www/BIO1006_H2018_Echantillon.csv")
+sondage_bio1006 <- read.csv("../data/BIO1006_H2018_Echantillon.csv")
 head(sondage_bio1006)
 ```
 
