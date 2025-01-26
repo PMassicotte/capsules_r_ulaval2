@@ -10,7 +10,7 @@
 .gitignore.save
 
 # Exclure tous les dossiers de capsules générés
-_site/capsules/*_capsule_files/
+_site/capsules/*-capsule_files/
 
 # Exclure les fichiers htmls
 *.html
