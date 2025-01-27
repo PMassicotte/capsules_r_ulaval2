@@ -3,3 +3,6 @@
 /_site/
 
 /capsules/*-capsule_files/
+
+.DS_Store
+.gitignore.save
