@@ -149,7 +149,6 @@ check_question(
 ::: {.callout-note appearance="simple" icon=false .question}
 
 ```{r}
-# Reponse negative a reformuler
 #| label: question7
 #| echo: false
 #| results: "asis"
@@ -169,7 +168,6 @@ check_question(
 ::: {.callout-note appearance="simple" icon=false .question}
 
 ```{r}
-# Reponse negative a reformuler
 #| label: question8
 #| echo: false
 #| results: "asis"

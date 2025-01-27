@@ -23,7 +23,7 @@ library(checkdown)
 
 ## Capsule vidéo
 
-{{< https://youtu.be/Jdf5KX4jn-E >}}
+{{< video https://youtu.be/Jdf5KX4jn-E >}}
 
 [Télécharger le script R de la vidéo](www/capsule_7.R) (Faire boutton droit -> enregistrer sous...)
 

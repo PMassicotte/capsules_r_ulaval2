@@ -12,7 +12,8 @@
 # Exclure tous les dossiers de capsules générés
 _site/capsules/*-capsule_files/
 
-# Exclure les fichiers htmls
+# Exclure divers fichiers
 *.html
 _site/images/*.png
 _site/site_libs/pagedtable-1.1/
+*.json
