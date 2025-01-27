@@ -194,6 +194,126 @@
     ]
   },
   {
+    "objectID": "capsules/02-capsule.html",
+    "href": "capsules/02-capsule.html",
+    "title": "Capsule 2",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nAssigner une valeur à une variable.\nNommer une variable de façon efficace.\nConnaître les principales classes de variables.\nConvertir une donnée d’une classe de variable à une autre.\nSavoir qu’il existe d’autres classes de variables.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#objectifs-de-la-capsule",
+    "href": "capsules/02-capsule.html#objectifs-de-la-capsule",
+    "title": "Capsule 2",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nAssigner une valeur à une variable.\nNommer une variable de façon efficace.\nConnaître les principales classes de variables.\nConvertir une donnée d’une classe de variable à une autre.\nSavoir qu’il existe d’autres classes de variables.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#capsule-vidéo",
+    "href": "capsules/02-capsule.html#capsule-vidéo",
+    "title": "Capsule 2",
+    "section": "Capsule vidéo",
+    "text": "Capsule vidéo",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#exercices",
+    "href": "capsules/02-capsule.html#exercices",
+    "title": "Capsule 2",
+    "section": "Exercices",
+    "text": "Exercices\n\nVeuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint” est là pour être utilisé!\n\n\nClasses de variables\n\n\n\n\n\n\n\n\nLesquelles des valeurs suivantes sont du type caractère?\n\n12.34\n\n\n'banane'\n\n\n'3.1415'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuel est le bon opérateur à utiliser pour assigner une valeur à une variable?\n\n&lt;-\n\n\n = \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComment peut-on déterminer la classe d’une variable nommée x?\n\n`class(x)`\n\n\n`Class(x)`\n\n\n`type(x)`\n\n\n\n\n\n\n\nⓘ  Indices\nCliquez ici pour obtenir un indice!\n\n\nCliquez ici pour obtenir un indice!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuels types de variables seraient préférables pour représenter les mois d’une année?\n\nnumeric\n\n\nfactor\n\n\nlogical\n\n\ncharacter\n\n\n\n\n\n\n\n\n\n\n\nNoms de variable\n\n\n\n\n\n\n\n\nParmi les choix suivants, lesquelles représentent des noms de variables valides en R?\n\n1x3\n\n\nx2\n\n\nma variable\n\n\ntempérature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d’une voiture se déplaçant à 50 km/h?\n\nx &lt;- 50\n\n\nvitesse_km_h &lt;- 50\n\n\nvitesse &lt;- 50\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi l’assignation suivante ne devrait pas être utilisée? c &lt;- 23\n\nParce que `c()` est une fonction de base dans R.\n\n\nParce que `c` n'est pas suffisamment descriptif.\n\n\nToutes ces réponses\n\n\n\n\n\n\n\n\n\n\n\nLes vecteurs\n\n\n\n\n\n\n\n\nQuelle est la classe de x &lt;- c(1, '2', 3)?\n\nnumeric\n\n\nvecteur\n\n\ncharactère\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParmi les choix suivants, lesquelles représentent des vecteurs de type logic?\n\n`c(TRUE, FALSE)`\n\n\n`c(VRAI, FAUX)`\n\n\n`c(0, 1)`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvec le vecteur suivant: x &lt;- c(1, 42, 5, 4), quelle est la valeur de x[2]?\n\n1\n\n\n42\n\n\n5\n\n\n4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvec le vecteur suivant: x &lt;- c(1, 42, 5, 4), quelle est la valeur de x[-2]?\n\n-42\n\n\nc(1, -42, 5, 4)\n\n\nc(1, 5, 4)",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/02-capsule.html#matériel-accompagnateur",
+    "href": "capsules/02-capsule.html#matériel-accompagnateur",
+    "title": "Capsule 2",
+    "section": "Matériel accompagnateur",
+    "text": "Matériel accompagnateur\n\nClasses de base\nIl existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.\nLa classe numeric\nLa classe numeric sert à représenter les nombres (ex.: 1, 3.14, -3324.56).\n\n\nCode\n12\n\n\n[1] 12\n\n\nCode\n-1.45\n\n\n[1] -1.45\n\n\nCode\n3 + pi\n\n\n[1] 6.141593\n\n\nLa classe character\nLa classe character sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples ' ou doubles \" guillemets.\n\n\nCode\n\"banane\"\n\n\n[1] \"banane\"\n\n\nCode\n\"banane\"\n\n\n[1] \"banane\"\n\n\n\n\n\n\n\n\nImportant\n\n\n\nR est un langage de programmation dit case sensitive. C’est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères banane est différente de la chaîne de caractères Banane.\n\n\n\n\nCode\n# Est-ce que les deux chaînes sont identiques?\n\"banane\" == \"Banane\"\n\n\n[1] FALSE\n\n\nLa classe logic\nLa classe logic sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs logic sont représentées soit à l’aide des valeurs TRUE, FALSE ou T, F. Il est cependant recommandé d’utiliser la forme longue (TRUE, FALSE).\n\n\nCode\nTRUE\n\n\n[1] TRUE\n\n\nCode\nFALSE\n\n\n[1] FALSE\n\n\nLa classe factor\nLa classe factor sert à représenter les valeurs lorsqu’on connaît d’avance les différentes possibilités (ex. mois de l’année). Les facteurs sont généralement créés avec la fonction factor().\n\n\nCode\nfactor(c(\"lundi\", \"mardi\", \"mercredi\", \"jeudi\", \"vendredi\", \"samedi\", \"dimanche\"))\n\n\n[1] lundi    mardi    mercredi jeudi    vendredi samedi   dimanche\nLevels: dimanche jeudi lundi mardi mercredi samedi vendredi\n\n\nOn peut utiliser la fonction class() pour connaître la classe d’une variable.\n\n\nCode\nclass(1)\n\n\n[1] \"numeric\"\n\n\nCode\nclass(\"banane\")\n\n\n[1] \"character\"\n\n\nCode\nclass(\"Banane\")\n\n\n[1] \"character\"\n\n\nCode\nclass(factor(123.1))\n\n\n[1] \"factor\"\n\n\nIl est également possible de convertir les classes. Par exemple, on peut convertir une classe character en classe numeric.\n\n\nCode\nclass(\"3.4\")\n\n\n[1] \"character\"\n\n\nCode\nclass(as.numeric(\"3.4\"))\n\n\n[1] \"numeric\"\n\n\n\n\nNoms de variables\nIl est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d’une opération dans d’autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l’assignement d’une valeur à une variable peut se faire à l’aide des opérateurs &lt;- et =. Cependant, il est préférable d’utiliser l’opérateur &lt;- plutôt que = pour l’assignation d’une variable. En plus, l’utilisation de &lt;- permet d’éviter la confusion avec l’opérateur logique ==.\n\n\nCode\nx &lt;- 2 # Assigner la valeur numérique 2 à la variable x\ny &lt;- 40 # Assigner la valeur numérique 40 à la variable y\nx + y # Somme de x et y\n\n\n[1] 42\n\n\nUn nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.\n\n\nCode\n# Bon\nx123 &lt;- TRUE\n\n# Pas bon\n123x &lt;- \"R est vraiment trop cool!\"\n\n\nIl est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.\n\n\nCode\nx &lt;- 200 # x n'est pas assez descriptif\nchla &lt;- 200 # mieux, mais on ne connaît pas les unités\nchla_mg_m2 &lt;- 200 # idéal, on connaît la variable et son unité\n\n\nIl est important d’être consistent dans la casse des noms de variables. Par exemple, chla_mg_m2 et Chla_mg_m2 sont deux variables distinctes.\n\n\nCode\nchla_mg_m2 &lt;- 200\nChla_mg_m2 &lt;- 200\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIl est important que vos noms de variables n’entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d’utiliser cos, sin, min, median, pi.\n\n\n\n\nCode\ncos &lt;- 3 # À ne pas faire!\n\n\n\n\nLes vecteurs\nLes vecteurs sont des tableaux d’éléments successifs. Les éléments d’un vecteur peuvent être, par exemple: numeric, character, logic. Dans R, les vecteurs sont créés à l’aide de la fonction c() (qui veut dire combine) et les valeurs sont séparées à l’aide de la virgule (,).\n\n\nCode\n# Création d'un vecteur avec 6 valeurs numériques\nv1 &lt;- c(100, 101, 102, 103, 104, 105)\nv1\n\n\n[1] 100 101 102 103 104 105\n\n\nPour accéder aux valeurs d’un vecteur, il suffit de spécifier l’index (position) à laquel nous voulons accéder.\n\n\nCode\nv1[3] # 3ième élément du vecteur v\n\n\n[1] 102\n\n\nCode\nv1[3:5] # Positions 3,4,5 du vecteur v\n\n\n[1] 102 103 104\n\n\n\n\n\n\n\n\nImportant\n\n\n\nDans R il est possible de créer rapidement une séquence de nombre en utilisant l’opérateur :. Par exemple, la commande 3:5 retourne un vecteur numérique avec les valeurs 3, 4 et 5.\n\n\nIl est également possible de supprimer un élément d’un vecteur en utilisant l’opérateur - suivi de l’index à supprimer.\n\n\nCode\nv1[-3] # Supprimer le 3ième élément du vecteur v\n\n\n[1] 100 101 103 104 105\n\n\nDes opérations arithmétiques sont également possibles avec les vecteurs.\n\n\nCode\nv1 &lt;- c(100, 101, 102, 103, 104, 105)\nv2 &lt;- c(10, 20, 30, 40, 50, 60)\nv1 + v2\n\n\n[1] 110 121 132 143 154 165\n\n\n\n\nAutres types de classes\nIl existe un très grand nombre d’objets dans R. Ainsi, d’autres classes d’objets vous seront utiles:\n\ndata.frame: Format habituel de tableau de données que vous importez.\nlist: Liste d’objets de classes différentes (texte, numérique, etc.).\nlm: Résultat d’une analyse de modèle linéaire.\ndate: Pour représenter les dates.\n\nDans l’exemple suivant, un modèle linéaire model1 est créé avec la fonction lm(). Différentes fonctions génériques peuvent être utilisées avec la variable model1.\n\n\nCode\nmodel1 &lt;- lm(mpg ~ hp, data = mtcars) # Créer un modèle linéaire (lm)\n\nclass(model1) # Voir la classe de model1\n\n\n[1] \"lm\"\n\n\nCode\nsummary(model1) # Diagnostiques du modèle\n\n\n\nCall:\nlm(formula = mpg ~ hp, data = mtcars)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-5.7121 -2.1122 -0.8854  1.5819  8.2360 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 30.09886    1.63392  18.421  &lt; 2e-16 ***\nhp          -0.06823    0.01012  -6.742 1.79e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 3.863 on 30 degrees of freedom\nMultiple R-squared:  0.6024,    Adjusted R-squared:  0.5892 \nF-statistic: 45.46 on 1 and 30 DF,  p-value: 1.788e-07\n\n\nCode\nplot(model1) # Graphiques de diagnostic du modèle",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 2"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html",
+    "href": "capsules/01-capsule.html",
+    "title": "Capsule 1",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre ce qu’est R.\nInstaller R et RStudio.\nDémarrer RStudio et être prêt à travailler avec des données.\nInstallation et mise à jour de librairies.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#objectifs-de-la-capsule",
+    "href": "capsules/01-capsule.html#objectifs-de-la-capsule",
+    "title": "Capsule 1",
+    "section": "",
+    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre ce qu’est R.\nInstaller R et RStudio.\nDémarrer RStudio et être prêt à travailler avec des données.\nInstallation et mise à jour de librairies.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#capsule-vidéo",
+    "href": "capsules/01-capsule.html#capsule-vidéo",
+    "title": "Capsule 1",
+    "section": "Capsule vidéo",
+    "text": "Capsule vidéo",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#matériel-accompagnateur",
+    "href": "capsules/01-capsule.html#matériel-accompagnateur",
+    "title": "Capsule 1",
+    "section": "Matériel accompagnateur",
+    "text": "Matériel accompagnateur\n\nQu’est-ce que R?\nR est un langage (et un environnement) de programmation dédié à la manipulation, l’analyse statistique et la visualisation de données.\nIl y a plusieurs raisons pourquoi R est utilisé de plus en plus dans les domaines de la science des données massives.\n\nGratuit et open source.\nMultiplateformes (Windows, Mac et Linux).\nExcellentes capacités graphiques (idéal pour la préparation d’articles scientifiques).\nFacile de développer vos propres fonctions (automatisation).\nTrès grande communauté d’utilisateurs et de développeurs (beaucoup de librairies, aide, etc.).\n\n\n\nInstallation de R et RStudio\nPour installer R, il suffit de se rendre sur le site suivant et de télécharger la dernière version de R:\n\nTélécharger R https://cran.r-project.org/\n\nUne fois l’installation de R effectuée, nous pouvons procéder à l’installation de RStudio qui est offre un environnement de travail graphique et convivial. Le fichier d’installation de RStudio peut être téléchargé à l’adresse suivante:\n\nTélécharger RStudio: https://www.rstudio.com/products/rstudio/download/\n\n\n\n\n\n\n\nAstuce\n\n\n\nVisionnez la capsule vidéo portant sur l’installation de R et RStudio ainsi qu’un premier tour de l’interface de RStudio.\n\n\n\n\nInstallation de librairies\nL’une des grandes forces de R est sa très grande communauté d’utilisateurs qui développent régulièrement de nouvelles fonctionnalités (statistiques, graphiques, etc.). Ces fonctionnalités se regroupent dans des entités nommées library ou package. Pour installer une librairie, vous devez aller sur l’onglet Packages dans la fenêtre inférieure droite de RStudio. Par la suite il faut cliquer sur install et une nouvelle fenêtre s’ouvrira. Entrez le nom de la librairie à installer et cliquez sur install. Dans l’exemple ci-bas, la librairie MASS est installée.\n\nUne fois la librairie installée, il faut la charger en mémoire à l’aide de la fonction library(nom_de_la_library).\n\n\nCode\nlibrary(MASS) # Charger la librairie en mémoire\n?MASS # Accéder à l'aide de la librairie\n\n\n\n\n\n\n\n\nAstuce\n\n\n\nLes librairies doivent être chargées en mémoire à chaque démarrage de R ou RStudio. Il est conseillé de les charger au début de votre script R1.",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
+    "objectID": "capsules/01-capsule.html#footnotes",
+    "href": "capsules/01-capsule.html#footnotes",
+    "title": "Capsule 1",
+    "section": "Notes de bas de page",
+    "text": "Notes de bas de page\n\n\nVoir la capsule Le script Bonnes pratiques dans R et RStudio pour une explication plus complète sur l’utilisation de scripts.↩︎",
+    "crumbs": [
+      "Accueil",
+      "Capsules",
+      "Capsule 1"
+    ]
+  },
+  {
     "objectID": "capsules/03-capsule.html",
     "href": "capsules/03-capsule.html",
     "title": "Capsule 3",
@@ -264,133 +384,6 @@
       "Capsules",
       "Capsule 3"
     ]
-  },
-  {
-    "objectID": "capsules/01-capsule.html",
-    "href": "capsules/01-capsule.html",
-    "title": "Capsule 1",
-    "section": "",
-    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre ce qu’est R.\nInstaller R et RStudio.\nDémarrer RStudio et être prêt à travailler avec des données.\nInstallation et mise à jour de librairies.",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 1"
-    ]
-  },
-  {
-    "objectID": "capsules/01-capsule.html#objectifs-de-la-capsule",
-    "href": "capsules/01-capsule.html#objectifs-de-la-capsule",
-    "title": "Capsule 1",
-    "section": "",
-    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nComprendre ce qu’est R.\nInstaller R et RStudio.\nDémarrer RStudio et être prêt à travailler avec des données.\nInstallation et mise à jour de librairies.",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 1"
-    ]
-  },
-  {
-    "objectID": "capsules/01-capsule.html#capsule-vidéo",
-    "href": "capsules/01-capsule.html#capsule-vidéo",
-    "title": "Capsule 1",
-    "section": "Capsule vidéo",
-    "text": "Capsule vidéo",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 1"
-    ]
-  },
-  {
-    "objectID": "capsules/01-capsule.html#matériel-accompagnateur",
-    "href": "capsules/01-capsule.html#matériel-accompagnateur",
-    "title": "Capsule 1",
-    "section": "Matériel accompagnateur",
-    "text": "Matériel accompagnateur\n\nQu’est-ce que R?\nR est un langage (et un environnement) de programmation dédié à la manipulation, l’analyse statistique et la visualisation de données.\nIl y a plusieurs raisons pourquoi R est utilisé de plus en plus dans les domaines de la science des données massives.\n\nGratuit et open source.\nMultiplateformes (Windows, Mac et Linux).\nExcellentes capacités graphiques (idéal pour la préparation d’articles scientifiques).\nFacile de développer vos propres fonctions (automatisation).\nTrès grande communauté d’utilisateurs et de développeurs (beaucoup de librairies, aide, etc.).\n\n\n\nInstallation de R et RStudio\nPour installer R, il suffit de se rendre sur le site suivant et de télécharger la dernière version de R:\n\nTélécharger R https://cran.r-project.org/\n\nUne fois l’installation de R effectuée, nous pouvons procéder à l’installation de RStudio qui est offre un environnement de travail graphique et convivial. Le fichier d’installation de RStudio peut être téléchargé à l’adresse suivante:\n\nTélécharger RStudio: https://www.rstudio.com/products/rstudio/download/\n\n\n\n\n\n\n\nAstuce\n\n\n\nVisionnez la capsule vidéo portant sur l’installation de R et RStudio ainsi qu’un premier tour de l’interface de RStudio.\n\n\n\n\nInstallation de librairies\nL’une des grandes forces de R est sa très grande communauté d’utilisateurs qui développent régulièrement de nouvelles fonctionnalités (statistiques, graphiques, etc.). Ces fonctionnalités se regroupent dans des entités nommées library ou package. Pour installer une librairie, vous devez aller sur l’onglet Packages dans la fenêtre inférieure droite de RStudio. Par la suite il faut cliquer sur install et une nouvelle fenêtre s’ouvrira. Entrez le nom de la librairie à installer et cliquez sur install. Dans l’exemple ci-bas, la librairie MASS est installée.\n\nUne fois la librairie installée, il faut la charger en mémoire à l’aide de la fonction library(nom_de_la_library).\n\n\nCode\nlibrary(MASS) # Charger la librairie en mémoire\n?MASS # Accéder à l'aide de la librairie\n\n\n\n\n\n\n\n\nAstuce\n\n\n\nLes librairies doivent être chargées en mémoire à chaque démarrage de R ou RStudio. Il est conseillé de les charger au début de votre script R1.",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 1"
-    ]
-  },
-  {
-    "objectID": "capsules/01-capsule.html#footnotes",
-    "href": "capsules/01-capsule.html#footnotes",
-    "title": "Capsule 1",
-    "section": "Notes de bas de page",
-    "text": "Notes de bas de page\n\n\nVoir la capsule Le script Bonnes pratiques dans R et RStudio pour une explication plus complète sur l’utilisation de scripts.↩︎",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 1"
-    ]
-  },
-  {
-    "objectID": "capsules/02-capsule.html",
-    "href": "capsules/02-capsule.html",
-    "title": "Capsule 2",
-    "section": "",
-    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nAssigner une valeur à une variable.\nNommer une variable de façon efficace.\nConnaître les principales classes de variables.\nConvertir une donnée d’une classe de variable à une autre.\nSavoir qu’il existe d’autres classes de variables.",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 2"
-    ]
-  },
-  {
-    "objectID": "capsules/02-capsule.html#objectifs-de-la-capsule",
-    "href": "capsules/02-capsule.html#objectifs-de-la-capsule",
-    "title": "Capsule 2",
-    "section": "",
-    "text": "À la fin de cette capsule, vous serez en mesure de:\n\nAssigner une valeur à une variable.\nNommer une variable de façon efficace.\nConnaître les principales classes de variables.\nConvertir une donnée d’une classe de variable à une autre.\nSavoir qu’il existe d’autres classes de variables.",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 2"
-    ]
-  },
-  {
-    "objectID": "capsules/02-capsule.html#capsule-vidéo",
-    "href": "capsules/02-capsule.html#capsule-vidéo",
-    "title": "Capsule 2",
-    "section": "Capsule vidéo",
-    "text": "Capsule vidéo",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 2"
-    ]
-  },
-  {
-    "objectID": "capsules/02-capsule.html#exercices",
-    "href": "capsules/02-capsule.html#exercices",
-    "title": "Capsule 2",
-    "section": "Exercices",
-    "text": "Exercices\n\nVeuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint” est là pour être utilisé!\n\n\nClasses de variables\n\n\n\n\n\n\n\n\nLesquelles des valeurs suivantes sont du type caractère?\n\n12.34\n\n\n'banane'\n\n\n'3.1415'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuel est le bon opérateur à utiliser pour assigner une valeur à une variable?\n\n&lt;-\n\n\n = \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComment peut-on déterminer la classe d’une variable nommée x?\n\n`class(x)`\n\n\n`Class(x)`\n\n\n`type(x)`\n\n\n\n\n\n\n\nⓘ  Indices\nCliquez ici pour obtenir un indice!\n\n\nCliquez ici pour obtenir un indice!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuels types de variables seraient préférables pour représenter les mois d’une année?\n\nnumeric\n\n\nfactor\n\n\nlogical\n\n\ncharacter\n\n\n\n\n\n\n\n\n\n\n\nNoms de variable\n\n\n\n\n\n\n\n\nParmi les choix suivants, lesquelles représentent des noms de variables valides en R?\n\n1x3\n\n\nx2\n\n\nma variable\n\n\ntempérature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d’une voiture se déplaçant à 50 km/h?\n\nx &lt;- 50\n\n\nvitesse_km_h &lt;- 50\n\n\nvitesse &lt;- 50\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi l’assignation suivante ne devrait pas être utilisée? c &lt;- 23\n\nParce que `c()` est une fonction de base dans R.\n\n\nParce que `c` n'est pas suffisamment descriptif.\n\n\nToutes ces réponses\n\n\n\n\n\n\n\n\n\n\n\nLes vecteurs\n\n\n\n\n\n\n\n\nQuelle est la classe de x &lt;- c(1, '2', 3)?\n\nnumeric\n\n\nvecteur\n\n\ncharactère\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParmi les choix suivants, lesquelles représentent des vecteurs de type logic?\n\n`c(TRUE, FALSE)`\n\n\n`c(VRAI, FAUX)`\n\n\n`c(0, 1)`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvec le vecteur suivant: x &lt;- c(1, 42, 5, 4), quelle est la valeur de x[2]?\n\n1\n\n\n42\n\n\n5\n\n\n4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvec le vecteur suivant: x &lt;- c(1, 42, 5, 4), quelle est la valeur de x[-2]?\n\n-42\n\n\nc(1, -42, 5, 4)\n\n\nc(1, 5, 4)",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 2"
-    ]
-  },
-  {
-    "objectID": "capsules/02-capsule.html#matériel-accompagnateur",
-    "href": "capsules/02-capsule.html#matériel-accompagnateur",
-    "title": "Capsule 2",
-    "section": "Matériel accompagnateur",
-    "text": "Matériel accompagnateur\n\nClasses de base\nIl existe quatre principales classes de variables dans R que vous devriez connaître sur le bout de vos doigts.\nLa classe numeric\nLa classe numeric sert à représenter les nombres (ex.: 1, 3.14, -3324.56).\n\n\nCode\n12\n\n\n[1] 12\n\n\nCode\n-1.45\n\n\n[1] -1.45\n\n\nCode\n3 + pi\n\n\n[1] 6.141593\n\n\nLa classe character\nLa classe character sert à représenter les caractères ou les chaînes de caractères. Les chaînes de caractères sont soit entourées de simples ' ou doubles \" guillemets.\n\n\nCode\n\"banane\"\n\n\n[1] \"banane\"\n\n\nCode\n\"banane\"\n\n\n[1] \"banane\"\n\n\n\n\n\n\n\n\nImportant\n\n\n\nR est un langage de programmation dit case sensitive. C’est-à-dire que la casse (minuscule/majuscule) des caractères est importante. Ainsi, la chaîne de caractères banane est différente de la chaîne de caractères Banane.\n\n\n\n\nCode\n# Est-ce que les deux chaînes sont identiques?\n\"banane\" == \"Banane\"\n\n\n[1] FALSE\n\n\nLa classe logic\nLa classe logic sert à représenter les valeurs booléennes (VRAI/FAUX). Dans R, les valeurs logic sont représentées soit à l’aide des valeurs TRUE, FALSE ou T, F. Il est cependant recommandé d’utiliser la forme longue (TRUE, FALSE).\n\n\nCode\nTRUE\n\n\n[1] TRUE\n\n\nCode\nFALSE\n\n\n[1] FALSE\n\n\nLa classe factor\nLa classe factor sert à représenter les valeurs lorsqu’on connaît d’avance les différentes possibilités (ex. mois de l’année). Les facteurs sont généralement créés avec la fonction factor().\n\n\nCode\nfactor(c(\"lundi\", \"mardi\", \"mercredi\", \"jeudi\", \"vendredi\", \"samedi\", \"dimanche\"))\n\n\n[1] lundi    mardi    mercredi jeudi    vendredi samedi   dimanche\nLevels: dimanche jeudi lundi mardi mercredi samedi vendredi\n\n\nOn peut utiliser la fonction class() pour connaître la classe d’une variable.\n\n\nCode\nclass(1)\n\n\n[1] \"numeric\"\n\n\nCode\nclass(\"banane\")\n\n\n[1] \"character\"\n\n\nCode\nclass(\"Banane\")\n\n\n[1] \"character\"\n\n\nCode\nclass(factor(123.1))\n\n\n[1] \"factor\"\n\n\nIl est également possible de convertir les classes. Par exemple, on peut convertir une classe character en classe numeric.\n\n\nCode\nclass(\"3.4\")\n\n\n[1] \"character\"\n\n\nCode\nclass(as.numeric(\"3.4\"))\n\n\n[1] \"numeric\"\n\n\n\n\nNoms de variables\nIl est souvent fort utile de pouvoir réutiliser les valeurs (numérique, texte ou autre) d’une opération dans d’autres calculs par exemple. Pour ce faire, il faut assigner la valeur à une variable. Dans R, l’assignement d’une valeur à une variable peut se faire à l’aide des opérateurs &lt;- et =. Cependant, il est préférable d’utiliser l’opérateur &lt;- plutôt que = pour l’assignation d’une variable. En plus, l’utilisation de &lt;- permet d’éviter la confusion avec l’opérateur logique ==.\n\n\nCode\nx &lt;- 2 # Assigner la valeur numérique 2 à la variable x\ny &lt;- 40 # Assigner la valeur numérique 40 à la variable y\nx + y # Somme de x et y\n\n\n[1] 42\n\n\nUn nom de variable peut contenir à la fois des lettres et des chiffres, mais doit commencer par une lettre.\n\n\nCode\n# Bon\nx123 &lt;- TRUE\n\n# Pas bon\n123x &lt;- \"R est vraiment trop cool!\"\n\n\nIl est important de choisir un nom de variable qui est descriptif. Dans les exemples suivants, on créer une variable pour contenir une valeur de chlorophylle a.\n\n\nCode\nx &lt;- 200 # x n'est pas assez descriptif\nchla &lt;- 200 # mieux, mais on ne connaît pas les unités\nchla_mg_m2 &lt;- 200 # idéal, on connaît la variable et son unité\n\n\nIl est important d’être consistent dans la casse des noms de variables. Par exemple, chla_mg_m2 et Chla_mg_m2 sont deux variables distinctes.\n\n\nCode\nchla_mg_m2 &lt;- 200\nChla_mg_m2 &lt;- 200\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIl est important que vos noms de variables n’entrent pas en conflit avec des noms de variables ou de fonctions déjà définies dans R. Par exemple, il faut éviter d’utiliser cos, sin, min, median, pi.\n\n\n\n\nCode\ncos &lt;- 3 # À ne pas faire!\n\n\n\n\nLes vecteurs\nLes vecteurs sont des tableaux d’éléments successifs. Les éléments d’un vecteur peuvent être, par exemple: numeric, character, logic. Dans R, les vecteurs sont créés à l’aide de la fonction c() (qui veut dire combine) et les valeurs sont séparées à l’aide de la virgule (,).\n\n\nCode\n# Création d'un vecteur avec 6 valeurs numériques\nv1 &lt;- c(100, 101, 102, 103, 104, 105)\nv1\n\n\n[1] 100 101 102 103 104 105\n\n\nPour accéder aux valeurs d’un vecteur, il suffit de spécifier l’index (position) à laquel nous voulons accéder.\n\n\nCode\nv1[3] # 3ième élément du vecteur v\n\n\n[1] 102\n\n\nCode\nv1[3:5] # Positions 3,4,5 du vecteur v\n\n\n[1] 102 103 104\n\n\n\n\n\n\n\n\nImportant\n\n\n\nDans R il est possible de créer rapidement une séquence de nombre en utilisant l’opérateur :. Par exemple, la commande 3:5 retourne un vecteur numérique avec les valeurs 3, 4 et 5.\n\n\nIl est également possible de supprimer un élément d’un vecteur en utilisant l’opérateur - suivi de l’index à supprimer.\n\n\nCode\nv1[-3] # Supprimer le 3ième élément du vecteur v\n\n\n[1] 100 101 103 104 105\n\n\nDes opérations arithmétiques sont également possibles avec les vecteurs.\n\n\nCode\nv1 &lt;- c(100, 101, 102, 103, 104, 105)\nv2 &lt;- c(10, 20, 30, 40, 50, 60)\nv1 + v2\n\n\n[1] 110 121 132 143 154 165\n\n\n\n\nAutres types de classes\nIl existe un très grand nombre d’objets dans R. Ainsi, d’autres classes d’objets vous seront utiles:\n\ndata.frame: Format habituel de tableau de données que vous importez.\nlist: Liste d’objets de classes différentes (texte, numérique, etc.).\nlm: Résultat d’une analyse de modèle linéaire.\ndate: Pour représenter les dates.\n\nDans l’exemple suivant, un modèle linéaire model1 est créé avec la fonction lm(). Différentes fonctions génériques peuvent être utilisées avec la variable model1.\n\n\nCode\nmodel1 &lt;- lm(mpg ~ hp, data = mtcars) # Créer un modèle linéaire (lm)\n\nclass(model1) # Voir la classe de model1\n\n\n[1] \"lm\"\n\n\nCode\nsummary(model1) # Diagnostiques du modèle\n\n\n\nCall:\nlm(formula = mpg ~ hp, data = mtcars)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-5.7121 -2.1122 -0.8854  1.5819  8.2360 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 30.09886    1.63392  18.421  &lt; 2e-16 ***\nhp          -0.06823    0.01012  -6.742 1.79e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 3.863 on 30 degrees of freedom\nMultiple R-squared:  0.6024,    Adjusted R-squared:  0.5892 \nF-statistic: 45.46 on 1 and 30 DF,  p-value: 1.788e-07\n\n\nCode\nplot(model1) # Graphiques de diagnostic du modèle",
-    "crumbs": [
-      "Accueil",
-      "Capsules",
-      "Capsule 2"
-    ]
-  },
-  {
-    "objectID": "capsules/999-capsule.html#choix-de-réponses",
-    "href": "capsules/999-capsule.html#choix-de-réponses",
-    "title": "Capsule 2",
-    "section": "Choix de réponses",
-    "text": "Choix de réponses\n\n\n\n\n\n\n\n\nQuelle est la bonne réponse?\n\nBonne réponse\n\n\nMauvaise réponse"
   },
   {
     "objectID": "capsules/05-capsule.html",
