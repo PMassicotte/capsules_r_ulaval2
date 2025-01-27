@@ -1,18 +1,15 @@
 /.quarto/
+
+# R-specific files
 .Rproj.user
-
-
-
-########### Esther Update ###########
-
-# Fichiers spécifiques à R
 .Rhistory
 .gitignore.save
 
-# Exclure tous les dossiers de capsules générés
-_site/capsules/*-capsule_files/
+# Exclude all generated capsule folders
+/_site/
+/capsules/*-capsule_files/
 
-# Exclure divers fichiers
+# Exclude various files
 *.html
 _site/images/*.png
 _site/site_libs/pagedtable-1.1/
