@@ -26,10 +26,8 @@ library(checkdown)
 
 ## Exercices
 
-::: {.callout-info}
-
-Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
-
+::: {.callout-note}
+**Info!** Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -274,10 +272,8 @@ Refaites le même graphique mais en utilisant la notation par formule.
 
 ```
 
-::: {.callout-info}
-
+::: {.callout-tip title="Tip"}
 Pensez à utiliser l'opérateur tilde ~.
-
 :::
 
 ## Matériel accompagnateur
@@ -353,9 +349,7 @@ head(sondage_bio1006)
 ```
 
 ::: {.callout-important}
-
 N'oubliez de changer le chemin d'accès pour lire le fichier `BIO1006_H2018_Echantillon.csv` qui se trouve sur votre ordinateur.
-
 :::
 
 L'histogramme suivant montre l'étendue des valeurs de la variable `taille_cm`.
@@ -441,9 +435,10 @@ La variable Species étant de classe `factor`, les trois couleurs fournies dans 
 
 La librairie `languageR` et sa fonction `pairscor.fnc()` offre une version améliorée de la fonction `pairs()`. Cette fonction permet à la fois d'obtenir les histogrammes, les graphiques en pairs ainsi que les coefficients de corrélation Pearson et Spearman.
 
-<div class="alert alert-info">
-  <strong>Info!</strong> La librairie `languageR` n'est pas installée dans la version de base de R. Vous devrez l'installer vous-même[^3].
-</div>
+::: {.callout-note}
+La librairie `languageR` n'est pas installée dans la version de base de R. Vous devrez l'installer vous-même[^3].
+:::
+
 
 [^3]: Voir la capsule intitulée "Introduction à R et RStudio: premiers pas".
 

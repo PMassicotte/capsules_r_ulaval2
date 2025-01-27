@@ -27,10 +27,8 @@ library(checkdown)
 
 ## Exercices
 
-::: {.callout-info}
-
+::: {.callout-note}
 Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
-
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -230,10 +228,8 @@ Voici un ensemble de commandes organisées en script (voir capsule #5).
 
 Il s'agit d'un jeu de données fourni avec R donnant les mesures de longueur et de largeur des composantes des fleurs de 3 espèces d'iris et qui a été utilisé par Ronald Fisher dans une de ses analyses célèbres. On va d'abord charger le jeu de données dans la mémoire de R et vérifier les propriétés de ces données avec les fonctions suivantes :
 
-::: {.callout-info}
-
+::: {.callout-tip}
 Tappez `iris` dans l'aide de R pour en savoir plus (voir capsule #1).
-
 :::
 
 ```{r}
@@ -247,14 +243,13 @@ summary(iris)
 
 Pour cet exercice, on veut comparer la moyenne des valeurs de longueur de sépales de l'*Iris versicolor* et une valeur seuil (**arbitraire**) de 6 cm. Pour les besoins de l'exercice, nous allons comparer une moyenne à une valeur seuil qui est ici **arbitraire**. Mais cette situation est courante lorsque vous cherchez à comparer la moyenne d'un échantillon à une norme, par exemple. Il est facile de comprendre une situation ou vous chercher à vérifier que la concentration d'un certain contaminant dans un échantillon d'eau de baignade doit être en moyenne significativement différente (inférieure) qu'un seuil légal.
 
-::: {.callout-info}
-
+::: {.callout-note}
 Cette espèce est le symbole floral du Québec !
-
 :::
   
 <center>
   ![](http://cms.ledomaineboise.ca/image/462/820/820/crop/iris-versicolor.jpg)
+  
 </center>
 
   
@@ -335,10 +330,8 @@ Une première stratégie pour éviter ce problème est de **corriger** *a priori
 
 Toutefois, une façon plus efficace de vérifier en **un seul calcul** si tous les échétantillons ont la même moyenne estimée à un seuil de confiance de 95% est **l'analyse de variance !**  
 
-::: {.callout-info}
-
-ATTENTION : L'analyse de **variance** (ANOVA) est bien une méthode pour comparer des **moyennes** !.
-
+::: {.callout-important}
+L'analyse de **variance** (ANOVA) est bien une méthode pour comparer des **moyennes** !
 :::
 
 L'ANOVA se sert en effet de la **dispersion** des valeurs de plusieurs groupes pour en déduire si, statistiquement, elles ont **tendance** à être distinctes les unes des autres. Rappelez-vous que la **moyenne** est une valeur de tendance centrale, alors que la **variance** est une mesure de dispersion.  
