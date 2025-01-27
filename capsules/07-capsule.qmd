@@ -254,7 +254,7 @@ Il n'y a pas d’avantage à retenir par coeur toutes les options qui s’offren
 ?hist
 ```
 
-{{< www/help_hist.png >}}
+![](../images/help_hist.png)
 
 ```{r}
 #| echo: True
@@ -264,7 +264,7 @@ Il n'y a pas d’avantage à retenir par coeur toutes les options qui s’offren
 ?plot
 ```
 
-{{< www/help_plot.png >}}
+![](../images/help_plot.png)
 
 ### Le cas spécial des couleurs
 
