@@ -44,7 +44,7 @@ check_question(
   options = c("`lty`", "`bty`", "`cex`", "`size`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre numérique `cex` permet de changer la taille des points (ex.: `plot(1, cex = 12)`.",
+  right = "✅ Correct ! Le paramètre numérique `cex` permet de changer la taille des points (ex.: `plot(1, cex = 12)`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un graphique R, quel est le paramètre à utiliser pour ajuster la taille des points?"
 )
