@@ -214,6 +214,11 @@
       ],
       "Hash": "acf380f300c721da9fde7df115a5f86f"
     },
+    "languageR": {
+      "Package": "languageR",
+      "Version": "1.5.0",
+      "Source": "Repository"
+    },
     "lifecycle": {
       "Package": "lifecycle",
       "Version": "1.0.4",
