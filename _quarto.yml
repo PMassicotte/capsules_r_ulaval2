@@ -50,12 +50,12 @@ website:
             file: capsules/04-capsule.qmd
           # - text: "Capsule 5"
           #   file: capsules/05-capsule.qmd
-          # - text: "Capsule 6"
-          #   file: capsules/06-capsule.qmd
-          # - text: "Capsule 7"
-          #   file: capsules/07-capsule.qmd
-          # - text: "Capsule 8"
-          #   file: capsules/08-capsule.qmd
+          - text: "Capsule 6"
+            file: capsules/06-capsule.qmd
+          - text: "Capsule 7"
+            file: capsules/07-capsule.qmd
+          - text: "Capsule 8"
+            file: capsules/08-capsule.qmd
           # - text: "Capsule 9"
           #   file: capsules/09-capsule.qmd
           # - text: "Capsule 10"
