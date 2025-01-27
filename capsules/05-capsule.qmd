@@ -1,5 +1,5 @@
 ---
-title: Capsule 4
+title: Capsule 5
 ---
 
 {{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
@@ -152,12 +152,8 @@ Modifier le code suivant pour qu'il fonctionne correctement.
 Générer 100 nombres aléatoirement
 x <- rnorm(100)
 
-# Calculer la moyenne du vecteur x
+Calculer la moyenne du vecteur x
 mean(x)
-```
-
-```{r add-comment-hint-1}
-"Le signe # permet de commenter une ligne de commande."
 ```
 
 ## Matériel accompagnateur
