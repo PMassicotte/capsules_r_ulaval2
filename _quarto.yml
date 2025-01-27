@@ -4,11 +4,10 @@ project:
 
 format:
   html:
+    df-print: paged
     theme: styles.scss
     toc: true
     lang: fr
-    df-print: paged
-  pdf: default
 
 website:
   page-navigation: true
