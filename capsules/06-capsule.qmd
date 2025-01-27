@@ -43,8 +43,8 @@ check_question(
   options = c("`hist()`", "`histo()`", "`histgram()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `hist()` permet de faire des histogrammes.",
-  wrong = "Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `hist()` permet de faire des histogrammes.",
+  wrong = "❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
   title = "Quelle fonction permet de faire des histogrammes?"
 )
 ```
@@ -62,8 +62,8 @@ check_question(
   options = c("Peu importe la classe", "`character`", "`numeric`", "`factor`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Il faut que la variable soit de type numérique (continue).",
-  wrong = "Rappelez-vous qu'un histogramme est une représentation graphique permettant de représenter la répartition d'une variable **continue**.",
+  right = "✅ Correct ! Il faut que la variable soit de type numérique (continue).",
+  wrong = "❌ Incorrect. Rappelez-vous qu'un histogramme est une représentation graphique permettant de représenter la répartition d'une variable **continue**.",
   title = "Quelle est la classe de variable doit-on utiliser pour faire un histogramme?"
 )
 ```
@@ -81,8 +81,8 @@ check_question(
   options = c("`nbins`", "`bins`", "`breaks`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le paramètre `breaks` permet de contrôler le nombre *bins*.",
-  wrong = "Consulter l'aide de la fonction avec la commande `?hist`.",
+  right = "✅ Correct ! Le paramètre `breaks` permet de contrôler le nombre *bins*.",
+  wrong = "❌ Incorrect. Consulter l'aide de la fonction avec la commande `?hist`.",
   title = "Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?"
 )
 ```
@@ -100,8 +100,8 @@ check_question(
   options = c("`scatterplot()`", "`graph()`", "`scatter()`","`plot()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction générique `plot()` permet de faire des graphiques nuage de points.",
-  wrong = "Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction générique `plot()` permet de faire des graphiques nuage de points.",
+  wrong = "❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
   title = "Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?"
 )
 ```
@@ -119,8 +119,8 @@ check_question(
   options = c("`bar`", "`barplot()`", "`bplot`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `barplot()` permet de faire des graphiques à bâtons.",
-  wrong = "Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `barplot()` permet de faire des graphiques à bâtons.",
+  wrong = "❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
   title = "Quelle fonction permet de faire des diagrammes à bâtons (*barplot*)?"
 )
 ```
@@ -138,8 +138,8 @@ check_question(
   options = c("`bar`", "`barplot()`", "`bplot`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `barplot()` permet de faire des graphiques à bâtons.",
-  wrong = "Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `barplot()` permet de faire des graphiques à bâtons.",
+  wrong = "❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
   title = "Quelle fonction permet de faire des diagrammes à bâtons (*barplot*)?"
 )
 ```
@@ -157,8 +157,8 @@ check_question(
   options = c("`classify()`", "`count()`", "`sort()`", "`table()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `table()` utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.",
-  wrong = "`classify()` et `count()` n'existent à la base dans R. `sort()` permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `table()` utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.",
+  wrong = "❌ Incorrect. `classify()` et `count()` n'existent à la base dans R. `sort()` permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
   title = "Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?"
 )
 ```
@@ -176,8 +176,8 @@ check_question(
   options = c("`moust()`", "`boxplot()`", "`box()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `boxplot()` permet de faire des graphiques à moustaches.",
-  wrong = "La fonction `moust()` n'existe à la base dans R. La fonction `box()` permet d'ajouter une bordure autours d'un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `boxplot()` permet de faire des graphiques à moustaches.",
+  wrong = "❌ Incorrect. La fonction `moust()` n'existe à la base dans R. La fonction `box()` permet d'ajouter une bordure autours d'un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
   title = "Quelle fonction permet de faire des graphiques à moustaches (*boxplot*)?"
 )
 ```
@@ -195,8 +195,8 @@ check_question(
   options = c("`~`", "`+`", "`|`", "`/`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le *tilde* se lit *en fonction de*.",
-  wrong = "`+` est l'opérateur d'addition. `|` est l'opétateur logique de comparaison *ou*. `/` est l'opérateur de division. ",
+  right = "✅ Correct ! Le *tilde* se lit *en fonction de*.",
+  wrong = "❌ Incorrect. `+` est l'opérateur d'addition. `|` est l'opétateur logique de comparaison *ou*. `/` est l'opérateur de division. ",
   title = "Pour créer un graphique à moustache il faut utiliser la notation dite “par formule”. Quel est le signe (caractère) qui doit être utilisé pour cette notation?"
 )
 ```
@@ -214,8 +214,8 @@ check_question(
   options = c("PNG et TIF", "JPEG et GIF", "Matriciel et vectoriel"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.",
-  wrong = "Ceux-ci sont plutôt des formats de fichiers de type matriciel.",
+  right = "✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.",
+  wrong = "❌ Incorrect. Ceux-ci sont plutôt des formats de fichiers de type matriciel.",
   title = "Il existe deux grandes familles d’images, nommez-les."
 )
 ```
@@ -233,8 +233,8 @@ check_question(
   options = c("(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.", "(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Bravo!",
-  wrong = "Il faut d'abord ouvrir le moteur graphique.",
+  right = "✅ Correct ! ",
+  wrong = "❌ Incorrect. Il faut d'abord ouvrir le moteur graphique.",
   title = "Quelles sont les trois grandes étapes (dans l’ordre) pour sauvegarder un graphique localement sur votre ordinateur?"
 )
 ```
@@ -252,8 +252,8 @@ check_question(
   options = c("Ce format permet de générer des fichiers de petite taille.", "Ce format permet de modifier la taille de l’image sans perte de résolution.", "Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux)."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Bravo!",
-  wrong = "Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux). ",
+  right = "✅ Correct ! ",
+  wrong = "❌ Incorrect. Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux). ",
   title = "Pourquoi devriez-vous utiliser le format d’image vectoriel lorsque possible?"
 )
 ```

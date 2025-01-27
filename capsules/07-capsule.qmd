@@ -46,8 +46,8 @@ check_question(
   options = c("`lty`", "`bty`", "`cex`", "`size`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le paramètre numérique `cex` permet de changer la taille des points (ex.: `plot(1, cex = 12)`.",
-  wrong = "Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
+  right = "✅ Correct ! Le paramètre numérique `cex` permet de changer la taille des points (ex.: `plot(1, cex = 12)`.",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un graphique R, quel est le paramètre à utiliser pour ajuster la taille des points?"
 )
 ```
@@ -65,8 +65,8 @@ check_question(
   options = c("`lty`", "`bty`", "`pch`", "`shape`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le paramètre numérique `pch` permet de changer le symbole des points (ex.: `plot(1, pch = 22)`).",
-  wrong = "Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
+  right = "✅ Correct ! Le paramètre numérique `pch` permet de changer le symbole des points (ex.: `plot(1, pch = 22)`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un graphique R, quel est le paramètre à utiliser pour changer le symbole des points?"
 )
 ```
@@ -84,8 +84,8 @@ check_question(
   options = c("`color`", "`col`", "fill`", "`colour`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le paramètre `col` permet de changer la couleur de remplissage des barres (ex.: `barplot(1, col = 'red')`).",
-  wrong = "Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
+  right = "✅ Correct ! Le paramètre `col` permet de changer la couleur de remplissage des barres (ex.: `barplot(1, col = 'red')`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un histogramme, quel paramètre doit-on utiliser pour changer la couleur de remplissage des barres?"
 )
 ```
@@ -103,8 +103,8 @@ check_question(
   options = c("`xlab`", "`ylab`", "`labels`", "`labs`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Les paramètres `xlab` et `ylab` permettent de changer le nom des axises (ex.: `plot(1, xlab = 'yolo', ylab = 'lol')`).",
-  wrong = "Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
+  right = "✅ Correct ! Les paramètres `xlab` et `ylab` permettent de changer le nom des axises (ex.: `plot(1, xlab = 'yolo', ylab = 'lol')`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quels paramètres peuvent être modifiés pour changer les noms des axes dans un graphique?"
 )
 ```
@@ -122,8 +122,8 @@ check_question(
   options = c("`title`", "`main`", "`titre`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le paramètre `main` permet de changer le titre d'un graphique (ex.: `hist(rnorm(100), main = 'Mon super titre')`).",
-  wrong = "Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
+  right = "✅ Correct ! Le paramètre `main` permet de changer le titre d'un graphique (ex.: `hist(rnorm(100), main = 'Mon super titre')`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quel paramètre doit-on utiliser pour ajouter un titre dans un graphique?"
 )
 ```
@@ -141,8 +141,8 @@ check_question(
   options = c("`line()`", "`segment()`", "`abline()`", "`path()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `abline()` permet d'ajouter une droite à un graphique (ex.: `plot(1); abline(a = 0, b = 1)`).",
-  wrong = "Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `abline()` permet d'ajouter une droite à un graphique (ex.: `plot(1); abline(a = 0, b = 1)`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
   title = "Quelle est la fonction qui permet d’ajouter une droite (verticale, horizontale ou de régression) dans un graphique?"
 )
 ```
@@ -160,8 +160,8 @@ check_question(
   options = c("`width`", "`lwd`", "`lty`", "`size`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Le paramètre `lwd` (*line width*) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: `plot(1:100, type = 'l', lwd = 10)`).",
-  wrong = "Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
+  right = "✅ Correct ! Le paramètre `lwd` (*line width*) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: `plot(1:100, type = 'l', lwd = 10)`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quel paramètre permet de changer l’épaisseur d’une ligne dans un graphique?"
 )
 ```
@@ -179,8 +179,8 @@ check_question(
   options = c("`point()`", "`points()`", "`lines()`", "`line()`", "`add()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Les fonctions `points()` et `lines()` permettent d'ajouter plusieurs séries de données dans un graphique (ex.: `plot(1:10, 1:10); lines(1:10, 1:10*2)`).",
-  wrong = "Regardez les exemples dans l'aide de R (`?plot`) pour vous aider.",
+  right = "✅ Correct ! Les fonctions `points()` et `lines()` permettent d'ajouter plusieurs séries de données dans un graphique (ex.: `plot(1:10, 1:10); lines(1:10, 1:10*2)`).",
+  wrong = "❌ Incorrect. Regardez les exemples dans l'aide de R (`?plot`) pour vous aider.",
   title = "Il est possible d’ajouter plusieurs séries de données dans un graphique. Quelle(s) fonction(s) permet(tent) de faire afficher une seconde série de données?"
 )
 ```
@@ -198,8 +198,8 @@ check_question(
   options = c("`par(mfrow = c(6, 1, 2))`", "`par(mfrow = c(3, 2))`", "`par(mfrow = c(2, 3))`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Les fonctions `par()` et `mfrow()` permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.",
-  wrong = "Utilisez l'aide de R (`?par`) pour trouver la bonne fonction à utiliser.",
+  right = "✅ Correct ! Les fonctions `par()` et `mfrow()` permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.",
+  wrong = "❌ Incorrect. Utilisez l'aide de R (`?par`) pour trouver la bonne fonction à utiliser.",
   title = "Parmi les choix suivants, lequel permet de créer un graphique contenant 6 panneaux distribués selon 3 lignes et 2 colonnes?"
 )
 ```
@@ -217,8 +217,8 @@ check_question(
   options = c("`margin`", "`mar`", "`marge`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La fonction `mar()` permet de contrôler l'espace autours d'un graphique. (ex.: `par(mar = c(20, 3, 3, 3)); plot(1)`).",
-  wrong = "Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
+  right = "✅ Correct ! La fonction `mar()` permet de contrôler l'espace autours d'un graphique. (ex.: `par(mar = c(20, 3, 3, 3)); plot(1)`).",
+  wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
   title = "Quelle fonction permet de contrôler la marge autour des graphiques?"
 )
 ```

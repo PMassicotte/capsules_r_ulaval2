@@ -44,8 +44,8 @@ check_question(
   options = c("Le test ne présuppose pas qu’une moyenne devrait être significativement supérieure ou inférieure à la valeur seuil.", "Le test ne présuppose pas que la différence entre deux moyennes devrait être significativement supérieure ou inférieure à zéro.", "Le test présuppose qu’on doit comparer les moyennes de deux échantillons."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Un test est bilatéral justement lorsqu'il couvre toutes les possibilités autres que l'hypothèse nulle qui est *il n'y a pas de différence / pas d'effet autre que celui du hasard*.",
-  wrong = "Le terme *bilatéral* n'a rien à voir avec le nombre d'échantillons impliqué dans l'analyse; il concerne plutôt la formulation de l'Hypothèse alternative du test.",
+  right = "✅ Correct ! Un test est bilatéral justement lorsqu'il couvre toutes les possibilités autres que l'hypothèse nulle qui est *il n'y a pas de différence / pas d'effet autre que celui du hasard*.",
+  wrong = "❌ Incorrect. Le terme *bilatéral* n'a rien à voir avec le nombre d'échantillons impliqué dans l'analyse; il concerne plutôt la formulation de l'Hypothèse alternative du test.",
   title = "On dit qu’un test de comparaison de moyenne(s) est bilatéral lorsque (plusieurs bonnes réponses possibles) :"
 )
 ```
@@ -63,8 +63,8 @@ check_question(
   options = c("L’hypothèse nulle H0 met en équation le fait qu’il n’y a pas de différence entre les variables comparées ou qu’il n’y a pas d’effet du facteur étudié.", "Une hypothèse alternative H1 qui est le contraire de l’hypothèse nulle H0 (couvre toutes les autres possibilités) implique un test bilatéral.", "Une hypothèse alternative H1 qui ne couvre qu’une moitié des autres possibilités complémentaires à l’hypothèse nulle H0 implique un test unilatéral."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "L'hypothèse nulle de n'importe quel test statistique peut toujours se formuler ainsi : *il n'y a pas de différence / pas d'effet autre que celui du hasard*. Une hypothèse alternative H1 qui est le contraire de l’hypothèse nulle H0 (couvre toutes les autres possibilités) implique un test bilatéral.",
-  wrong = "Atention, il peut y avoir plusieurs réponses valides!",
+  right = "✅ Correct ! L'hypothèse nulle de n'importe quel test statistique peut toujours se formuler ainsi : *il n'y a pas de différence / pas d'effet autre que celui du hasard*. Une hypothèse alternative H1 qui est le contraire de l’hypothèse nulle H0 (couvre toutes les autres possibilités) implique un test bilatéral.",
+  wrong = "❌ Incorrect. Atention, il peut y avoir plusieurs réponses valides!",
   title = "Choisissez TOUTES les affirmations VRAIES à propos des hypothèses statistiques :"
 )
 ```
@@ -82,8 +82,8 @@ check_question(
   options = c("Accepter une hypothèse nulle H0 à tort, c’est à dire à déclarer qu’une différence ou un effet est seulement dû au hasard alors que ce n’est pas le cas en réalité.", "Rejeter une hypothèse nulle H0 à tort, c’est à dire à déclarer qu’une différence ou un effet est significatif alors que ce n’est pas le cas en réalité.", "Accepter l’hypothèse alternative H1 qu’il y a une différence ou un effet qui ne résulte pas que du hasard, alors que ce n’est pas le cas en réalité.", "Risque d’obtenir par hasard un résultat qui ressemble à une différence ou un effet réel, alors que ce n’est pas le cas en réalité."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "",
-  wrong = "ATTENTION : lorsqu'on fait un test statistique, on n'accepte jamais une hypothèse ! On la rejète, ou bien on échoue à la rejeter. De plus, on teste seulement l'hypothèse nulle. Il y a ici deux façons de formuler la même idée : l'erreur de type I consiste à détecter PAR HASARD un effet qui n'est pas réel." ,
+  right = "✅ Correct ! ",
+  wrong = "❌ Incorrect. Attention: lorsqu'on fait un test statistique, on n'accepte jamais une hypothèse ! On la rejète, ou bien on échoue à la rejeter. De plus, on teste seulement l'hypothèse nulle. Il y a ici deux façons de formuler la même idée : l'erreur de type I consiste à détecter PAR HASARD un effet qui n'est pas réel." ,
   title = "Lors d’un test statistique, l’erreur de Type I correspond à (plusieurs bonnes réponses possibles) :"
 )
 ```
@@ -101,8 +101,8 @@ check_question(
   options = c("Vrai", "Faux"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Il faut fixer notre tolérance à ce risque AVANT de faire le test. On choisi souvent un seuil alpha = 0.05, mais la seule obligation est de le fixer a priori.",
-  wrong = "On peut *contrôler* l'erreur de Type I en fixant notre tolérance à ce risque avant de faire le test." ,
+  right = "✅ Correct ! Il faut fixer notre tolérance à ce risque AVANT de faire le test. On choisi souvent un seuil alpha = 0.05, mais la seule obligation est de le fixer a priori.",
+  wrong = "❌ Incorrect. On peut *contrôler* l'erreur de Type I en fixant notre tolérance à ce risque avant de faire le test." ,
   title = "Dans un test statistique, nous pouvons fixer à priori le risque d’erreur de Type I par la valeur du coefficient alpha (souvent fixé à 0.05)."
 )
 ```
@@ -120,8 +120,8 @@ check_question(
   options = c("La probabilité que les deux moyennes soient réellement différentes dans la population.", "La probabilité que les deux échantillons ne proviennent pas de la même population statistique.", "La probabilité d’obtenir sous le seul effet du hasard de l’échantillonnage une différence entre les moyennes au moins aussi importante que celle observée."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "La clé ici est de bien comprendre que la p-value exprime effectivement la probabilité qu'on puisse obtenir PAR HASARD un autre résultat au moins aussi extrême que celui qu'on vient d'obtenir, si on répétait l'échantillonnage.",
-  wrong = "Il ne faut pas oublier que le but de notre test est de rejeter, ou non, l'hypothèse nulle. On ne mesure donc jamais avec quelle probabilité deux moyennes sont réellement différentes ! Le résultat du test est binaire : on rejète (les moyennes sont différentes) ou non ( les moyennes ne sont pas différentes)." ,
+  right = "✅ Correct ! La clé ici est de bien comprendre que la p-value exprime effectivement la probabilité qu'on puisse obtenir PAR HASARD un autre résultat au moins aussi extrême que celui qu'on vient d'obtenir, si on répétait l'échantillonnage.",
+  wrong = "❌ Incorrect. Il ne faut pas oublier que le but de notre test est de rejeter, ou non, l'hypothèse nulle. On ne mesure donc jamais avec quelle probabilité deux moyennes sont réellement différentes ! Le résultat du test est binaire : on rejète (les moyennes sont différentes) ou non ( les moyennes ne sont pas différentes)." ,
   title = "Trouvez la bonne définition de la *p-value* dans un test de comparaison des moyennes de deux échantillons :"
 )
 ```
@@ -139,8 +139,8 @@ check_question(
   options = c("Si la p-value >  seuil alpha fixé à 0.05, alors on rejette l’hypothèse nulle H0.", "Si la p-value < seuil alpha fixé à 0.05, alors on rejette l’hypothèse nulle H0.", "Si la p-value >  seuil alpha fixé à 0.05, alors on accepte l’hypothèse nulle H0.", "Si la p-value < seuil alpha fixé à 0.05, alors on accepte l’hypothèse alternative H1."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "On rejète l'hypothèse nulle lorsque le risque de commettre une erreur de Type I (trouver un effet significatif à cause du hasard) est assez faible, autrement dit lors que la p-value est plus petite que notre seuil alpha.",
-  wrong = "Ne pas oublier qu'on N'ACCEPTE jamais une hypothèse dans un test statistique !" ,
+  right = "✅ Correct ! On rejète l'hypothèse nulle lorsque le risque de commettre une erreur de Type I (trouver un effet significatif à cause du hasard) est assez faible, autrement dit lors que la p-value est plus petite que notre seuil alpha.",
+  wrong = "❌ Incorrect. Ne pas oublier qu'on N'ACCEPTE jamais une hypothèse dans un test statistique !" ,
   title = "Choisissez l'affirmation VRAIE concernant la prise de décision selon la p-value d’un test statistique :"
 )
 ```
@@ -158,8 +158,8 @@ check_question(
   options = c("Vrai", "Faux"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Bravo !",
-  wrong = "Un test t de Student permet de comparer une moyenne d'un échantillon à une valeur seuil ou bien les moyennes de deux échantillons." ,
+  right = "✅ Correct ! ",
+  wrong = "❌ Incorrect. Un test t de Student permet de comparer une moyenne d'un échantillon à une valeur seuil ou bien les moyennes de deux échantillons." ,
   title = "Un test t de Student permet de faire des comparaisons de moyenne entre plus de deux échantillons à la fois."
 )
 ```
@@ -177,7 +177,7 @@ check_question(
   options = c("`alternative = `", "`paired = `", "`mu = `", "`var.equal = `"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Par défaut, un test de Student à un échantillon compare la moyenne de l'échantillon à mu = 0. L'argument mu permet de changer cette valeur.",
+  right = "✅ Correct ! Par défaut, un test de Student à un échantillon compare la moyenne de l'échantillon à mu = 0. L'argument mu permet de changer cette valeur.",
   title = "Quel argument (option) de la fonction `t.test()` faut-il modifier lorsqu’on veut comparer la moyenne d’un échantillon à une valeur seuil ?"
 )
 ```
@@ -195,8 +195,8 @@ check_question(
   options = c("Vrai", "Faux"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Bravo !",
-  wrong = "L'ANOVA utilise la dispersion relative des valeurs à l'intérieur des échantillons et entre eux pour déterminer si les moyennes sont semblables ou non.",
+  right = "✅ Correct ! ",
+  wrong = "❌ Incorrect. L'ANOVA utilise la dispersion relative des valeurs à l'intérieur des échantillons et entre eux pour déterminer si les moyennes sont semblables ou non.",
   title = "L’analyse de variance (ANOVA) permet de comparer les variances de plusieurs échantillons à la fois :"
 )
 ```
@@ -214,8 +214,8 @@ check_question(
   options = c("Pour pouvoir distinguer comment les moyennes de plusieurs groupes (échantillons) se distinguent les unes des autres, il faut faire un test post hoc après l’ANOVA.", "L’ANOVA permet de distinguer comment chaque moyenne de plusieurs groupes (échantillons) se distinguent les unes des autres.", "Le problème d’un test post hoc est que les comparaisons multiples de moyennes qui sont faites augmentent de beaucoup le risque d’erreur de Type I dans notre analyse statistique."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Bravo !",
-  wrong = "L'ANOVA ne teste qu'une seule hypothèse nulle, c'est-à-dire *il n'y a aucune différence entre les moyennes de tous les échantillons testés*. Elle ne donne pas d'autres informations. Le principe d'un test post hoc (fait APRÈS le test d'ANOVA) est justement de permettre des comparaisons multiples sans augmenter le risque global d'erreur de type I.",
+  right = "✅ Correct ! ",
+  wrong = "❌ Incorrect. L'ANOVA ne teste qu'une seule hypothèse nulle, c'est-à-dire *il n'y a aucune différence entre les moyennes de tous les échantillons testés*. Elle ne donne pas d'autres informations. Le principe d'un test post hoc (fait APRÈS le test d'ANOVA) est justement de permettre des comparaisons multiples sans augmenter le risque global d'erreur de type I.",
   title = "Choisissez l'affirmation VRAIE à propos de l’ANOVA :"
 )
 ```
