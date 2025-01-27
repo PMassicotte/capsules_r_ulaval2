@@ -23,6 +23,11 @@
       ],
       "Hash": "470851b6d5d0ac559e9d01bb352b4021"
     },
+    "RColorBrewer": {
+      "Package": "RColorBrewer",
+      "Version": "1.1-3",
+      "Source": "Repository"
+    },
     "base64enc": {
       "Package": "base64enc",
       "Version": "0.1-3",
