@@ -2,6 +2,14 @@ project:
   type: website
   output-dir: _site
 
+format:
+  html:
+    theme: styles.scss
+    toc: true
+    lang: fr
+    df-print: paged
+  pdf: default
+
 website:
   page-navigation: true
   title: "Capsule R ULAVAL"
@@ -64,10 +72,3 @@ website:
   page-footer:
     right: "Cette page a été réalisée à l'aide de [Quarto](https://quarto.org/)."
     left: "&copy; CC-By xxx, 2024. Capsules réalisées par N. Aubin-Horth, F. Maps et P. Massicotte."
-
-format:
-  html:
-    theme: styles.scss
-    toc: true
-    lang: fr
-    df-print: paged
