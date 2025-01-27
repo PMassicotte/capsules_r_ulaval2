@@ -122,18 +122,7 @@ sondage_bio1006 <- read.table("../data/BIO1006_H2018_Echantillon.csv", header = 
 ```
 
 ```{r}
-#| echo: true
-#| eval: false
 sondage_bio1006
-```
-
-```{r}
-#| echo: false
-
-#FIX: This should be a paged table by default as defined in the front matter. I
-# do not know why this is not working. I am forcing it here until I find a
-# solution.
-rmarkdown::paged_table(sondage_bio1006)
 ```
 
 Utilisez la fonction `head` pour faire afficher les 4 premières lignes du _data frame_ nommé `sondage_bio1006`.

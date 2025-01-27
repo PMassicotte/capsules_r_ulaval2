@@ -6,6 +6,7 @@ format:
     theme: ././styles.scss
     toc: true
     lang: fr
+    df-print: paged
 
 webr:
   packages:
