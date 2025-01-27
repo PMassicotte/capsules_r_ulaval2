@@ -105,6 +105,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
 </head>
@@ -333,25 +335,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_37392" onsubmit="return validate_form_37392()" method="post">
+<form name="form_77076" onsubmit="return validate_form_77076()" method="post">
 <fieldset>
 <legend>Quelle fonction devriez-vous utiliser pour calculer la moyenne des valeurs du vecteur suivant <code>x &lt;- c(1, 2, 3)</code></legend>
-<input type="radio" name="answer_37392" id="answer_37392_1" value="`mean(x)`">
+<input type="radio" name="answer_77076" id="answer_77076_1" value="`mean(x)`">
 <label>`mean(x)`</label>
 <br>
-<input type="radio" name="answer_37392" id="answer_37392_2" value="`average(x)`">
+<input type="radio" name="answer_77076" id="answer_77076_2" value="`average(x)`">
 <label>`average(x)`</label>
 <br>
-<input type="radio" name="answer_37392" id="answer_37392_3" value="`moyenne(x)`">
+<input type="radio" name="answer_77076" id="answer_77076_3" value="`moyenne(x)`">
 <label>`moyenne(x)`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_37392"></div>
+<div id="result_77076"></div>
 </fieldset>
 </form>
-<script>function validate_form_37392() {var x, text; var x = document.forms['form_37392']['answer_37392'].value;if (x == '`mean(x)`'){text = '<strong>Correct!</strong>';} else {text = 'Vous êtes proche! Les fonctions ont rarement un nom en français.';} document.getElementById('result_37392').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_77076() {var x, text; var x = document.forms['form_77076']['answer_77076'].value;if (x == '`mean(x)`'){text = '<strong>Correct!</strong>';} else {text = 'Vous êtes proche! Les fonctions ont rarement un nom en français.';} document.getElementById('result_77076').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_37392').innerText == 'Correct!';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_77076').innerText == 'Correct!';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -400,25 +402,25 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_96266" onsubmit="return validate_form_96266()" method="post">
+<form name="form_96782" onsubmit="return validate_form_96782()" method="post">
 <fieldset>
 <legend>Indiquez les paramètres que l’utilisateur doit obligatoirement fournir à la fonction.</legend>
-<input type="radio" name="answer_96266" id="answer_96266_1" value="`x`">
+<input type="radio" name="answer_96782" id="answer_96782_1" value="`x`">
 <label>`x`</label>
 <br>
-<input type="radio" name="answer_96266" id="answer_96266_2" value="`trim`">
+<input type="radio" name="answer_96782" id="answer_96782_2" value="`trim`">
 <label>`trim`</label>
 <br>
-<input type="radio" name="answer_96266" id="answer_96266_3" value="`na.rm`">
+<input type="radio" name="answer_96782" id="answer_96782_3" value="`na.rm`">
 <label>`na.rm`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_96266"></div>
+<div id="result_96782"></div>
 </fieldset>
 </form>
-<script>function validate_form_96266() {var x, text; var x = document.forms['form_96266']['answer_96266'].value;if (x == '`x`'){text = '<strong>Correct!</strong> <code>x</code> est un paramètre obligatoire de la fonction <code>mean()</code> puisque que ce paramètre ne possède pas de valeur par défaut.';} else {text = 'Le paramètre <code>trim</code> à une valeur par défaut égale à <code>0</code>. Il n’est pas obligatoire de lui spécifier une valeur. Le paramètre <code>na.rm</code> à une valeur par défaut égale à <code>FALSE</code>. Il n’est pas obligatoire de lui spécifier une valeur.';} document.getElementById('result_96266').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_96782() {var x, text; var x = document.forms['form_96782']['answer_96782'].value;if (x == '`x`'){text = '<strong>Correct!</strong> <code>x</code> est un paramètre obligatoire de la fonction <code>mean()</code> puisque que ce paramètre ne possède pas de valeur par défaut.';} else {text = 'Le paramètre <code>trim</code> à une valeur par défaut égale à <code>0</code>. Il n’est pas obligatoire de lui spécifier une valeur. Le paramètre <code>na.rm</code> à une valeur par défaut égale à <code>FALSE</code>. Il n’est pas obligatoire de lui spécifier une valeur.';} document.getElementById('result_96782').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_37392').innerText == 'Correct!'; res2 = document.getElementById('result_96266').innerText == 'Correct! x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_77076').innerText == 'Correct!'; res2 = document.getElementById('result_96782').innerText == 'Correct! x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -430,25 +432,25 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_59010" onsubmit="return validate_form_59010()" method="post">
+<form name="form_89340" onsubmit="return validate_form_89340()" method="post">
 <fieldset>
 <legend>Valeur par défaut de <code>na.rm</code></legend>
-<input type="radio" name="answer_59010" id="answer_59010_1" value="`FALSE`">
+<input type="radio" name="answer_89340" id="answer_89340_1" value="`FALSE`">
 <label>`FALSE`</label>
 <br>
-<input type="radio" name="answer_59010" id="answer_59010_2" value="Il n'y en a pas.">
+<input type="radio" name="answer_89340" id="answer_89340_2" value="Il n'y en a pas.">
 <label>Il n'y en a pas.</label>
 <br>
-<input type="radio" name="answer_59010" id="answer_59010_3" value="Il n'est pas possible de le savoir.">
+<input type="radio" name="answer_89340" id="answer_89340_3" value="Il n'est pas possible de le savoir.">
 <label>Il n'est pas possible de le savoir.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_59010"></div>
+<div id="result_89340"></div>
 </fieldset>
 </form>
-<script>function validate_form_59010() {var x, text; var x = document.forms['form_59010']['answer_59010'].value;if (x == '`FALSE`'){text = '<strong>Correct!</strong> La valeur par défaut est <code>FALSE</code> et il serait possible de la changer pour la valeur <code>TRUE</code> si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';} else {text = 'Incorrect! Utilisez l’aide pour vérifier quelle est la valeur par défaut du paramètre <code>na.rm</code>.';} document.getElementById('result_59010').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_89340() {var x, text; var x = document.forms['form_89340']['answer_89340'].value;if (x == '`FALSE`'){text = '<strong>Correct!</strong> La valeur par défaut est <code>FALSE</code> et il serait possible de la changer pour la valeur <code>TRUE</code> si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';} else {text = 'Incorrect! Utilisez l’aide pour vérifier quelle est la valeur par défaut du paramètre <code>na.rm</code>.';} document.getElementById('result_89340').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_37392').innerText == 'Correct!'; res2 = document.getElementById('result_96266').innerText == 'Correct! x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_59010').innerText == 'Correct! La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_77076').innerText == 'Correct!'; res2 = document.getElementById('result_96782').innerText == 'Correct! x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_89340').innerText == 'Correct! La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -467,31 +469,31 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_42768" onsubmit="return validate_form_42768()" method="post">
+<form name="form_92320" onsubmit="return validate_form_92320()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lesquels permettent techniquement de générer une séquence de 100 nombres ayant un écart-type de 2 et une moyenne de 50?</legend>
-<input type="checkbox" id="answer_42768_1" value="rnorm(100, 50, 2)">
+<input type="checkbox" id="answer_92320_1" value="rnorm(100, 50, 2)">
 <label>rnorm(100, 50, 2)</label>
 <br>
-<input type="checkbox" id="answer_42768_2" value="rnorm(sd = 2, mean = 50, 100)">
+<input type="checkbox" id="answer_92320_2" value="rnorm(sd = 2, mean = 50, 100)">
 <label>rnorm(sd = 2, mean = 50, 100)</label>
 <br>
-<input type="checkbox" id="answer_42768_3" value="rnorm(sd = 2, mean = 50, n = 100)">
+<input type="checkbox" id="answer_92320_3" value="rnorm(sd = 2, mean = 50, n = 100)">
 <label>rnorm(sd = 2, mean = 50, n = 100)</label>
 <br>
-<input type="checkbox" id="answer_42768_4" value="rnorm(x = 100, sd = 2, mean = 50)">
+<input type="checkbox" id="answer_92320_4" value="rnorm(x = 100, sd = 2, mean = 50)">
 <label>rnorm(x = 100, sd = 2, mean = 50)</label>
 <br>
-<input type="checkbox" id="answer_42768_5" value="rnorm(100, mean = 50, sd = 2)">
+<input type="checkbox" id="answer_92320_5" value="rnorm(100, mean = 50, sd = 2)">
 <label>rnorm(100, mean = 50, sd = 2)</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_42768"></div>
+<div id="result_92320"></div>
 </fieldset>
 </form>
-<script>function validate_form_42768() {var text; var x1 = document.getElementById('answer_42768_1'); var x2 = document.getElementById('answer_42768_2'); var x3 = document.getElementById('answer_42768_3'); var x4 = document.getElementById('answer_42768_4'); var x5 = document.getElementById('answer_42768_5'); if (x1.checked == true&x2.checked == true&x3.checked == true&x4.checked == false&x5.checked == true){text = '<strong>Correct!</strong> <code>rnorm(100, 50, 2)</code> est équivalent à <code>rnorm(n = 100, mean = 50, sd = 2)</code>.';} else {text = '<strong>Incorrect</strong> Le paramètre <code>x</code> ne fait pas partie de la liste des paramètres utilisables avec la fonction <code>rnorm()</code>.';} document.getElementById('result_42768').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_92320() {var text; var x1 = document.getElementById('answer_92320_1'); var x2 = document.getElementById('answer_92320_2'); var x3 = document.getElementById('answer_92320_3'); var x4 = document.getElementById('answer_92320_4'); var x5 = document.getElementById('answer_92320_5'); if (x1.checked == true&x2.checked == true&x3.checked == true&x4.checked == false&x5.checked == true){text = '<strong>Correct!</strong> <code>rnorm(100, 50, 2)</code> est équivalent à <code>rnorm(n = 100, mean = 50, sd = 2)</code>.';} else {text = '<strong>Incorrect</strong> Le paramètre <code>x</code> ne fait pas partie de la liste des paramètres utilisables avec la fonction <code>rnorm()</code>.';} document.getElementById('result_92320').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_37392').innerText == 'Correct!'; res2 = document.getElementById('result_96266').innerText == 'Correct! x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_59010').innerText == 'Correct! La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.'; res4 = document.getElementById('result_42768').innerText == 'Correct! rnorm(100, 50, 2) est équivalent à rnorm(n = 100, mean = 50, sd = 2).';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_77076').innerText == 'Correct!'; res2 = document.getElementById('result_96782').innerText == 'Correct! x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_89340').innerText == 'Correct! La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.'; res4 = document.getElementById('result_92320').innerText == 'Correct! rnorm(100, 50, 2) est équivalent à rnorm(n = 100, mean = 50, sd = 2).';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
