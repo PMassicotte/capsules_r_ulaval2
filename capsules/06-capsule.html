@@ -293,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capsules/01-capsule.html">Capsules</a></li><li class="breadcrumb-item"><a href="../capsules/06-capsule.html">Capsule 6</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Capsule 6</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Montrer tout le code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Cacher tout le code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Voir les sources</a></li></ul></div></div>
+<h1 class="title">Capsule 6</h1>
 </div>
 
 
@@ -345,25 +345,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_39522" onsubmit="return validate_form_39522()" method="post">
+<form name="form_85340" onsubmit="return validate_form_85340()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des histogrammes?</legend>
-<input type="checkbox" id="answer_39522_1" value="`hist()`">
+<input type="checkbox" id="answer_85340_1" value="`hist()`">
 <label>`hist()`</label>
 <br>
-<input type="checkbox" id="answer_39522_2" value="`histo()`">
+<input type="checkbox" id="answer_85340_2" value="`histo()`">
 <label>`histo()`</label>
 <br>
-<input type="checkbox" id="answer_39522_3" value="`histgram()`">
+<input type="checkbox" id="answer_85340_3" value="`histgram()`">
 <label>`histgram()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_39522"></div>
+<div id="result_85340"></div>
 </fieldset>
 </form>
-<script>function validate_form_39522() {var text; var x1 = document.getElementById('answer_39522_1'); var x2 = document.getElementById('answer_39522_2'); var x3 = document.getElementById('answer_39522_3'); if (x1.checked == true&x2.checked == false&x3.checked == false){text = '✅ Correct ! La fonction <code>hist()</code> permet de faire des histogrammes.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_39522').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_85340() {var text; var x1 = document.getElementById('answer_85340_1'); var x2 = document.getElementById('answer_85340_2'); var x3 = document.getElementById('answer_85340_3'); if (x1.checked == true&x2.checked == false&x3.checked == false){text = '✅ Correct ! La fonction <code>hist()</code> permet de faire des histogrammes.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_85340').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -375,28 +375,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_51801" onsubmit="return validate_form_51801()" method="post">
+<form name="form_63772" onsubmit="return validate_form_63772()" method="post">
 <fieldset>
 <legend>Quelle est la classe de variable doit-on utiliser pour faire un histogramme?</legend>
-<input type="checkbox" id="answer_51801_1" value="Peu importe la classe">
+<input type="checkbox" id="answer_63772_1" value="Peu importe la classe">
 <label>Peu importe la classe</label>
 <br>
-<input type="checkbox" id="answer_51801_2" value="`character`">
+<input type="checkbox" id="answer_63772_2" value="`character`">
 <label>`character`</label>
 <br>
-<input type="checkbox" id="answer_51801_3" value="`numeric`">
+<input type="checkbox" id="answer_63772_3" value="`numeric`">
 <label>`numeric`</label>
 <br>
-<input type="checkbox" id="answer_51801_4" value="`factor`">
+<input type="checkbox" id="answer_63772_4" value="`factor`">
 <label>`factor`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_51801"></div>
+<div id="result_63772"></div>
 </fieldset>
 </form>
-<script>function validate_form_51801() {var text; var x1 = document.getElementById('answer_51801_1'); var x2 = document.getElementById('answer_51801_2'); var x3 = document.getElementById('answer_51801_3'); var x4 = document.getElementById('answer_51801_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = '✅ Correct ! Il faut que la variable soit de type numérique (continue).';} else {text = '❌ Incorrect. Rappelez-vous qu’un histogramme est une représentation graphique permettant de représenter la répartition d’une variable <strong>continue</strong>.';} document.getElementById('result_51801').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_63772() {var text; var x1 = document.getElementById('answer_63772_1'); var x2 = document.getElementById('answer_63772_2'); var x3 = document.getElementById('answer_63772_3'); var x4 = document.getElementById('answer_63772_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = '✅ Correct ! Il faut que la variable soit de type numérique (continue).';} else {text = '❌ Incorrect. Rappelez-vous qu’un histogramme est une représentation graphique permettant de représenter la répartition d’une variable <strong>continue</strong>.';} document.getElementById('result_63772').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -408,25 +408,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_21644" onsubmit="return validate_form_21644()" method="post">
+<form name="form_72242" onsubmit="return validate_form_72242()" method="post">
 <fieldset>
 <legend>Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?</legend>
-<input type="checkbox" id="answer_21644_1" value="`nbins`">
+<input type="checkbox" id="answer_72242_1" value="`nbins`">
 <label>`nbins`</label>
 <br>
-<input type="checkbox" id="answer_21644_2" value="`bins`">
+<input type="checkbox" id="answer_72242_2" value="`bins`">
 <label>`bins`</label>
 <br>
-<input type="checkbox" id="answer_21644_3" value="`breaks`">
+<input type="checkbox" id="answer_72242_3" value="`breaks`">
 <label>`breaks`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_21644"></div>
+<div id="result_72242"></div>
 </fieldset>
 </form>
-<script>function validate_form_21644() {var text; var x1 = document.getElementById('answer_21644_1'); var x2 = document.getElementById('answer_21644_2'); var x3 = document.getElementById('answer_21644_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = '✅ Correct ! Le paramètre <code>breaks</code> permet de contrôler le nombre <em>bins</em>.';} else {text = '❌ Incorrect. Consulter l’aide de la fonction avec la commande <code>?hist</code>.';} document.getElementById('result_21644').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_72242() {var text; var x1 = document.getElementById('answer_72242_1'); var x2 = document.getElementById('answer_72242_2'); var x3 = document.getElementById('answer_72242_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = '✅ Correct ! Le paramètre <code>breaks</code> permet de contrôler le nombre <em>bins</em>.';} else {text = '❌ Incorrect. Consulter l’aide de la fonction avec la commande <code>?hist</code>.';} document.getElementById('result_72242').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -438,28 +438,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_72685" onsubmit="return validate_form_72685()" method="post">
+<form name="form_48143" onsubmit="return validate_form_48143()" method="post">
 <fieldset>
 <legend>Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?</legend>
-<input type="checkbox" id="answer_72685_1" value="`scatterplot()`">
+<input type="checkbox" id="answer_48143_1" value="`scatterplot()`">
 <label>`scatterplot()`</label>
 <br>
-<input type="checkbox" id="answer_72685_2" value="`graph()`">
+<input type="checkbox" id="answer_48143_2" value="`graph()`">
 <label>`graph()`</label>
 <br>
-<input type="checkbox" id="answer_72685_3" value="`scatter()`">
+<input type="checkbox" id="answer_48143_3" value="`scatter()`">
 <label>`scatter()`</label>
 <br>
-<input type="checkbox" id="answer_72685_4" value="`plot()`">
+<input type="checkbox" id="answer_48143_4" value="`plot()`">
 <label>`plot()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_72685"></div>
+<div id="result_48143"></div>
 </fieldset>
 </form>
-<script>function validate_form_72685() {var text; var x1 = document.getElementById('answer_72685_1'); var x2 = document.getElementById('answer_72685_2'); var x3 = document.getElementById('answer_72685_3'); var x4 = document.getElementById('answer_72685_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = '✅ Correct ! La fonction générique <code>plot()</code> permet de faire des graphiques nuage de points.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_72685').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_48143() {var text; var x1 = document.getElementById('answer_48143_1'); var x2 = document.getElementById('answer_48143_2'); var x3 = document.getElementById('answer_48143_3'); var x4 = document.getElementById('answer_48143_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = '✅ Correct ! La fonction générique <code>plot()</code> permet de faire des graphiques nuage de points.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_48143').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -471,25 +471,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_40880" onsubmit="return validate_form_40880()" method="post">
+<form name="form_42819" onsubmit="return validate_form_42819()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des diagrammes à bâtons (<em>barplot</em>)?</legend>
-<input type="checkbox" id="answer_40880_1" value="`bar`">
+<input type="checkbox" id="answer_42819_1" value="`bar`">
 <label>`bar`</label>
 <br>
-<input type="checkbox" id="answer_40880_2" value="`barplot()`">
+<input type="checkbox" id="answer_42819_2" value="`barplot()`">
 <label>`barplot()`</label>
 <br>
-<input type="checkbox" id="answer_40880_3" value="`bplot`">
+<input type="checkbox" id="answer_42819_3" value="`bplot`">
 <label>`bplot`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_40880"></div>
+<div id="result_42819"></div>
 </fieldset>
 </form>
-<script>function validate_form_40880() {var text; var x1 = document.getElementById('answer_40880_1'); var x2 = document.getElementById('answer_40880_2'); var x3 = document.getElementById('answer_40880_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_40880').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_42819() {var text; var x1 = document.getElementById('answer_42819_1'); var x2 = document.getElementById('answer_42819_2'); var x3 = document.getElementById('answer_42819_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_42819').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -501,25 +501,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_81950" onsubmit="return validate_form_81950()" method="post">
+<form name="form_64089" onsubmit="return validate_form_64089()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des diagrammes à bâtons (<em>barplot</em>)?</legend>
-<input type="checkbox" id="answer_81950_1" value="`bar`">
+<input type="checkbox" id="answer_64089_1" value="`bar`">
 <label>`bar`</label>
 <br>
-<input type="checkbox" id="answer_81950_2" value="`barplot()`">
+<input type="checkbox" id="answer_64089_2" value="`barplot()`">
 <label>`barplot()`</label>
 <br>
-<input type="checkbox" id="answer_81950_3" value="`bplot`">
+<input type="checkbox" id="answer_64089_3" value="`bplot`">
 <label>`bplot`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_81950"></div>
+<div id="result_64089"></div>
 </fieldset>
 </form>
-<script>function validate_form_81950() {var text; var x1 = document.getElementById('answer_81950_1'); var x2 = document.getElementById('answer_81950_2'); var x3 = document.getElementById('answer_81950_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_81950').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_64089() {var text; var x1 = document.getElementById('answer_64089_1'); var x2 = document.getElementById('answer_64089_2'); var x3 = document.getElementById('answer_64089_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_64089').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -531,28 +531,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_79282" onsubmit="return validate_form_79282()" method="post">
+<form name="form_75325" onsubmit="return validate_form_75325()" method="post">
 <fieldset>
 <legend>Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?</legend>
-<input type="checkbox" id="answer_79282_1" value="`classify()`">
+<input type="checkbox" id="answer_75325_1" value="`classify()`">
 <label>`classify()`</label>
 <br>
-<input type="checkbox" id="answer_79282_2" value="`count()`">
+<input type="checkbox" id="answer_75325_2" value="`count()`">
 <label>`count()`</label>
 <br>
-<input type="checkbox" id="answer_79282_3" value="`sort()`">
+<input type="checkbox" id="answer_75325_3" value="`sort()`">
 <label>`sort()`</label>
 <br>
-<input type="checkbox" id="answer_79282_4" value="`table()`">
+<input type="checkbox" id="answer_75325_4" value="`table()`">
 <label>`table()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_79282"></div>
+<div id="result_75325"></div>
 </fieldset>
 </form>
-<script>function validate_form_79282() {var text; var x1 = document.getElementById('answer_79282_1'); var x2 = document.getElementById('answer_79282_2'); var x3 = document.getElementById('answer_79282_3'); var x4 = document.getElementById('answer_79282_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = '✅ Correct ! La fonction <code>table()</code> utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';} else {text = '❌ Incorrect. <code>classify()</code> et <code>count()</code> n’existent à la base dans R. <code>sort()</code> permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_79282').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_75325() {var text; var x1 = document.getElementById('answer_75325_1'); var x2 = document.getElementById('answer_75325_2'); var x3 = document.getElementById('answer_75325_3'); var x4 = document.getElementById('answer_75325_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = '✅ Correct ! La fonction <code>table()</code> utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';} else {text = '❌ Incorrect. <code>classify()</code> et <code>count()</code> n’existent à la base dans R. <code>sort()</code> permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_75325').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_79282').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -564,25 +564,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_57524" onsubmit="return validate_form_57524()" method="post">
+<form name="form_45508" onsubmit="return validate_form_45508()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des graphiques à moustaches (<em>boxplot</em>)?</legend>
-<input type="checkbox" id="answer_57524_1" value="`moust()`">
+<input type="checkbox" id="answer_45508_1" value="`moust()`">
 <label>`moust()`</label>
 <br>
-<input type="checkbox" id="answer_57524_2" value="`boxplot()`">
+<input type="checkbox" id="answer_45508_2" value="`boxplot()`">
 <label>`boxplot()`</label>
 <br>
-<input type="checkbox" id="answer_57524_3" value="`box()`">
+<input type="checkbox" id="answer_45508_3" value="`box()`">
 <label>`box()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_57524"></div>
+<div id="result_45508"></div>
 </fieldset>
 </form>
-<script>function validate_form_57524() {var text; var x1 = document.getElementById('answer_57524_1'); var x2 = document.getElementById('answer_57524_2'); var x3 = document.getElementById('answer_57524_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>boxplot()</code> permet de faire des graphiques à moustaches.';} else {text = '❌ Incorrect. La fonction <code>moust()</code> n’existe à la base dans R. La fonction <code>box()</code> permet d’ajouter une bordure autours d’un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_57524').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_45508() {var text; var x1 = document.getElementById('answer_45508_1'); var x2 = document.getElementById('answer_45508_2'); var x3 = document.getElementById('answer_45508_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>boxplot()</code> permet de faire des graphiques à moustaches.';} else {text = '❌ Incorrect. La fonction <code>moust()</code> n’existe à la base dans R. La fonction <code>box()</code> permet d’ajouter une bordure autours d’un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_45508').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_79282').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_57524').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -594,28 +594,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_70812" onsubmit="return validate_form_70812()" method="post">
+<form name="form_26191" onsubmit="return validate_form_26191()" method="post">
 <fieldset>
 <legend>Pour créer un graphique à moustache il faut utiliser la notation dite “par formule”. Quel est le signe (caractère) qui doit être utilisé pour cette notation?</legend>
-<input type="checkbox" id="answer_70812_1" value="`~`">
+<input type="checkbox" id="answer_26191_1" value="`~`">
 <label>`~`</label>
 <br>
-<input type="checkbox" id="answer_70812_2" value="`+`">
+<input type="checkbox" id="answer_26191_2" value="`+`">
 <label>`+`</label>
 <br>
-<input type="checkbox" id="answer_70812_3" value="`|`">
+<input type="checkbox" id="answer_26191_3" value="`|`">
 <label>`|`</label>
 <br>
-<input type="checkbox" id="answer_70812_4" value="`/`">
+<input type="checkbox" id="answer_26191_4" value="`/`">
 <label>`/`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_70812"></div>
+<div id="result_26191"></div>
 </fieldset>
 </form>
-<script>function validate_form_70812() {var text; var x1 = document.getElementById('answer_70812_1'); var x2 = document.getElementById('answer_70812_2'); var x3 = document.getElementById('answer_70812_3'); var x4 = document.getElementById('answer_70812_4'); if (x1.checked == true&x2.checked == false&x3.checked == false&x4.checked == false){text = '✅ Correct ! Le <em>tilde</em> se lit <em>en fonction de</em>.';} else {text = '❌ Incorrect. <code>+</code> est l’opérateur d’addition. <code>|</code> est l’opétateur logique de comparaison <em>ou</em>. <code>/</code> est l’opérateur de division.';} document.getElementById('result_70812').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_26191() {var text; var x1 = document.getElementById('answer_26191_1'); var x2 = document.getElementById('answer_26191_2'); var x3 = document.getElementById('answer_26191_3'); var x4 = document.getElementById('answer_26191_4'); if (x1.checked == true&x2.checked == false&x3.checked == false&x4.checked == false){text = '✅ Correct ! Le <em>tilde</em> se lit <em>en fonction de</em>.';} else {text = '❌ Incorrect. <code>+</code> est l’opérateur d’addition. <code>|</code> est l’opétateur logique de comparaison <em>ou</em>. <code>/</code> est l’opérateur de division.';} document.getElementById('result_26191').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_79282').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_57524').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_70812').innerText == '✅ Correct ! Le tilde se lit en fonction de.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -627,25 +627,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_86737" onsubmit="return validate_form_86737()" method="post">
+<form name="form_89144" onsubmit="return validate_form_89144()" method="post">
 <fieldset>
 <legend>Il existe deux grandes familles d’images, nommez-les.</legend>
-<input type="checkbox" id="answer_86737_1" value="PNG et TIF">
+<input type="checkbox" id="answer_89144_1" value="PNG et TIF">
 <label>PNG et TIF</label>
 <br>
-<input type="checkbox" id="answer_86737_2" value="JPEG et GIF">
+<input type="checkbox" id="answer_89144_2" value="JPEG et GIF">
 <label>JPEG et GIF</label>
 <br>
-<input type="checkbox" id="answer_86737_3" value="Matriciel et vectoriel">
+<input type="checkbox" id="answer_89144_3" value="Matriciel et vectoriel">
 <label>Matriciel et vectoriel</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_86737"></div>
+<div id="result_89144"></div>
 </fieldset>
 </form>
-<script>function validate_form_86737() {var text; var x1 = document.getElementById('answer_86737_1'); var x2 = document.getElementById('answer_86737_2'); var x3 = document.getElementById('answer_86737_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';} else {text = '❌ Incorrect. Ceux-ci sont plutôt des formats de fichiers de type matriciel.';} document.getElementById('result_86737').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_89144() {var text; var x1 = document.getElementById('answer_89144_1'); var x2 = document.getElementById('answer_89144_2'); var x3 = document.getElementById('answer_89144_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';} else {text = '❌ Incorrect. Ceux-ci sont plutôt des formats de fichiers de type matriciel.';} document.getElementById('result_89144').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_79282').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_57524').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_70812').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_86737').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_89144').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -657,22 +657,22 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_99151" onsubmit="return validate_form_99151()" method="post">
+<form name="form_45844" onsubmit="return validate_form_45844()" method="post">
 <fieldset>
 <legend>Quelles sont les trois grandes étapes (dans l’ordre) pour sauvegarder un graphique localement sur votre ordinateur?</legend>
-<input type="checkbox" id="answer_99151_1" value="(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.">
+<input type="checkbox" id="answer_45844_1" value="(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.">
 <label>(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.</label>
 <br>
-<input type="checkbox" id="answer_99151_2" value="(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.">
+<input type="checkbox" id="answer_45844_2" value="(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.">
 <label>(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_99151"></div>
+<div id="result_45844"></div>
 </fieldset>
 </form>
-<script>function validate_form_99151() {var text; var x1 = document.getElementById('answer_99151_1'); var x2 = document.getElementById('answer_99151_2'); if (x1.checked == true&x2.checked == false){text = '✅ Correct !';} else {text = '❌ Incorrect. Il faut d’abord ouvrir le moteur graphique.';} document.getElementById('result_99151').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_45844() {var text; var x1 = document.getElementById('answer_45844_1'); var x2 = document.getElementById('answer_45844_2'); if (x1.checked == true&x2.checked == false){text = '✅ Correct !';} else {text = '❌ Incorrect. Il faut d’abord ouvrir le moteur graphique.';} document.getElementById('result_45844').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_79282').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_57524').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_70812').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_86737').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_99151').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_89144').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_45844').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -684,25 +684,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_25244" onsubmit="return validate_form_25244()" method="post">
+<form name="form_66301" onsubmit="return validate_form_66301()" method="post">
 <fieldset>
 <legend>Pourquoi devriez-vous utiliser le format d’image vectoriel lorsque possible?</legend>
-<input type="checkbox" id="answer_25244_1" value="Ce format permet de générer des fichiers de petite taille.">
+<input type="checkbox" id="answer_66301_1" value="Ce format permet de générer des fichiers de petite taille.">
 <label>Ce format permet de générer des fichiers de petite taille.</label>
 <br>
-<input type="checkbox" id="answer_25244_2" value="Ce format permet de modifier la taille de l’image sans perte de résolution.">
+<input type="checkbox" id="answer_66301_2" value="Ce format permet de modifier la taille de l’image sans perte de résolution.">
 <label>Ce format permet de modifier la taille de l’image sans perte de résolution.</label>
 <br>
-<input type="checkbox" id="answer_25244_3" value="Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).">
+<input type="checkbox" id="answer_66301_3" value="Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).">
 <label>Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_25244"></div>
+<div id="result_66301"></div>
 </fieldset>
 </form>
-<script>function validate_form_25244() {var text; var x1 = document.getElementById('answer_25244_1'); var x2 = document.getElementById('answer_25244_2'); var x3 = document.getElementById('answer_25244_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct !';} else {text = '❌ Incorrect. Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux).';} document.getElementById('result_25244').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_66301() {var text; var x1 = document.getElementById('answer_66301_1'); var x2 = document.getElementById('answer_66301_2'); var x3 = document.getElementById('answer_66301_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct !';} else {text = '❌ Incorrect. Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux).';} document.getElementById('result_66301').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_39522').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_51801').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_21644').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_72685').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_40880').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_81950').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_79282').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_57524').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_70812').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_86737').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_99151').innerText == '✅ Correct !'; res12 = document.getElementById('result_25244').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_89144').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_45844').innerText == '✅ Correct !'; res12 = document.getElementById('result_66301').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -710,10 +710,7 @@ Note
 </div>
 <p>Il est possible de faire un graphique nuage de points en utilisant cette commande:</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Petal.Length, iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -793,17 +790,11 @@ Tip
 <p>Nous utiliserons un jeu de données biologiques intéressant afin de présenter les fonctions de base de chacun de ces types de graphiques. En effet, R contient des jeux de données qui ont été créés et intégrés à la version de base afin de nous permettre de tester ses différentes fonctions. Nous utiliserons le jeu de données <em>iris</em> qui contient de véritables mesures morphologiques sur trois espèces d’Iris (des fleurs), récoltées par le biologiste Edgar Anderson. Ce jeu de données est d’autant plus intéressant pour nous que deux des trois espèces étudiées proviennent de la Gaspésie (incluant l’emblème floral du Québec, l’<em>Iris versicolor</em>). Ce jeu de données est aussi très connu, car il a été utilisé par Ronald Fisher, un des pères fondateurs de la biostatistique, dans un de ses articles scientifiques.</p>
 <p>On importe le jeu de données avec la fonction <code>data()</code>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>On peut utiliser la fonction <code>head()</code> pour vérifier le contenu de notre jeu de données.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(iris)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -814,10 +805,7 @@ Tip
 </div>
 <p>Nous avons 4 variables morphologiques mesurées en centimètres (<code>Sepal.Length</code>, <code>Sepal.Width</code>, <code>Petal.Length</code> et <code>Petal.Width</code>) ainsi qu’une variable indiquant l’espèce d’iris (<code>Species</code>). Nous utilisons la fonction <code>str()</code> afin d’avoir des informations sur cet objet.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   150 obs. of  5 variables:
  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
@@ -832,11 +820,8 @@ Tip
 <h4 class="anchored" data-anchor-id="les-histogrammes">Les histogrammes</h4>
 <p>Les histogrammes permettent de visualiser la <strong>distribution de fréquence d’une variable continue</strong>, comme on vient de le voir. La fonction de base pour créer un histogramme est <code>hist(x)</code> où x est un vecteur de valeurs numériques. Dans le cas de nos iris, toutes les variables morphologiques sont des données continues et peuvent donc être représentées à l’aide d’un histogramme. Si on visualise la longueur des sépales:</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer un histogramme de la longueur des sépales</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -849,17 +834,11 @@ Tip
 <p>Nous allons voir un excellent exemple de graphique qui permet de détecter une erreur humaine à l’aide du fichier de données <code>BIO1006_H2018_Echantillon.csv</code> qui présente le résultat d’un sondage effectué dans le cours de biostatistiques BIO-1006 du programme de baccalauréat en Biologie de l’Université Laval. Ce fichier peut-être téléchargé depuis la section <a href="#telechargement">Téléchargement</a>.</p>
 <p>La première étape consiste à ouvrir le fichier en utilisant la fonction <code>read.csv()</code>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/BIO1006_H2018_Echantillon.csv"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/BIO1006_H2018_Echantillon.csv"</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sondage_bio1006)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -883,11 +862,8 @@ Important
 </div>
 <p>L’histogramme suivant montre l’étendue des valeurs de la variable <code>taille_cm</code>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualiser la distribution de fréquence des valeurs de la taille</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sondage_bio1006<span class="sc">$</span>taille_cm)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -898,25 +874,19 @@ Important
 </div>
 <p>Dans ce cas-ci, on voit bien qu’il y a une valeur de taille qui est beaucoup plus petite que les autres. En effet, on remarque qu’il y a une valeur de 1.53 qui a probablement été écrite par une personne qui pensait que la mesure était en mètres plutôt qu’en centimètres. On peut aussi vérifier l’étendue des données de taille à l’aide de la fonction <code>range()</code>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vérifier l’étendue des données de taille</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(sondage_bio1006<span class="sc">$</span>taille_cm)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]   1.53 195.68</code></pre>
 </div>
 </div>
 <p>On peut maintenant refaire l’histogramme en supprimant cette valeur aberrante. Pour y arriver, nous pouvons utiliser la fonction <code>subset()</code> comme suit: utilisez la fonction d’aide <code>help(subset)</code> afin d’en apprendre plus sur cette fonction.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Supprimer la ligne du tableau de données qui contient la valeur aberrante</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">subset</span>(sondage_bio1006, taille_cm <span class="sc">&gt;</span> <span class="dv">100</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Refaire l'histogramme avec les nouvelles données</span></span>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sondage_bio1006<span class="sc">$</span>taille_cm)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -930,12 +900,9 @@ Important
 <h4 class="anchored" data-anchor-id="les-graphiques-en-nuage-de-points">Les graphiques en nuage de points</h4>
 <p>Les graphiques en nuage de points (<em>scatterplot</em>) permettent de visualiser la relation entre deux variables. ON est en effet en mesure de voir si cette relation est présente ou non, si elle est positive ou négative et si elle est linéaire ou non. La fonction de base en R pour créer ce type de graphique est <code>plot()</code>. Cette fonction demande au minimum deux paramètres: les valeurs en abscisse <code>x</code> et les valeurs en ordonnées <code>y</code>. La ligne de code suivante créer un graphique en nuage de points présentant la relation entre la longueur des pétales <code>Petal.Length</code> sur l’axe des <code>x</code> et la largeur de ceux-ci, <code>Petal.Width</code> sur l’axe des <code>y</code>, à partir du jeu de données <code>iris</code>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer un graphique en nuage de points avec les données iris de la longueur des</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pétales et la largeur de ceux-ci</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Petal.Length, iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -948,13 +915,10 @@ Important
 <p>Il est également possible de créer ce graphique en utilisant la <strong>notation par formule</strong>. L’un des avantages de cette méthode est de simplifier l’écriture du code en utilisant le caractère <code>~</code> (<em>tilde</em>). Dans R, lorsque vous voyez ce caractère, vous devriez lire <strong>en fonction de</strong>. Ceci implique que la variable qui sera sur l’axe des <code>y</code> (en ordonnées) est nommée en premier.</p>
 <p>Dans l’exemple suivant, le même graphique est reproduit en illustrant la largeur des pétales <strong>en fonction de</strong> la longueur de ceux-ci. Notez qu’avec cette forme, il n’est pas nécessaire d’écrire le nom du tableau de données suivi du signe <code>$</code> puisqu’on le précise en utilisant le paramètre <code>data =</code> de la fonction <code>plot()</code>. Cette ligne de commande peut être lue comme suit: “faire un graphique en nuage de points de la variable <code>Petal.Width</code> <strong>en fonction de</strong> la variable <code>Petal.Length</code> qui sont contenues dans le tableau de données <code>iris</code>.”</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un graphique en nuage de points de la variable Petal.Width en fonction de</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la variable Petal.Length qui sont contenues dans le data frame iris</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Petal.Width <span class="sc">~</span> Petal.Length, <span class="at">data =</span> iris)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -969,11 +933,8 @@ Important
 <h4 class="anchored" data-anchor-id="les-graphiques-en-pairs">Les graphiques en pairs</h4>
 <p>Les graphiques en paires permettent de visualiser rapidement la relation entre toutes les variables continues du jeu de données grâce à la fonction <code>pairs()</code>. Dans notre jeu de données des iris, 4 des cinq variables peuvent être visualisées l’une par rapport à l’autre. Ici on spécifie donc de ne pas utiliser la colonne 5 qui contient la seule variable qui n’est pas continue, car elle contient le nom des espèces de fleurs; c’est une variable de classe <code>factor</code> et non <code>numeric</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire des graphiques en pair pour toutes les colonnes sauf la 5ième</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(iris[<span class="sc">-</span><span class="dv">5</span>])</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -985,14 +946,11 @@ Important
 <p>Les carrés contenant le nom des variables nous indiquent quelles données sont sur l’axe des <code>x</code> et des <code>y</code> dont ils forment l’intersection. Une variable est représentée sur sur l’axe des <code>x</code> sur la colonne où elle se trouve et sur l’axe des <code>y</code> sur la ligne où on la trouve. Si on regarde le premier graphique en haut à gauche (première colonne, deuxième ligne), il illustre comment la longueur des sépales (<code>Sepal.Length</code>) sur l’axe des abscisses (car c’est le titre de la colonne 1) covarie avec la largeur des sépales (<code>Sepal.Width</code>) sur l’axe des ordonnées (car c’est le titre de la ligne 2). De même, le graphique que nous avons créé précédemment avec la fonction <code>plot()</code> est représenté en bas à droite (troisième colonne, quatrième ligne), avec les variables <code>Petal.Length</code> en abscisses (titre de la colonne = axe des <code>x</code>) et <code>Petal.Width</code> en ordonnées (titre de la ligne = axe des <code>y</code>).</p>
 <p>Le jeu de données du botaniste Edgar Anderson porte sur 3 espèces. Il serait donc intéressant de pouvoir visualiser les 3 espèces d’iris séparément, ce qu’on peut faire en spécifiant la couleur à donner aux valeurs pour chaque espèce.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Donner une couleur rouge, verte ou bleue à chaque espèce</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cols <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Refaire le graphique avec ces couleurs</span></span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>( iris[<span class="sc">-</span><span class="dv">5</span>], <span class="at">col =</span> cols[iris<span class="sc">$</span>Species])</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1017,14 +975,11 @@ Note
 </div>
 </div>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Charger la librairie dans R pour l’utiliser</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(languageR)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un graphique de type "paire" avec cette librairie</span></span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pairscor.fnc</span>(iris[<span class="sc">-</span><span class="dv">5</span>], <span class="at">col.points =</span> cols[iris<span class="sc">$</span>Species])</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in graphics::par(usr): argument 1 does not name a graphical parameter
 Warning in graphics::par(usr): argument 1 does not name a graphical parameter
@@ -1050,14 +1005,11 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 <h4 class="anchored" data-anchor-id="les-diagrammes-à-bâtons">Les diagrammes à bâtons</h4>
 <p>Les diagrammes à bâtons (<em>barplots</em> en anglais) permettent de représenter des données catégorielles avec des barres rectangulaires dont les hauteurs sont proportionnelles aux fréquences qu’elles représentent (nombre d’observations pour chaque catégorie). Les diagrammes à bâtons sont souvent utilisés conjointement avec la fonction <code>table()</code> qui permet de faire la classification croisée d’une variable pour créer un tableau de contingence selon les combinaisons possibles. Dans l’exemple suivant, nous voulons faire un diagrammes à bâtons de la variable <code>peur_des_biostats</code> contenu dans le tableau de données <code>sondage_bio1006</code>. La première étape consiste à dénombrer combien il y a d’observations pour chacune des réponses possibles (<em>Non</em>, <em>Oui</em>, <em>Pas_sur</em>).</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire le décompte de chaque réponse</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(sondage_bio1006<span class="sc">$</span>peur_des_biostats)</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Voir le tableau de décompte</span></span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>counts</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Non     Oui Pas_sur 
@@ -1066,11 +1018,8 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 </div>
 <p>Pour faire un diagramme à bâtons, il suffit d’utiliser la fonction <code>barplot()</code> avec la variable <code>counts</code> qui contient le résultat de notre décompte.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un diagramme en bâton avec les valeurs du décompte</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1081,14 +1030,11 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 </div>
 <p>Avec la fonction <code>table()</code>, il est également possible de faire un décompte croisé, c’est à dire selon plusieurs variables à la fois. Dans l’exemple suivant, nous faisons un décompte du nombre d’observations <em>Face</em> et <em>Pile</em> en groupant par <code>genre</code> et <code>piece_monnaie</code>. On peut ainsi constater immédiatement que les nombres de résultats <em>Face</em> et <em>Pile</em> sont presque égaux (comme on peut s’y attendre) aussi bien pour les <code>Filles</code> que les <code>Gars</code>.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un décompte croisé avec deux variables</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(sondage_bio1006<span class="sc">$</span>genre, sondage_bio1006<span class="sc">$</span>piece_monnaie)</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Voir le tableau de décompte croisé</span></span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>counts</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>       
         Face Pile
@@ -1098,10 +1044,7 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 </div>
 <p>Le diagramme à bâton illustre de façon claire cette observation obtenue avec la fonction <code>table()</code>. Les paramètres <code>legend.text = rownames(counts)</code> et <code>beside = TRUE</code> servent à créer la légende à partir du nom des lignes et à placer les barres côte à côte, respectivement.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">legend.text =</span> <span class="fu">rownames</span>(counts), <span class="at">beside =</span> <span class="cn">TRUE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1116,11 +1059,8 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 <h4 class="anchored" data-anchor-id="les-diagrammes-en-boîte-à-moustaches">Les diagrammes en boîte à moustaches</h4>
 <p>Les diagrammes en boîte à moustaches (<em>boxplot</em>, en anglais) offrent une représentation graphique permettant de visualiser la médiane et les quartiles inférieurs (&lt; 25%) et supérieurs (&gt; 75%) d’une variable. Les valeurs extrêmes de la distribution sont représentées par des points au-delà des “moustaches” (ce ne sont pas nécessairement des valeurs aberrantes!). À l’aide de la représentation par formule vue précédemment, il est possible de grouper les données selon une variable catégorielle (de classe <code>factor</code>) et de comparer ces valeurs de médiane et de quartiles pour deux groupes ou plus. Dans l’exemple suivant, un graphique de type <em>diagramme à boîte</em> présente la distribution de la longueur des sépales (<code>Sepal.Length</code>) en fonction de l’espèce d’iris (<code>Species</code>).</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualiser la distribution de la longueur des sépales en fonction de l’espèce d’iris</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(Sepal.Length <span class="sc">~</span> Species, <span class="at">data =</span> iris)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1166,8 +1106,6 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 </ol>
 <p>Les lignes de code suivantes permettent de créer un simple graphique et de le sauvegarder dans un fichier pdf.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ouvrir le moteur graphique</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file =</span> <span class="st">"/emplacement/nom_du_fichier.pdf"</span>)</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1176,12 +1114,9 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 <span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Fermer le moteur graphique</span></span>
 <span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Plutôt que d’exporter en format pdf, nous pourrions utiliser la fonction <code>png()</code> pour créer un graphique au format png.</p>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ouvrir le moteur graphique</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="at">file =</span> <span class="st">"/emplacement/nom_du_fichier.png"</span>)</span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1190,7 +1125,6 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 <span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Fermer le moteur graphique</span></span>
 <span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section>
 <section id="telechargement" class="level3">
@@ -1210,8 +1144,6 @@ Warning in graphics::par(usr): argument 1 does not name a graphical parameter</c
 <li><a href="www/BIO1006_H2018_Echantillon.csv">Télécharger le fichier de données sous format CSV</a></li>
 </ul>
 
-
-<!-- -->
 
 <script type="webr-data">
 eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC40LjEvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyIsImRwbHlyIiwicGFsbWVycGVuZ3VpbnMiLCJnZ3Bsb3QyIl0sInJlcG9zIjpbXX0sInJlbmRlcl9kZiI6ImRlZmF1bHQifQ==
@@ -1340,57 +1272,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -1732,603 +1613,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text">Capsule 7</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Code source</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb28" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Capsule 6</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../_extensions/r-wasm/live/_knitr.qmd &gt;}}</span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: setup</span></span>
-<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(checkdown)</span>
-<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objectifs de la capsule</span></span>
-<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>À la fin de cette capsule, vous serez en mesure de:</span>
-<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Comprendre l'utilité d'explorer son jeu de données et comment le faire de façon visuelle.</span>
-<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Connaître les 4 types de graphiques les plus utilisés selon les variables à représenter graphiquement.</span>
-<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Sauvegarder et exporter les graphiques sous différents formats.</span>
-<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Capsule vidéo</span></span>
-<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://youtu.be/PzMiODIA4VA &gt;}}</span>
-<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Télécharger le script R de la vidéo</span><span class="co">](www/capsule_6.R)</span> (Faire bouton droit -&gt; enregistrer sous...)</span>
-<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exercices</span></span>
-<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a>**Info!** Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!</span>
-<span id="cb28-33"><a href="#cb28-33" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-35"><a href="#cb28-35" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-36"><a href="#cb28-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-39"><a href="#cb28-39" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-40"><a href="#cb28-40" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question1</span></span>
-<span id="cb28-41"><a href="#cb28-41" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-42"><a href="#cb28-42" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-43"><a href="#cb28-43" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-44"><a href="#cb28-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`hist()`"</span>),</span>
-<span id="cb28-45"><a href="#cb28-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`hist()`"</span>, <span class="st">"`histo()`"</span>, <span class="st">"`histgram()`"</span>),</span>
-<span id="cb28-46"><a href="#cb28-46" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-47"><a href="#cb28-47" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! La fonction `hist()` permet de faire des histogrammes."</span>,</span>
-<span id="cb28-49"><a href="#cb28-49" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
-<span id="cb28-50"><a href="#cb28-50" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction permet de faire des histogrammes?"</span></span>
-<span id="cb28-51"><a href="#cb28-51" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-52"><a href="#cb28-52" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-53"><a href="#cb28-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-54"><a href="#cb28-54" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-55"><a href="#cb28-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-56"><a href="#cb28-56" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-57"><a href="#cb28-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-60"><a href="#cb28-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-61"><a href="#cb28-61" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question2</span></span>
-<span id="cb28-62"><a href="#cb28-62" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-63"><a href="#cb28-63" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-64"><a href="#cb28-64" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-65"><a href="#cb28-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`numeric`"</span>),</span>
-<span id="cb28-66"><a href="#cb28-66" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"Peu importe la classe"</span>, <span class="st">"`character`"</span>, <span class="st">"`numeric`"</span>, <span class="st">"`factor`"</span>),</span>
-<span id="cb28-67"><a href="#cb28-67" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-68"><a href="#cb28-68" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-69"><a href="#cb28-69" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! Il faut que la variable soit de type numérique (continue)."</span>,</span>
-<span id="cb28-70"><a href="#cb28-70" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Rappelez-vous qu'un histogramme est une représentation graphique permettant de représenter la répartition d'une variable **continue**."</span>,</span>
-<span id="cb28-71"><a href="#cb28-71" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle est la classe de variable doit-on utiliser pour faire un histogramme?"</span></span>
-<span id="cb28-72"><a href="#cb28-72" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-73"><a href="#cb28-73" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-74"><a href="#cb28-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-75"><a href="#cb28-75" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-76"><a href="#cb28-76" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb28-77"><a href="#cb28-77" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-78"><a href="#cb28-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-81"><a href="#cb28-81" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-82"><a href="#cb28-82" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question3</span></span>
-<span id="cb28-83"><a href="#cb28-83" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-84"><a href="#cb28-84" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-85"><a href="#cb28-85" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-86"><a href="#cb28-86" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`breaks`"</span>),</span>
-<span id="cb28-87"><a href="#cb28-87" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`nbins`"</span>, <span class="st">"`bins`"</span>, <span class="st">"`breaks`"</span>),</span>
-<span id="cb28-88"><a href="#cb28-88" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-89"><a href="#cb28-89" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-90"><a href="#cb28-90" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! Le paramètre `breaks` permet de contrôler le nombre *bins*."</span>,</span>
-<span id="cb28-91"><a href="#cb28-91" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Consulter l'aide de la fonction avec la commande `?hist`."</span>,</span>
-<span id="cb28-92"><a href="#cb28-92" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?"</span></span>
-<span id="cb28-93"><a href="#cb28-93" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-94"><a href="#cb28-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-95"><a href="#cb28-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-96"><a href="#cb28-96" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-97"><a href="#cb28-97" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb28-98"><a href="#cb28-98" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-99"><a href="#cb28-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-102"><a href="#cb28-102" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-103"><a href="#cb28-103" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question4</span></span>
-<span id="cb28-104"><a href="#cb28-104" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-105"><a href="#cb28-105" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-106"><a href="#cb28-106" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-107"><a href="#cb28-107" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`plot()`"</span>),</span>
-<span id="cb28-108"><a href="#cb28-108" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`scatterplot()`"</span>, <span class="st">"`graph()`"</span>, <span class="st">"`scatter()`"</span>,<span class="st">"`plot()`"</span>),</span>
-<span id="cb28-109"><a href="#cb28-109" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-110"><a href="#cb28-110" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-111"><a href="#cb28-111" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! La fonction générique `plot()` permet de faire des graphiques nuage de points."</span>,</span>
-<span id="cb28-112"><a href="#cb28-112" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
-<span id="cb28-113"><a href="#cb28-113" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?"</span></span>
-<span id="cb28-114"><a href="#cb28-114" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-115"><a href="#cb28-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-116"><a href="#cb28-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-117"><a href="#cb28-117" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-118"><a href="#cb28-118" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb28-119"><a href="#cb28-119" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-120"><a href="#cb28-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-123"><a href="#cb28-123" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-124"><a href="#cb28-124" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question5</span></span>
-<span id="cb28-125"><a href="#cb28-125" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-126"><a href="#cb28-126" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-127"><a href="#cb28-127" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-128"><a href="#cb28-128" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`barplot()`"</span>),</span>
-<span id="cb28-129"><a href="#cb28-129" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`bar`"</span>, <span class="st">"`barplot()`"</span>, <span class="st">"`bplot`"</span>),</span>
-<span id="cb28-130"><a href="#cb28-130" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-131"><a href="#cb28-131" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-132"><a href="#cb28-132" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! La fonction `barplot()` permet de faire des graphiques à bâtons."</span>,</span>
-<span id="cb28-133"><a href="#cb28-133" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
-<span id="cb28-134"><a href="#cb28-134" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction permet de faire des diagrammes à bâtons (*barplot*)?"</span></span>
-<span id="cb28-135"><a href="#cb28-135" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-136"><a href="#cb28-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-137"><a href="#cb28-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-138"><a href="#cb28-138" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-139"><a href="#cb28-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-140"><a href="#cb28-140" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-141"><a href="#cb28-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-144"><a href="#cb28-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-145"><a href="#cb28-145" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question6</span></span>
-<span id="cb28-146"><a href="#cb28-146" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-147"><a href="#cb28-147" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-148"><a href="#cb28-148" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-149"><a href="#cb28-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`barplot()`"</span>),</span>
-<span id="cb28-150"><a href="#cb28-150" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`bar`"</span>, <span class="st">"`barplot()`"</span>, <span class="st">"`bplot`"</span>),</span>
-<span id="cb28-151"><a href="#cb28-151" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-152"><a href="#cb28-152" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-153"><a href="#cb28-153" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! La fonction `barplot()` permet de faire des graphiques à bâtons."</span>,</span>
-<span id="cb28-154"><a href="#cb28-154" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
-<span id="cb28-155"><a href="#cb28-155" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction permet de faire des diagrammes à bâtons (*barplot*)?"</span></span>
-<span id="cb28-156"><a href="#cb28-156" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-157"><a href="#cb28-157" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-158"><a href="#cb28-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-159"><a href="#cb28-159" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-160"><a href="#cb28-160" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb28-161"><a href="#cb28-161" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-162"><a href="#cb28-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-165"><a href="#cb28-165" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-166"><a href="#cb28-166" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question7</span></span>
-<span id="cb28-167"><a href="#cb28-167" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-168"><a href="#cb28-168" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-169"><a href="#cb28-169" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-170"><a href="#cb28-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`table()`"</span>),</span>
-<span id="cb28-171"><a href="#cb28-171" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`classify()`"</span>, <span class="st">"`count()`"</span>, <span class="st">"`sort()`"</span>, <span class="st">"`table()`"</span>),</span>
-<span id="cb28-172"><a href="#cb28-172" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-173"><a href="#cb28-173" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-174"><a href="#cb28-174" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! La fonction `table()` utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs."</span>,</span>
-<span id="cb28-175"><a href="#cb28-175" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. `classify()` et `count()` n'existent à la base dans R. `sort()` permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
-<span id="cb28-176"><a href="#cb28-176" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?"</span></span>
-<span id="cb28-177"><a href="#cb28-177" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-178"><a href="#cb28-178" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-179"><a href="#cb28-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-180"><a href="#cb28-180" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-181"><a href="#cb28-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-182"><a href="#cb28-182" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-183"><a href="#cb28-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-186"><a href="#cb28-186" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-187"><a href="#cb28-187" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question8</span></span>
-<span id="cb28-188"><a href="#cb28-188" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-189"><a href="#cb28-189" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-190"><a href="#cb28-190" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-191"><a href="#cb28-191" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`boxplot()`"</span>),</span>
-<span id="cb28-192"><a href="#cb28-192" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`moust()`"</span>, <span class="st">"`boxplot()`"</span>, <span class="st">"`box()`"</span>),</span>
-<span id="cb28-193"><a href="#cb28-193" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-194"><a href="#cb28-194" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-195"><a href="#cb28-195" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! La fonction `boxplot()` permet de faire des graphiques à moustaches."</span>,</span>
-<span id="cb28-196"><a href="#cb28-196" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. La fonction `moust()` n'existe à la base dans R. La fonction `box()` permet d'ajouter une bordure autours d'un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser."</span>,</span>
-<span id="cb28-197"><a href="#cb28-197" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelle fonction permet de faire des graphiques à moustaches (*boxplot*)?"</span></span>
-<span id="cb28-198"><a href="#cb28-198" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-199"><a href="#cb28-199" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-200"><a href="#cb28-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-201"><a href="#cb28-201" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-202"><a href="#cb28-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-203"><a href="#cb28-203" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-204"><a href="#cb28-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-207"><a href="#cb28-207" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-208"><a href="#cb28-208" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question9</span></span>
-<span id="cb28-209"><a href="#cb28-209" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-210"><a href="#cb28-210" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-211"><a href="#cb28-211" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-212"><a href="#cb28-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"`~`"</span>),</span>
-<span id="cb28-213"><a href="#cb28-213" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"`~`"</span>, <span class="st">"`+`"</span>, <span class="st">"`|`"</span>, <span class="st">"`/`"</span>),</span>
-<span id="cb28-214"><a href="#cb28-214" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-215"><a href="#cb28-215" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-216"><a href="#cb28-216" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! Le *tilde* se lit *en fonction de*."</span>,</span>
-<span id="cb28-217"><a href="#cb28-217" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. `+` est l'opérateur d'addition. `|` est l'opétateur logique de comparaison *ou*. `/` est l'opérateur de division. "</span>,</span>
-<span id="cb28-218"><a href="#cb28-218" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Pour créer un graphique à moustache il faut utiliser la notation dite “par formule”. Quel est le signe (caractère) qui doit être utilisé pour cette notation?"</span></span>
-<span id="cb28-219"><a href="#cb28-219" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-220"><a href="#cb28-220" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-221"><a href="#cb28-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-222"><a href="#cb28-222" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-223"><a href="#cb28-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-224"><a href="#cb28-224" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-225"><a href="#cb28-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-228"><a href="#cb28-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-229"><a href="#cb28-229" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question10</span></span>
-<span id="cb28-230"><a href="#cb28-230" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-231"><a href="#cb28-231" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-232"><a href="#cb28-232" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-233"><a href="#cb28-233" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"Matriciel et vectoriel"</span>),</span>
-<span id="cb28-234"><a href="#cb28-234" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"PNG et TIF"</span>, <span class="st">"JPEG et GIF"</span>, <span class="st">"Matriciel et vectoriel"</span>),</span>
-<span id="cb28-235"><a href="#cb28-235" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-236"><a href="#cb28-236" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-237"><a href="#cb28-237" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution."</span>,</span>
-<span id="cb28-238"><a href="#cb28-238" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Ceux-ci sont plutôt des formats de fichiers de type matriciel."</span>,</span>
-<span id="cb28-239"><a href="#cb28-239" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Il existe deux grandes familles d’images, nommez-les."</span></span>
-<span id="cb28-240"><a href="#cb28-240" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-241"><a href="#cb28-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-242"><a href="#cb28-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-243"><a href="#cb28-243" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-244"><a href="#cb28-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-245"><a href="#cb28-245" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-246"><a href="#cb28-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-249"><a href="#cb28-249" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-250"><a href="#cb28-250" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question11</span></span>
-<span id="cb28-251"><a href="#cb28-251" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-252"><a href="#cb28-252" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-253"><a href="#cb28-253" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-254"><a href="#cb28-254" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier."</span>),</span>
-<span id="cb28-255"><a href="#cb28-255" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier."</span>, <span class="st">"(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier."</span>),</span>
-<span id="cb28-256"><a href="#cb28-256" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-257"><a href="#cb28-257" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-258"><a href="#cb28-258" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! "</span>,</span>
-<span id="cb28-259"><a href="#cb28-259" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Il faut d'abord ouvrir le moteur graphique."</span>,</span>
-<span id="cb28-260"><a href="#cb28-260" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Quelles sont les trois grandes étapes (dans l’ordre) pour sauvegarder un graphique localement sur votre ordinateur?"</span></span>
-<span id="cb28-261"><a href="#cb28-261" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-262"><a href="#cb28-262" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-263"><a href="#cb28-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-264"><a href="#cb28-264" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-265"><a href="#cb28-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-266"><a href="#cb28-266" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" icon=false .question}</span>
-<span id="cb28-267"><a href="#cb28-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-270"><a href="#cb28-270" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-271"><a href="#cb28-271" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: question12</span></span>
-<span id="cb28-272"><a href="#cb28-272" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb28-273"><a href="#cb28-273" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: "asis"</span></span>
-<span id="cb28-274"><a href="#cb28-274" aria-hidden="true" tabindex="-1"></a><span class="fu">check_question</span>(</span>
-<span id="cb28-275"><a href="#cb28-275" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"Ce format permet de modifier la taille de l’image sans perte de résolution."</span>),</span>
-<span id="cb28-276"><a href="#cb28-276" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">c</span>(<span class="st">"Ce format permet de générer des fichiers de petite taille."</span>, <span class="st">"Ce format permet de modifier la taille de l’image sans perte de résolution."</span>, <span class="st">"Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux)."</span>),</span>
-<span id="cb28-277"><a href="#cb28-277" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"checkbox"</span>,</span>
-<span id="cb28-278"><a href="#cb28-278" aria-hidden="true" tabindex="-1"></a>  <span class="at">button_label =</span> <span class="st">"Vérifier"</span>,</span>
-<span id="cb28-279"><a href="#cb28-279" aria-hidden="true" tabindex="-1"></a>  <span class="at">right =</span> <span class="st">"✅ Correct ! "</span>,</span>
-<span id="cb28-280"><a href="#cb28-280" aria-hidden="true" tabindex="-1"></a>  <span class="at">wrong =</span> <span class="st">"❌ Incorrect. Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux). "</span>,</span>
-<span id="cb28-281"><a href="#cb28-281" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Pourquoi devriez-vous utiliser le format d’image vectoriel lorsque possible?"</span></span>
-<span id="cb28-282"><a href="#cb28-282" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb28-283"><a href="#cb28-283" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-284"><a href="#cb28-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-285"><a href="#cb28-285" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-286"><a href="#cb28-286" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-287"><a href="#cb28-287" aria-hidden="true" tabindex="-1"></a>Il est possible de faire un graphique nuage de points en utilisant cette commande:</span>
-<span id="cb28-288"><a href="#cb28-288" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-291"><a href="#cb28-291" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-292"><a href="#cb28-292" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-293"><a href="#cb28-293" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Petal.Length, iris<span class="sc">$</span>Petal.Width)</span>
-<span id="cb28-294"><a href="#cb28-294" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-295"><a href="#cb28-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-296"><a href="#cb28-296" aria-hidden="true" tabindex="-1"></a>Refaites le même graphique mais en utilisant la notation par formule.</span>
-<span id="cb28-297"><a href="#cb28-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-300"><a href="#cb28-300" aria-hidden="true" tabindex="-1"></a><span class="in">```{webr}</span></span>
-<span id="cb28-301"><a href="#cb28-301" aria-hidden="true" tabindex="-1"></a><span class="in">#| autorun: false</span></span>
-<span id="cb28-302"><a href="#cb28-302" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-303"><a href="#cb28-303" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-304"><a href="#cb28-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-305"><a href="#cb28-305" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Tip"}</span>
-<span id="cb28-306"><a href="#cb28-306" aria-hidden="true" tabindex="-1"></a>Pensez à utiliser l'opérateur tilde ~.</span>
-<span id="cb28-307"><a href="#cb28-307" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-308"><a href="#cb28-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-309"><a href="#cb28-309" aria-hidden="true" tabindex="-1"></a><span class="fu">## Matériel accompagnateur</span></span>
-<span id="cb28-310"><a href="#cb28-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-311"><a href="#cb28-311" aria-hidden="true" tabindex="-1"></a><span class="fu">### Explorer son jeu de données: pourquoi et comment</span></span>
-<span id="cb28-312"><a href="#cb28-312" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-313"><a href="#cb28-313" aria-hidden="true" tabindex="-1"></a>Lorsqu'on se familiarise avec un jeu de données que l'on vient d'obtenir, il est important  de l'explorer pour détecter  les erreurs qui peuvent s'être glissées lors de la saisie des données dans le fichier. Comme les humains sont visuels et qu'une image vaut mille mots, il est pratique d'utiliser la visualisation graphique pour explorer l'étendue de ces données, comment elles se comparent entre différents groupes et s'il y a des variables qui sont potentiellement corrélées.</span>
-<span id="cb28-314"><a href="#cb28-314" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-315"><a href="#cb28-315" aria-hidden="true" tabindex="-1"></a><span class="fu">### Les graphiques de base</span></span>
-<span id="cb28-316"><a href="#cb28-316" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-317"><a href="#cb28-317" aria-hidden="true" tabindex="-1"></a>L'un des nombreux avantages de R est qu'il permet de créer des graphiques de haute qualité. Le tableau suivant présente les quatre types de graphiques fréquemment utilisés en biologie.</span>
-<span id="cb28-318"><a href="#cb28-318" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-319"><a href="#cb28-319" aria-hidden="true" tabindex="-1"></a>|   Fonction   |                                                             Description                                                              |</span>
-<span id="cb28-320"><a href="#cb28-320" aria-hidden="true" tabindex="-1"></a>| :----------- | :----------------------------------------------------------------------------------------------------------------------------------- |</span>
-<span id="cb28-321"><a href="#cb28-321" aria-hidden="true" tabindex="-1"></a>| <span class="in">`hist(x)`</span>    | Histogramme de la variable continue <span class="in">`x`</span>.                                                                                             |</span>
-<span id="cb28-322"><a href="#cb28-322" aria-hidden="true" tabindex="-1"></a>| <span class="in">`plot(x, y)`</span> | Nuage de points de la relation entre <span class="in">`x`</span> (abscisse) et <span class="in">`y`</span> (ordonnées).                                                              |</span>
-<span id="cb28-323"><a href="#cb28-323" aria-hidden="true" tabindex="-1"></a>| <span class="in">`pairs(df)`</span>  | Permets de visualiser la relation entre toutes les variables continues d’une structure de données (tableau de données *data frame*). |</span>
-<span id="cb28-324"><a href="#cb28-324" aria-hidden="true" tabindex="-1"></a>| <span class="in">`barplot(x)`</span> | Diagramme à bâtons du décompte de la variable <span class="in">`x`</span>.                                                                                   |</span>
-<span id="cb28-325"><a href="#cb28-325" aria-hidden="true" tabindex="-1"></a>| <span class="in">`boxplot(x)`</span> | Diagramme à boîte à moustaches de la variable continue <span class="in">`x`</span>.                                                                          |</span>
-<span id="cb28-326"><a href="#cb28-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-327"><a href="#cb28-327" aria-hidden="true" tabindex="-1"></a>Nous utiliserons un jeu de données biologiques intéressant afin de présenter les fonctions de base de chacun de ces types de graphiques. En effet, R contient des jeux de données qui ont été créés et intégrés à la version de base afin de nous permettre de tester ses différentes fonctions. Nous utiliserons le jeu de données *iris* qui contient de véritables mesures morphologiques sur trois espèces d'Iris (des fleurs), récoltées par le biologiste Edgar Anderson. Ce jeu de données est d'autant plus intéressant pour nous que deux des trois espèces étudiées proviennent de la Gaspésie (incluant l'emblème floral du Québec, l'*Iris versicolor*). Ce jeu de données est aussi très connu, car il a été utilisé par Ronald Fisher, un des pères fondateurs de la biostatistique, dans un de ses articles scientifiques.</span>
-<span id="cb28-328"><a href="#cb28-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-329"><a href="#cb28-329" aria-hidden="true" tabindex="-1"></a>On importe le jeu de données avec la fonction <span class="in">`data()`</span>.</span>
-<span id="cb28-330"><a href="#cb28-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-333"><a href="#cb28-333" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-334"><a href="#cb28-334" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-335"><a href="#cb28-335" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
-<span id="cb28-336"><a href="#cb28-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-337"><a href="#cb28-337" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-338"><a href="#cb28-338" aria-hidden="true" tabindex="-1"></a>On peut utiliser la fonction <span class="in">`head()`</span> pour vérifier le contenu de notre jeu de données.</span>
-<span id="cb28-339"><a href="#cb28-339" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-342"><a href="#cb28-342" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-343"><a href="#cb28-343" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-344"><a href="#cb28-344" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(iris)</span>
-<span id="cb28-345"><a href="#cb28-345" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-346"><a href="#cb28-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-347"><a href="#cb28-347" aria-hidden="true" tabindex="-1"></a>Nous avons 4 variables morphologiques mesurées en centimètres (<span class="in">`Sepal.Length`</span>, <span class="in">`Sepal.Width`</span>, <span class="in">`Petal.Length`</span>  et <span class="in">`Petal.Width`</span>) ainsi qu'une variable indiquant l'espèce d'iris (<span class="in">`Species`</span>). Nous utilisons la fonction <span class="in">`str()`</span> afin d’avoir des informations sur cet objet.</span>
-<span id="cb28-348"><a href="#cb28-348" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-351"><a href="#cb28-351" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-352"><a href="#cb28-352" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-353"><a href="#cb28-353" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span>
-<span id="cb28-354"><a href="#cb28-354" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-355"><a href="#cb28-355" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-356"><a href="#cb28-356" aria-hidden="true" tabindex="-1"></a>Nous apprenons que nous avons 150 observations dans notre tableau (*data frame*). Les données sur les sépales et les pétales sont numériques (*numeric*) alors que la variable décrivant les espèces est un facteur (*factor*).</span>
-<span id="cb28-357"><a href="#cb28-357" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-358"><a href="#cb28-358" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Les histogrammes</span></span>
-<span id="cb28-359"><a href="#cb28-359" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-360"><a href="#cb28-360" aria-hidden="true" tabindex="-1"></a>Les histogrammes permettent de visualiser la **distribution de fréquence d'une variable continue**, comme on vient de le voir. La fonction de base pour créer un histogramme est <span class="in">`hist(x)`</span> où x est un vecteur de valeurs numériques. Dans le cas de nos iris, toutes les variables morphologiques sont des données continues et peuvent donc être représentées à l'aide d'un histogramme. Si on visualise la longueur des sépales:</span>
-<span id="cb28-361"><a href="#cb28-361" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-364"><a href="#cb28-364" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-365"><a href="#cb28-365" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-366"><a href="#cb28-366" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer un histogramme de la longueur des sépales</span></span>
-<span id="cb28-367"><a href="#cb28-367" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length)</span>
-<span id="cb28-368"><a href="#cb28-368" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-369"><a href="#cb28-369" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-370"><a href="#cb28-370" aria-hidden="true" tabindex="-1"></a>Les sépales des 3 espèces confondues ont des longueurs incluses dans les **classes de taille** allant de 4 à 8 centimètres. La distribution est unimodale, c.-à-d. qu'elle est symétrique autour d'un seul pic d'abondance de données. Ce mode correspond à la classe de taille 6 à 6.5 cm. L'un des avantages des histogrammes est qu'ils permettent de rapidement identifier les valeurs aberrantes dans un jeu de données. Une valeur aberrante (*outlier*) est une valeur qui s'éloigne beaucoup des autres; elle peut être tout à fait justifiée (par exemple une brève et intense vague de chaleur dans une série temporelle de températures de l'air) ou le résultat d'un défaut de fonctionnement d'un appareil, d'une erreur d'interprétation ou de transcription humaine, etc. Dans notre série de mesures de sépales, il ne semble pas y avoir de valeur aberrante.</span>
-<span id="cb28-371"><a href="#cb28-371" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-372"><a href="#cb28-372" aria-hidden="true" tabindex="-1"></a>Nous allons voir un excellent exemple de graphique qui permet de détecter une erreur humaine à l'aide du fichier de données <span class="in">`BIO1006_H2018_Echantillon.csv`</span> qui présente le résultat d'un sondage effectué dans le cours de biostatistiques BIO-1006 du programme de baccalauréat en Biologie de l'Université Laval. Ce fichier peut-être téléchargé depuis la section <span class="co">[</span><span class="ot">Téléchargement</span><span class="co">](#telechargement)</span>.</span>
-<span id="cb28-373"><a href="#cb28-373" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-374"><a href="#cb28-374" aria-hidden="true" tabindex="-1"></a>La première étape consiste à ouvrir le fichier en utilisant la fonction <span class="in">`read.csv()`</span>.</span>
-<span id="cb28-375"><a href="#cb28-375" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-378"><a href="#cb28-378" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-379"><a href="#cb28-379" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-380"><a href="#cb28-380" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: FALSE</span></span>
-<span id="cb28-381"><a href="#cb28-381" aria-hidden="true" tabindex="-1"></a><span class="co">#| comment: NA</span></span>
-<span id="cb28-382"><a href="#cb28-382" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/BIO1006_H2018_Echantillon.csv"</span>)</span>
-<span id="cb28-383"><a href="#cb28-383" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-384"><a href="#cb28-384" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-387"><a href="#cb28-387" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-388"><a href="#cb28-388" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-389"><a href="#cb28-389" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/BIO1006_H2018_Echantillon.csv"</span>)</span>
-<span id="cb28-390"><a href="#cb28-390" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sondage_bio1006)</span>
-<span id="cb28-391"><a href="#cb28-391" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-392"><a href="#cb28-392" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-393"><a href="#cb28-393" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb28-394"><a href="#cb28-394" aria-hidden="true" tabindex="-1"></a>N'oubliez de changer le chemin d'accès pour lire le fichier <span class="in">`BIO1006_H2018_Echantillon.csv`</span> qui se trouve sur votre ordinateur.</span>
-<span id="cb28-395"><a href="#cb28-395" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-396"><a href="#cb28-396" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-397"><a href="#cb28-397" aria-hidden="true" tabindex="-1"></a>L'histogramme suivant montre l'étendue des valeurs de la variable <span class="in">`taille_cm`</span>.</span>
-<span id="cb28-398"><a href="#cb28-398" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-401"><a href="#cb28-401" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-402"><a href="#cb28-402" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-403"><a href="#cb28-403" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualiser la distribution de fréquence des valeurs de la taille</span></span>
-<span id="cb28-404"><a href="#cb28-404" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sondage_bio1006<span class="sc">$</span>taille_cm)</span>
-<span id="cb28-405"><a href="#cb28-405" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-406"><a href="#cb28-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-407"><a href="#cb28-407" aria-hidden="true" tabindex="-1"></a>Dans ce cas-ci, on voit bien qu'il y a une valeur de taille qui est beaucoup plus petite que les autres. En effet, on remarque qu'il y a une valeur de 1.53 qui a probablement été écrite par une personne qui pensait que la mesure était en mètres plutôt qu'en centimètres. On peut aussi vérifier l'étendue des données de taille à l'aide de la fonction <span class="in">`range()`</span>.</span>
-<span id="cb28-408"><a href="#cb28-408" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-409"><a href="#cb28-409" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=TRUE}</span></span>
-<span id="cb28-410"><a href="#cb28-410" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: true</span></span>
-<span id="cb28-411"><a href="#cb28-411" aria-hidden="true" tabindex="-1"></a><span class="in"># Vérifier l’étendue des données de taille</span></span>
-<span id="cb28-412"><a href="#cb28-412" aria-hidden="true" tabindex="-1"></a><span class="in">range(sondage_bio1006$taille_cm)</span></span>
-<span id="cb28-413"><a href="#cb28-413" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-414"><a href="#cb28-414" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-415"><a href="#cb28-415" aria-hidden="true" tabindex="-1"></a>On peut maintenant refaire l'histogramme en supprimant cette valeur aberrante. Pour y arriver, nous pouvons utiliser la fonction <span class="in">`subset()`</span> comme suit: utilisez la fonction d'aide <span class="in">`help(subset)`</span> afin d'en apprendre plus sur cette fonction.</span>
-<span id="cb28-416"><a href="#cb28-416" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-419"><a href="#cb28-419" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-420"><a href="#cb28-420" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-421"><a href="#cb28-421" aria-hidden="true" tabindex="-1"></a><span class="co"># Supprimer la ligne du tableau de données qui contient la valeur aberrante</span></span>
-<span id="cb28-422"><a href="#cb28-422" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">subset</span>(sondage_bio1006, taille_cm <span class="sc">&gt;</span> <span class="dv">100</span>)</span>
-<span id="cb28-423"><a href="#cb28-423" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-424"><a href="#cb28-424" aria-hidden="true" tabindex="-1"></a><span class="co"># Refaire l'histogramme avec les nouvelles données</span></span>
-<span id="cb28-425"><a href="#cb28-425" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sondage_bio1006<span class="sc">$</span>taille_cm)</span>
-<span id="cb28-426"><a href="#cb28-426" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-427"><a href="#cb28-427" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-428"><a href="#cb28-428" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Les graphiques en nuage de points</span></span>
-<span id="cb28-429"><a href="#cb28-429" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-430"><a href="#cb28-430" aria-hidden="true" tabindex="-1"></a>Les graphiques en nuage de points (*scatterplot*) permettent de visualiser la relation entre deux variables. ON est en effet en mesure de voir si cette relation est présente ou non, si elle est positive ou négative et si elle est linéaire ou non. La fonction de base en R pour créer ce type de graphique est <span class="in">`plot()`</span>. Cette fonction demande au minimum deux paramètres: les valeurs en abscisse <span class="in">`x`</span> et les valeurs en ordonnées <span class="in">`y`</span>. La ligne de code suivante créer un graphique en nuage de points présentant la relation entre la longueur des pétales <span class="in">`Petal.Length`</span> sur l'axe des <span class="in">`x`</span> et la largeur de ceux-ci, <span class="in">`Petal.Width`</span> sur l'axe des <span class="in">`y`</span>, à partir du jeu de données <span class="in">`iris`</span>.</span>
-<span id="cb28-431"><a href="#cb28-431" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-434"><a href="#cb28-434" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-435"><a href="#cb28-435" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-436"><a href="#cb28-436" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer un graphique en nuage de points avec les données iris de la longueur des</span></span>
-<span id="cb28-437"><a href="#cb28-437" aria-hidden="true" tabindex="-1"></a><span class="co"># pétales et la largeur de ceux-ci</span></span>
-<span id="cb28-438"><a href="#cb28-438" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Petal.Length, iris<span class="sc">$</span>Petal.Width)</span>
-<span id="cb28-439"><a href="#cb28-439" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-440"><a href="#cb28-440" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-441"><a href="#cb28-441" aria-hidden="true" tabindex="-1"></a>En visualisant les données, on voit que ces deux mesures morphologiques semblent co-varier positivement et de façon linéaire pour l'ensemble du jeu de données sur ces trois espèces d'iris. Nous verrons dans une autre capsule comment modifier ce graphique, car de nombreux points de données ne sont pas visibles en ce moment et les trois espèces ne peuvent pas être distinguées.</span>
-<span id="cb28-442"><a href="#cb28-442" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-443"><a href="#cb28-443" aria-hidden="true" tabindex="-1"></a>Il est également possible de créer ce graphique en utilisant la **notation par formule**. L'un des avantages de cette méthode est de simplifier l'écriture du code en utilisant le caractère `~` (*tilde*). Dans R, lorsque vous voyez ce caractère, vous devriez lire **en fonction de**. Ceci implique que la variable qui sera sur l'axe des <span class="in">`y`</span> (en ordonnées) est nommée en premier.</span>
-<span id="cb28-444"><a href="#cb28-444" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-445"><a href="#cb28-445" aria-hidden="true" tabindex="-1"></a>Dans l'exemple suivant, le même graphique est reproduit en illustrant la largeur des pétales **en fonction de** la longueur de ceux-ci. Notez qu'avec cette forme, il n'est pas nécessaire d'écrire le nom du tableau de données suivi du signe `$` puisqu'on le précise en utilisant le paramètre `data =` de la fonction `plot()`. Cette ligne de commande peut être lue comme suit: "faire un graphique en nuage de points de la variable `Petal.Width` **en fonction de** la variable <span class="in">`Petal.Length`</span> qui sont contenues dans le tableau de données <span class="in">`iris`</span>."</span>
-<span id="cb28-446"><a href="#cb28-446" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-449"><a href="#cb28-449" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-450"><a href="#cb28-450" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-451"><a href="#cb28-451" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un graphique en nuage de points de la variable Petal.Width en fonction de</span></span>
-<span id="cb28-452"><a href="#cb28-452" aria-hidden="true" tabindex="-1"></a><span class="co"># la variable Petal.Length qui sont contenues dans le data frame iris</span></span>
-<span id="cb28-453"><a href="#cb28-453" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-454"><a href="#cb28-454" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Petal.Width <span class="sc">~</span> Petal.Length, <span class="at">data =</span> iris)</span>
-<span id="cb28-455"><a href="#cb28-455" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-456"><a href="#cb28-456" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-457"><a href="#cb28-457" aria-hidden="true" tabindex="-1"></a>La seule différence avec le graphique précédent est le nom des axes. Dans la seconde version (avec formule), le nom du tableau de données n'est pas indiqué, seuls les noms des variables sont visibles.</span>
-<span id="cb28-458"><a href="#cb28-458" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-459"><a href="#cb28-459" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Les graphiques en pairs</span></span>
-<span id="cb28-460"><a href="#cb28-460" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-461"><a href="#cb28-461" aria-hidden="true" tabindex="-1"></a>Les graphiques en paires permettent de visualiser rapidement la relation entre toutes les variables continues du jeu de données grâce à la fonction <span class="in">`pairs()`</span>. Dans notre jeu de données des iris, 4 des cinq variables peuvent être visualisées l'une par rapport à l'autre. Ici on spécifie donc de ne pas utiliser la colonne 5 qui contient la seule variable qui n'est pas continue, car elle contient le nom des espèces de fleurs; c'est une variable de classe <span class="in">`factor`</span> et non <span class="in">`numeric`</span><span class="ot">[^1]</span>.</span>
-<span id="cb28-462"><a href="#cb28-462" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-463"><a href="#cb28-463" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>Voir la capsule intitulée *Les variables dans R*.</span>
-<span id="cb28-464"><a href="#cb28-464" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-467"><a href="#cb28-467" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-468"><a href="#cb28-468" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-469"><a href="#cb28-469" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire des graphiques en pair pour toutes les colonnes sauf la 5ième</span></span>
-<span id="cb28-470"><a href="#cb28-470" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(iris[<span class="sc">-</span><span class="dv">5</span>])</span>
-<span id="cb28-471"><a href="#cb28-471" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-472"><a href="#cb28-472" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-473"><a href="#cb28-473" aria-hidden="true" tabindex="-1"></a>Les carrés contenant le nom des variables nous indiquent quelles données sont sur l'axe des <span class="in">`x`</span> et des <span class="in">`y`</span> dont ils forment l'intersection. Une variable est représentée sur sur l’axe des <span class="in">`x`</span> sur la colonne où elle se trouve et sur l’axe des <span class="in">`y`</span> sur la ligne où on la trouve. Si on regarde le premier graphique en haut à gauche (première colonne, deuxième ligne), il illustre comment la longueur des sépales (<span class="in">`Sepal.Length`</span>) sur l’axe des abscisses (car c’est le titre de la colonne 1) covarie avec la largeur des sépales (<span class="in">`Sepal.Width`</span>) sur l’axe des ordonnées (car c’est le titre de la ligne 2). De même, le graphique que nous avons créé précédemment avec la fonction <span class="in">`plot()`</span> est représenté en bas à droite (troisième colonne, quatrième ligne), avec les variables <span class="in">`Petal.Length`</span> en abscisses (titre de la colonne = axe des <span class="in">`x`</span>) et <span class="in">`Petal.Width`</span> en ordonnées (titre de la ligne = axe des <span class="in">`y`</span>).</span>
-<span id="cb28-474"><a href="#cb28-474" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-475"><a href="#cb28-475" aria-hidden="true" tabindex="-1"></a>Le jeu de données du botaniste Edgar Anderson porte sur 3 espèces. Il serait donc intéressant de pouvoir visualiser les 3 espèces d'iris séparément, ce qu'on peut faire en spécifiant la couleur à donner aux valeurs pour chaque espèce.</span>
-<span id="cb28-476"><a href="#cb28-476" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-479"><a href="#cb28-479" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-480"><a href="#cb28-480" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-481"><a href="#cb28-481" aria-hidden="true" tabindex="-1"></a><span class="co"># Donner une couleur rouge, verte ou bleue à chaque espèce</span></span>
-<span id="cb28-482"><a href="#cb28-482" aria-hidden="true" tabindex="-1"></a>cols <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>)</span>
-<span id="cb28-483"><a href="#cb28-483" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-484"><a href="#cb28-484" aria-hidden="true" tabindex="-1"></a><span class="co"># Refaire le graphique avec ces couleurs</span></span>
-<span id="cb28-485"><a href="#cb28-485" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>( iris[<span class="sc">-</span><span class="dv">5</span>], <span class="at">col =</span> cols[iris<span class="sc">$</span>Species])</span>
-<span id="cb28-486"><a href="#cb28-486" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-487"><a href="#cb28-487" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-488"><a href="#cb28-488" aria-hidden="true" tabindex="-1"></a>La variable Species étant de classe <span class="in">`factor`</span>, les trois couleurs fournies dans le vecteur <span class="in">`cols`</span> sont indexées selon la valeur de l'espèce, qui pour R se résume à 3 catégories! Les espèces sont maintenant illustrées en rouge, vert ou bleu. Tout d'un coup, on voit que la relation entre deux mesures morphologiques est très différente selon l'espèce d'iris.</span>
-<span id="cb28-489"><a href="#cb28-489" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-490"><a href="#cb28-490" aria-hidden="true" tabindex="-1"></a>La librairie <span class="in">`languageR`</span> et sa fonction <span class="in">`pairscor.fnc()`</span> offre une version améliorée de la fonction <span class="in">`pairs()`</span>. Cette fonction permet à la fois d'obtenir les histogrammes, les graphiques en pairs ainsi que les coefficients de corrélation Pearson et Spearman.</span>
-<span id="cb28-491"><a href="#cb28-491" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-492"><a href="#cb28-492" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb28-493"><a href="#cb28-493" aria-hidden="true" tabindex="-1"></a>La librairie <span class="in">`languageR`</span> n'est pas installée dans la version de base de R. Vous devrez l'installer vous-même<span class="ot">[^3]</span>.</span>
-<span id="cb28-494"><a href="#cb28-494" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-495"><a href="#cb28-495" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-496"><a href="#cb28-496" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-497"><a href="#cb28-497" aria-hidden="true" tabindex="-1"></a><span class="ot">[^3]: </span>Voir la capsule intitulée "Introduction à R et RStudio: premiers pas".</span>
-<span id="cb28-498"><a href="#cb28-498" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-501"><a href="#cb28-501" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-502"><a href="#cb28-502" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-503"><a href="#cb28-503" aria-hidden="true" tabindex="-1"></a><span class="co"># Charger la librairie dans R pour l’utiliser</span></span>
-<span id="cb28-504"><a href="#cb28-504" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(languageR)</span>
-<span id="cb28-505"><a href="#cb28-505" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-506"><a href="#cb28-506" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un graphique de type "paire" avec cette librairie</span></span>
-<span id="cb28-507"><a href="#cb28-507" aria-hidden="true" tabindex="-1"></a><span class="fu">pairscor.fnc</span>(iris[<span class="sc">-</span><span class="dv">5</span>], <span class="at">col.points =</span> cols[iris<span class="sc">$</span>Species])</span>
-<span id="cb28-508"><a href="#cb28-508" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-509"><a href="#cb28-509" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-510"><a href="#cb28-510" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Les diagrammes à bâtons</span></span>
-<span id="cb28-511"><a href="#cb28-511" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-512"><a href="#cb28-512" aria-hidden="true" tabindex="-1"></a>Les diagrammes à bâtons (*barplots* en anglais) permettent de représenter des données catégorielles avec des barres rectangulaires dont les hauteurs sont proportionnelles aux fréquences  qu'elles représentent (nombre d'observations pour chaque catégorie). Les diagrammes à bâtons sont souvent utilisés conjointement avec la fonction `table()` qui permet de faire la classification croisée d'une variable pour créer un tableau de contingence selon les combinaisons possibles. Dans l'exemple suivant, nous voulons faire un diagrammes à bâtons de la variable `peur_des_biostats` contenu dans le tableau de données `sondage_bio1006`. La première étape consiste à dénombrer combien il y a d'observations pour chacune des réponses possibles (*Non*, *Oui*, *Pas_sur*).</span>
-<span id="cb28-513"><a href="#cb28-513" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-516"><a href="#cb28-516" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-517"><a href="#cb28-517" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-518"><a href="#cb28-518" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire le décompte de chaque réponse</span></span>
-<span id="cb28-519"><a href="#cb28-519" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(sondage_bio1006<span class="sc">$</span>peur_des_biostats)</span>
-<span id="cb28-520"><a href="#cb28-520" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-521"><a href="#cb28-521" aria-hidden="true" tabindex="-1"></a><span class="co"># Voir le tableau de décompte</span></span>
-<span id="cb28-522"><a href="#cb28-522" aria-hidden="true" tabindex="-1"></a>counts</span>
-<span id="cb28-523"><a href="#cb28-523" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-524"><a href="#cb28-524" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-525"><a href="#cb28-525" aria-hidden="true" tabindex="-1"></a>Pour faire un diagramme à bâtons, il suffit d'utiliser la fonction <span class="in">`barplot()`</span> avec la variable <span class="in">`counts`</span> qui contient le résultat de notre décompte.</span>
-<span id="cb28-526"><a href="#cb28-526" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-529"><a href="#cb28-529" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-530"><a href="#cb28-530" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-531"><a href="#cb28-531" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un diagramme en bâton avec les valeurs du décompte</span></span>
-<span id="cb28-532"><a href="#cb28-532" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts)</span>
-<span id="cb28-533"><a href="#cb28-533" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-534"><a href="#cb28-534" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-535"><a href="#cb28-535" aria-hidden="true" tabindex="-1"></a>Avec la fonction <span class="in">`table()`</span>, il est également possible de faire un décompte croisé, c'est à dire selon plusieurs variables à la fois. Dans l'exemple suivant, nous faisons un décompte du nombre d'observations *Face* et *Pile* en groupant par `genre` et `piece_monnaie`. On peut ainsi constater immédiatement que les nombres de résultats *Face* et *Pile* sont presque égaux (comme on peut s'y attendre) aussi bien pour les <span class="in">`Filles`</span> que les <span class="in">`Gars`</span>.</span>
-<span id="cb28-536"><a href="#cb28-536" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-539"><a href="#cb28-539" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-540"><a href="#cb28-540" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-541"><a href="#cb28-541" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire un décompte croisé avec deux variables</span></span>
-<span id="cb28-542"><a href="#cb28-542" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(sondage_bio1006<span class="sc">$</span>genre, sondage_bio1006<span class="sc">$</span>piece_monnaie)</span>
-<span id="cb28-543"><a href="#cb28-543" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-544"><a href="#cb28-544" aria-hidden="true" tabindex="-1"></a><span class="co"># Voir le tableau de décompte croisé</span></span>
-<span id="cb28-545"><a href="#cb28-545" aria-hidden="true" tabindex="-1"></a>counts</span>
-<span id="cb28-546"><a href="#cb28-546" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-547"><a href="#cb28-547" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-548"><a href="#cb28-548" aria-hidden="true" tabindex="-1"></a>Le diagramme à bâton illustre de façon claire cette observation obtenue avec la fonction <span class="in">`table()`</span>. Les paramètres <span class="in">`legend.text = rownames(counts)`</span> et <span class="in">`beside = TRUE`</span> servent à créer la légende à partir du nom des lignes et à placer les barres côte à côte, respectivement.</span>
-<span id="cb28-549"><a href="#cb28-549" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-552"><a href="#cb28-552" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-553"><a href="#cb28-553" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-554"><a href="#cb28-554" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts, <span class="at">legend.text =</span> <span class="fu">rownames</span>(counts), <span class="at">beside =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb28-555"><a href="#cb28-555" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-556"><a href="#cb28-556" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-557"><a href="#cb28-557" aria-hidden="true" tabindex="-1"></a>Vous pouvez consulter la seconde capsule sur les graphiques pour en apprendre plus sur la modification de l'apparence des graphiques.</span>
-<span id="cb28-558"><a href="#cb28-558" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-559"><a href="#cb28-559" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Les diagrammes en boîte à moustaches</span></span>
-<span id="cb28-560"><a href="#cb28-560" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-561"><a href="#cb28-561" aria-hidden="true" tabindex="-1"></a>Les diagrammes en boîte à moustaches (*boxplot*, en anglais) offrent une représentation graphique permettant de visualiser la médiane et les quartiles inférieurs (&lt; 25%) et supérieurs (&gt; 75%) d'une variable. Les valeurs extrêmes de la distribution sont représentées par des points au-delà des “moustaches” (ce ne sont pas nécessairement des valeurs aberrantes!). À l'aide de la représentation par formule vue précédemment, il est possible de grouper les données selon une variable catégorielle (de classe `factor`) et de comparer ces valeurs de médiane et de quartiles pour deux groupes ou plus. Dans l'exemple suivant, un graphique de type *diagramme à boîte* présente la distribution de la longueur des sépales (<span class="in">`Sepal.Length`</span>) en fonction de l'espèce d'iris (<span class="in">`Species`</span>).</span>
-<span id="cb28-562"><a href="#cb28-562" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-565"><a href="#cb28-565" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-566"><a href="#cb28-566" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb28-567"><a href="#cb28-567" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualiser la distribution de la longueur des sépales en fonction de l’espèce d’iris</span></span>
-<span id="cb28-568"><a href="#cb28-568" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(Sepal.Length <span class="sc">~</span> Species, <span class="at">data =</span> iris)</span>
-<span id="cb28-569"><a href="#cb28-569" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-570"><a href="#cb28-570" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-571"><a href="#cb28-571" aria-hidden="true" tabindex="-1"></a>La distribution des valeurs de  la longueur des sépales semble différer entre les trois espèces (<span class="in">`setosa`</span>, <span class="in">`versicolor`</span> et <span class="in">`virginica`</span>). Nous pourrions utiliser une analyse de variance (ANOVA) pour déterminer statistiquement si cette différence est significative<span class="ot">[^2]</span>.</span>
-<span id="cb28-572"><a href="#cb28-572" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-573"><a href="#cb28-573" aria-hidden="true" tabindex="-1"></a><span class="ot">[^2]: </span>Voir la capsule sur les tests de comparaison de moyennes paramétriques.</span>
-<span id="cb28-574"><a href="#cb28-574" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-575"><a href="#cb28-575" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exporter les graphiques</span></span>
-<span id="cb28-576"><a href="#cb28-576" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-577"><a href="#cb28-577" aria-hidden="true" tabindex="-1"></a>À un certain moment pendant vos analyses, il vous faudra exporter vos graphiques pour les partager avec votre équipe ou votre superviseur, les inclure dans vos rapports de travaux pratiques ou les projeter pour une présentation orale. Il existe deux grandes familles d'images.</span>
-<span id="cb28-578"><a href="#cb28-578" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-579"><a href="#cb28-579" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Le format vectoriel (*eps*, *pdf*, *svg*, *ps*, etc).</span>
-<span id="cb28-580"><a href="#cb28-580" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Le format matriciel (*bmp*, *jpeg*, *png*, *tif*, etc.)</span>
-<span id="cb28-581"><a href="#cb28-581" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-582"><a href="#cb28-582" aria-hidden="true" tabindex="-1"></a>La plupart des journaux scientifiques préfèrent le format vectoriel lors du processus de soumission d'un article, car ce format de graphique a une meilleure qualité comparée au format matriciel et il peut s'agrandir indéfiniment **sans perte de résolution** (qualité). Les deux figures suivantes permettent de comparer la qualité graphique des formats *jpeg* (format matriciel) et *pdf* (format vectoriel). On voit qu'il y a de la pixellisation dans la version matricielle tandis que la version vectorielle est nettement plus claire. Si vous devez néanmoins utiliser le format matriciel, on vous recommande d'utiliser le format *png* qui offre un bon compromis entre la qualité de l'image et la taille de fichier.</span>
-<span id="cb28-583"><a href="#cb28-583" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-586"><a href="#cb28-586" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-587"><a href="#cb28-587" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: True</span></span>
-<span id="cb28-588"><a href="#cb28-588" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: False</span></span>
-<span id="cb28-589"><a href="#cb28-589" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: False</span></span>
-<span id="cb28-590"><a href="#cb28-590" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: False</span></span>
-<span id="cb28-591"><a href="#cb28-591" aria-hidden="true" tabindex="-1"></a><span class="co">#| dev: 'jpeg'</span></span>
-<span id="cb28-592"><a href="#cb28-592" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.width: 6</span></span>
-<span id="cb28-593"><a href="#cb28-593" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.height: 6</span></span>
-<span id="cb28-594"><a href="#cb28-594" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.align: 'center'</span></span>
-<span id="cb28-595"><a href="#cb28-595" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
-<span id="cb28-596"><a href="#cb28-596" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(x, <span class="at">main =</span> <span class="st">"Format matriciel"</span>, <span class="at">col =</span> <span class="st">"cornflowerblue"</span>)</span>
-<span id="cb28-597"><a href="#cb28-597" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-598"><a href="#cb28-598" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-601"><a href="#cb28-601" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-602"><a href="#cb28-602" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: True</span></span>
-<span id="cb28-603"><a href="#cb28-603" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: False</span></span>
-<span id="cb28-604"><a href="#cb28-604" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: False</span></span>
-<span id="cb28-605"><a href="#cb28-605" aria-hidden="true" tabindex="-1"></a><span class="co">#| dev: 'svg'</span></span>
-<span id="cb28-606"><a href="#cb28-606" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.width: 6</span></span>
-<span id="cb28-607"><a href="#cb28-607" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.height: 6</span></span>
-<span id="cb28-608"><a href="#cb28-608" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.align: 'center'</span></span>
-<span id="cb28-609"><a href="#cb28-609" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(x, <span class="at">main =</span> <span class="st">"Format vectoriel"</span>, <span class="at">col =</span> <span class="st">"cornflowerblue"</span>)</span>
-<span id="cb28-610"><a href="#cb28-610" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-611"><a href="#cb28-611" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-612"><a href="#cb28-612" aria-hidden="true" tabindex="-1"></a>Dans R, pour exporter un graphique, il faut au minimum trois étapes:</span>
-<span id="cb28-613"><a href="#cb28-613" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-614"><a href="#cb28-614" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Ouvrir le moteur graphique lié au format de fichier que l'on veut (*pdf*, *png*, *jpeg*, etc.).</span>
-<span id="cb28-615"><a href="#cb28-615" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Créer le graphique et potentiellement modifier son apparence.</span>
-<span id="cb28-616"><a href="#cb28-616" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Fermer le moteur graphique.</span>
-<span id="cb28-617"><a href="#cb28-617" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-618"><a href="#cb28-618" aria-hidden="true" tabindex="-1"></a>Les lignes de code suivantes permettent de créer un simple graphique et de le sauvegarder dans un fichier pdf.</span>
-<span id="cb28-619"><a href="#cb28-619" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-622"><a href="#cb28-622" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-623"><a href="#cb28-623" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: True</span></span>
-<span id="cb28-624"><a href="#cb28-624" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: False</span></span>
-<span id="cb28-625"><a href="#cb28-625" aria-hidden="true" tabindex="-1"></a><span class="co">#| comment: NA</span></span>
-<span id="cb28-626"><a href="#cb28-626" aria-hidden="true" tabindex="-1"></a><span class="co"># Ouvrir le moteur graphique</span></span>
-<span id="cb28-627"><a href="#cb28-627" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file =</span> <span class="st">"/emplacement/nom_du_fichier.pdf"</span>)</span>
-<span id="cb28-628"><a href="#cb28-628" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-629"><a href="#cb28-629" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire le graphique</span></span>
-<span id="cb28-630"><a href="#cb28-630" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span>)</span>
-<span id="cb28-631"><a href="#cb28-631" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-632"><a href="#cb28-632" aria-hidden="true" tabindex="-1"></a><span class="co"># Fermer le moteur graphique</span></span>
-<span id="cb28-633"><a href="#cb28-633" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span>
-<span id="cb28-634"><a href="#cb28-634" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-635"><a href="#cb28-635" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-636"><a href="#cb28-636" aria-hidden="true" tabindex="-1"></a>Plutôt que d'exporter en format pdf, nous pourrions utiliser la fonction <span class="in">`png()`</span> pour créer un graphique au format png.</span>
-<span id="cb28-637"><a href="#cb28-637" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-640"><a href="#cb28-640" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-641"><a href="#cb28-641" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: True</span></span>
-<span id="cb28-642"><a href="#cb28-642" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: False</span></span>
-<span id="cb28-643"><a href="#cb28-643" aria-hidden="true" tabindex="-1"></a><span class="co">#| comment: NA</span></span>
-<span id="cb28-644"><a href="#cb28-644" aria-hidden="true" tabindex="-1"></a><span class="co"># Ouvrir le moteur graphique</span></span>
-<span id="cb28-645"><a href="#cb28-645" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="at">file =</span> <span class="st">"/emplacement/nom_du_fichier.png"</span>)</span>
-<span id="cb28-646"><a href="#cb28-646" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-647"><a href="#cb28-647" aria-hidden="true" tabindex="-1"></a><span class="co"># Faire le graphique</span></span>
-<span id="cb28-648"><a href="#cb28-648" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span>)</span>
-<span id="cb28-649"><a href="#cb28-649" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-650"><a href="#cb28-650" aria-hidden="true" tabindex="-1"></a><span class="co"># Fermer le moteur graphique</span></span>
-<span id="cb28-651"><a href="#cb28-651" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span>
-<span id="cb28-652"><a href="#cb28-652" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-653"><a href="#cb28-653" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-654"><a href="#cb28-654" aria-hidden="true" tabindex="-1"></a><span class="fu">### Téléchargement {#telechargement}</span></span>
-<span id="cb28-655"><a href="#cb28-655" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-656"><a href="#cb28-656" aria-hidden="true" tabindex="-1"></a>Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:</span>
-<span id="cb28-657"><a href="#cb28-657" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-658"><a href="#cb28-658" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.</span>
-<span id="cb28-659"><a href="#cb28-659" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).</span>
-<span id="cb28-660"><a href="#cb28-660" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-661"><a href="#cb28-661" aria-hidden="true" tabindex="-1"></a>Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous…".</span>
-<span id="cb28-662"><a href="#cb28-662" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-663"><a href="#cb28-663" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Télécharger la documentation sous format PDF</span><span class="co">](www/capsule_6.pdf)</span></span>
-<span id="cb28-664"><a href="#cb28-664" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Télécharger la documentation sous format HTML</span><span class="co">](www/capsule_6.html)</span></span>
-<span id="cb28-665"><a href="#cb28-665" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-666"><a href="#cb28-666" aria-hidden="true" tabindex="-1"></a>Vous pouvez aussi télécharger le fichier <span class="in">`BIO1006_H2018_Echantillon.csv`</span> qui contient les données utilisées dans cette capsule.</span>
-<span id="cb28-667"><a href="#cb28-667" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-668"><a href="#cb28-668" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Télécharger le fichier de données sous format CSV</span><span class="co">](www/BIO1006_H2018_Echantillon.csv)</span></span>
-</code><button title="Copier vers le presse-papier" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
