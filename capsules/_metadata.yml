@@ -1,7 +1,5 @@
 format:
   live-html:
-    code-fold: show
-    code-tools: true
     toc-depth: 4
     theme: ././styles.scss
     toc: true
