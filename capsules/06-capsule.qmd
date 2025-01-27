@@ -362,7 +362,7 @@ hist(sondage_bio1006$taille_cm)
 
 Dans ce cas-ci, on voit bien qu'il y a une valeur de taille qui est beaucoup plus petite que les autres. En effet, on remarque qu'il y a une valeur de 1.53 qui a probablement été écrite par une personne qui pensait que la mesure était en mètres plutôt qu'en centimètres. On peut aussi vérifier l'étendue des données de taille à l'aide de la fonction `range()`.
 
-```{r, echo=TRUE}
+```{r}
 #| echo: true
 # Vérifier l’étendue des données de taille
 range(sondage_bio1006$taille_cm)

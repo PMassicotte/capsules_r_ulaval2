@@ -1,0 +1,408 @@
+---
+title: Capsule 10
+---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+
+```{r}
+#| label: setup
+#| echo: false
+library(checkdown)
+```
+
+## Objectifs de la capsule
+
+À la fin de cette capsule, vous serez en mesure de:
+
+1. Comprendre le principe d’un **test non paramétrique** sur les **rangs**,  
+2. Connaître les tests non-paramétriques de comparaison de moyennes disponibles dans R,  
+3. Appliquer ces tests à vos données.
+
+Les méthodes utilisées dans ce script sont avancées, mais chacune peut être facilement comprise en étudiant l'aide relative aux fonctions utilisées (voir capsule #3).
+
+## Capsule vidéo
+
+{{< video https://youtu.be/E4R5Jh4L3wU >}}
+
+[Télécharger le script R de la vidéo](www/capsule_10.R) (Faire boutton droit -> enregistrer sous...)
+
+## Exercices
+
+::: {.callout-note}
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
+:::
+
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: question1
+#| echo: false
+#| results: "asis"
+check_question(
+  c("Ces tests sont dits **paramétriques** car ils supposent que les données suivent une certaine distribution de fréquence (par ex. Normale) qui peut-être calculée mathématiquement grâce à un petit nombre de **paramètres** (comme la moyenne et l’écart-type pour la distribution Normale"),
+  options = c("Les tests “paramétriques” permettent de calculer des paramètres spécifiques à nos données et qui serviront à rejeter (ou non) l'hypothèse nulle du test.", "Il faut vérifier a priori que certains **paramètres** soient vérifiés sur nos données (par ex. absence de valeurs aberrantes) avant de pouvoir procéder à des tests **paramétriques** pour estimer l’effet du hasard sur nos valeurs. ", "Ces tests sont dits **paramétriques** car ils supposent que les données suivent une certaine distribution de fréquence (par ex. Normale) qui peut-être calculée mathématiquement grâce à un petit nombre de **paramètres** (comme la moyenne et l’écart-type pour la distribution Normale" ),
+  type = "checkbox",
+  button_label = "Vérifier",
+  right = "✅ Correct ! Le terme **paramétrique** est en effet dérivé simplement du fait que ces tests supposent que les valeurs de l'échantillon proviennent d'une population qui suit une distribution que l'on peut décrire mathématiquement grâce à ses paramètres.",
+  wrong = "❌ Incorrect. Demandez-vous (rappelez-vous) ce que sont les **paramètres** d'une population statistique.",
+  title = "Choisissez la bonne définition concernant les tests statistiques paramétriques :"
+)
+```
+
+:::
+
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: question2
+#| echo: false
+#| results: "asis"
+check_question(
+  c("Les tests non-paramétriques sont moins bons que leurs équivalents paramétriques."),
+  options = c("Il existe presque toujours un test non-paramétrique **équivalent** à un test paramétrique (permet de répondre à la même question statistique).", "Les tests non-paramétriques sont moins bons que leurs équivalents paramétriques.", "Les tests non-paramétriques sont plus robustes que leurs équivalents paramétriques.", "Les tests paramétriques sont plus puissants que leurs équivalents non-paramétriques."),
+  type = "checkbox",
+  button_label = "Vérifier",
+  right = "✅ Correct ! Non ! Ils sont conçus pour des données et des situations qui sont exclues par les tests paramétriques. On peut même dire qu'ils sont excellent dans leur domaine !",
+  wrong = "❌ Incorrect.  Il existe effectivement PRESQUE toujours un test non-paramétrique équivalent à un test paramétrique ! Les tests non-paramétriques demandent moins de contraintes sur les données, et sont ainsi plus robustes. Lorsque TOUTES les conditions d'application sont satisfaites, les tests paramétriques peuvent rejeter une hypothèse nulle pour une taille d'effet plus faible. Ils sont donc plus puissants à détecter un effet potentiel.",
+  title = "Choisissez l’affirmation FAUSSE :"
+)
+```
+
+:::
+
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: question3
+#| echo: false
+#| results: "asis"
+check_question(
+  c("Ils ne nécessitent de vérifier **aucune condition d’application**."),
+  options = c("Ils **s’appliquent sur les rangs** des valeurs des variables quantitatives.", "Ils ne nécessitent de vérifier **aucune condition d’application**.", "Ils **ne nécessitent pas** que les valeurs des variables quantitatives suivent une distribution Normale."),
+  type = "checkbox",
+  button_label = "Vérifier",
+  right = "✅ Correct ! Il faut le plus souvent que les données soient distribuées plutôt symétriquement autour de leur médiane.",
+  wrong = "❌ Incorrect. Les tests non paramétriques, s'appliquent sur les rangs des valeurs des variables quantitatives et c'est pour cela qu'ils ne demandent pas que les données suivent une distribution de fréquences particulière. ",
+  title = "Choisissez l’affirmation FAUSSE concernant les tests non-paramétriques :"
+)
+```
+
+:::
+
+::: {.callout-note appearance="simple" icon=false .question}
+
+```{r}
+#| label: question4
+#| echo: false
+#| results: "asis"
+check_question(
+  c("La différence de **position relative des rangs** entre deux groupes de valeurs."),
+  options = c("La différence de **moyennes** entre deux groupes de valeurs.", "La différence de **mode** entre deux groupes de valeurs.", "La différence de **position relative des rangs** entre deux groupes de valeurs." ),
+  type = "checkbox",
+  button_label = "Vérifier",
+  right = "✅ Correct ! Les tests non-paramétriques travaillent avec les rangs des variables, et ils comparent donc les positions relatives des rangs entre les groupes. Si les mesures de tendances centrales comme les moyennes sont différentes entre les groupes, cela peut être détecté par les tests.",
+  wrong = "❌ Incorrect.",
+  title = "Choisissez l’affirmation VRAIE. Les **tests statistiques non-paramétriques** de comparaison de rangs permettent de tester :"
+)
+```
+
+:::
+
+Voici un jeux de données. Il s’agit du débit annuel mesuré à Aswan le long du cours du Nil (unité = $10^8 m^{-3}$) de 1871 à 1970. Nous voulons comparer les débits moyens entre les périodes 1890-1899 et 1960-1969.
+
+```{r}
+#| echo: True
+#| eval: True
+data(Nile)
+plot(Nile, xlab = "Année", ylab = "Débit annuel du Nil (10^8 m^-3)")
+
+## Identifier les deux périodes
+i <- time(Nile) > 1889 & time(Nile) < 1900
+j <- time(Nile) > 1959 & time(Nile) < 1970
+N1 <- ts(Nile[i], start = 1890, end = 1899, frequency = 1)
+N2 <- ts(Nile[j], start = 1960, end = 1969, frequency = 1)
+lines(N1, lwd = 3, col = "red")
+lines(N2, lwd = 3, col = "blue")
+```
+
+Faites deux histogrammes : des échantillons N1 (débit pour la période 1890-1899) et N2 (débit de 1960 à 1969).
+
+```{webr}
+#| autorun: false
+
+```
+
+::: {.callout-tip collapse="true"}
+### Indice
+Vous pouvez utiliser la fonction `hist()` pour créer des histogrammes.
+:::
+
+::: {.callout-warning collapse="true"}
+### Solution
+```{r}
+#| echo: True
+hist(N1)
+hist(N2)
+```
+:::
+
+Pensez-vous que leur distribution de fréquence suive une loi Normale ? Demandez vous si les distributions sont unimodales, symétriques et sans valeurs extrêmes (loin de la moyenne). Faites le test de Shapiro avec la fonction `shapiro.test()` pour le vérifier. Qu’en est-il d’après le test ?
+
+```{webr}
+#| autorun: false
+
+```
+
+::: {.callout-warning collapse="true"}
+### Solution
+```{r}
+shapiro.test(N1)
+shapiro.test(N2)
+```
+:::
+
+Faites le test statistique approprié pour comparer les débits moyens des deux périodes.
+
+```{webr}
+#| autorun: false
+
+```
+
+::: {.callout-tip collapse="true"}
+### Indice
+Vous pourriez utiliser `?wilcox.test`.
+:::
+
+::: {.callout-warning collapse="true"}
+### Solution
+```{r}
+wilcox.test(N1, N2, exact = FALSE)
+```
+:::
+
+## Matériel accompagnateur
+
+### Charger les données pour l'analyse  
+
+::: {.callout-note}
+Tapez "airquality" dans l'aide de R pour en savoir plus (voir capsule #1).
+:::
+
+Il s'agit d'un jeu de données fourni avec R et qui comprend des mesures relatives à la qualité de l'air de New York de mai à septembre 1973. On va d'abord charger le jeu de données, puis le rendre accessible en premier plan dans la mémoire de R :
+  
+```{r}
+#| echo: true
+#| eval: true
+data("airquality")
+```
+
+### Tests **paramétriques**, **non**-paramétriques et notion de **rang**.    
+  
+Un test **paramétrique** est appelé ainsi parce qu'il utilise les paramètres mathématiques des distributions de fréquence des valeurs des échantillons testés.  Par exemple, lorsque la distribution des valeurs d'un échantillon correspond à une **distribution Normale**, toute l'information contenue dans ces valeurs peut être **résumée par deux paramètres** mathématiques qui définissent l'équation de cette distribution :
+
+1. La variable de **centralité** "moyenne",  
+2. La variable de **dispersion** "variance" (= écart-type^2^).  
+  
+Nous pouvons illustrer ce principe avec le graphique ci-dessous :  
+
+```{r}
+#| echo: False
+#| eval: True
+#Indice pour le mois de juillet
+M7 <- airquality$Month == 7
+
+#Calcul de la distribution de fréquence des données de vent pour le mois de juillet
+h  <- hist(airquality$Wind[M7], breaks = 10, plot = FALSE)
+fh <- (h$counts / h$density)[1]
+
+#Calculs intermédiaires pour superposer la distribution Normale théorique correspondant à la moyenne et la variance de la distribution des valeurs échantillonnées
+mW <- mean(airquality$Wind[M7])
+sW <- sd(airquality$Wind[M7])
+xW <- seq(0, 25, 0.1)
+yW <- dnorm(xW, mean = mW, sd = sW) * fh
+yScale <- dnorm(mW, mean = mW, sd = sW) * fh
+
+# Graphiques
+plot(h, xlim = c(0, 25), ylim = c(0, ceiling(yScale)), xlab = "Vitesse (mph)", ylab = "Fréquence", main = "Vents enregistrés en juillet 1973", col = "gray")
+lines(xW, yW, lty = 2, lwd = 2, col = "red")
+lines(c(mW, mW), c(0, yScale), lty = 1, lwd = 2, col = "red")
+arrows(mW, 0, mW + sW, 0, lty = 1, lwd = 2, col = "red", length = 0.1)
+text(mW, yScale + 0.5, "Moyenne", col = "red", pos = 4)
+text(mW + sW, 0.5, "1 écart-type", col = "red")
+text(mW + 2 * sW, 1, "Courbe théorique", col = "red", pos = 4)
+```
+
+Ici la correspondance visuelle n'est pas parfaite; malgré tout un test formel comme le ```shapiro.test()``` ne trouve pas de différence significative entre la distribution des valeurs de vent échantillonnées et une distribution normale (*p*-value > seuil alpha de 0.05) :
+
+```{r}
+#| echo: true
+#| eval: true
+shapiro.test(airquality$Wind[M7])
+```
+
+Ceci permet de **résumer l'information** contenue dans ces données avec **seulement les paramètres de moyenne et d'écart-type**, et de faire des **tests paramétriques** sur ces données. Toutefois, les valeurs des échantillons ne peuvent pas toujours être assimilées à des distributions de fréquences dont les propriétés mathématiques conviennent (ni conformes ni transformables) : valeurs aléatoires uniformes, présence de valeurs extrêmes (*outliers*), valeurs regroupées autour de plusieurs modes, etc.  Tous ces cas de figure et bien d'autres existent dans les systèmes naturels que nous étudions !  Prenons comme exemple dans le même jeu de données la distribution des valeurs d'insolation du mois de juillet :
+  
+```{r}
+#| echo: False
+#Calcul de la distribution de fréquence des données d'insolation pour le mois de juillet
+h  <- hist(airquality$Solar.R[M7], breaks = 10, plot = FALSE)
+fh <- (h$counts / h$density)[1]
+
+#Calculs pour pouvoir superposer la courbe de la distribution Normale théorique correspondant à la moyenne et la variance de la distribution des valeurs échantillonnées
+mS <- mean(airquality$Solar.R[M7])
+sS <- sd(airquality$Solar.R[M7])
+xS <- seq(0, 400, 0.1)
+yS <- dnorm(xS, mean = mS, sd = sS) * fh
+yScale <- dnorm(mS, mean = mS, sd = sS) * fh
+
+#Graphique
+plot(
+  h,
+  xlim = c(0, 400),
+  xlab = "(Langleys)",
+  ylab = "Fréquence",
+  main = "Insolation en juillet 1973",
+  col = "gray"
+)
+
+lines(xS, yS, lty = 2, lwd = 2, col = "black")
+lines(c(mS, mS), c(0, yScale), lty = 1, lwd = 2, col = "black")
+
+arrows(mS, 0, mS + sS, 0, lty = 1, lwd = 2, col = "black", length = 0.1)
+
+text(mS, yScale + 0.5, "Moyenne", col = "black", pos = 4)
+text(mS + sS, 1, "1 écart-type", col = "black")
+```
+
+Cette fois-ci, les données **ne** correspondent **pas** à une distribution normale, comme le confirme le test de Shapiro-Wilk ( *p*-value << seuil alpha = 0.05, rejet de l'hypothèse nulle) :
+
+```{r}
+#| echo: true
+#| eval: true
+shapiro.test(airquality$Solar.R[M7])
+```
+
+::: {.callout-warning}
+La solution est alors de **ne pas** travailler sur les **valeurs** échantillonnées, mais sur leurs **rangs** dans l'échantillon.
+:::
+
+Pour mieux comprendre, regardons le tableau suivant qui représente les mêmes données brutes et leur **rang** dans la distribution associée :
+
+```{r}
+#| echo: False
+#| eval: True
+#Créer un jeu de données avec les valeurs brutes et les rangs correspondants
+SR <- rank(sort(airquality$Solar.R[M7]), ties.method = "average")
+tabl <- as.data.frame(cbind(Insolation = sort(airquality$Solar.R[M7]), Rang = SR))
+
+DT::datatable(
+  tabl,
+  extensions = c('FixedColumns', "FixedHeader"),
+  options = list(
+    scrollX = TRUE,
+    paging = TRUE,
+    fixedHeader = TRUE,
+    searching = FALSE,
+    language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json')
+  ),
+  caption = "Valeurs d'insolation et rangs dans leur distribution"
+)
+```
+
+::: {.callout-warning}
+Le rang correspond donc tout simplement à la position de chaque valeur par rapport aux autres, lorsqu'on les classe par ordre croissant !
+:::
+
+L'avantage des rangs est que les valeurs extrêmes (*outliers*) ou une répartition irrégulière des valeurs n'ont plus d'importance pour le reste des analyses statistiques.  Seul compte les positions relatives des valeurs par rapport aux autres auxquelles elles sont comparées. Remarquez ici que certaines valeurs identiques (175) impliquent des rangs identiques (8) qui correspondent à leur position moyenne par rapport aux valeurs immédiatement inférieure et supérieure : ici, au lieu d'avoir la séquence 6, **7, 8, 9,** 10... on a 6, **8, 8, 8,** 10.
+
+### Tests **non-paramétriques** de comparaison de moyennes
+  
+Le but ici est simplement d'utiliser les équivalents non-paramétriques des tests de comparaison de moyennes pour un, deux et plusieurs échantillons sur un jeu de données qui **ne se conforment pas aux conditions d'application du test** reliées à leur distribution.  
+
+- Test de **Wilcoxon** / Mann-Whitney : comparaison d'une moyenne d'un échantillon et d'une valeur ou des moyennes de deux échantillons   
+On peut utiliser le ```wilcoxon.test()``` pour comparer la moyenne des valeurs d'insolation au mois de juillet à une valeur seuil arbitraire de 200 Ly. Il faut procéder comme pour la fonction ```t.test()``` en spécifiant une valeur à l'argument (option) ```mu = ``` : 
+  
+```{r}
+#| warning: False
+#| eval: True
+#| echo: True
+#Test
+wilcox.test(airquality$Solar.R[M7], mu = 200)
+```
+
+Vous n'avez bien sûr pas besoin de calculer vous-même les rangs des valeurs échantillonnées pour effectuer ces tests dans R. Le test de Wilcoxon vérifie l'hypothèse nulle que la distribution des valeurs échantillonnées est symétrique par rapport à ```mu```, autrement dit qu'il y a autant de valeurs dont le rang est supérieur que de valeurs dont le rang est inférieur à ```mu```. Comme le démontre la *p*-value > seuil alpha = 0.05, ici ce test **ne permet pas de rejeter l'hypothèse nulle**.  
+
+On peut également utiliser le ```wilcoxon.test()``` pour comparer les distributions de deux échantillons. On va maintenant comparer la moyenne des valeurs d'insolation aux mois de juillet et août.  
+
+```{r}
+#| warning: False
+#| eval: True
+#| echo: True
+#Indice pour le mois d'août
+M8 <- airquality$Month == 8
+
+#Boxplot
+boxplot(airquality$Solar.R[M7 |M8] ~ airquality$Month[M7 | M8], xlab = "Mois de l'année", ylab = "Insolation (Langley)")
+
+#Test
+wilcox.test(airquality$Solar.R[M7], airquality$Solar.R[M8])
+```
+  
+Dans ce cas de figure, le test de Wilcoxon vérifie si la différence entre les moyennes des rangs est significativement différente de 0. Ce n'est pas le cas ici, comme le démontre la *p*-value << seuil alpha = 0.05 qui permet de **rejeter l'hypothèse nulle** qui est qu'il n'y a pas de différence entre les moyennes des rangs.  
+
+- Test de **Kruskal-Wallis** pour la comparaison des moyennes de plusieurs (> 2) échantillons   
+
+Comme pour les comparaisons de moyennes de deux groupes, il existe un équivalent non-paramétrique à l'ANOVA pour comparer les moyennes de plusieurs groupes : le test de Kruskal-Wallis, qui est essentiellement une extension du test de Wilcoxon.  Nous allons utiliser le ```kruskal.test()``` pour comparer la moyenne des valeurs d'insolation des mois de mai à septembre 
+  
+```{r}
+#| warning: False
+#| eval: True
+#| echo: True
+#Boxplot
+boxplot(
+  Solar.R ~ Month ,
+  xlab = "Mois de l'année",
+  ylab = "Insolation (Langley)",
+  col = c("grey", "white", "white", "white", "white"),
+  data = airquality
+)
+
+#Test
+kruskal.test(Solar.R ~ Month, data = airquality)
+```
+  
+On remarque que malgré notre résultat précédent et l'allure des distributions des valeurs d'insolation échantillonnées chaque mois, le test ne permet pas de rejeter l'hypothèse nulle; **il ne détecte pas de différence significative entre les mois de mai à septembre** lorsqu'il analyse tous les groupes ensemble.  Ceci est essentiellement dû à la **grande dispersion des valeurs pour le mois de mai** (grisé dans le boxplot).  Si nous reprenons l'analyse en **excluant les données du mois de mai**, nous trouvons alors :  
+
+```{r}
+#| warning: False
+#| eval: True
+#| echo: True
+#Indice pour le mois de mai
+M5 <- airquality$Month == 5
+
+#Test
+kruskal.test(Solar.R[!M5] ~ Month[!M5], data = airquality)
+```
+  
+Cette fois-ci le test confirme ce qu'il semblait en observant les données, à savoir **qu'au moins une des valeurs de rang moyen est différente des autres**. 
+
+::: {.callout-important}
+Ce test, tout comme sa contrepartie paramétrique l'ANOVA, n'indique pas **quel(s)** groupe(s) se distingue(nt) des autres !
+::: 
+
+Si on veut poursuivre l'analyse, il faut alors faire des tests de comparaisons de moyenne deux à deux non-paramétriques de Wilcoxon avec une **correction de Bonferroni** (par example) de la valeur seuil alpha de rejet de l'hypothèse nulle pour éviter l'inflation de l'erreur de type I (voir capsule #8).
+
+### Téléchargement
+
+Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
+
+1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
+2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
+
+Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous...".
+
+Télécharger la documentation sous format PDF
+
+- [Télécharger la documentation sous format PDF](www/capsule_10.pdf)
+- [Télécharger la documentation sous format HTML](www/capsule_10.html)
+
