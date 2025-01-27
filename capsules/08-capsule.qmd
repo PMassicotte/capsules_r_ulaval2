@@ -253,7 +253,10 @@ Cette espèce est le symbole floral du Québec !
 
 :::
   
-{{< http://cms.ledomaineboise.ca/image/462/820/820/crop/iris-versicolor.jpg >}}
+<center>
+  ![](http://cms.ledomaineboise.ca/image/462/820/820/crop/iris-versicolor.jpg)
+</center>
+
   
 - Ajouter une représentation graphique de cette valeur seuil (voir Capsule #7)  
   
