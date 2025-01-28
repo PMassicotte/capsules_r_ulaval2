@@ -68,6 +68,29 @@ Compléter le code suivant pour calculer la moyenne du vecteur `x`.
 x <- c(1, 2, NA, 3)
 ```
 
+::: {.callout-tip collapse="true"}
+
+### Indice
+
+```{r}
+#| eval: false
+?mean
+```
+
+:::
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+x <- c(1, 2, NA, 3)
+mean(x, na.rm = TRUE)
+```
+
+:::
+
 La fonction `seq()` permet de générer des valeurs séquentielles. Utilisez cette fonction pour créer un vecteur contenant les valeurs suivantes:
 
 ```{r}
@@ -76,8 +99,31 @@ La fonction `seq()` permet de générer des valeurs séquentielles. Utilisez cet
 ```
 
 ```{webr}
+#| autorun: false
 seq()
 ```
+
+::: {.callout-tip collapse="true"}
+
+### Indice
+
+```{r}
+#| eval: false
+?seq
+```
+
+:::
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+seq(1, 13, by = 2)
+```
+
+:::
 
 ### Paramètres des fonctions
 
@@ -332,9 +378,9 @@ mean(v, 0, FALSE)
 
 Dans ce cas, il est obligatoire que l'ordre des paramètres suive celle de la signature de la fonction qui est spécifiée dans l'aide (i.e. `mean(x, trim = 0, na.rm = FALSE)`).
 
-<div class="alert alert-info">
-  <strong>Info!</strong> Bien que l'appel d'une fonction avec des paramètres non nommés soit techniquement valide, il est recommandé d'utiliser des paramètres nommés, car cela rend le code plus clair et plus explicite.
-</div>
+::: {.callout-tip}
+Bien que l'appel d'une fonction avec des paramètres non nommés soit techniquement valide, il est recommandé d'utiliser des paramètres nommés, car cela rend le code plus clair et plus explicite.
+:::
 
 ### Téléchargement
 
