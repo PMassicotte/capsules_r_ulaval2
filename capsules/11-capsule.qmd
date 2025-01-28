@@ -40,15 +40,15 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 #| echo: false
 #| results: "asis"
 check_question(
-  c("(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
+  c("(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci."),
   options = c(
     "(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une interaction entre deux variables numériques.",
     "(2) La régression est un test statistique permettant de vérifier l’existence d’une relation linéaire entre deux variables numériques.",
-    "(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."
+    "(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci."
   ),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! (3) Si ses conditions d'application sont respectées, la régression linéaire simple permet en effet d'estimer la valeur moyenne que devrait prendre une variable réponse `Y` à une variable explicative `X`. La dernière partie de la définition est importante ici : l'estimation est valable seulement pour des valeurs de `X` comprise à l'intérieur des limites existantes, c'est à dire pour faire de l'interpolation, et non pas de l'extrapolation.",
+  right = "✅ Correct ! (3) Si ses conditions d'application sont respectées, la régression linéaire simple permet en effet d'estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l'estimation est valable seulement pour des valeurs de X comprise à l'intérieur des limites existantes, c'est à dire pour faire de l'interpolation, et non pas de l'extrapolation.",
   wrong = "❌ Incorrect. (1) Cette définition fait plutôt référence à la Corrélation, puisqu'elle ne mentionne pas de relation de causalité (variables réponse et explicative). (2) Il s'agit plutôt d'une condition d'application préalable pour la régression linéaire simple. Il est vrai que lors d'une régression, on teste la significativité de la pente de la droite (est-elle différente de 0 ?).",
   title = "Choisissez la bonne définition concernant la régression linéaire simple :"
 )
@@ -231,7 +231,7 @@ check_question(
 
 :::
 
-Faites la régression linéaire entre ces deux variables en utilisant la fonction `lm()`.
+Faites la régression linéaire entre ces deux variables en utilisant la fonction lm().
 
 ```{webr}
 #| autorun: false
@@ -325,7 +325,7 @@ check_question(
 
 :::
 
-Finalement, on veut calculer l’intervalle de confiance à 95% des valeurs de milage attendues pour un véhicule de 1973-74 pesant 4750 lbs. En utilisant le modèle de régression suivant, complétez la function `predict()` avec la bonne option (remplacez les …) pour calculer les limites de cet intervalle :
+Finalement, on veut calculer l’intervalle de confiance à 95% des valeurs de milage attendues pour un véhicule de 1973-74 pesant 4750 lbs. En utilisant le modèle de régression suivant, complétez la function predict() avec la bonne option (remplacez les …) pour calculer les limites de cet intervalle :
 
 ```{webr}
 #| autorun: false
@@ -438,7 +438,7 @@ plot(
 )
 ```
 
-Il apparaît évident que la relation entre lesvariables n'est pas linéaire, mais notre connaissance de la cinétique enzymatique nous permet de comprendre qu'on pourrait obtenir une relation linéaire en transformant les valeurs de concentration en `log()` !
+Il apparaît évident que la relation entre lesvariables n'est pas linéaire, mais notre connaissance de la cinétique enzymatique nous permet de comprendre qu'on pourrait obtenir une relation linéaire en transformant les valeurs de concentration en log() !
 
 ```{r}
 #| echo: true
@@ -463,9 +463,9 @@ On constate qu'on semble bien avoir une relation linéaire entre les concentrati
 Pour la suite de nos analyses, nous allons créer une variable transformée pour les valeurs de concentration avec laquelle nous pourrons travailler.
 :::
 
-- Utilisation de la fonction `lm()`
+- Utilisation de la fonction lm()
 
-L'analyse de régression linéaire fait partie de la grande famille des **"modèles linéaires"** en statistiques, d'où le nom de la fonction utilisée dans R : `lm()`
+L'analyse de régression linéaire fait partie de la grande famille des **"modèles linéaires"** en statistiques, d'où le nom de la fonction utilisée dans R : lm()
 
 ```{r}
 #| echo: true
@@ -484,20 +484,20 @@ Les résultats de cette analyse sont très riches en informations :
 
 1. Tout d'abord, comme pour tous les tests semblables dans R, on vous rappelle le modèle linéaire testé, c'est à dire ici le taux de réaction enzymatique en fonction du log de la concentration de substrat :`lm(formula = rate1~ logc[un])`
 
-2. Ensuite on vous présente un résumé de la distribution des valeurs des résidus : `Residuals`
+2. Ensuite on vous présente un résumé de la distribution des valeurs des résidus : Residuals
 
-3. Puis viennent les informations relatives aux coefficients de la régression linéaire : `Coefficients`
+3. Puis viennent les informations relatives aux coefficients de la régression linéaire : Coefficients
 
-   - La première colonne `Estimate` donne les valeurs estimées de l'ordonnée à l'origine `(Intercept)` et la pente `logc[un]` (toujours le nom de la variable explicative) de la droite de régression
-   - La deuxième colonne `Std. Error` donne l'erreur standard associée à l'estimation de ces valeurs,
-   - La troisième colonne `t value` donne la valeur de _t_ utilisée pour tester les hypothèses nulles que ces valeurs ne sont pas significativement différentes de 0 à un seuil de confiance de 95%,
-   - Finalement la dernière colonne `Pr(>|t|)` donne la valeur de la _p_-value permettant de tirer une conclusion de ces tests. On rappelle que si la _p_-value est < au seuil alpha = 0.05, alors on peut rejeter l'hypothèse nulle et conclure que les valeurs sont significativement différentes de 0. La ligne immédiatement sous ce tableau n'est qu'une sorte de "légende" pour aider à interpréter la force de la significativité.
+   - La première colonne Estimate donne les valeurs estimées de l'ordonnée à l'origine (Intercept) et la pente logc[un] (toujours le nom de la variable explicative) de la droite de régression
+   - La deuxième colonne Std. Error donne l'erreur standard associée à l'estimation de ces valeurs,
+   - La troisième colonne t value donne la valeur de _t_ utilisée pour tester les hypothèses nulles que ces valeurs ne sont pas significativement différentes de 0 à un seuil de confiance de 95%,
+   - Finalement la dernière colonne Pr(>|t|) donne la valeur de la _p_-value permettant de tirer une conclusion de ces tests. On rappelle que si la _p_-value est < au seuil alpha = 0.05, alors on peut rejeter l'hypothèse nulle et conclure que les valeurs sont significativement différentes de 0. La ligne immédiatement sous ce tableau n'est qu'une sorte de "légende" pour aider à interpréter la force de la significativité.
 
-4. Deux valeurs sont principalement d'intérêt dans la dernière section : `Adjusted R-squared` et `F-statistic`
-   - `Adjusted R-squared` est appelé le **coefficient de régression R^2^** (_à ne pas confondres avec les coefficients de l'équation linéaire !_) et indique ici la proportion de variance expliquée par la variable... explicative. Ce n'est pas rare de voir une valeur de R^2^ > 0.9 en biochimie, lorsqu'on produit des courbes d'étalonnage par exemple; C'est beaucoup plus rare en écologie !
-   - `F-statistic` est le résultat d'un test qui permet d'évaluer la significativité de la régression linéaire dans son ensemble, et pas seulement des paramètres de l'équation de la droite. Dans une régression linéaire simple, si la pente est significativement différente de 0, alors la _p_-value du test de F de la régression est < 0.05 et la régression est significative, comme dans ce cas-ci.
+4. Deux valeurs sont principalement d'intérêt dans la dernière section : Adjusted R-squared et F-statistic
+   - Adjusted R-squared est appelé le **coefficient de régression R^2^** (_à ne pas confondres avec les coefficients de l'équation linéaire !_) et indique ici la proportion de variance expliquée par la variable... explicative. Ce n'est pas rare de voir une valeur de R^2^ > 0.9 en biochimie, lorsqu'on produit des courbes d'étalonnage par exemple; C'est beaucoup plus rare en écologie !
+   - F-statistic est le résultat d'un test qui permet d'évaluer la significativité de la régression linéaire dans son ensemble, et pas seulement des paramètres de l'équation de la droite. Dans une régression linéaire simple, si la pente est significativement différente de 0, alors la _p_-value du test de F de la régression est < 0.05 et la régression est significative, comme dans ce cas-ci.
 
-On peut visualiser très simplement notre droite de régression sur le graphique de nos données avec la fonction `abline()`:
+On peut visualiser très simplement notre droite de régression sur le graphique de nos données avec la fonction abline():
 
 ```{r}
 #| echo: true
@@ -551,7 +551,7 @@ Le nombre de valeurs analysées est faible (11), donc les conclusions des graphi
 
 - Vérification **statistique** des conditions d'application
 
-La fonction `gvlma()` permet de vérifier en une fois si l'ensemble des conditions d'applications mathématiques sont remplies, grâce à plusieurs tests statistiques. Exemple :
+La fonction gvlma() permet de vérifier en une fois si l'ensemble des conditions d'applications mathématiques sont remplies, grâce à plusieurs tests statistiques. Exemple :
 
 ```{r}
 #| message: False
@@ -562,23 +562,23 @@ gvlma(regl)
 ```
 
 ::: {.callout-note}
-N'oubliez pas d'installer la librarie `gvlma` à l'aide de la fonction `install.packages()`.  
+N'oubliez pas d'installer la librarie gvlma à l'aide de la fonction install.packages().  
 :::
 
 Encore une fois, les résultats de cette analyse sont riches en informations :
 
-1. D'abord on vous rappelle le modèle linéaire testé : `Call`
+1. D'abord on vous rappelle le modèle linéaire testé : Call
 
-2. Ensuite les valeurs estimées des coefficients de la régression : `Coefficients`
+2. Ensuite les valeurs estimées des coefficients de la régression : Coefficients
 
-3. Puis on clairement ce que cette fonction fait : `ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS`
+3. Puis on clairement ce que cette fonction fait : ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
 
-4. Finalement, on détaille les résultats des différents tests sur les résidus. Chacun doit être interprété de la même façon : une statistique de test calculée `Value`, suivie de la _p_-value associée `p-value` et de la décision suggérée (`Assumptions acceptable.` ou `Assumptions NOT satisfied!`)
-   - `Global Stat` est un test sur la **conformité globale** de notre analyse aux conditions d'application, au cas où un des tests spécifiques ci-dessous ne serait pas concluant,
-   - `Skewness` vérifie la **symétrie** de la distribution des résidus par rapport à 0,
-   - `Kurtosis` vérifie la **normalité** de la distribution des résidus ainsi que la présence de **valeurs extrêmes**,
-   - `Link Function` vérifie la **linéarité** de la relation entre les variables réponse et explicative,
-   - `Heteroscedasticity` vérifie **l'homogénéité de la variance** des résidus.
+4. Finalement, on détaille les résultats des différents tests sur les résidus. Chacun doit être interprété de la même façon : une statistique de test calculée Value, suivie de la _p_-value associée p-value et de la décision suggérée (Assumptions acceptable. ou Assumptions NOT satisfied!)
+   - Global Stat est un test sur la **conformité globale** de notre analyse aux conditions d'application, au cas où un des tests spécifiques ci-dessous ne serait pas concluant,
+   - Skewness vérifie la **symétrie** de la distribution des résidus par rapport à 0,
+   - Kurtosis vérifie la **normalité** de la distribution des résidus ainsi que la présence de **valeurs extrêmes**,
+   - Link Function vérifie la **linéarité** de la relation entre les variables réponse et explicative,
+   - Heteroscedasticity vérifie **l'homogénéité de la variance** des résidus.
 
 ::: {.callout-warning}
 Tous ces tests graphiques et statistiques restent des **aides à la décision**. Vous devez **exercer votre jugement en tout temps** pour décider si vous pouvez vous fier aux résultats de vos analyses.
@@ -592,9 +592,9 @@ Toutefois cela est vrai dans les limites observées de la variable explicative, 
 
 - Prédiction de la valeur moyenne
 
-Il est très facile de faire une telle prédiction. En fait, il s'agit simplement d'utiliser l'équation de la droite de régression `y = a + bx`, avec `a` l'ordonnée à l'origine et `b` la pente.
+Il est très facile de faire une telle prédiction. En fait, il s'agit simplement d'utiliser l'équation de la droite de régression `y = a + bx`, avec a l'ordonnée à l'origine et b la pente.
 
-On peut toutefois utiliser la fonction `predict()` si on veut faire plusieurs prédictions facilement, par exemple.
+On peut toutefois utiliser la fonction predict() si on veut faire plusieurs prédictions facilement, par exemple.
 
 ```{r}
 #| echo: true
@@ -605,11 +605,11 @@ conx <- log10(c(0.3, 0.35, 0.4)) # Il ne faut pas oublier la transformation !
 predict(regl, newdata = data.frame(logc1 = conx), interval = "confidence")
 ```
 
-Les résultats de la fonction `predict()` donnent:
+Les résultats de la fonction predict() donnent:
 
-1. `fit` : la **valeur moyenne** prédite en x par la régression linéaire,
-2. `lwr` : la **limite inférieure** de **l'intervalle de confiance à 95%** en x, selon la valeur de l'argument `interval = `
-3. `upr` : la **limite supérieure** de l'intervalle de confiance à 95% en x, selon la valeur de cet argument.
+1. fit : la **valeur moyenne** prédite en x par la régression linéaire,
+2. lwr : la **limite inférieure** de **l'intervalle de confiance à 95%** en x, selon la valeur de l'argument `interval = `
+3. upr : la **limite supérieure** de l'intervalle de confiance à 95% en x, selon la valeur de cet argument.
 
 L'ordre des lignes suit l'ordre des valeurs dans le vecteur x fourni à la fonction.
 

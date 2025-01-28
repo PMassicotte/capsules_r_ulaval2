@@ -309,7 +309,7 @@ setos <- iris$Species == "setosa"
 
 - Faire le test de comparaison de moyenne
 
-Il y a des arguments (options) à la fonction `t.test()` dont nous pouvons préciser la valeur (voir capsule #3). Nous allons faire un test pour **échantillons non appariés** (situation par defaut dans R).
+Il y a des arguments (options) à la fonction t.test() dont nous pouvons préciser la valeur (voir capsule #3). Nous allons faire un test pour **échantillons non appariés** (situation par defaut dans R).
 
 ```{r}
 #| echo: True

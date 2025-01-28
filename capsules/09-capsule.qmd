@@ -16,7 +16,7 @@ library(checkdown)
 
 1. Comprendre l'importance de **vérifier les conditions d'application** des tests statistiques paramétriques (normalité, homoscédasticité, etc.),
 2. **Transformer des données** et ajouter ces nouvelles variables dans le jeu de données, si nécessaire,
-3. Utiliser un **test diagnostique visuel** _a posteriori_ avec la fonction `plot()`.
+3. Utiliser un **test diagnostique visuel** _a posteriori_ avec la fonction plot().
 
 ## Capsule vidéo
 
@@ -202,12 +202,12 @@ boxplot(PlantGrowth$weight ~ PlantGrowth$group,
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`bartlett.test()`"),
+  c("bartlett.test()"),
   options = c(
-    "`shapiro.test()`",
-    "`t.test()`",
-    "`TukeyHSD()`",
-    "`bartlett.test()`"
+    "shapiro.test()",
+    "t.test()",
+    "TukeyHSD()",
+    "bartlett.test()"
   ),
   type = "radio",
   button_label = "Vérifier",
@@ -243,7 +243,7 @@ Voici un ensemble de commandes organisées en script (voir capsule #5).
 ### Charger les données pour l'analyse
 
 ::: {.callout-tip}
-Tapez `InsectSprays` dans l'aide de R pour en savoir plus (voir capsule #1).
+Tapez InsectSprays dans l'aide de R pour en savoir plus (voir capsule #1).
 :::
 
 Il s'agit d'un jeu de données fourni avec R donnant les comptes d'insectes trouvés sur des parcelles traitées avec différents insecticides. On va d'abord charger le jeu de données, puis le rendre accessible en premier plan dans la mémoire de R :
@@ -306,7 +306,7 @@ hist(
 )
 ```
 
-Il apparait évident à l'allure asymétrique des deux distributions de fréquence que les valeurs des deux échantillons ne sont pas normalement distribuées. De plus, la première distribution en particulier fait apparaitre des valeurs extrêmes, très éloignées des autres : ce sont des _outliers_; il faut y apporter une attention particulière (voir ci-dessous). Nous pouvons le confirmer avec un test statistique de Shapiro-Wilk qui compare la distribution de l'échantillon à la distribution nulle Normale : `shapiro.test()`
+Il apparait évident à l'allure asymétrique des deux distributions de fréquence que les valeurs des deux échantillons ne sont pas normalement distribuées. De plus, la première distribution en particulier fait apparaitre des valeurs extrêmes, très éloignées des autres : ce sont des _outliers_; il faut y apporter une attention particulière (voir ci-dessous). Nous pouvons le confirmer avec un test statistique de Shapiro-Wilk qui compare la distribution de l'échantillon à la distribution nulle Normale : shapiro.test()
 
 ```{r, echo=TRUE, eval=TRUE}
 shapiro.test(InsectSprays$count[T.C])
@@ -332,7 +332,7 @@ InsectSprays$logCount <- logCount
 ```
 
 ::: {.callout-caution}
-N'oubliez pas que `log(0)` n'existe pas ! Donc si vous avez des valeurs nulles, la transformation à faire est `log( valeur + 1 )`. Soyez attentifs aux spécificités des fonctions mathématiques que vous utilisez.
+N'oubliez pas que log(0) n'existe pas ! Donc si vous avez des valeurs nulles, la transformation à faire est log( valeur + 1 ). Soyez attentifs aux spécificités des fonctions mathématiques que vous utilisez.
 :::
 
 ::: {.callout-caution}
@@ -369,10 +369,10 @@ t.test(x,
 )
 ```
 
-Ici il y a une (1) option directement reliée à la condition **d'homoscédasticité** (égalité des variances) : `var.equal = ` qui devra indiquer par les valeurs logiques `TRUE` ou `FALSE` si on considère que les variances des deux échantillons sont homogènes.
+Ici il y a une (1) option directement reliée à la condition **d'homoscédasticité** (égalité des variances) : `var.equal = ` qui devra indiquer par les valeurs logiques TRUE ou FALSE si on considère que les variances des deux échantillons sont homogènes.
 
 ::: {.callout-caution}
-La valeur par défaut de cette option est `FALSE`; donc R fait **par défaut un test corrigé de Welch** !
+La valeur par défaut de cette option est FALSE; donc R fait **par défaut un test corrigé de Welch** !
 :::
 
 Dans notre cas, les variances des groupes comparés **sont homogènes**, donc il faut spécifier la valeur suivante lors du test dans R :
@@ -413,7 +413,7 @@ La conclusion de ce test **semble claire** : la très faible _p_-value indique q
 plot(analyse, which = c(1, 2, 4))
 ```
 
-La fonction `plot()` reconnait le type de la variable `analyse`, c'est-à-dire un résultat de test statistique, et elle produit automatiquement plusieurs graphiques diagnostiques (par défaut). On en a choisi trois ici.
+La fonction plot() reconnait le type de la variable analyse, c'est-à-dire un résultat de test statistique, et elle produit automatiquement plusieurs graphiques diagnostiques (par défaut). On en a choisi trois ici.
 
 1. Le premier représente simplement les valeurs de chaque résidu (écart) en fonction de la valeur "prédite" par le modèle nul testé. Dans le cas de l'ANOVA, il s'agit simplement de la moyenne de groupe ! Ce premier graphique permet déjà de vérifier la normalité des résidus et donc des valeurs : Sont-ils répartis symétriquement de part et d'autre du 0 ? **Ce n'est pas vraiment le cas ici !** Il permet également d'avoir une idée de l'homogénéité des variances : Les étendues des valeurs sont-elles comparables entre les groupes ? **Ça n'est pas le cas non plus**. Finalement, si la droite indicatrice rouge dévie notablement de l'horizontale, ceci indique d'autres problèmes tels que la non-linéarité des relations entre variables dans le cas d'une régression (voir capsule #11).
 
@@ -422,7 +422,7 @@ La fonction `plot()` reconnait le type de la variable `analyse`, c'est-à-dire u
 3. Le troisième présente finalement la distance de Cook, c'est-à-dire le "poids" relatif de chaque valeur individuelle sur la conclusion de notre analyse; il permet **d'identifier des points qui influencent de façon disproportionnée nos conclusions**. Ce sont encore une fois des "outliers" dont il faut se méfier. Une valeur > 0.5 est problématique.
 
 ::: {.callout-note}
-Consulter l'aide à propos de la fonction `plot.lm()` pour plus de détails sur ces graphiques.
+Consulter l'aide à propos de la fonction plot.lm() pour plus de détails sur ces graphiques.
 :::
 
 On peut voir la différence de résultats en refaisant ce **diagnostic visuel sur les résultats de l'analyse effectuée sur les valeurs transformées** pour satisfaire aux conditions d'application. Les conclusions de cette inspection visuelle confirment les bienfaits de transformer nos données !
@@ -446,7 +446,3 @@ Télécharger la documentation sous format PDF
 
 - [Télécharger la documentation sous format PDF](www/capsule_9.pdf)
 - [Télécharger la documentation sous format HTML](www/capsule_9.html)
-
-```
-
-```

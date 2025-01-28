@@ -20,11 +20,8 @@ website:
         text: Accueil
       - text: "Capsules"
         file: capsules/index.qmd
-      - icon: slack
-        href: "TODO"
-        aria-label: "TODO"
       - icon: github
-        href: "TODO"
+        href: "https://github.com/PMassicotte/capsules_r_ulaval2"
         aria-label: "GitHub"
 
   sidebar:

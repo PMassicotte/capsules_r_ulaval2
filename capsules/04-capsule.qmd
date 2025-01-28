@@ -52,8 +52,8 @@ check_question(
   options = c("Oui", "Non"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct !  Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes `salaire` et `dénombrement` où `salaire` contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne `dénombrement` contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
-  wrong = "❌ Incorrect.  Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes `salaire` et `dénombrement` où `salaire` contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne `dénombrement` contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
+  right = "✅ Correct !  Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
+  wrong = "❌ Incorrect.  Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
   title = "Selon vous, est-ce que ce jeu de données est bien structuré?"
 )
 ```
