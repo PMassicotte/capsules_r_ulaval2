@@ -13,6 +13,11 @@
     ]
   },
   "Packages": {
+    "DT": {
+      "Package": "DT",
+      "Version": "0.33",
+      "Source": "Repository"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
@@ -155,6 +160,11 @@
         "methods"
       ],
       "Hash": "e0b3a53876554bd45879e596cdb10a52"
+    },
+    "gvlma": {
+      "Package": "gvlma",
+      "Version": "1.0.0.3",
+      "Source": "Repository"
     },
     "highr": {
       "Package": "highr",

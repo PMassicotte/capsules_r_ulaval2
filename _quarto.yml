@@ -65,8 +65,10 @@ website:
             file: capsules/08-capsule.qmd
           # - text: "Capsule 9"
           #   file: capsules/09-capsule.qmd
-          # - text: "Capsule 10"
-          #   file: capsules/10-capsule.qmd
+          - text: "Capsule 10"
+            file: capsules/10-capsule.qmd
+          - text: "Capsule 11"
+            file: capsules/11-capsule.qmd
 
   page-footer:
     right: "Cette page a été réalisée à l'aide de [Quarto](https://quarto.org/)."
