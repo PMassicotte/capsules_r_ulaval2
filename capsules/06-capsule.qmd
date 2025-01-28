@@ -27,7 +27,7 @@ library(checkdown)
 ## Exercices
 
 ::: {.callout-note}
-Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question.
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over". Le bouton "Indice" est là pour être utilisé!
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -299,13 +299,13 @@ Lorsqu'on se familiarise avec un jeu de données que l'on vient d'obtenir, il es
 
 L'un des nombreux avantages de R est qu'il permet de créer des graphiques de haute qualité. Le tableau suivant présente les quatre types de graphiques fréquemment utilisés en biologie.
 
-| Fonction     | Description                                                                                                                          |
-| :----------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| hist(x)    | Histogramme de la variable continue x.                                                                                             |
-| plot(x, y) | Nuage de points de la relation entre x (abscisse) et y (ordonnées).                                                              |
+| Fonction   | Description                                                                                                                          |
+| :--------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| hist(x)    | Histogramme de la variable continue x.                                                                                               |
+| plot(x, y) | Nuage de points de la relation entre x (abscisse) et y (ordonnées).                                                                  |
 | pairs(df)  | Permets de visualiser la relation entre toutes les variables continues d’une structure de données (tableau de données _data frame_). |
-| barplot(x) | Diagramme à bâtons du décompte de la variable x.                                                                                   |
-| boxplot(x) | Diagramme à boîte à moustaches de la variable continue x.                                                                          |
+| barplot(x) | Diagramme à bâtons du décompte de la variable x.                                                                                     |
+| boxplot(x) | Diagramme à boîte à moustaches de la variable continue x.                                                                            |
 
 Nous utiliserons un jeu de données biologiques intéressant afin de présenter les fonctions de base de chacun de ces types de graphiques. En effet, R contient des jeux de données qui ont été créés et intégrés à la version de base afin de nous permettre de tester ses différentes fonctions. Nous utiliserons le jeu de données _iris_ qui contient de véritables mesures morphologiques sur trois espèces d'Iris (des fleurs), récoltées par le biologiste Edgar Anderson. Ce jeu de données est d'autant plus intéressant pour nous que deux des trois espèces étudiées proviennent de la Gaspésie (incluant l'emblème floral du Québec, l'_Iris versicolor_). Ce jeu de données est aussi très connu, car il a été utilisé par Ronald Fisher, un des pères fondateurs de la biostatistique, dans un de ses articles scientifiques.
 
@@ -465,7 +465,7 @@ pairscor.fnc(iris[-5], col.points = cols[iris$Species])
 
 #### Les diagrammes à bâtons
 
-Les diagrammes à bâtons (_barplots_ en anglais) permettent de représenter des données catégorielles avec des barres rectangulaires dont les hauteurs sont proportionnelles aux fréquences qu'elles représentent (nombre d'observations pour chaque catégorie). Les diagrammes à bâtons sont souvent utilisés conjointement avec la fonction table() qui permet de faire la classification croisée d'une variable pour créer un tableau de contingence selon les combinaisons possibles. Dans l'exemple suivant, nous voulons faire un diagrammes à bâtons de la variable peur_des_biostats contenu dans le tableau de données sondage_bio1006. La première étape consiste à dénombrer combien il y a d'observations pour chacune des réponses possibles (_Non_, _Oui_, _Pas_sur_).
+Les diagrammes à bâtons (_barplots_ en anglais) permettent de représenter des données catégorielles avec des barres rectangulaires dont les hauteurs sont proportionnelles aux fréquences qu'elles représentent (nombre d'observations pour chaque catégorie). Les diagrammes à bâtons sont souvent utilisés conjointement avec la fonction table() qui permet de faire la classification croisée d'une variable pour créer un tableau de contingence selon les combinaisons possibles. Dans l'exemple suivant, nous voulons faire un diagrammes à bâtons de la variable peur*des_biostats contenu dans le tableau de données sondage_bio1006. La première étape consiste à dénombrer combien il y a d'observations pour chacune des réponses possibles (\_Non*, _Oui_, _Pas_sur_).
 
 ```{r}
 #| echo: true
@@ -484,7 +484,7 @@ Pour faire un diagramme à bâtons, il suffit d'utiliser la fonction barplot() a
 barplot(counts)
 ```
 
-Avec la fonction table(), il est également possible de faire un décompte croisé, c'est à dire selon plusieurs variables à la fois. Dans l'exemple suivant, nous faisons un décompte du nombre d'observations _Face_ et _Pile_ en groupant par genre et piece_monnaie. On peut ainsi constater immédiatement que les nombres de résultats _Face_ et _Pile_ sont presque égaux (comme on peut s'y attendre) aussi bien pour les Filles que les Gars.
+Avec la fonction table(), il est également possible de faire un décompte croisé, c'est à dire selon plusieurs variables à la fois. Dans l'exemple suivant, nous faisons un décompte du nombre d'observations _Face_ et _Pile_ en groupant par genre et piece*monnaie. On peut ainsi constater immédiatement que les nombres de résultats \_Face* et _Pile_ sont presque égaux (comme on peut s'y attendre) aussi bien pour les Filles que les Gars.
 
 ```{r}
 #| echo: true
