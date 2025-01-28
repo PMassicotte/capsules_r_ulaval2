@@ -359,25 +359,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_45461" onsubmit="return validate_form_45461()" method="post">
+<form name="form_35404" onsubmit="return validate_form_35404()" method="post">
 <fieldset>
 <legend>Lesquelles des valeurs suivantes sont du type caractère?</legend>
-<input type="checkbox" id="answer_45461_1" value="12.34">
+<input type="checkbox" id="answer_35404_1" value="12.34">
 <label>12.34</label>
 <br>
-<input type="checkbox" id="answer_45461_2" value="banane">
+<input type="checkbox" id="answer_35404_2" value="banane">
 <label>banane</label>
 <br>
-<input type="checkbox" id="answer_45461_3" value="3.1415">
+<input type="checkbox" id="answer_35404_3" value="3.1415">
 <label>3.1415</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_45461"></div>
+<div id="result_35404"></div>
 </fieldset>
 </form>
-<script>function validate_form_45461() {var text; var x1 = document.getElementById('answer_45461_1'); var x2 = document.getElementById('answer_45461_2'); var x3 = document.getElementById('answer_45461_3'); if (x1.checked == false&x2.checked == true&x3.checked == true){text = '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';} else {text = '❌ Incorrect.  N’oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).';} document.getElementById('result_45461').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_35404() {var text; var x1 = document.getElementById('answer_35404_1'); var x2 = document.getElementById('answer_35404_2'); var x3 = document.getElementById('answer_35404_3'); if (x1.checked == false&x2.checked == true&x3.checked == true){text = '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';} else {text = '❌ Incorrect.  N’oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).';} document.getElementById('result_35404').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -389,22 +389,22 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_73072" onsubmit="return validate_form_73072()" method="post">
+<form name="form_57149" onsubmit="return validate_form_57149()" method="post">
 <fieldset>
 <legend>Quel est le bon opérateur à utiliser pour assigner une valeur à une variable?</legend>
-<input type="radio" name="answer_73072" id="answer_73072_1" value="<-">
+<input type="radio" name="answer_57149" id="answer_57149_1" value="<-">
 <label>&lt;-</label>
 <br>
-<input type="radio" name="answer_73072" id="answer_73072_2" value=" = ">
+<input type="radio" name="answer_57149" id="answer_57149_2" value=" = ">
 <label> = </label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_73072"></div>
+<div id="result_57149"></div>
 </fieldset>
 </form>
-<script>function validate_form_73072() {var x, text; var x = document.forms['form_73072']['answer_73072'].value;if (x == '<-'){text = '✅ Correct ! L’opérateur <code>&lt;-</code> est recommandé en plus d’éviter la confusion avec l’opérateur logique <code>==</code>.';} else {text = '❌ Incorrect.  L’opérateur <code>=</code> fonctionne, mais il est recommandé d’utiliser <code>&lt;-</code> pour éviter la confusion avec l’opérateur logique <code>==</code>.';} document.getElementById('result_73072').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_57149() {var x, text; var x = document.forms['form_57149']['answer_57149'].value;if (x == '<-'){text = '✅ Correct ! L’opérateur <code>&lt;-</code> est recommandé en plus d’éviter la confusion avec l’opérateur logique <code>==</code>.';} else {text = '❌ Incorrect.  L’opérateur <code>=</code> fonctionne, mais il est recommandé d’utiliser <code>&lt;-</code> pour éviter la confusion avec l’opérateur logique <code>==</code>.';} document.getElementById('result_57149').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -416,35 +416,35 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_60072" onsubmit="return validate_form_60072()" method="post">
+<form name="form_45709" onsubmit="return validate_form_45709()" method="post">
 <fieldset>
 <legend>Comment peut-on déterminer la classe d’une variable nommée <code>x</code>?</legend>
-<input type="radio" name="answer_60072" id="answer_60072_1" value="class(x)">
+<input type="radio" name="answer_45709" id="answer_45709_1" value="class(x)">
 <label>class(x)</label>
 <br>
-<input type="radio" name="answer_60072" id="answer_60072_2" value="Class(x)">
+<input type="radio" name="answer_45709" id="answer_45709_2" value="Class(x)">
 <label>Class(x)</label>
 <br>
-<input type="radio" name="answer_60072" id="answer_60072_3" value="type(x)">
+<input type="radio" name="answer_45709" id="answer_45709_3" value="type(x)">
 <label>type(x)</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_60072"></div>
+<div id="result_45709"></div>
 </fieldset>
 </form>
-<script>function validate_form_60072() {var x, text; var x = document.forms['form_60072']['answer_60072'].value;if (x == 'class(x)'){text = '✅ Correct ! <code>class()</code> est une fonction de base de R pour déterminer la classe d’une variable.';} else {text = '❌ Incorrect.  Essayez encore! Utilisez les indices si nécessaire au bas de la question.';} document.getElementById('result_60072').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_45709() {var x, text; var x = document.forms['form_45709']['answer_45709'].value;if (x == 'class(x)'){text = '✅ Correct ! <code>class()</code> est une fonction de base de R pour déterminer la classe d’une variable.';} else {text = '❌ Incorrect.  Essayez encore! Utilisez les indices si nécessaire au bas de la question.';} document.getElementById('result_45709').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 <details>
 <summary><strong>ⓘ  Indices</strong></summary>
-<div id="hint_33432" onclick="return show_hint_33432()">Cliquez ici pour obtenir un indice!</div>
-<div id="result_33432" onclick="return show_hint_33432()"></div>
-<script>function show_hint_33432(){var x = document.getElementById('result_33432').innerHTML; if(!x){document.getElementById('result_33432').innerHTML = 'Attention à la casse (minuscule ou majuscule) des fonctions.';} else {document.getElementById('result_33432').innerHTML = '';}}</script>
-<div id="hint_7972" onclick="return show_hint_7972()">Cliquez ici pour obtenir un indice!</div>
-<div id="result_7972" onclick="return show_hint_7972()"></div>
-<script>function show_hint_7972(){var x = document.getElementById('result_7972').innerHTML; if(!x){document.getElementById('result_7972').innerHTML = '<code>type()</code> n’est pas une fonction de base de R.';} else {document.getElementById('result_7972').innerHTML = '';}}</script>
+<div id="hint_51508" onclick="return show_hint_51508()">Cliquez ici pour obtenir un indice!</div>
+<div id="result_51508" onclick="return show_hint_51508()"></div>
+<script>function show_hint_51508(){var x = document.getElementById('result_51508').innerHTML; if(!x){document.getElementById('result_51508').innerHTML = 'Attention à la casse (minuscule ou majuscule) des fonctions.';} else {document.getElementById('result_51508').innerHTML = '';}}</script>
+<div id="hint_9899" onclick="return show_hint_9899()">Cliquez ici pour obtenir un indice!</div>
+<div id="result_9899" onclick="return show_hint_9899()"></div>
+<script>function show_hint_9899(){var x = document.getElementById('result_9899').innerHTML; if(!x){document.getElementById('result_9899').innerHTML = '<code>type()</code> n’est pas une fonction de base de R.';} else {document.getElementById('result_9899').innerHTML = '';}}</script>
 </details>
 </div>
 </div>
@@ -455,28 +455,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_66356" onsubmit="return validate_form_66356()" method="post">
+<form name="form_39308" onsubmit="return validate_form_39308()" method="post">
 <fieldset>
 <legend>Quels types de variables seraient préférables pour représenter les mois d’une année?</legend>
-<input type="checkbox" id="answer_66356_1" value="numeric">
+<input type="checkbox" id="answer_39308_1" value="numeric">
 <label>numeric</label>
 <br>
-<input type="checkbox" id="answer_66356_2" value="factor">
+<input type="checkbox" id="answer_39308_2" value="factor">
 <label>factor</label>
 <br>
-<input type="checkbox" id="answer_66356_3" value="logical">
+<input type="checkbox" id="answer_39308_3" value="logical">
 <label>logical</label>
 <br>
-<input type="checkbox" id="answer_66356_4" value="character">
+<input type="checkbox" id="answer_39308_4" value="character">
 <label>character</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_66356"></div>
+<div id="result_39308"></div>
 </fieldset>
 </form>
-<script>function validate_form_66356() {var text; var x1 = document.getElementById('answer_66356_1'); var x2 = document.getElementById('answer_66356_2'); var x3 = document.getElementById('answer_66356_3'); var x4 = document.getElementById('answer_66356_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct ! Puisque les noms de mois sont fixes, le type <code>factor</code> est le meilleur choix. Le type <code>character</code> est également valide.';} else {text = '❌ Incorrect. Il y a peut-être plus d’une bonne réponse!';} document.getElementById('result_66356').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_39308() {var text; var x1 = document.getElementById('answer_39308_1'); var x2 = document.getElementById('answer_39308_2'); var x3 = document.getElementById('answer_39308_3'); var x4 = document.getElementById('answer_39308_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct ! Puisque les noms de mois sont fixes, le type <code>factor</code> est le meilleur choix. Le type <code>character</code> est également valide.';} else {text = '❌ Incorrect. Il y a peut-être plus d’une bonne réponse!';} document.getElementById('result_39308').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -491,28 +491,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_82638" onsubmit="return validate_form_82638()" method="post">
+<form name="form_14071" onsubmit="return validate_form_14071()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?</legend>
-<input type="checkbox" id="answer_82638_1" value="1x3">
+<input type="checkbox" id="answer_14071_1" value="1x3">
 <label>1x3</label>
 <br>
-<input type="checkbox" id="answer_82638_2" value="x2">
+<input type="checkbox" id="answer_14071_2" value="x2">
 <label>x2</label>
 <br>
-<input type="checkbox" id="answer_82638_3" value="ma variable">
+<input type="checkbox" id="answer_14071_3" value="ma variable">
 <label>ma variable</label>
 <br>
-<input type="checkbox" id="answer_82638_4" value="température">
+<input type="checkbox" id="answer_14071_4" value="température">
 <label>température</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_82638"></div>
+<div id="result_14071"></div>
 </fieldset>
 </form>
-<script>function validate_form_82638() {var text; var x1 = document.getElementById('answer_82638_1'); var x2 = document.getElementById('answer_82638_2'); var x3 = document.getElementById('answer_82638_3'); var x4 = document.getElementById('answer_82638_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct ! <code>x2</code> est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. <code>température</code> est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';} else {text = '❌ Incorrect. Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d’espace.';} document.getElementById('result_82638').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_14071() {var text; var x1 = document.getElementById('answer_14071_1'); var x2 = document.getElementById('answer_14071_2'); var x3 = document.getElementById('answer_14071_3'); var x4 = document.getElementById('answer_14071_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct ! <code>x2</code> est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. <code>température</code> est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';} else {text = '❌ Incorrect. Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d’espace.';} document.getElementById('result_14071').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -524,25 +524,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_8070" onsubmit="return validate_form_8070()" method="post">
+<form name="form_69659" onsubmit="return validate_form_69659()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d’une voiture se déplaçant à 50 km/h?</legend>
-<input type="radio" name="answer_8070" id="answer_8070_1" value="x <- 50">
+<input type="radio" name="answer_69659" id="answer_69659_1" value="x <- 50">
 <label>x &lt;- 50</label>
 <br>
-<input type="radio" name="answer_8070" id="answer_8070_2" value="vitesse_km_h <- 50">
+<input type="radio" name="answer_69659" id="answer_69659_2" value="vitesse_km_h <- 50">
 <label>vitesse_km_h &lt;- 50</label>
 <br>
-<input type="radio" name="answer_8070" id="answer_8070_3" value="vitesse <- 50">
+<input type="radio" name="answer_69659" id="answer_69659_3" value="vitesse <- 50">
 <label>vitesse &lt;- 50</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_8070"></div>
+<div id="result_69659"></div>
 </fieldset>
 </form>
-<script>function validate_form_8070() {var x, text; var x = document.forms['form_8070']['answer_8070'].value;if (x == 'vitesse_km_h <- 50'){text = '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.';} else {text = '❌ Incorrect. Le nom de la variable (<code>x</code>) n’est pas très descriptif ou les unités ne sont pas indiquées.';} document.getElementById('result_8070').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_69659() {var x, text; var x = document.forms['form_69659']['answer_69659'].value;if (x == 'vitesse_km_h <- 50'){text = '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.';} else {text = '❌ Incorrect. Le nom de la variable (<code>x</code>) n’est pas très descriptif ou les unités ne sont pas indiquées.';} document.getElementById('result_69659').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_8070').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_69659').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -554,25 +554,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_20415" onsubmit="return validate_form_20415()" method="post">
+<form name="form_75778" onsubmit="return validate_form_75778()" method="post">
 <fieldset>
 <legend>Pourquoi l’assignation suivante ne devrait pas être utilisée? <code>c &lt;- 23</code></legend>
-<input type="radio" name="answer_20415" id="answer_20415_1" value="Parce que `c()` est une fonction de base dans R.">
+<input type="radio" name="answer_75778" id="answer_75778_1" value="Parce que `c()` est une fonction de base dans R.">
 <label>Parce que `c()` est une fonction de base dans R.</label>
 <br>
-<input type="radio" name="answer_20415" id="answer_20415_2" value="Parce que `c` n'est pas suffisamment descriptif.">
+<input type="radio" name="answer_75778" id="answer_75778_2" value="Parce que `c` n'est pas suffisamment descriptif.">
 <label>Parce que `c` n'est pas suffisamment descriptif.</label>
 <br>
-<input type="radio" name="answer_20415" id="answer_20415_3" value="Toutes ces réponses">
+<input type="radio" name="answer_75778" id="answer_75778_3" value="Toutes ces réponses">
 <label>Toutes ces réponses</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_20415"></div>
+<div id="result_75778"></div>
 </fieldset>
 </form>
-<script>function validate_form_20415() {var x, text; var x = document.forms['form_20415']['answer_20415'].value;if (x == 'Toutes ces réponses'){text = '✅ Correct ! <code>c()</code> est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';} else {text = '❌ Incorrect. Attention, il y a peut-être plusieurs réponses vraies!';} document.getElementById('result_20415').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_75778() {var x, text; var x = document.forms['form_75778']['answer_75778'].value;if (x == 'Toutes ces réponses'){text = '✅ Correct ! <code>c()</code> est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';} else {text = '❌ Incorrect. Attention, il y a peut-être plusieurs réponses vraies!';} document.getElementById('result_75778').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_8070').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_20415').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_69659').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75778').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -587,25 +587,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_43701" onsubmit="return validate_form_43701()" method="post">
+<form name="form_4881" onsubmit="return validate_form_4881()" method="post">
 <fieldset>
 <legend>Quelle est la classe de <code>x &lt;- c(1, '2', 3)</code>?</legend>
-<input type="radio" name="answer_43701" id="answer_43701_1" value="numeric">
+<input type="radio" name="answer_4881" id="answer_4881_1" value="numeric">
 <label>numeric</label>
 <br>
-<input type="radio" name="answer_43701" id="answer_43701_2" value="vecteur">
+<input type="radio" name="answer_4881" id="answer_4881_2" value="vecteur">
 <label>vecteur</label>
 <br>
-<input type="radio" name="answer_43701" id="answer_43701_3" value="charactère">
+<input type="radio" name="answer_4881" id="answer_4881_3" value="charactère">
 <label>charactère</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_43701"></div>
+<div id="result_4881"></div>
 </fieldset>
 </form>
-<script>function validate_form_43701() {var x, text; var x = document.forms['form_43701']['answer_43701'].value;if (x == 'charactère'){text = '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,<code>2</code>, le vecteur entier est de type <code>charactère</code>.';} else {text = '❌ Incorrect. Utilisez la fonction <code>class()</code> pour valider votre choix.';} document.getElementById('result_43701').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_4881() {var x, text; var x = document.forms['form_4881']['answer_4881'].value;if (x == 'charactère'){text = '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,<code>2</code>, le vecteur entier est de type <code>charactère</code>.';} else {text = '❌ Incorrect. Utilisez la fonction <code>class()</code> pour valider votre choix.';} document.getElementById('result_4881').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_8070').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_20415').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_43701').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_69659').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75778').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_4881').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -617,25 +617,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_65327" onsubmit="return validate_form_65327()" method="post">
+<form name="form_21655" onsubmit="return validate_form_21655()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lesquelles représentent des vecteurs de type <code>logic</code>?</legend>
-<input type="radio" name="answer_65327" id="answer_65327_1" value="c(TRUE, FALSE)">
+<input type="radio" name="answer_21655" id="answer_21655_1" value="c(TRUE, FALSE)">
 <label>c(TRUE, FALSE)</label>
 <br>
-<input type="radio" name="answer_65327" id="answer_65327_2" value="c(VRAI, FAUX)">
+<input type="radio" name="answer_21655" id="answer_21655_2" value="c(VRAI, FAUX)">
 <label>c(VRAI, FAUX)</label>
 <br>
-<input type="radio" name="answer_65327" id="answer_65327_3" value="c(0, 1)">
+<input type="radio" name="answer_21655" id="answer_21655_3" value="c(0, 1)">
 <label>c(0, 1)</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_65327"></div>
+<div id="result_21655"></div>
 </fieldset>
 </form>
-<script>function validate_form_65327() {var x, text; var x = document.forms['form_65327']['answer_65327'].value;if (x == 'c(TRUE, FALSE)'){text = '✅ Correct !  R n’utilise généralement pas des noms français.';} else {text = '❌ Incorrect. Stictement parlant, <code>c(0, 1)</code> n’est pas <code>logic</code>. Essayez les commandes suivantes dans R: (1) <code>1 == TRUE</code> et (2) <code>0 == FALSE</code>.';} document.getElementById('result_65327').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_21655() {var x, text; var x = document.forms['form_21655']['answer_21655'].value;if (x == 'c(TRUE, FALSE)'){text = '✅ Correct !  R n’utilise généralement pas des noms français.';} else {text = '❌ Incorrect. Stictement parlant, <code>c(0, 1)</code> n’est pas <code>logic</code>. Essayez les commandes suivantes dans R: (1) <code>1 == TRUE</code> et (2) <code>0 == FALSE</code>.';} document.getElementById('result_21655').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_8070').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_20415').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_43701').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_65327').innerText == '✅ Correct !  R n’utilise généralement pas des noms français.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_69659').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75778').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_4881').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_21655').innerText == '✅ Correct !  R n’utilise généralement pas des noms français.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -647,28 +647,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_17614" onsubmit="return validate_form_17614()" method="post">
+<form name="form_78479" onsubmit="return validate_form_78479()" method="post">
 <fieldset>
 <legend>Avec le vecteur suivant: <code>x &lt;- c(1, 42, 5, 4)</code>, quelle est la valeur de <code>x[2]</code>?</legend>
-<input type="radio" name="answer_17614" id="answer_17614_1" value="1">
+<input type="radio" name="answer_78479" id="answer_78479_1" value="1">
 <label>1</label>
 <br>
-<input type="radio" name="answer_17614" id="answer_17614_2" value="42">
+<input type="radio" name="answer_78479" id="answer_78479_2" value="42">
 <label>42</label>
 <br>
-<input type="radio" name="answer_17614" id="answer_17614_3" value="5">
+<input type="radio" name="answer_78479" id="answer_78479_3" value="5">
 <label>5</label>
 <br>
-<input type="radio" name="answer_17614" id="answer_17614_4" value="4">
+<input type="radio" name="answer_78479" id="answer_78479_4" value="4">
 <label>4</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_17614"></div>
+<div id="result_78479"></div>
 </fieldset>
 </form>
-<script>function validate_form_17614() {var x, text; var x = document.forms['form_17614']['answer_17614'].value;if (x == '42'){text = '✅ Correct ! 42 est la valeur à la position 2 du vecteur <code>x</code>.';} else {text = '❌ Incorrect. N’oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l’intérieur du vecteur <code>x</code>.';} document.getElementById('result_17614').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_78479() {var x, text; var x = document.forms['form_78479']['answer_78479'].value;if (x == '42'){text = '✅ Correct ! 42 est la valeur à la position 2 du vecteur <code>x</code>.';} else {text = '❌ Incorrect. N’oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l’intérieur du vecteur <code>x</code>.';} document.getElementById('result_78479').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_8070').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_20415').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_43701').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_65327').innerText == '✅ Correct !  R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_17614').innerText == '✅ Correct ! 42 est la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_69659').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75778').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_4881').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_21655').innerText == '✅ Correct !  R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_78479').innerText == '✅ Correct ! 42 est la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -680,25 +680,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_74524" onsubmit="return validate_form_74524()" method="post">
+<form name="form_63592" onsubmit="return validate_form_63592()" method="post">
 <fieldset>
 <legend>Avec le vecteur suivant: <code>x &lt;- c(1, 42, 5, 4)</code>, quelle est la valeur de <code>x[-2]</code>?</legend>
-<input type="radio" name="answer_74524" id="answer_74524_1" value="-42">
+<input type="radio" name="answer_63592" id="answer_63592_1" value="-42">
 <label>-42</label>
 <br>
-<input type="radio" name="answer_74524" id="answer_74524_2" value="c(1, -42, 5, 4)">
+<input type="radio" name="answer_63592" id="answer_63592_2" value="c(1, -42, 5, 4)">
 <label>c(1, -42, 5, 4)</label>
 <br>
-<input type="radio" name="answer_74524" id="answer_74524_3" value="c(1, 5, 4)">
+<input type="radio" name="answer_63592" id="answer_63592_3" value="c(1, 5, 4)">
 <label>c(1, 5, 4)</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_74524"></div>
+<div id="result_63592"></div>
 </fieldset>
 </form>
-<script>function validate_form_74524() {var x, text; var x = document.forms['form_74524']['answer_74524'].value;if (x == 'c(1, 5, 4)'){text = '✅ Correct ! <code>x[-2]</code> supprime la valeur à la position 2 du vecteur <code>x</code>.';} else {text = '❌ Incorrect.  N’oubliez pas qu’un indice négatif à l’intérieur des [] supprime la valeur à cet emplacement.';} document.getElementById('result_74524').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_63592() {var x, text; var x = document.forms['form_63592']['answer_63592'].value;if (x == 'c(1, 5, 4)'){text = '✅ Correct ! <code>x[-2]</code> supprime la valeur à la position 2 du vecteur <code>x</code>.';} else {text = '❌ Incorrect.  N’oubliez pas qu’un indice négatif à l’intérieur des [] supprime la valeur à cet emplacement.';} document.getElementById('result_63592').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_45461').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_73072').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_60072').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_66356').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_82638').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_8070').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_20415').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_43701').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_65327').innerText == '✅ Correct !  R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_17614').innerText == '✅ Correct ! 42 est la valeur à la position 2 du vecteur x.'; res11 = document.getElementById('result_74524').innerText == '✅ Correct ! x[-2] supprime la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_35404').innerText == '✅ Correct ! Les valeurs de ‘banane’ et de ‘3.1415’ sont entourées de guillemets ce qui indique des valeurs de type caractère.'; res2 = document.getElementById('result_57149').innerText == '✅ Correct ! L’opérateur &lt;- est recommandé en plus d’éviter la confusion avec l’opérateur logique ==.'; res3 = document.getElementById('result_45709').innerText == '✅ Correct ! class() est une fonction de base de R pour déterminer la classe d’une variable.'; res4 = document.getElementById('result_39308').innerText == '✅ Correct ! Puisque les noms de mois sont fixes, le type factor est le meilleur choix. Le type character est également valide.'; res5 = document.getElementById('result_14071').innerText == '✅ Correct ! x2 est valide puisqu’il commence par une lettre, ne contient pas de caractères spéciaux et/ou d’espaces. température est techniquement valide, mais il est fortement conseillé d’éviter l’utilisation de caractères spéciaux.'; res6 = document.getElementById('result_69659').innerText == '✅ Correct ! Ce nom est descriptif en plus d’indiquer les unités.'; res7 = document.getElementById('result_75778').innerText == '✅ Correct ! c() est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.'; res8 = document.getElementById('result_4881').innerText == '✅ Correct ! Puisqu’il y a une valeur texte dans le vecteur,2, le vecteur entier est de type charactère.'; res9 = document.getElementById('result_21655').innerText == '✅ Correct !  R n’utilise généralement pas des noms français.'; res10 = document.getElementById('result_78479').innerText == '✅ Correct ! 42 est la valeur à la position 2 du vecteur x.'; res11 = document.getElementById('result_63592').innerText == '✅ Correct ! x[-2] supprime la valeur à la position 2 du vecteur x.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -1099,7 +1099,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/rcapsules\.fsg\.ulaval\.ca");
+      var filterRegex = new RegExp("https:\/\/PMassicotte\.github\.io\/capsules_r_ulaval2\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -1,1 +1,1 @@
-Sitemap: https://rcapsules.fsg.ulaval.ca/sitemap.xml
+Sitemap: https://PMassicotte.github.io/capsules_r_ulaval2/sitemap.xml
