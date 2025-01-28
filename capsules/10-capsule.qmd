@@ -29,7 +29,7 @@ Les méthodes utilisées dans ce script sont avancées, mais chacune peut être 
 ## Exercices
 
 ::: {.callout-note}
-Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. 
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -39,12 +39,12 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Ces tests sont dits **paramétriques** car ils supposent que les données suivent une certaine distribution de fréquence (par ex. Normale) qui peut-être calculée mathématiquement grâce à un petit nombre de **paramètres** (comme la moyenne et l’écart-type pour la distribution Normale"),
-  options = c("Les tests “paramétriques” permettent de calculer des paramètres spécifiques à nos données et qui serviront à rejeter (ou non) l'hypothèse nulle du test.", "Il faut vérifier a priori que certains **paramètres** soient vérifiés sur nos données (par ex. absence de valeurs aberrantes) avant de pouvoir procéder à des tests **paramétriques** pour estimer l’effet du hasard sur nos valeurs. ", "Ces tests sont dits **paramétriques** car ils supposent que les données suivent une certaine distribution de fréquence (par ex. Normale) qui peut-être calculée mathématiquement grâce à un petit nombre de **paramètres** (comme la moyenne et l’écart-type pour la distribution Normale" ),
+  c("Ces tests sont dits paramétriques car ils supposent que les données suivent une certaine distribution de fréquence (par ex. Normale) qui peut-être calculée mathématiquement grâce à un petit nombre de paramètres (comme la moyenne et l’écart-type pour la distribution Normale"),
+  options = c("Les tests “paramétriques” permettent de calculer des paramètres spécifiques à nos données et qui serviront à rejeter (ou non) l'hypothèse nulle du test.", "Il faut vérifier a priori que certains paramètres soient vérifiés sur nos données (par ex. absence de valeurs aberrantes) avant de pouvoir procéder à des tests paramétriques pour estimer l’effet du hasard sur nos valeurs. ", "Ces tests sont dits paramétriques car ils supposent que les données suivent une certaine distribution de fréquence (par ex. Normale) qui peut-être calculée mathématiquement grâce à un petit nombre de paramètres (comme la moyenne et l’écart-type pour la distribution Normale" ),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le terme **paramétrique** est en effet dérivé simplement du fait que ces tests supposent que les valeurs de l'échantillon proviennent d'une population qui suit une distribution que l'on peut décrire mathématiquement grâce à ses paramètres.",
-  wrong = "❌ Incorrect. Demandez-vous (rappelez-vous) ce que sont les **paramètres** d'une population statistique.",
+  right = "✅ Correct ! Le terme paramétrique est en effet dérivé simplement du fait que ces tests supposent que les valeurs de l'échantillon proviennent d'une population qui suit une distribution que l'on peut décrire mathématiquement grâce à ses paramètres.",
+  wrong = "❌ Incorrect. Demandez-vous (rappelez-vous) ce que sont les *aramètres d'une population statistique.",
   title = "Choisissez la bonne définition concernant les tests statistiques paramétriques :"
 )
 ```
@@ -59,7 +59,7 @@ check_question(
 #| results: "asis"
 check_question(
   c("Les tests non-paramétriques sont moins bons que leurs équivalents paramétriques."),
-  options = c("Il existe presque toujours un test non-paramétrique **équivalent** à un test paramétrique (permet de répondre à la même question statistique).", "Les tests non-paramétriques sont moins bons que leurs équivalents paramétriques.", "Les tests non-paramétriques sont plus robustes que leurs équivalents paramétriques.", "Les tests paramétriques sont plus puissants que leurs équivalents non-paramétriques."),
+  options = c("Il existe presque toujours un test non-paramétrique équivalent à un test paramétrique (permet de répondre à la même question statistique).", "Les tests non-paramétriques sont moins bons que leurs équivalents paramétriques.", "Les tests non-paramétriques sont plus robustes que leurs équivalents paramétriques.", "Les tests paramétriques sont plus puissants que leurs équivalents non-paramétriques."),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! Non ! Ils sont conçus pour des données et des situations qui sont exclues par les tests paramétriques. On peut même dire qu'ils sont excellent dans leur domaine !",
@@ -77,8 +77,8 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Ils ne nécessitent de vérifier **aucune condition d’application**."),
-  options = c("Ils **s’appliquent sur les rangs** des valeurs des variables quantitatives.", "Ils ne nécessitent de vérifier **aucune condition d’application**.", "Ils **ne nécessitent pas** que les valeurs des variables quantitatives suivent une distribution Normale."),
+  c("Ils ne nécessitent de vérifier aucune condition d’application."),
+  options = c("Ils s’appliquent sur les rangs des valeurs des variables quantitatives.", "Ils ne nécessitent de vérifier aucune condition d’application.", "Ils ne nécessitent pas que les valeurs des variables quantitatives suivent une distribution Normale."),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! Il faut le plus souvent que les données soient distribuées plutôt symétriquement autour de leur médiane.",
@@ -96,13 +96,13 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("La différence de **position relative des rangs** entre deux groupes de valeurs."),
-  options = c("La différence de **moyennes** entre deux groupes de valeurs.", "La différence de **mode** entre deux groupes de valeurs.", "La différence de **position relative des rangs** entre deux groupes de valeurs." ),
+  c("La différence de position relative des rangs entre deux groupes de valeurs."),
+  options = c("La différence de moyennes entre deux groupes de valeurs.", "La différence de mode entre deux groupes de valeurs.", "La différence de position relative des rangs entre deux groupes de valeurs." ),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! Les tests non-paramétriques travaillent avec les rangs des variables, et ils comparent donc les positions relatives des rangs entre les groupes. Si les mesures de tendances centrales comme les moyennes sont différentes entre les groupes, cela peut être détecté par les tests.",
   wrong = "❌ Incorrect.",
-  title = "Choisissez l’affirmation VRAIE. Les **tests statistiques non-paramétriques** de comparaison de rangs permettent de tester :"
+  title = "Choisissez l’affirmation VRAIE. Les tests statistiques non-paramétriques de comparaison de rangs permettent de tester :"
 )
 ```
 

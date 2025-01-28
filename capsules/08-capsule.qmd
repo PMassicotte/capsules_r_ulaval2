@@ -28,7 +28,7 @@ library(checkdown)
 ## Exercices
 
 ::: {.callout-note}
-Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question.
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}

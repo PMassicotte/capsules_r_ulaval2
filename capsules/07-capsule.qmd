@@ -30,7 +30,7 @@ library(checkdown)
 ## Exercices
 
 ::: {.callout-note}
-Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question.
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -158,7 +158,7 @@ check_question(
   options = c("`width`", "`lwd`", "`lty`", "`size`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre `lwd` (*line width*) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: `plot(1:100, type = 'l', lwd = 10)`).",
+  right = "✅ Correct ! Le paramètre `lwd` (line width) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: `plot(1:100, type = 'l', lwd = 10)`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quel paramètre permet de changer l’épaisseur d’une ligne dans un graphique?"
 )

@@ -30,26 +30,7 @@ Les méthodes utilisées dans ce script sont avancées, mais chacune peut être 
 ## Exercices
 
 ::: {.callout-note}
-Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
-:::
-
-::: {.callout-note appearance="simple" icon=false .question}
-
-```{r}
-#| label: questionXXXXX
-#| echo: false
-#| results: "asis"
-check_question(
-  c(""),
-  options = c(""),
-  type = "checkbox",
-  button_label = "Vérifier",
-  right = "✅ Correct ! ",
-  wrong = "❌ Incorrect. ",
-  title = ""
-)
-```
-
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question.
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -59,13 +40,13 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("(3) La régression est une méthode statistique utilisée pour **prédire la valeur moyenne** d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
-  options = c("(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une **interaction** entre deux variables numériques.", "(2) La régression est un test statistique permettant de vérifier l’existence d’une **relation linéaire** entre deux variables numériques.", "(3) La régression est une méthode statistique utilisée pour **prédire la valeur moyenne** d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
+  c("(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
+  options = c("(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une interaction entre deux variables numériques.", "(2) La régression est un test statistique permettant de vérifier l’existence d’une relation linéaire entre deux variables numériques.", "(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! (3) Si ses conditions d'application sont respectées, la régression linéaire simple permet en effet d'estimer la valeur moyenne que devrait prendre une variable réponse `Y` à une variable explicative `X`. La dernière partie de la définition est importante ici : l'estimation est valable seulement pour des valeurs de `X` comprise à l'intérieur des limites existantes, c'est à dire pour faire de l'interpolation, et non pas de l'extrapolation.",
   wrong = "❌ Incorrect. (1) Cette définition fait plutôt référence à la Corrélation, puisqu'elle ne mentionne pas de relation de causalité (variables réponse et explicative). (2) Il s'agit plutôt d'une condition d'application préalable pour la régression linéaire simple. Il est vrai que lors d'une régression, on teste la significativité de la pente de la droite (est-elle différente de 0 ?).",
-  title = "Choisissez la bonne **définition** concernant la régression linéaire simple :"
+  title = "Choisissez la bonne définition concernant la régression linéaire simple :"
 )
 ```
 
@@ -78,13 +59,13 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("On calcule l’équation de la droite de régression en **maximisant** la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y."),
-  options = c("Une régression linéaire calcule **l’équation d’une droite** à travers un nuage de points dont les coordonnées sont les valeurs de la variable explicative en X et de la variable réponse en Y.", "On calcule l’équation de la droite de régression en **maximisant** la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.", "Les **résidus** représentent la différence entre la prédiction faite par la droite et les valeurs observées en Y.", "**L’intervalle de confiance** calculé autour de l’estimé de la pente de la droite de régression est basé sur une distribution de Student (t)." ),
+  c("On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y."),
+  options = c("Une régression linéaire calcule l’équation d’une droite à travers un nuage de points dont les coordonnées sont les valeurs de la variable explicative en X et de la variable réponse en Y.", "On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.", "Les résidus représentent la différence entre la prédiction faite par la droite et les valeurs observées en Y.", "L’intervalle de confiance calculé autour de l’estimé de la pente de la droite de régression est basé sur une distribution de Student (t)." ),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! C'est le contraire, l'équation de la droite de régression minimise les écarts entre sa prédiction et les observations.",
   wrong = "❌ Incorrect. La méthode de la régression linéaire permet d'estimer les paramètres d'une droite décrivant mathématiquement la relation entre ces 2 variables quantitatives. L'équation de la droite de régression est celle qui minimise la somme des carrés des résidus. Chaque paramètre de l'équation de la droite est calculé avec un intervalle de confiance, et donc la valeur moyenne prédite aussi." ,
-  title = "Choisissez l’affirmation FAUSSE concernant la **régression linéaire simple** "
+  title = "Choisissez l’affirmation FAUSSE concernant la régression linéaire simple "
 )
 ```
 
@@ -97,8 +78,8 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("La valeur de R2 mesure la **proportion de variance** des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression."),
-  options = c("La valeur de R2 est la **pente** de la droite de régression.", "La valeur de R2 mesure la **proportion de variance** des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.", "La valeur de R2 permet de **rejeter (ou non) l’hypothèse nulle** qu’il n’y a pas de relation entre les variables réponse et explicative."),
+  c("La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression."),
+  options = c("La valeur de R2 est la pente de la droite de régression.", "La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.", "La valeur de R2 permet de rejeter (ou non) l’hypothèse nulle qu’il n’y a pas de relation entre les variables réponse et explicative."),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
@@ -126,7 +107,7 @@ check_question(
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Réessayez! ",
-  title = "Quel graphique démontre un problème **d’hétéroscédasticité** (la variance de la variable réponse augmente avec la valeur de la variable explicative)?"
+  title = "Quel graphique démontre un problème d’hétéroscédasticité (la variance de la variable réponse augmente avec la valeur de la variable explicative)?"
 )
 ```
 
@@ -145,7 +126,7 @@ check_question(
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Réessayez! ",
-  title = "Quel graphique démontre l'absence de **relation linéaire**?"
+  title = "Quel graphique démontre l'absence de relation linéaire?"
 )
 ```
 
@@ -164,7 +145,7 @@ check_question(
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Réessayez! ",
-  title = "Quel graphique démontre un problème avec des **valeurs extrêmes** (*outliers*) qui vont influencer fortement la régression linéaire?"
+  title = "Quel graphique démontre un problème avec des valeurs extrêmes (*outliers*) qui vont influencer fortement la régression linéaire?"
 )
 ```
 
@@ -221,7 +202,7 @@ check_question(
   button_label = "Vérifier",
   right = "✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes... on peut dire qu'elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l'hypothèse nulle que la distribution est normalement distribuée.",
   wrong = "❌ Incorrect. ",
-  title = "Est-ce que la **masse** suit une loi Normale?"
+  title = "Est-ce que la masse suit une loi Normale?"
 )
 ```
 
@@ -240,7 +221,7 @@ check_question(
   button_label = "Vérifier",
   right = "✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes... on peut dire qu'elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l'hypothèse nulle que la distribution est normalement distribuée.",
   wrong = "❌ Incorrect. ",
-  title = "Est-ce que le **milage** suit une loi Normale?"
+  title = "Est-ce que le milage suit une loi Normale?"
 )
 ```
 
@@ -248,9 +229,19 @@ check_question(
 
 Faites la régression linéaire entre ces deux variables en utilisant la fonction `lm()`.
 
+```{webr}
+#| autorun: false
+
+```
+
+::: {.callout-warning collapse="true"}
+### Solution
 ```{r}
+#| echo: true
+#| eval: true
 lm(mtcars$mpg ~ mtcars$wt)
 ```
+:::
 
 ::: {.callout-note appearance="simple" icon=false .question}
 

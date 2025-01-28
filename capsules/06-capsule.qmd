@@ -27,7 +27,7 @@ library(checkdown)
 ## Exercices
 
 ::: {.callout-note}
-**Info!** Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint"" est là pour être utilisé!
+Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question. 
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -61,7 +61,7 @@ check_question(
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! Il faut que la variable soit de type numérique (continue).",
-  wrong = "❌ Incorrect. Rappelez-vous qu'un histogramme est une représentation graphique permettant de représenter la répartition d'une variable **continue**.",
+  wrong = "❌ Incorrect. Rappelez-vous qu'un histogramme est une représentation graphique permettant de représenter la répartition d'une variable continue.",
   title = "Quelle est la classe de variable doit-on utiliser pour faire un histogramme?"
 )
 ```
