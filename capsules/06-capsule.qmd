@@ -100,7 +100,7 @@ check_question(
   button_label = "Vérifier",
   right = "✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.",
   wrong = "❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.",
-  title = "Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?"
+  title = "Quelle fonction permet de faire des graphiques nuage de points (*scatterplot*)?"
 )
 ```
 
