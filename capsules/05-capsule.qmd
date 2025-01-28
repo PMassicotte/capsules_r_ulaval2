@@ -43,8 +43,8 @@ check_question(
   options = c("#", "//", "$", "%"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** Il n'y a que le signe `#` qui permette de commenter du texte en R. Cela fait partie de la syntaxe propre à ce langage et il n'y a pas d'autre choix que de l'apprendre par coeur!",
-  wrong = "**Mauvaise réponse** Il n'y a que le signe `#` qui permette de commenter du texte en R. Cela fait partie de la syntaxe propre à ce langage et il n'y a pas d'autre choix que de l'apprendre par coeur!",
+  right = "✅ Correct !  Il n'y a que le signe `#` qui permette de commenter du texte en R. Cela fait partie de la syntaxe propre à ce langage et il n'y a pas d'autre choix que de l'apprendre par coeur!",
+  wrong = "❌ Incorrect.  Il n'y a que le signe `#` qui permette de commenter du texte en R. Cela fait partie de la syntaxe propre à ce langage et il n'y a pas d'autre choix que de l'apprendre par coeur!",
   title = "Quel est le bon signe à utiliser pour commenter du code en R?"
 )
 ```
@@ -62,8 +62,8 @@ check_question(
   options = c("Garder une trace de ce qui a été fait.", "Assurer la reproductibilité de notre analyse.", "Sauvegarder des résultats d’analyses.", "Enregistrer des données à analyser."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail.",
-  wrong = "**Mauvaise réponse** L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail.",
+  right = "✅ Correct !  L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail.",
+  wrong = "❌ Incorrect.  L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail.",
   title = "Quelles sont les utilités d’un script R?"
 )
 ```
@@ -81,8 +81,8 @@ check_question(
   options = c(".R", ".r", ".txt", ".script"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** L'extension `.R` est la plus utilisée (et reconnue) pour sauvegarder des scripts R.",
-  wrong = "**Mauvaise réponse** Les extensions ne sont pas si importantes que ça pour des fichiers textes comme des scripts R, mais certaines applications très utiles comme RStudio vont reconnaitre automatiquement un fichier `*.R` comme étant un script. Cela nous facilite la tâche!",
+  right = "✅ Correct !  L'extension `.R` est la plus utilisée (et reconnue) pour sauvegarder des scripts R.",
+  wrong = "❌ Incorrect.  Les extensions ne sont pas si importantes que ça pour des fichiers textes comme des scripts R, mais certaines applications très utiles comme RStudio vont reconnaitre automatiquement un fichier `*.R` comme étant un script. Cela nous facilite la tâche!",
   title = "Quelle extension de fichier est généralement préférée pour sauvegarder les scripts R?"
 )
 ```
@@ -100,8 +100,8 @@ check_question(
   options = c("Pour le complexifier", "Pour le rendre plus clair.", "Pour que R comprenne exactement ce que l’on veut faire.", "Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes."),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** Clarifier la lecture du code et justifier nos choix sont les deux raisons principales pour commenter notre code. On peut également en profiter pour donner des exemples et des références, entre autres.",
-  wrong = "**Mauvaise réponse** Clarifier la lecture du code et justifier nos choix sont les deux raisons principales pour commenter notre code. On peut également en profiter pour donner des exemples et des références, entre autres.",
+  right = "✅ Correct !  Clarifier la lecture du code et justifier nos choix sont les deux raisons principales pour commenter notre code. On peut également en profiter pour donner des exemples et des références, entre autres.",
+  wrong = "❌ Incorrect.  Clarifier la lecture du code et justifier nos choix sont les deux raisons principales pour commenter notre code. On peut également en profiter pour donner des exemples et des références, entre autres.",
   title = "Pourquoi est-il important de commenter son code?"
 )
 ```
@@ -119,8 +119,8 @@ check_question(
   options = c("Oui", "Non"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** Il est facile de transférer des lignes de code déjà exécutées vers un script en utilisant le bouton *To Source* de la fenêtre d'historique de RStudio.",
-  wrong = "**Mauvaise réponse** Il est facile de transférer des lignes de code déjà exécutées vers un script en utilisant le bouton *To Source* de la fenêtre d'historique de RStudio.",
+  right = "✅ Correct !  Il est facile de transférer des lignes de code déjà exécutées vers un script en utilisant le bouton *To Source* de la fenêtre d'historique de RStudio.",
+  wrong = "❌ Incorrect.  Il est facile de transférer des lignes de code déjà exécutées vers un script en utilisant le bouton *To Source* de la fenêtre d'historique de RStudio.",
   title = "Peut-on récupérer facilement des lignes d’instructions déjà exécutées et les ajouter à un script dans RStudio?"
 )
 ```
@@ -138,8 +138,8 @@ check_question(
   options = c("Ctrl + Shift + A", "Ctrl + C", "Alt + Ctrl + D"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** Bien que ce ne soit pas obligatoire (contrairement à d'autres langages de programmation, comme python), c'est fortement conseillé pour la clarté de la lecture et de la compréhension du code.",
-  wrong = "**Mauvaise réponse** Vérifiez dans le menu *Code* de RStudio quel est le raccourci clavier pour indenter automatiquement un bloc de code.",
+  right = "✅ Correct !  Bien que ce ne soit pas obligatoire (contrairement à d'autres langages de programmation, comme python), c'est fortement conseillé pour la clarté de la lecture et de la compréhension du code.",
+  wrong = "❌ Incorrect.  Vérifiez dans le menu Code de RStudio quel est le raccourci clavier pour indenter automatiquement un bloc de code.",
   title = "Dans RStudio, quel est le raccourci clavier par défaut qui permet d’indenter automatiquement un bloc de code?"
 )
 ```

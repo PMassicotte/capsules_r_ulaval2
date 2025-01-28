@@ -45,8 +45,8 @@ check_question(
   options = c("12.34", "'banane'", "'3.1415'"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** Les valeurs de 'banane' et de '3.1415' sont entourées de guillemets ce qui indique des valeurs de type caractère.",
-  wrong = "**Mauvaise réponse** N'oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).",
+  right = "✅ Correct ! Les valeurs de 'banane' et de '3.1415' sont entourées de guillemets ce qui indique des valeurs de type caractère.",
+  wrong = "❌ Incorrect.  N'oubliez pas que les caractères sont entourés de guillemets (simples ou doubles).",
   title = "Lesquelles des valeurs suivantes sont du type caractère?"
 )
 ```
@@ -64,8 +64,8 @@ check_question(
   options = c("<-", " = "),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** L'opérateur ` <- ` est recommandé en plus d'éviter la confusion avec l'opérateur logique `==`.",
-  wrong = "**Mauvaise réponse** L'opérateur `=` fonctionne, mais il est recommandé d'utiliser ` <- ` pour éviter la confusion avec l'opérateur logique `==`.",
+  right = "✅ Correct ! L'opérateur ` <- ` est recommandé en plus d'éviter la confusion avec l'opérateur logique `==`.",
+  wrong = "❌ Incorrect.  L'opérateur `=` fonctionne, mais il est recommandé d'utiliser ` <- ` pour éviter la confusion avec l'opérateur logique `==`.",
   title = "Quel est le bon opérateur à utiliser pour assigner une valeur à une variable?"
 )
 ```
@@ -83,8 +83,8 @@ check_question(
   options = c("`class(x)`", "`Class(x)`", "`type(x)`"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** `class()` est une fonction de base de R pour déterminer la classe d'une variable.",
-  wrong = "**Mauvaise réponse** Essayez encore! Utilisez les indices si nécessaire au bas de la question.",
+  right = "✅ Correct ! `class()` est une fonction de base de R pour déterminer la classe d'une variable.",
+  wrong = "❌ Incorrect.  Essayez encore! Utilisez les indices si nécessaire au bas de la question.",
   title = "Comment peut-on déterminer la classe d'une variable nommée `x`?"
 )
 check_hints(
@@ -110,8 +110,8 @@ check_question(
   options = c("numeric", "factor", "logical", "character"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide.",
-  wrong = "Il y a peut-être plus d'une bonne réponse!",
+  right = "✅ Correct ! Puisque les noms de mois sont fixes, le type `factor` est le meilleur choix. Le type `character` est également valide.",
+  wrong = "❌ Incorrect. Il y a peut-être plus d'une bonne réponse!",
   title = "Quels types de variables seraient préférables pour représenter les mois d'une année?"
 )
 ```
@@ -131,8 +131,8 @@ check_question(
   options = c("1x3", "x2", "ma variable", "température"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "`x2` est valide puisqu'il commence par une lettre, ne contient pas de caractères spéciaux et/ou d'espaces. `température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux.",
-  wrong = "Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d'espace.",
+  right = "✅ Correct ! `x2` est valide puisqu'il commence par une lettre, ne contient pas de caractères spéciaux et/ou d'espaces. `température` est techniquement valide, mais il est fortement conseillé d'éviter l'utilisation de caractères spéciaux.",
+  wrong = "❌ Incorrect. Un nom de variable ne doit pas commencer par une valeur numérique ou contenir d'espace.",
   title = "Parmi les choix suivants, lesquelles représentent des noms de variables valides en R?"
 )
 ```
@@ -150,8 +150,8 @@ check_question(
   options = c("x <- 50", "vitesse_km_h <- 50", "vitesse <- 50"),
   type = "radio",
   button_label = "Vérifier",
-  right = "Ce nom est descriptif en plus d'indiquer les unités.",
-  wrong = "Le nom de la variable (`x`) n'est pas très descriptif ou les unités ne sont pas indiquées.",
+  right = "✅ Correct ! Ce nom est descriptif en plus d'indiquer les unités.",
+  wrong = "❌ Incorrect. Le nom de la variable (`x`) n'est pas très descriptif ou les unités ne sont pas indiquées.",
   title = "Parmi les choix suivants, lequel serait le meilleur choix pour exprimer la valeur de déplacement d'une voiture se déplaçant à 50 km/h?"
 )
 ```
@@ -169,8 +169,8 @@ check_question(
   options = c("Parce que `c()` est une fonction de base dans R.", "Parce que `c` n'est pas suffisamment descriptif.", "Toutes ces réponses"),
   type = "radio",
   button_label = "Vérifier",
-  right = "`c()` est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.",
-  wrong = "Attention, il y a peut-être plusieurs réponses vraies!",
+  right = "✅ Correct ! `c()` est la fonction pour créer un vecteur en plus de ne pas être un nom de variable très descriptif.",
+  wrong = "❌ Incorrect. Attention, il y a peut-être plusieurs réponses vraies!",
   title = "Pourquoi l'assignation suivante ne devrait pas être utilisée? `c <- 23`"
 )
 ```
@@ -190,8 +190,8 @@ check_question(
   options = c("numeric", "vecteur", "charactère"),
   type = "radio",
   button_label = "Vérifier",
-  right = "VRAI! Puisqu'il y a une valeur texte dans le vecteur,`2`, le vecteur entier est de type `charactère`.",
-  wrong = "Utilisez la fonction `class()` pour valider votre choix.",
+  right = "✅ Correct ! Puisqu'il y a une valeur texte dans le vecteur,`2`, le vecteur entier est de type `charactère`.",
+  wrong = "❌ Incorrect. Utilisez la fonction `class()` pour valider votre choix.",
   title = "Quelle est la classe de `x <- c(1, '2', 3)`?"
 )
 ```
@@ -209,8 +209,8 @@ check_question(
   options = c("`c(TRUE, FALSE)`", "`c(VRAI, FAUX)`", "`c(0, 1)`"),
   type = "radio",
   button_label = "Vérifier",
-  right = "VRAI! R n'utilise généralement pas des noms français.",
-  wrong = "Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`.",
+  right = "✅ Correct !  R n'utilise généralement pas des noms français.",
+  wrong = "❌ Incorrect. Stictement parlant, `c(0, 1)` n'est pas `logic`. Essayez les commandes suivantes dans R: (1) `1 == TRUE` et (2) `0 == FALSE`.",
   title = "Parmi les choix suivants, lesquelles représentent des vecteurs de type `logic`?"
 )
 ```
@@ -228,8 +228,8 @@ check_question(
   options = c("1", "42", "5", "4"),
   type = "radio",
   button_label = "Vérifier",
-  right = "42 est la valeur à la position 2 du vecteur `x`.",
-  wrong = "Incorrect! N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`.",
+  right = "✅ Correct ! 42 est la valeur à la position 2 du vecteur `x`.",
+  wrong = "❌ Incorrect. N'oubliez pas que le nombre entre les [] indique la position (indice) de la valeur à l'intérieur du vecteur `x`.",
   title = "Avec le vecteur suivant: `x <- c(1, 42, 5, 4)`, quelle est la valeur de `x[2]`?"
 )
 ```
@@ -247,8 +247,8 @@ check_question(
   options = c("-42", "c(1, -42, 5, 4)", "c(1, 5, 4)"),
   type = "radio",
   button_label = "Vérifier",
-  right = "`x[-2]` supprime la valeur à la position 2 du vecteur `x`.",
-  wrong = "Incorrect! N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement.",
+  right = "✅ Correct ! `x[-2]` supprime la valeur à la position 2 du vecteur `x`.",
+  wrong = "❌ Incorrect.  N'oubliez pas qu'un indice négatif à l'intérieur des [] supprime la valeur à cet emplacement.",
   title = "Avec le vecteur suivant: `x <- c(1, 42, 5, 4)`, quelle est la valeur de `x[-2]`?"
 )
 ```
