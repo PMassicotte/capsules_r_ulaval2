@@ -14,8 +14,8 @@ library(checkdown)
 
 À la fin de cette capsule, vous serez en mesure de:
 
-1. Un test de Student (*t-test*) pour comparer une moyenne à une valeur seuil, 
-2. Un test de Student (*t-test*) pour comparer les moyennes de deux groupes non appariés,
+1. Un test de Student (_t-test_) pour comparer une moyenne à une valeur seuil,
+2. Un test de Student (_t-test_) pour comparer les moyennes de deux groupes non appariés,
 3. Une analyse de variance (ANOVA) à un facteur pour comparer les moyennes de plusieurs (> 2) échantillons,
 4. Un test post-hoc pour identifier comment les échantillons se distinguent entre eux.
 
@@ -81,7 +81,7 @@ check_question(
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
-  wrong = "❌ Incorrect. Attention: lorsqu'on fait un test statistique, on n'accepte jamais une hypothèse ! On la rejète, ou bien on échoue à la rejeter. De plus, on teste seulement l'hypothèse nulle. Il y a ici deux façons de formuler la même idée : l'erreur de type I consiste à détecter PAR HASARD un effet qui n'est pas réel." ,
+  wrong = "❌ Incorrect. Attention: lorsqu'on fait un test statistique, on n'accepte jamais une hypothèse ! On la rejète, ou bien on échoue à la rejeter. De plus, on teste seulement l'hypothèse nulle. Il y a ici deux façons de formuler la même idée : l'erreur de type I consiste à détecter PAR HASARD un effet qui n'est pas réel.",
   title = "Lors d’un test statistique, l’erreur de Type I correspond à (plusieurs bonnes réponses possibles) :"
 )
 ```
@@ -100,7 +100,7 @@ check_question(
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! Il faut fixer notre tolérance à ce risque AVANT de faire le test. On choisi souvent un seuil alpha = 0.05, mais la seule obligation est de le fixer a priori.",
-  wrong = "❌ Incorrect. On peut *contrôler* l'erreur de Type I en fixant notre tolérance à ce risque avant de faire le test." ,
+  wrong = "❌ Incorrect. On peut *contrôler* l'erreur de Type I en fixant notre tolérance à ce risque avant de faire le test.",
   title = "Dans un test statistique, nous pouvons fixer à priori le risque d’erreur de Type I par la valeur du coefficient alpha (souvent fixé à 0.05)."
 )
 ```
@@ -119,7 +119,7 @@ check_question(
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! La clé ici est de bien comprendre que la p-value exprime effectivement la probabilité qu'on puisse obtenir PAR HASARD un autre résultat au moins aussi extrême que celui qu'on vient d'obtenir, si on répétait l'échantillonnage.",
-  wrong = "❌ Incorrect. Il ne faut pas oublier que le but de notre test est de rejeter, ou non, l'hypothèse nulle. On ne mesure donc jamais avec quelle probabilité deux moyennes sont réellement différentes ! Le résultat du test est binaire : on rejète (les moyennes sont différentes) ou non ( les moyennes ne sont pas différentes)." ,
+  wrong = "❌ Incorrect. Il ne faut pas oublier que le but de notre test est de rejeter, ou non, l'hypothèse nulle. On ne mesure donc jamais avec quelle probabilité deux moyennes sont réellement différentes ! Le résultat du test est binaire : on rejète (les moyennes sont différentes) ou non ( les moyennes ne sont pas différentes).",
   title = "Trouvez la bonne définition de la *p-value* dans un test de comparaison des moyennes de deux échantillons :"
 )
 ```
@@ -138,7 +138,7 @@ check_question(
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! On rejète l'hypothèse nulle lorsque le risque de commettre une erreur de Type I (trouver un effet significatif à cause du hasard) est assez faible, autrement dit lors que la p-value est plus petite que notre seuil alpha.",
-  wrong = "❌ Incorrect. Ne pas oublier qu'on N'ACCEPTE jamais une hypothèse dans un test statistique !" ,
+  wrong = "❌ Incorrect. Ne pas oublier qu'on N'ACCEPTE jamais une hypothèse dans un test statistique !",
   title = "Choisissez l'affirmation VRAIE concernant la prise de décision selon la p-value d’un test statistique :"
 )
 ```
@@ -157,7 +157,7 @@ check_question(
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
-  wrong = "❌ Incorrect. Un test t de Student permet de comparer une moyenne d'un échantillon à une valeur seuil ou bien les moyennes de deux échantillons." ,
+  wrong = "❌ Incorrect. Un test t de Student permet de comparer une moyenne d'un échantillon à une valeur seuil ou bien les moyennes de deux échantillons.",
   title = "Un test t de Student permet de faire des comparaisons de moyenne entre plus de deux échantillons à la fois."
 )
 ```
@@ -238,23 +238,22 @@ Tappez `iris` dans l'aide de R pour en savoir plus (voir capsule #1).
 data("iris")
 summary(iris)
 ```
-  
-### Comparer la moyenne des valeurs de longueur de sépales 
 
-Pour cet exercice, on veut comparer la moyenne des valeurs de longueur de sépales de l'*Iris versicolor* et une valeur seuil (**arbitraire**) de 6 cm. Pour les besoins de l'exercice, nous allons comparer une moyenne à une valeur seuil qui est ici **arbitraire**. Mais cette situation est courante lorsque vous cherchez à comparer la moyenne d'un échantillon à une norme, par exemple. Il est facile de comprendre une situation ou vous chercher à vérifier que la concentration d'un certain contaminant dans un échantillon d'eau de baignade doit être en moyenne significativement différente (inférieure) qu'un seuil légal.
+### Comparer la moyenne des valeurs de longueur de sépales
+
+Pour cet exercice, on veut comparer la moyenne des valeurs de longueur de sépales de l'_Iris versicolor_ et une valeur seuil (**arbitraire**) de 6 cm. Pour les besoins de l'exercice, nous allons comparer une moyenne à une valeur seuil qui est ici **arbitraire**. Mais cette situation est courante lorsque vous cherchez à comparer la moyenne d'un échantillon à une norme, par exemple. Il est facile de comprendre une situation ou vous chercher à vérifier que la concentration d'un certain contaminant dans un échantillon d'eau de baignade doit être en moyenne significativement différente (inférieure) qu'un seuil légal.
 
 ::: {.callout-note}
 Cette espèce est le symbole floral du Québec !
 :::
-  
+
 <center>
   ![](http://cms.ledomaineboise.ca/image/462/820/820/crop/iris-versicolor.jpg)
   
 </center>
 
-  
-- Ajouter une représentation graphique de cette valeur seuil (voir Capsule #7)  
-  
+- Ajouter une représentation graphique de cette valeur seuil (voir Capsule #7)
+
 ```{r}
 #| echo: True
 #| eval: True
@@ -262,82 +261,82 @@ boxplot(
   Sepal.Length ~ Species,
   ylim = c(4, 9),
   xlab = "Espèce d'Iris",
-  ylab = "Longueur des sépales (cm)", 
+  ylab = "Longueur des sépales (cm)",
   data = iris
 )
 abline(h = 6, lty = 2)
 ```
-  
-- Définir des indices pour sélectionner les données appropriées  
-  
+
+- Définir des indices pour sélectionner les données appropriées
+
 ```{r}
 #| echo: True
 #| eval: True
 versi <- iris$Species == "versicolor"
 ```
-  
-- Faire le test de comparaison de moyenne  
-  
+
+- Faire le test de comparaison de moyenne
+
 On fait un test **bilatéral** qui convient à la grande majorité des situations. Un test bilatéral ne présuppose pas que la moyenne devrait être significativement supérieure ou inférieure à la valeur seuil, mais plutôt qu'elle pourrait être l'un ou l'autre, sans préférence.
-  
+
 ```{r}
 #| echo: True
 #| eval: True
 t.test(iris$Sepal.Length[versi], mu = 6)
 ```
-  
+
 Pour poursuivre l'exemple, on peut faire le même test de façon **unilatérale**. Ici on cherche à démontrer si la moyenne est significativement inférieure à la valeur seuil de 6 cm.
-  
+
 ```{r}
 #| echo: True
 #| eval: True
 t.test(iris$Sepal.Length[versi], mu = 6, alternative = "less")
 ```
-  
-On voit que la valeur de la *p*-value est différente, ainsi que l'intervalle de confiance à partir duquel celle-ci a été calculée. En effet, faire un test unilatéral changera les calculs statistiques, mais on constate également que **la conclusion du test reste la même** !
-  
-- Comparer maintenant les moyennes des valeurs de longueurs de sépales de l'*Iris versicolor* et l'espèce subarctique *Iris setosa*  
-  
+
+On voit que la valeur de la _p_-value est différente, ainsi que l'intervalle de confiance à partir duquel celle-ci a été calculée. En effet, faire un test unilatéral changera les calculs statistiques, mais on constate également que **la conclusion du test reste la même** !
+
+- Comparer maintenant les moyennes des valeurs de longueurs de sépales de l'_Iris versicolor_ et l'espèce subarctique _Iris setosa_
+
 Le but de ce test devient ici de vérifier si ces deux espèces cousines produisent des sépales de longueurs différentes en moyenne.
-  
-- Définir des indices pour sélectionner les données appropriées  
-  
+
+- Définir des indices pour sélectionner les données appropriées
+
 ```{r}
 #| echo: True
 #| eval: True
 setos <- iris$Species == "setosa"
 ```
-  
-- Faire le test de comparaison de moyenne  
-  
-Il y a des arguments (options) à la fonction ```t.test()``` dont nous pouvons préciser la valeur (voir capsule #3). Nous allons faire un test pour **échantillons non appariés** (situation par defaut dans R).  
-  
+
+- Faire le test de comparaison de moyenne
+
+Il y a des arguments (options) à la fonction `t.test()` dont nous pouvons préciser la valeur (voir capsule #3). Nous allons faire un test pour **échantillons non appariés** (situation par defaut dans R).
+
 ```{r}
 #| echo: True
 #| eval: True
 t.test(iris$Sepal.Length[versi], iris$Sepal.Length[setos])
 ```
-  
-La conclusion de ce test est claire : ces deux espèces produisent des sépales dont les longueurs sont en moyenne significativement différentes, 19 fois sur 20 (confiance à 95%). Le résultat du test nous rappelle par ailleurs les moyennes de chaque échantillon à la fin du texte (5.936 pour *I. versicolor* et 5.006 pour *I. setosa*).
-  
+
+La conclusion de ce test est claire : ces deux espèces produisent des sépales dont les longueurs sont en moyenne significativement différentes, 19 fois sur 20 (confiance à 95%). Le résultat du test nous rappelle par ailleurs les moyennes de chaque échantillon à la fin du texte (5.936 pour _I. versicolor_ et 5.006 pour _I. setosa_).
+
 ### Comparer les moyennes
 
-On veut maintenant comparer les moyennes des valeurs de longueurs de sépales des trois espèces en même temps. Nous devons utiliser une autre méthode, l'ANOVA pour cela. En effet, lorsqu'on veut comparer plus de deux échantillons, il est erroné de répéter des tests de *t* deux à deux sur toutes les paires possibles. La raison est simplement mathématique et elle concerne directement le risque (probabilité) de se tromper en détectant une différence significative, ou **erreur de type I** :  Lorsque nous faisons une seule comparaison de 2 moyennes (*t*-test), nous fixons le risque d'erreur de type I avec le paramètre alpha, souvent choisi à 0.05 (5%). Donc, selon les règles de calcul des probabilités, la **probabilité de ne pas faussement détecter une différence significative est 1 - 0.05 = 0.95**.  
-  
-Maintenant, si nous faisons une autre comparaison d'un couple de moyennes (si nous comparons 3 échantillons, nous avons 3 comparaisons de couples de moyennes à faire), toujours selon les règles de calcul des probabilités, notre probabilité de ne pas faussement détecter une différence significative devient 0.95 x 0.95 = 0.95^2^ = 0.9025. Et si nous complétons nos 3 comparaisons de couples de moyennes, elle tombe à P(3) = 0.95^3^ = 0.857.  Autrement dit, même dans ce cas le plus simple possible, faire des *t*-test à répétition **augmente rapidement notre risque de nous tromper** (erreur de type I) à 14.7%, bien au-delà du seuil alpha de 5% que nous nous étions fixé au départ !
-  
-Une première stratégie pour éviter ce problème est de **corriger** *a priori* le seuil alpha de chaque comparaison deux à deux pour diminuer le risque individuel de se tromper en rejetant l'hypothèse nulle et ramener le risque global vers 0.05 (le seuil de départ). Plusieurs méthodes existent, la plus simple et la plus connue étant la **correction de Bonferroni** qui se résume ainsi :  Si on fait **n** comparaisons deux à deux, alors le seuil de rejet individuel (pour chaque comparaison) devient **alpha / n**.  
+On veut maintenant comparer les moyennes des valeurs de longueurs de sépales des trois espèces en même temps. Nous devons utiliser une autre méthode, l'ANOVA pour cela. En effet, lorsqu'on veut comparer plus de deux échantillons, il est erroné de répéter des tests de _t_ deux à deux sur toutes les paires possibles. La raison est simplement mathématique et elle concerne directement le risque (probabilité) de se tromper en détectant une différence significative, ou **erreur de type I** : Lorsque nous faisons une seule comparaison de 2 moyennes (_t_-test), nous fixons le risque d'erreur de type I avec le paramètre alpha, souvent choisi à 0.05 (5%). Donc, selon les règles de calcul des probabilités, la **probabilité de ne pas faussement détecter une différence significative est 1 - 0.05 = 0.95**.
 
-Toutefois, une façon plus efficace de vérifier en **un seul calcul** si tous les échétantillons ont la même moyenne estimée à un seuil de confiance de 95% est **l'analyse de variance !**  
+Maintenant, si nous faisons une autre comparaison d'un couple de moyennes (si nous comparons 3 échantillons, nous avons 3 comparaisons de couples de moyennes à faire), toujours selon les règles de calcul des probabilités, notre probabilité de ne pas faussement détecter une différence significative devient 0.95 x 0.95 = 0.95^2^ = 0.9025. Et si nous complétons nos 3 comparaisons de couples de moyennes, elle tombe à P(3) = 0.95^3^ = 0.857. Autrement dit, même dans ce cas le plus simple possible, faire des _t_-test à répétition **augmente rapidement notre risque de nous tromper** (erreur de type I) à 14.7%, bien au-delà du seuil alpha de 5% que nous nous étions fixé au départ !
+
+Une première stratégie pour éviter ce problème est de **corriger** _a priori_ le seuil alpha de chaque comparaison deux à deux pour diminuer le risque individuel de se tromper en rejetant l'hypothèse nulle et ramener le risque global vers 0.05 (le seuil de départ). Plusieurs méthodes existent, la plus simple et la plus connue étant la **correction de Bonferroni** qui se résume ainsi : Si on fait **n** comparaisons deux à deux, alors le seuil de rejet individuel (pour chaque comparaison) devient **alpha / n**.
+
+Toutefois, une façon plus efficace de vérifier en **un seul calcul** si tous les échétantillons ont la même moyenne estimée à un seuil de confiance de 95% est **l'analyse de variance !**
 
 ::: {.callout-important}
 L'analyse de **variance** (ANOVA) est bien une méthode pour comparer des **moyennes** !
 :::
 
-L'ANOVA se sert en effet de la **dispersion** des valeurs de plusieurs groupes pour en déduire si, statistiquement, elles ont **tendance** à être distinctes les unes des autres. Rappelez-vous que la **moyenne** est une valeur de tendance centrale, alors que la **variance** est une mesure de dispersion.  
-  
-On peut illustrer facilement ce principe avec les mêmes données de longueur de sépales que ci-dessus, mais présentées différemment :  
-  
+L'ANOVA se sert en effet de la **dispersion** des valeurs de plusieurs groupes pour en déduire si, statistiquement, elles ont **tendance** à être distinctes les unes des autres. Rappelez-vous que la **moyenne** est une valeur de tendance centrale, alors que la **variance** est une mesure de dispersion.
+
+On peut illustrer facilement ce principe avec les mêmes données de longueur de sépales que ci-dessus, mais présentées différemment :
+
 ```{r}
 #| echo: True
 #| eval: True
@@ -363,22 +362,22 @@ lines(c(0.8, 3.2), c(mean(iris$Sepal.Length), mean(iris$Sepal.Length)), lwd = 2,
 segments(0.85, mean(iris$Sepal.Length[iris$Species == "setosa"]), 1.15, lwd = 4, col = "firebrick")
 segments(1.85, mean(iris$Sepal.Length[iris$Species == "versicolor"]), 2.15, lwd = 4, col = "firebrick")
 segments(2.85, mean(iris$Sepal.Length[iris$Species == "virginica"]), 3.15, lwd = 4, col = "firebrick")
-```  
-  
-Le principe qui est illustré ici est que l'analyse de variance permet de calculer l'importance relative de la variance **intra**groupe (entre les valeurs de chaque échantillon; aussi appelée résiduelle) et la variance **inter**groupe (entre les moyennes des groupes; aussi appelée factorielle).  
-  
-On le calcule avec le ratio F des variances factorielle sur résiduelle. On peut imaginer à partir du graphique que si les moyennes des groupes sont trop rapprochées alors que les valeurs sont fortement dispersées au sein des échantillons, ce ratio F sera faible et on ne pourra pas conclure qu'au moins une des moyennes des échantillons se détache des autres. Ce n'est pas le cas ici, où il semble bien que les valeurs du premier échantillon se distinguent des valeurs du dernier. Nous allons le confirmer avec le test statistique !  
-  
-- Définir le modèle (linéaire) de l'ANOVA  
-  
+```
+
+Le principe qui est illustré ici est que l'analyse de variance permet de calculer l'importance relative de la variance **intra**groupe (entre les valeurs de chaque échantillon; aussi appelée résiduelle) et la variance **inter**groupe (entre les moyennes des groupes; aussi appelée factorielle).
+
+On le calcule avec le ratio F des variances factorielle sur résiduelle. On peut imaginer à partir du graphique que si les moyennes des groupes sont trop rapprochées alors que les valeurs sont fortement dispersées au sein des échantillons, ce ratio F sera faible et on ne pourra pas conclure qu'au moins une des moyennes des échantillons se détache des autres. Ce n'est pas le cas ici, où il semble bien que les valeurs du premier échantillon se distinguent des valeurs du dernier. Nous allons le confirmer avec le test statistique !
+
+- Définir le modèle (linéaire) de l'ANOVA
+
 ```{r}
 #| echo: True
 #| eval: True
 model <- Sepal.Length ~ Species
 ```
-  
-- Faire le test de comparaison de moyennes multiple = ANOVA  
-  
+
+- Faire le test de comparaison de moyennes multiple = ANOVA
+
 ```{r}
 #| echo: True
 #| eval: True
@@ -386,25 +385,25 @@ analyse <- aov(model, data = iris)
 
 summary(analyse)
 ```
-  
-La conclusion de ce test est claire : la très faible *p*-value indique que les valeurs de longueurs des sépales d'**au moins un des échantillons sont différentes des autres en moyenne**, 19 fois sur 20 (confiance à 95%). Pour savoir précisément comment les groupes (échantillons) se distinguent les uns des autres, il faut faire un test supplémentaire à partir des résultats de l'ANOVA.  
-    
-### Poursuivre avec un test post-hoc de Tukey pour vérifier comment les groupes se distinguent   
-  
-Un test post-hoc permet de distinguer les groupes **sans inflation du risque d'erreur de type I** (voir ci-dessus), c'est-à-dire en conservant une valeur seuil de rejet globale alpha = 0.05. 
-  
-- Faire le test sur les RÉSULTATS DE L'ANOVA  
-  
+
+La conclusion de ce test est claire : la très faible _p_-value indique que les valeurs de longueurs des sépales d'**au moins un des échantillons sont différentes des autres en moyenne**, 19 fois sur 20 (confiance à 95%). Pour savoir précisément comment les groupes (échantillons) se distinguent les uns des autres, il faut faire un test supplémentaire à partir des résultats de l'ANOVA.
+
+### Poursuivre avec un test post-hoc de Tukey pour vérifier comment les groupes se distinguent
+
+Un test post-hoc permet de distinguer les groupes **sans inflation du risque d'erreur de type I** (voir ci-dessus), c'est-à-dire en conservant une valeur seuil de rejet globale alpha = 0.05.
+
+- Faire le test sur les RÉSULTATS DE L'ANOVA
+
 ```{r}
 #| echo: True
 #| eval: True
 TukeyHSD(analyse)
 ```
-  
-Ici la situation est la plus simple possible : avec trois échantillons, il y a trois comparaisons deux à deux possibles. Elles sont toutes présentées dans les résultats du test, avec une *p*-value associée (colonne ```p adj```). Le test post hoc de Tukley démontre que la moyenne de chaque groupe se distingue significativement de celle de ses voisins.
-  
-- Visualiser les résultats du test post-hoc sur le graphique  
-  
+
+Ici la situation est la plus simple possible : avec trois échantillons, il y a trois comparaisons deux à deux possibles. Elles sont toutes présentées dans les résultats du test, avec une _p_-value associée (colonne `p adj`). Le test post hoc de Tukley démontre que la moyenne de chaque groupe se distingue significativement de celle de ses voisins.
+
+- Visualiser les résultats du test post-hoc sur le graphique
+
 Nous refaisons simplement ici un boxplot sur lequel nous indiquons les différents "groupes de moyennes" similaires, tel que le test post hoc de Tukey l'a démontré, par des lettres. Une même lettre indique des échantillons dont les moyennes **ne** sont **pas** significativement différentes. Ici, les moyennes de chaque échantillon sont significativement distinctes les unes des autres, donc chacun est surmonté de sa propre lettre !
 
 ```{r}
