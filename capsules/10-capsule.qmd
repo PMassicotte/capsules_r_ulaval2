@@ -303,18 +303,7 @@ Pour mieux comprendre, regardons le tableau suivant qui représente les mêmes d
 SR <- rank(sort(airquality$Solar.R[M7]), ties.method = "average")
 tabl <- as.data.frame(cbind(Insolation = sort(airquality$Solar.R[M7]), Rang = SR))
 
-DT::datatable(
-  tabl,
-  extensions = c("FixedColumns", "FixedHeader"),
-  options = list(
-    scrollX = TRUE,
-    paging = TRUE,
-    fixedHeader = TRUE,
-    searching = FALSE,
-    language = list(url = "//cdn.datatables.net/plug-ins/1.10.11/i18n/French.json")
-  ),
-  caption = "Valeurs d'insolation et rangs dans leur distribution"
-)
+tabl
 ```
 
 ::: {.callout-warning}
