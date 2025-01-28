@@ -5,6 +5,14 @@ format:
     toc: true
     lang: fr
     df-print: paged
+  # typst: default
+
+# https://quarto.org/docs/output-formats/html-multi-format.html
+# format-links:
+#   - html
+#   - format: typst
+#     text: PDF
+#     icon: file-pdf
 
 webr:
   packages:

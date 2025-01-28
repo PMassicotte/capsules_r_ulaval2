@@ -5,12 +5,14 @@ project:
 format:
   html:
     df-print: paged
-    theme: styles.scss
+    theme: ./capsules/styles.scss
     toc: true
     lang: fr
 
 website:
   page-navigation: true
+  repo-url: https://github.com/PMassicotte/capsules_r_ulaval2
+  repo-actions: [issue]
   title: "Capsule R ULAVAL"
   navbar:
     right:
@@ -71,5 +73,5 @@ website:
             file: capsules/11-capsule.qmd
 
   page-footer:
-    right: "Cette page a été réalisée à l'aide de [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By xxx, 2024. Capsules réalisées par N. Aubin-Horth, F. Maps et P. Massicotte."
+    right: "Ce site web a été réalisé à l'aide de [Quarto](https://quarto.org/) et de [webr](https://docs.r-wasm.org/webr/latest/)."
+    left: "&copy; CC-By xxx, 2024. Capsules réalisées par N. Aubin-Horth, F. Maps, P. Massicotte et Esther Kros."

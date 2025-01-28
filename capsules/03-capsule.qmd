@@ -27,9 +27,9 @@ library(checkdown)
 
 ## Exercices
 
-<small>
-*Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over" ou "Try Again" Le bouton "hint" est là pour être utilisé!*
-</small>
+::: {.callout-note}
+Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons "Start Over". Le bouton "Indice" est là pour être utilisé!
+:::
 
 ### Fonctions de base dans R
 
