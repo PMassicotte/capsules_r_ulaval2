@@ -256,6 +256,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Capsule 8</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/10-capsule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capsules/11-capsule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 11</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -336,7 +348,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Info!</strong> Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint”” est là pour être utilisé!</p>
+<p>Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question.</p>
 </div>
 </div>
 <div class="question callout callout-style-simple callout-note no-icon">
@@ -345,25 +357,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_85340" onsubmit="return validate_form_85340()" method="post">
+<form name="form_72054" onsubmit="return validate_form_72054()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des histogrammes?</legend>
-<input type="checkbox" id="answer_85340_1" value="`hist()`">
+<input type="radio" name="answer_72054" id="answer_72054_1" value="`hist()`">
 <label>`hist()`</label>
 <br>
-<input type="checkbox" id="answer_85340_2" value="`histo()`">
+<input type="radio" name="answer_72054" id="answer_72054_2" value="`histo()`">
 <label>`histo()`</label>
 <br>
-<input type="checkbox" id="answer_85340_3" value="`histgram()`">
+<input type="radio" name="answer_72054" id="answer_72054_3" value="`histgram()`">
 <label>`histgram()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_85340"></div>
+<div id="result_72054"></div>
 </fieldset>
 </form>
-<script>function validate_form_85340() {var text; var x1 = document.getElementById('answer_85340_1'); var x2 = document.getElementById('answer_85340_2'); var x3 = document.getElementById('answer_85340_3'); if (x1.checked == true&x2.checked == false&x3.checked == false){text = '✅ Correct ! La fonction <code>hist()</code> permet de faire des histogrammes.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_85340').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_72054() {var x, text; var x = document.forms['form_72054']['answer_72054'].value;if (x == '`hist()`'){text = '✅ Correct ! La fonction <code>hist()</code> permet de faire des histogrammes.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_72054').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -375,28 +387,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_63772" onsubmit="return validate_form_63772()" method="post">
+<form name="form_99884" onsubmit="return validate_form_99884()" method="post">
 <fieldset>
 <legend>Quelle est la classe de variable doit-on utiliser pour faire un histogramme?</legend>
-<input type="checkbox" id="answer_63772_1" value="Peu importe la classe">
+<input type="radio" name="answer_99884" id="answer_99884_1" value="Peu importe la classe">
 <label>Peu importe la classe</label>
 <br>
-<input type="checkbox" id="answer_63772_2" value="`character`">
+<input type="radio" name="answer_99884" id="answer_99884_2" value="`character`">
 <label>`character`</label>
 <br>
-<input type="checkbox" id="answer_63772_3" value="`numeric`">
+<input type="radio" name="answer_99884" id="answer_99884_3" value="`numeric`">
 <label>`numeric`</label>
 <br>
-<input type="checkbox" id="answer_63772_4" value="`factor`">
+<input type="radio" name="answer_99884" id="answer_99884_4" value="`factor`">
 <label>`factor`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_63772"></div>
+<div id="result_99884"></div>
 </fieldset>
 </form>
-<script>function validate_form_63772() {var text; var x1 = document.getElementById('answer_63772_1'); var x2 = document.getElementById('answer_63772_2'); var x3 = document.getElementById('answer_63772_3'); var x4 = document.getElementById('answer_63772_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = '✅ Correct ! Il faut que la variable soit de type numérique (continue).';} else {text = '❌ Incorrect. Rappelez-vous qu’un histogramme est une représentation graphique permettant de représenter la répartition d’une variable <strong>continue</strong>.';} document.getElementById('result_63772').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_99884() {var x, text; var x = document.forms['form_99884']['answer_99884'].value;if (x == '`numeric`'){text = '✅ Correct ! Il faut que la variable soit de type numérique (continue).';} else {text = '❌ Incorrect. Rappelez-vous qu’un histogramme est une représentation graphique permettant de représenter la répartition d’une variable continue.';} document.getElementById('result_99884').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -408,25 +420,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_72242" onsubmit="return validate_form_72242()" method="post">
+<form name="form_82760" onsubmit="return validate_form_82760()" method="post">
 <fieldset>
 <legend>Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?</legend>
-<input type="checkbox" id="answer_72242_1" value="`nbins`">
+<input type="radio" name="answer_82760" id="answer_82760_1" value="`nbins`">
 <label>`nbins`</label>
 <br>
-<input type="checkbox" id="answer_72242_2" value="`bins`">
+<input type="radio" name="answer_82760" id="answer_82760_2" value="`bins`">
 <label>`bins`</label>
 <br>
-<input type="checkbox" id="answer_72242_3" value="`breaks`">
+<input type="radio" name="answer_82760" id="answer_82760_3" value="`breaks`">
 <label>`breaks`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_72242"></div>
+<div id="result_82760"></div>
 </fieldset>
 </form>
-<script>function validate_form_72242() {var text; var x1 = document.getElementById('answer_72242_1'); var x2 = document.getElementById('answer_72242_2'); var x3 = document.getElementById('answer_72242_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = '✅ Correct ! Le paramètre <code>breaks</code> permet de contrôler le nombre <em>bins</em>.';} else {text = '❌ Incorrect. Consulter l’aide de la fonction avec la commande <code>?hist</code>.';} document.getElementById('result_72242').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_82760() {var x, text; var x = document.forms['form_82760']['answer_82760'].value;if (x == '`breaks`'){text = '✅ Correct ! Le paramètre <code>breaks</code> permet de contrôler le nombre <em>bins</em>.';} else {text = '❌ Incorrect. Consulter l’aide de la fonction avec la commande <code>?hist</code>.';} document.getElementById('result_82760').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -438,28 +450,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_48143" onsubmit="return validate_form_48143()" method="post">
+<form name="form_84842" onsubmit="return validate_form_84842()" method="post">
 <fieldset>
 <legend>Quel est le paramètre qui permet de contrôler le nombre de “bins” d’un histogramme?</legend>
-<input type="checkbox" id="answer_48143_1" value="`scatterplot()`">
+<input type="radio" name="answer_84842" id="answer_84842_1" value="`scatterplot()`">
 <label>`scatterplot()`</label>
 <br>
-<input type="checkbox" id="answer_48143_2" value="`graph()`">
+<input type="radio" name="answer_84842" id="answer_84842_2" value="`graph()`">
 <label>`graph()`</label>
 <br>
-<input type="checkbox" id="answer_48143_3" value="`scatter()`">
+<input type="radio" name="answer_84842" id="answer_84842_3" value="`scatter()`">
 <label>`scatter()`</label>
 <br>
-<input type="checkbox" id="answer_48143_4" value="`plot()`">
+<input type="radio" name="answer_84842" id="answer_84842_4" value="`plot()`">
 <label>`plot()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_48143"></div>
+<div id="result_84842"></div>
 </fieldset>
 </form>
-<script>function validate_form_48143() {var text; var x1 = document.getElementById('answer_48143_1'); var x2 = document.getElementById('answer_48143_2'); var x3 = document.getElementById('answer_48143_3'); var x4 = document.getElementById('answer_48143_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = '✅ Correct ! La fonction générique <code>plot()</code> permet de faire des graphiques nuage de points.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_48143').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_84842() {var x, text; var x = document.forms['form_84842']['answer_84842'].value;if (x == '`plot()`'){text = '✅ Correct ! La fonction générique <code>plot()</code> permet de faire des graphiques nuage de points.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_84842').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -471,25 +483,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_42819" onsubmit="return validate_form_42819()" method="post">
+<form name="form_41904" onsubmit="return validate_form_41904()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des diagrammes à bâtons (<em>barplot</em>)?</legend>
-<input type="checkbox" id="answer_42819_1" value="`bar`">
+<input type="radio" name="answer_41904" id="answer_41904_1" value="`bar`">
 <label>`bar`</label>
 <br>
-<input type="checkbox" id="answer_42819_2" value="`barplot()`">
+<input type="radio" name="answer_41904" id="answer_41904_2" value="`barplot()`">
 <label>`barplot()`</label>
 <br>
-<input type="checkbox" id="answer_42819_3" value="`bplot`">
+<input type="radio" name="answer_41904" id="answer_41904_3" value="`bplot`">
 <label>`bplot`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_42819"></div>
+<div id="result_41904"></div>
 </fieldset>
 </form>
-<script>function validate_form_42819() {var text; var x1 = document.getElementById('answer_42819_1'); var x2 = document.getElementById('answer_42819_2'); var x3 = document.getElementById('answer_42819_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_42819').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_41904() {var x, text; var x = document.forms['form_41904']['answer_41904'].value;if (x == '`barplot()`'){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_41904').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -501,25 +513,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_64089" onsubmit="return validate_form_64089()" method="post">
+<form name="form_6706" onsubmit="return validate_form_6706()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des diagrammes à bâtons (<em>barplot</em>)?</legend>
-<input type="checkbox" id="answer_64089_1" value="`bar`">
+<input type="radio" name="answer_6706" id="answer_6706_1" value="`bar`">
 <label>`bar`</label>
 <br>
-<input type="checkbox" id="answer_64089_2" value="`barplot()`">
+<input type="radio" name="answer_6706" id="answer_6706_2" value="`barplot()`">
 <label>`barplot()`</label>
 <br>
-<input type="checkbox" id="answer_64089_3" value="`bplot`">
+<input type="radio" name="answer_6706" id="answer_6706_3" value="`bplot`">
 <label>`bplot`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_64089"></div>
+<div id="result_6706"></div>
 </fieldset>
 </form>
-<script>function validate_form_64089() {var text; var x1 = document.getElementById('answer_64089_1'); var x2 = document.getElementById('answer_64089_2'); var x3 = document.getElementById('answer_64089_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_64089').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_6706() {var x, text; var x = document.forms['form_6706']['answer_6706'].value;if (x == '`barplot()`'){text = '✅ Correct ! La fonction <code>barplot()</code> permet de faire des graphiques à bâtons.';} else {text = '❌ Incorrect. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_6706').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -531,28 +543,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_75325" onsubmit="return validate_form_75325()" method="post">
+<form name="form_46068" onsubmit="return validate_form_46068()" method="post">
 <fieldset>
 <legend>Quelle fonction est souvent utilisée pour faire une classification croisée des données avant de faire un diagramme en bâtons?</legend>
-<input type="checkbox" id="answer_75325_1" value="`classify()`">
+<input type="radio" name="answer_46068" id="answer_46068_1" value="`classify()`">
 <label>`classify()`</label>
 <br>
-<input type="checkbox" id="answer_75325_2" value="`count()`">
+<input type="radio" name="answer_46068" id="answer_46068_2" value="`count()`">
 <label>`count()`</label>
 <br>
-<input type="checkbox" id="answer_75325_3" value="`sort()`">
+<input type="radio" name="answer_46068" id="answer_46068_3" value="`sort()`">
 <label>`sort()`</label>
 <br>
-<input type="checkbox" id="answer_75325_4" value="`table()`">
+<input type="radio" name="answer_46068" id="answer_46068_4" value="`table()`">
 <label>`table()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_75325"></div>
+<div id="result_46068"></div>
 </fieldset>
 </form>
-<script>function validate_form_75325() {var text; var x1 = document.getElementById('answer_75325_1'); var x2 = document.getElementById('answer_75325_2'); var x3 = document.getElementById('answer_75325_3'); var x4 = document.getElementById('answer_75325_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == true){text = '✅ Correct ! La fonction <code>table()</code> utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';} else {text = '❌ Incorrect. <code>classify()</code> et <code>count()</code> n’existent à la base dans R. <code>sort()</code> permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_75325').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_46068() {var x, text; var x = document.forms['form_46068']['answer_46068'].value;if (x == '`table()`'){text = '✅ Correct ! La fonction <code>table()</code> utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';} else {text = '❌ Incorrect. <code>classify()</code> et <code>count()</code> n’existent à la base dans R. <code>sort()</code> permet de trier un vecteur numérique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_46068').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_46068').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -564,25 +576,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_45508" onsubmit="return validate_form_45508()" method="post">
+<form name="form_56982" onsubmit="return validate_form_56982()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de faire des graphiques à moustaches (<em>boxplot</em>)?</legend>
-<input type="checkbox" id="answer_45508_1" value="`moust()`">
+<input type="radio" name="answer_56982" id="answer_56982_1" value="`moust()`">
 <label>`moust()`</label>
 <br>
-<input type="checkbox" id="answer_45508_2" value="`boxplot()`">
+<input type="radio" name="answer_56982" id="answer_56982_2" value="`boxplot()`">
 <label>`boxplot()`</label>
 <br>
-<input type="checkbox" id="answer_45508_3" value="`box()`">
+<input type="radio" name="answer_56982" id="answer_56982_3" value="`box()`">
 <label>`box()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_45508"></div>
+<div id="result_56982"></div>
 </fieldset>
 </form>
-<script>function validate_form_45508() {var text; var x1 = document.getElementById('answer_45508_1'); var x2 = document.getElementById('answer_45508_2'); var x3 = document.getElementById('answer_45508_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! La fonction <code>boxplot()</code> permet de faire des graphiques à moustaches.';} else {text = '❌ Incorrect. La fonction <code>moust()</code> n’existe à la base dans R. La fonction <code>box()</code> permet d’ajouter une bordure autours d’un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_45508').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_56982() {var x, text; var x = document.forms['form_56982']['answer_56982'].value;if (x == '`boxplot()`'){text = '✅ Correct ! La fonction <code>boxplot()</code> permet de faire des graphiques à moustaches.';} else {text = '❌ Incorrect. La fonction <code>moust()</code> n’existe à la base dans R. La fonction <code>box()</code> permet d’ajouter une bordure autours d’un graphique. Consulter le matériel accompagnateur ou la capsule vidéo pour connaître la bonne fonction à utiliser.';} document.getElementById('result_56982').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_46068').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_56982').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -594,28 +606,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_26191" onsubmit="return validate_form_26191()" method="post">
+<form name="form_82505" onsubmit="return validate_form_82505()" method="post">
 <fieldset>
 <legend>Pour créer un graphique à moustache il faut utiliser la notation dite “par formule”. Quel est le signe (caractère) qui doit être utilisé pour cette notation?</legend>
-<input type="checkbox" id="answer_26191_1" value="`~`">
+<input type="radio" name="answer_82505" id="answer_82505_1" value="`~`">
 <label>`~`</label>
 <br>
-<input type="checkbox" id="answer_26191_2" value="`+`">
+<input type="radio" name="answer_82505" id="answer_82505_2" value="`+`">
 <label>`+`</label>
 <br>
-<input type="checkbox" id="answer_26191_3" value="`|`">
+<input type="radio" name="answer_82505" id="answer_82505_3" value="`|`">
 <label>`|`</label>
 <br>
-<input type="checkbox" id="answer_26191_4" value="`/`">
+<input type="radio" name="answer_82505" id="answer_82505_4" value="`/`">
 <label>`/`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_26191"></div>
+<div id="result_82505"></div>
 </fieldset>
 </form>
-<script>function validate_form_26191() {var text; var x1 = document.getElementById('answer_26191_1'); var x2 = document.getElementById('answer_26191_2'); var x3 = document.getElementById('answer_26191_3'); var x4 = document.getElementById('answer_26191_4'); if (x1.checked == true&x2.checked == false&x3.checked == false&x4.checked == false){text = '✅ Correct ! Le <em>tilde</em> se lit <em>en fonction de</em>.';} else {text = '❌ Incorrect. <code>+</code> est l’opérateur d’addition. <code>|</code> est l’opétateur logique de comparaison <em>ou</em>. <code>/</code> est l’opérateur de division.';} document.getElementById('result_26191').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_82505() {var x, text; var x = document.forms['form_82505']['answer_82505'].value;if (x == '`~`'){text = '✅ Correct ! Le <em>tilde</em> se lit <em>en fonction de</em>.';} else {text = '❌ Incorrect. <code>+</code> est l’opérateur d’addition. <code>|</code> est l’opétateur logique de comparaison <em>ou</em>. <code>/</code> est l’opérateur de division.';} document.getElementById('result_82505').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_46068').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_56982').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_82505').innerText == '✅ Correct ! Le tilde se lit en fonction de.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -627,25 +639,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_89144" onsubmit="return validate_form_89144()" method="post">
+<form name="form_23655" onsubmit="return validate_form_23655()" method="post">
 <fieldset>
 <legend>Il existe deux grandes familles d’images, nommez-les.</legend>
-<input type="checkbox" id="answer_89144_1" value="PNG et TIF">
+<input type="radio" name="answer_23655" id="answer_23655_1" value="PNG et TIF">
 <label>PNG et TIF</label>
 <br>
-<input type="checkbox" id="answer_89144_2" value="JPEG et GIF">
+<input type="radio" name="answer_23655" id="answer_23655_2" value="JPEG et GIF">
 <label>JPEG et GIF</label>
 <br>
-<input type="checkbox" id="answer_89144_3" value="Matriciel et vectoriel">
+<input type="radio" name="answer_23655" id="answer_23655_3" value="Matriciel et vectoriel">
 <label>Matriciel et vectoriel</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_89144"></div>
+<div id="result_23655"></div>
 </fieldset>
 </form>
-<script>function validate_form_89144() {var text; var x1 = document.getElementById('answer_89144_1'); var x2 = document.getElementById('answer_89144_2'); var x3 = document.getElementById('answer_89144_3'); if (x1.checked == false&x2.checked == false&x3.checked == true){text = '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';} else {text = '❌ Incorrect. Ceux-ci sont plutôt des formats de fichiers de type matriciel.';} document.getElementById('result_89144').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_23655() {var x, text; var x = document.forms['form_23655']['answer_23655'].value;if (x == 'Matriciel et vectoriel'){text = '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';} else {text = '❌ Incorrect. Ceux-ci sont plutôt des formats de fichiers de type matriciel.';} document.getElementById('result_23655').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_89144').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_46068').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_56982').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_82505').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_23655').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -657,22 +669,22 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_45844" onsubmit="return validate_form_45844()" method="post">
+<form name="form_29130" onsubmit="return validate_form_29130()" method="post">
 <fieldset>
 <legend>Quelles sont les trois grandes étapes (dans l’ordre) pour sauvegarder un graphique localement sur votre ordinateur?</legend>
-<input type="checkbox" id="answer_45844_1" value="(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.">
+<input type="radio" name="answer_29130" id="answer_29130_1" value="(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.">
 <label>(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.</label>
 <br>
-<input type="checkbox" id="answer_45844_2" value="(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.">
+<input type="radio" name="answer_29130" id="answer_29130_2" value="(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.">
 <label>(1) faire le graphique et l’assigner dans une variable, (2) ouvrir le moteur graphique lié au format de fichier, (3) utiliser la commande dev.off() pour écrire le fichier.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_45844"></div>
+<div id="result_29130"></div>
 </fieldset>
 </form>
-<script>function validate_form_45844() {var text; var x1 = document.getElementById('answer_45844_1'); var x2 = document.getElementById('answer_45844_2'); if (x1.checked == true&x2.checked == false){text = '✅ Correct !';} else {text = '❌ Incorrect. Il faut d’abord ouvrir le moteur graphique.';} document.getElementById('result_45844').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_29130() {var x, text; var x = document.forms['form_29130']['answer_29130'].value;if (x == '(1) ouvrir le moteur graphique lié au format de fichier, (2) faire le graphique, (3) utiliser la commande dev.off() pour écrire le fichier.'){text = '✅ Correct !';} else {text = '❌ Incorrect. Il faut d’abord ouvrir le moteur graphique.';} document.getElementById('result_29130').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_89144').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_45844').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_46068').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_56982').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_82505').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_23655').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_29130').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -684,25 +696,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_66301" onsubmit="return validate_form_66301()" method="post">
+<form name="form_19936" onsubmit="return validate_form_19936()" method="post">
 <fieldset>
 <legend>Pourquoi devriez-vous utiliser le format d’image vectoriel lorsque possible?</legend>
-<input type="checkbox" id="answer_66301_1" value="Ce format permet de générer des fichiers de petite taille.">
+<input type="radio" name="answer_19936" id="answer_19936_1" value="Ce format permet de générer des fichiers de petite taille.">
 <label>Ce format permet de générer des fichiers de petite taille.</label>
 <br>
-<input type="checkbox" id="answer_66301_2" value="Ce format permet de modifier la taille de l’image sans perte de résolution.">
+<input type="radio" name="answer_19936" id="answer_19936_2" value="Ce format permet de modifier la taille de l’image sans perte de résolution.">
 <label>Ce format permet de modifier la taille de l’image sans perte de résolution.</label>
 <br>
-<input type="checkbox" id="answer_66301_3" value="Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).">
+<input type="radio" name="answer_19936" id="answer_19936_3" value="Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).">
 <label>Ce format permet d’être lu sur n’importe quel plateforme (Windows, Mac, Linux).</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_66301"></div>
+<div id="result_19936"></div>
 </fieldset>
 </form>
-<script>function validate_form_66301() {var text; var x1 = document.getElementById('answer_66301_1'); var x2 = document.getElementById('answer_66301_2'); var x3 = document.getElementById('answer_66301_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct !';} else {text = '❌ Incorrect. Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux).';} document.getElementById('result_66301').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_19936() {var x, text; var x = document.forms['form_19936']['answer_19936'].value;if (x == 'Ce format permet de modifier la taille de l’image sans perte de résolution.'){text = '✅ Correct !';} else {text = '❌ Incorrect. Dans certains cas, le format vectoriel peut produire des fichiers volumineux. Le format matriciel peut aussi être lu sur n’importe quelle plateforme (Windows, Mac, Linux).';} document.getElementById('result_19936').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_85340').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_63772').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_72242').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_48143').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_42819').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_64089').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_75325').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_45508').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_26191').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_89144').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_45844').innerText == '✅ Correct !'; res12 = document.getElementById('result_66301').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_72054').innerText == '✅ Correct ! La fonction hist() permet de faire des histogrammes.'; res2 = document.getElementById('result_99884').innerText == '✅ Correct ! Il faut que la variable soit de type numérique (continue).'; res3 = document.getElementById('result_82760').innerText == '✅ Correct ! Le paramètre breaks permet de contrôler le nombre bins.'; res4 = document.getElementById('result_84842').innerText == '✅ Correct ! La fonction générique plot() permet de faire des graphiques nuage de points.'; res5 = document.getElementById('result_41904').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res6 = document.getElementById('result_6706').innerText == '✅ Correct ! La fonction barplot() permet de faire des graphiques à bâtons.'; res7 = document.getElementById('result_46068').innerText == '✅ Correct ! La fonction table() utilise les facteurs de classification croisée pour créer un tableau de contingence des comptes à chaque combinaison de niveaux de facteurs.'; res8 = document.getElementById('result_56982').innerText == '✅ Correct ! La fonction boxplot() permet de faire des graphiques à moustaches.'; res9 = document.getElementById('result_82505').innerText == '✅ Correct ! Le tilde se lit en fonction de.'; res10 = document.getElementById('result_23655').innerText == '✅ Correct ! Le format vectoriel a une meilleure qualité comparée au format matriciel et il peut s’agrandir indéfiniment sans perte de résolution.'; res11 = document.getElementById('result_29130').innerText == '✅ Correct !'; res12 = document.getElementById('result_19936').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
          return false;
          }}</script>
 </div>
