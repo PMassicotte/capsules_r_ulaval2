@@ -413,22 +413,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_53916" onsubmit="return validate_form_53916()" method="post">
+<form name="form_35813" onsubmit="return validate_form_35813()" method="post">
 <fieldset>
 <legend>Selon vous, est-ce que ce jeu de données est bien structuré?</legend>
-<input type="radio" name="answer_53916" id="answer_53916_1" value="Oui">
+<input type="radio" name="answer_35813" id="answer_35813_1" value="Oui">
 <label>Oui</label>
 <br>
-<input type="radio" name="answer_53916" id="answer_53916_2" value="Non">
+<input type="radio" name="answer_35813" id="answer_35813_2" value="Non">
 <label>Non</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_53916"></div>
+<div id="result_35813"></div>
 </fieldset>
 </form>
-<script>function validate_form_53916() {var x, text; var x = document.forms['form_53916']['answer_53916'].value;if (x == 'Non'){text = '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes <code>salaire</code> et <code>dénombrement</code> où <code>salaire</code> contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne <code>dénombrement</code> contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} else {text = '❌ Incorrect.  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes <code>salaire</code> et <code>dénombrement</code> où <code>salaire</code> contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne <code>dénombrement</code> contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} document.getElementById('result_53916').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_35813() {var x, text; var x = document.forms['form_35813']['answer_35813'].value;if (x == 'Non'){text = '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes <code>salaire</code> et <code>dénombrement</code> où <code>salaire</code> contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne <code>dénombrement</code> contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} else {text = '❌ Incorrect.  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes <code>salaire</code> et <code>dénombrement</code> où <code>salaire</code> contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne <code>dénombrement</code> contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} document.getElementById('result_35813').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_53916').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_35813').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -513,28 +513,28 @@ Solution
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_51380" onsubmit="return validate_form_51380()" method="post">
+<form name="form_38662" onsubmit="return validate_form_38662()" method="post">
 <fieldset>
 <legend>Quelle(s) fonction(s) devriez-vous utiliser pour lire un fichier texte de données?</legend>
-<input type="checkbox" id="answer_51380_1" value="read.table()">
+<input type="checkbox" id="answer_38662_1" value="read.table()">
 <label>read.table()</label>
 <br>
-<input type="checkbox" id="answer_51380_2" value="read.csv()">
+<input type="checkbox" id="answer_38662_2" value="read.csv()">
 <label>read.csv()</label>
 <br>
-<input type="checkbox" id="answer_51380_3" value="read.file()">
+<input type="checkbox" id="answer_38662_3" value="read.file()">
 <label>read.file()</label>
 <br>
-<input type="checkbox" id="answer_51380_4" value="read.delim()">
+<input type="checkbox" id="answer_38662_4" value="read.delim()">
 <label>read.delim()</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_51380"></div>
+<div id="result_38662"></div>
 </fieldset>
 </form>
-<script>function validate_form_51380() {var text; var x1 = document.getElementById('answer_51380_1'); var x2 = document.getElementById('answer_51380_2'); var x3 = document.getElementById('answer_51380_3'); var x4 = document.getElementById('answer_51380_4'); if (x1.checked == true&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';} else {text = '❌ Incorrect. Attention! Plusieurs choix peuvent être possibles.';} document.getElementById('result_51380').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_38662() {var text; var x1 = document.getElementById('answer_38662_1'); var x2 = document.getElementById('answer_38662_2'); var x3 = document.getElementById('answer_38662_3'); var x4 = document.getElementById('answer_38662_4'); if (x1.checked == true&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';} else {text = '❌ Incorrect. Attention! Plusieurs choix peuvent être possibles.';} document.getElementById('result_38662').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_53916').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_51380').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_35813').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_38662').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -546,25 +546,25 @@ Solution
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_29752" onsubmit="return validate_form_29752()" method="post">
+<form name="form_29123" onsubmit="return validate_form_29123()" method="post">
 <fieldset>
 <legend>Quel paramètre permet de contrôler le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données?</legend>
-<input type="radio" name="answer_29752" id="answer_29752_1" value="skip">
+<input type="radio" name="answer_29123" id="answer_29123_1" value="skip">
 <label>skip</label>
 <br>
-<input type="radio" name="answer_29752" id="answer_29752_2" value="sep">
+<input type="radio" name="answer_29123" id="answer_29123_2" value="sep">
 <label>sep</label>
 <br>
-<input type="radio" name="answer_29752" id="answer_29752_3" value="header">
+<input type="radio" name="answer_29123" id="answer_29123_3" value="header">
 <label>header</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_29752"></div>
+<div id="result_29123"></div>
 </fieldset>
 </form>
-<script>function validate_form_29752() {var x, text; var x = document.forms['form_29752']['answer_29752'].value;if (x == 'skip'){text = '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';} else {text = '❌ Incorrect.  sep permet de spécifier le caractère utilisé pour séparer les colonnes de variables. header permet de spécifier si la première ligne du fichier correspond aux noms des variables (colonnes).';} document.getElementById('result_29752').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_29123() {var x, text; var x = document.forms['form_29123']['answer_29123'].value;if (x == 'skip'){text = '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';} else {text = '❌ Incorrect.  sep permet de spécifier le caractère utilisé pour séparer les colonnes de variables. header permet de spécifier si la première ligne du fichier correspond aux noms des variables (colonnes).';} document.getElementById('result_29123').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_53916').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_51380').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_29752').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_35813').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_38662').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_29123').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -624,22 +624,22 @@ Solution
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_57176" onsubmit="return validate_form_57176()" method="post">
+<form name="form_42094" onsubmit="return validate_form_42094()" method="post">
 <fieldset>
 <legend>Que fait la commande suivante? sondage_bio1006[, -1]</legend>
-<input type="radio" name="answer_57176" id="answer_57176_1" value="Supprime la première ligne du data frame sondage_bio1006.">
+<input type="radio" name="answer_42094" id="answer_42094_1" value="Supprime la première ligne du data frame sondage_bio1006.">
 <label>Supprime la première ligne du data frame sondage_bio1006.</label>
 <br>
-<input type="radio" name="answer_57176" id="answer_57176_2" value="Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.">
+<input type="radio" name="answer_42094" id="answer_42094_2" value="Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.">
 <label>Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_57176"></div>
+<div id="result_42094"></div>
 </fieldset>
 </form>
-<script>function validate_form_57176() {var x, text; var x = document.forms['form_57176']['answer_57176'].value;if (x == 'Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.'){text = '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';} else {text = '❌ Incorrect. L’indexation des data frame fonctionnent de la même manière que pour les matrices M[ligne][colonne].';} document.getElementById('result_57176').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_42094() {var x, text; var x = document.forms['form_42094']['answer_42094'].value;if (x == 'Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.'){text = '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';} else {text = '❌ Incorrect. L’indexation des data frame fonctionnent de la même manière que pour les matrices M[ligne][colonne].';} document.getElementById('result_42094').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_53916').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_51380').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_29752').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.'; res4 = document.getElementById('result_57176').innerText == '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_35813').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_38662').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_29123').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.'; res4 = document.getElementById('result_42094').innerText == '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
