@@ -75,6 +75,24 @@ cat(readLines("../data/BIO1006_H2018_Echantillon_espace.dat", n = 10), sep = "\n
 read.table(file = "https://tinyurl.com/bio1006dat", ...)
 ```
 
+::: {.callout-tip collapse="true"}
+
+### Indice
+
+Le paramètre `sep` permet de spécifier le caractère utilisé pour séparer les colonnes de variables.
+:::
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+read.table(file = "https://tinyurl.com/bio1006dat", sep = " ")
+```
+
+:::
+
 ### Les _data frame_
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -129,9 +147,21 @@ Utilisez la fonction `head` pour faire afficher les 4 premières lignes du _data
 
 ```{webr}
 #| autorun: false
-sondage_bio1006 <- read.table("https://tinyurl.com/bio1006csv")
+sondage_bio1006 <- read.csv("https://tinyurl.com/bio1006csv")
 head()
 ```
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+sondage_bio1006 <- read.csv("https://tinyurl.com/bio1006csv")
+head(sondage_bio1006)
+```
+
+:::
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
@@ -148,6 +178,17 @@ check_question(
   wrong = "❌ Incorrect. L'indexation des data frame fonctionnent de la même manière que pour les matrices `M[ligne][colonne]`.",
   title = "Que fait la commande suivante? `sondage_bio1006[, -1]`"
 )
+```
+
+:::
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+sondage_bio1006[, -1]
 ```
 
 :::
