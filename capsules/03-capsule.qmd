@@ -33,9 +33,20 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 
 Écrivez une ligne de code qui calcule la somme de 2 et 2.
 
-```{r two-plus-two, exercise=TRUE}
+```{webr}
 
 ```
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+2 + 2
+```
+
+:::
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
