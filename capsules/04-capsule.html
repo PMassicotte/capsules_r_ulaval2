@@ -339,7 +339,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="exercices" class="level2">
 <h2 class="anchored" data-anchor-id="exercices">Exercices</h2>
-<p><small> <em>Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint”” est là pour être utilisé!</em> </small></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over”. Le bouton “Indice” est là pour être utilisé!</p>
+</div>
+</div>
 <section id="les-jeux-de-données" class="level3">
 <h3 class="anchored" data-anchor-id="les-jeux-de-données">Les jeux de données</h3>
 <p>Le jeux de données suivant (produit par le <em>Pew Research Center</em>) explore la relation entre le salaire et la religion aux États-Unis.</p>
@@ -408,22 +420,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_81828" onsubmit="return validate_form_81828()" method="post">
+<form name="form_12064" onsubmit="return validate_form_12064()" method="post">
 <fieldset>
 <legend>Selon vous, est-ce que ce jeu de données est bien structuré?</legend>
-<input type="radio" name="answer_81828" id="answer_81828_1" value="Oui">
+<input type="radio" name="answer_12064" id="answer_12064_1" value="Oui">
 <label>Oui</label>
 <br>
-<input type="radio" name="answer_81828" id="answer_81828_2" value="Non">
+<input type="radio" name="answer_12064" id="answer_12064_2" value="Non">
 <label>Non</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_81828"></div>
+<div id="result_12064"></div>
 </fieldset>
 </form>
-<script>function validate_form_81828() {var x, text; var x = document.forms['form_81828']['answer_81828'].value;if (x == 'Non'){text = '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} else {text = '❌ Incorrect.  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} document.getElementById('result_81828').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_12064() {var x, text; var x = document.forms['form_12064']['answer_12064'].value;if (x == 'Non'){text = '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} else {text = '❌ Incorrect.  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';} document.getElementById('result_12064').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_81828').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_12064').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -459,7 +471,7 @@ eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InJl
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -468,14 +480,14 @@ Indice
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Le paramètre <code>sep</code> permet de spécifier le caractère utilisé pour séparer les colonnes de variables.</p>
 </div>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -484,7 +496,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read.table</span>(<span class="at">file =</span> <span class="st">"https://tinyurl.com/bio1006dat"</span>, <span class="at">sep =</span> <span class="st">" "</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -508,28 +520,28 @@ Solution
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_77741" onsubmit="return validate_form_77741()" method="post">
+<form name="form_41578" onsubmit="return validate_form_41578()" method="post">
 <fieldset>
 <legend>Quelle(s) fonction(s) devriez-vous utiliser pour lire un fichier texte de données?</legend>
-<input type="checkbox" id="answer_77741_1" value="read.table()">
+<input type="checkbox" id="answer_41578_1" value="read.table()">
 <label>read.table()</label>
 <br>
-<input type="checkbox" id="answer_77741_2" value="read.csv()">
+<input type="checkbox" id="answer_41578_2" value="read.csv()">
 <label>read.csv()</label>
 <br>
-<input type="checkbox" id="answer_77741_3" value="read.file()">
+<input type="checkbox" id="answer_41578_3" value="read.file()">
 <label>read.file()</label>
 <br>
-<input type="checkbox" id="answer_77741_4" value="read.delim()">
+<input type="checkbox" id="answer_41578_4" value="read.delim()">
 <label>read.delim()</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_77741"></div>
+<div id="result_41578"></div>
 </fieldset>
 </form>
-<script>function validate_form_77741() {var text; var x1 = document.getElementById('answer_77741_1'); var x2 = document.getElementById('answer_77741_2'); var x3 = document.getElementById('answer_77741_3'); var x4 = document.getElementById('answer_77741_4'); if (x1.checked == true&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';} else {text = '❌ Incorrect. Attention! Plusieurs choix peuvent être possibles.';} document.getElementById('result_77741').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_41578() {var text; var x1 = document.getElementById('answer_41578_1'); var x2 = document.getElementById('answer_41578_2'); var x3 = document.getElementById('answer_41578_3'); var x4 = document.getElementById('answer_41578_4'); if (x1.checked == true&x2.checked == true&x3.checked == false&x4.checked == true){text = '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';} else {text = '❌ Incorrect. Attention! Plusieurs choix peuvent être possibles.';} document.getElementById('result_41578').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_81828').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_77741').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_12064').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_41578').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -541,25 +553,25 @@ Solution
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_23961" onsubmit="return validate_form_23961()" method="post">
+<form name="form_73540" onsubmit="return validate_form_73540()" method="post">
 <fieldset>
 <legend>Quel paramètre permet de contrôler le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données?</legend>
-<input type="radio" name="answer_23961" id="answer_23961_1" value="skip">
+<input type="radio" name="answer_73540" id="answer_73540_1" value="skip">
 <label>skip</label>
 <br>
-<input type="radio" name="answer_23961" id="answer_23961_2" value="sep">
+<input type="radio" name="answer_73540" id="answer_73540_2" value="sep">
 <label>sep</label>
 <br>
-<input type="radio" name="answer_23961" id="answer_23961_3" value="header">
+<input type="radio" name="answer_73540" id="answer_73540_3" value="header">
 <label>header</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_23961"></div>
+<div id="result_73540"></div>
 </fieldset>
 </form>
-<script>function validate_form_23961() {var x, text; var x = document.forms['form_23961']['answer_23961'].value;if (x == 'skip'){text = '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';} else {text = '❌ Incorrect.  sep permet de spécifier le caractère utilisé pour séparer les colonnes de variables. header permet de spécifier si la première ligne du fichier correspond aux noms des variables (colonnes).';} document.getElementById('result_23961').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_73540() {var x, text; var x = document.forms['form_73540']['answer_73540'].value;if (x == 'skip'){text = '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';} else {text = '❌ Incorrect.  sep permet de spécifier le caractère utilisé pour séparer les colonnes de variables. header permet de spécifier si la première ligne du fichier correspond aux noms des variables (colonnes).';} document.getElementById('result_73540').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_81828').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_77741').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_23961').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_12064').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_41578').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_73540').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -588,7 +600,7 @@ eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InNv
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -597,7 +609,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sondage_bio1006 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://tinyurl.com/bio1006csv"</span>)</span>
@@ -619,29 +631,29 @@ Solution
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_92775" onsubmit="return validate_form_92775()" method="post">
+<form name="form_11295" onsubmit="return validate_form_11295()" method="post">
 <fieldset>
 <legend>Que fait la commande suivante? sondage_bio1006[, -1]</legend>
-<input type="radio" name="answer_92775" id="answer_92775_1" value="Supprime la première ligne du data frame sondage_bio1006.">
+<input type="radio" name="answer_11295" id="answer_11295_1" value="Supprime la première ligne du data frame sondage_bio1006.">
 <label>Supprime la première ligne du data frame sondage_bio1006.</label>
 <br>
-<input type="radio" name="answer_92775" id="answer_92775_2" value="Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.">
+<input type="radio" name="answer_11295" id="answer_11295_2" value="Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.">
 <label>Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_92775"></div>
+<div id="result_11295"></div>
 </fieldset>
 </form>
-<script>function validate_form_92775() {var x, text; var x = document.forms['form_92775']['answer_92775'].value;if (x == 'Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.'){text = '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';} else {text = '❌ Incorrect. L’indexation des data frame fonctionnent de la même manière que pour les matrices M[ligne][colonne].';} document.getElementById('result_92775').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_11295() {var x, text; var x = document.forms['form_11295']['answer_11295'].value;if (x == 'Supprime la première colonne (couleur_yeux) du data frame sondage_bio1006.'){text = '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';} else {text = '❌ Incorrect. L’indexation des data frame fonctionnent de la même manière que pour les matrices M[ligne][colonne].';} document.getElementById('result_11295').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_81828').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_77741').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_23961').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.'; res4 = document.getElementById('result_92775').innerText == '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_12064').innerText == '✅ Correct !  Les colonnes ‘&lt;$10k’, ‘$10-20k’, ‘$20-30k’, ‘$30-40k’ représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes salaire et dénombrement où salaire contiendrait les valeurs ‘&lt;$10k’    ‘$10-20k’  ‘$20-30k’  ‘$30-40k’ et la colonne dénombrement contiendrait le nombre de répondeurs (27, 34, 60, etc.).'; res2 = document.getElementById('result_41578').innerText == '✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est read.table().'; res3 = document.getElementById('result_73540').innerText == '✅ Correct !  skip permet de spécifier le nombre de lignes à sauter/passer au début d’un fichier avant de commencer à lire les données.'; res4 = document.getElementById('result_11295').innerText == '✅ Correct !  L’indexation des data frame fonctionnent de la même manière que pour les matrices numériques: M[ligne][colonne].';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -650,7 +662,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sondage_bio1006[, <span class="sc">-</span><span class="dv">1</span>]</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
