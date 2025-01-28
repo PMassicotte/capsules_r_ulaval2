@@ -42,7 +42,7 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 check_question(
   c("(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
   options = c("(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une interaction entre deux variables numériques.", "(2) La régression est un test statistique permettant de vérifier l’existence d’une relation linéaire entre deux variables numériques.", "(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique `Y` (réponse) à une variable numérique `X` (explicative) à l’intérieur des limites observées pour celle-ci."),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! (3) Si ses conditions d'application sont respectées, la régression linéaire simple permet en effet d'estimer la valeur moyenne que devrait prendre une variable réponse `Y` à une variable explicative `X`. La dernière partie de la définition est importante ici : l'estimation est valable seulement pour des valeurs de `X` comprise à l'intérieur des limites existantes, c'est à dire pour faire de l'interpolation, et non pas de l'extrapolation.",
   wrong = "❌ Incorrect. (1) Cette définition fait plutôt référence à la Corrélation, puisqu'elle ne mentionne pas de relation de causalité (variables réponse et explicative). (2) Il s'agit plutôt d'une condition d'application préalable pour la régression linéaire simple. Il est vrai que lors d'une régression, on teste la significativité de la pente de la droite (est-elle différente de 0 ?).",
@@ -61,7 +61,7 @@ check_question(
 check_question(
   c("On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y."),
   options = c("Une régression linéaire calcule l’équation d’une droite à travers un nuage de points dont les coordonnées sont les valeurs de la variable explicative en X et de la variable réponse en Y.", "On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.", "Les résidus représentent la différence entre la prédiction faite par la droite et les valeurs observées en Y.", "L’intervalle de confiance calculé autour de l’estimé de la pente de la droite de régression est basé sur une distribution de Student (t)." ),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! C'est le contraire, l'équation de la droite de régression minimise les écarts entre sa prédiction et les observations.",
   wrong = "❌ Incorrect. La méthode de la régression linéaire permet d'estimer les paramètres d'une droite décrivant mathématiquement la relation entre ces 2 variables quantitatives. L'équation de la droite de régression est celle qui minimise la somme des carrés des résidus. Chaque paramètre de l'équation de la droite est calculé avec un intervalle de confiance, et donc la valeur moyenne prédite aussi." ,
@@ -80,7 +80,7 @@ check_question(
 check_question(
   c("La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression."),
   options = c("La valeur de R2 est la pente de la droite de régression.", "La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.", "La valeur de R2 permet de rejeter (ou non) l’hypothèse nulle qu’il n’y a pas de relation entre les variables réponse et explicative."),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Incorrect. La valeur de R2 vous renseigne sur la capacité de la régression à expliquer la variabilité de observations. La troisième solution est la définition correspondant à la p-value du test de significativité de la pente de la droite, qui permet de rejeter (ou non) l'hypothèse nulle que la pente n'est pas différente de 0 (pas de relation entre les variables).",
@@ -103,7 +103,7 @@ Associez à chaque graphique le problème principal que présentent les données
 check_question(
   c("A"),
   options = c("A", "B", "C"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Réessayez! ",
@@ -122,7 +122,7 @@ check_question(
 check_question(
   c("B"),
   options = c("A", "B", "C"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Réessayez! ",
@@ -141,7 +141,7 @@ check_question(
 check_question(
   c("C"),
   options = c("A", "B", "C"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! ",
   wrong = "❌ Réessayez! ",
@@ -198,7 +198,7 @@ Faites un histogramme des variables explicative `mtcars$wt` (la masse) et répon
 check_question(
   c("Oui"),
   options = c("Oui", "Non"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes... on peut dire qu'elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l'hypothèse nulle que la distribution est normalement distribuée.",
   wrong = "❌ Incorrect. ",
@@ -217,7 +217,7 @@ check_question(
 check_question(
   c("Oui"),
   options = c("Oui", "Non"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes... on peut dire qu'elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l'hypothèse nulle que la distribution est normalement distribuée.",
   wrong = "❌ Incorrect. ",
@@ -252,7 +252,7 @@ lm(mtcars$mpg ~ mtcars$wt)
 check_question(
   c("Environ -5"),
   options = c("Environ -12", "Environ -5", "Environ -8"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Il s'agit de l'estimé de la pente de la droite de régression.",
   wrong = "❌ Incorrect. ",
@@ -271,7 +271,7 @@ check_question(
 check_question(
   c("Environ 37"),
   options = c("Environ 52", "Environ 37", "Environ 23"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Il s'agit de l'ordonnée à l'origine de la droite de régression.",
   wrong = "❌ Incorrect. ",
@@ -290,7 +290,7 @@ check_question(
 check_question(
   c("Environ 75%"),
   options = c("Environ 58", "Environ 75%", "Environ 89"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Il s'agit du coefficient de régression R2.",
   wrong = "❌ Incorrect. ",
@@ -309,7 +309,7 @@ check_question(
 check_question(
   c("Environ 75%"),
   options = c("Environ 58", "Environ 75%", "Environ 89"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Il s'agit du coefficient de régression R2.",
   wrong = "❌ Incorrect. ",
@@ -341,7 +341,7 @@ Utilisez le paramètre "interval" = ...
 check_question(
   c("Environ 9-14"),
   options = c("Environ 10-12", "Environ 9-14", "Environ 15-18"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! C'est l'intervalle de confiance à 95%.",
   wrong = "❌ Incorrect. ",

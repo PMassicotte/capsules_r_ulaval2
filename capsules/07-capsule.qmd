@@ -156,7 +156,7 @@ check_question(
 check_question(
   c("`lwd`"),
   options = c("`width`", "`lwd`", "`lty`", "`size`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Le paramètre `lwd` (line width) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: `plot(1:100, type = 'l', lwd = 10)`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
@@ -194,7 +194,7 @@ check_question(
 check_question(
   c("`par(mfrow = c(3, 2))`"),
   options = c("`par(mfrow = c(6, 1, 2))`", "`par(mfrow = c(3, 2))`", "`par(mfrow = c(2, 3))`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Les fonctions `par()` et `mfrow()` permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.",
   wrong = "❌ Incorrect. Utilisez l'aide de R (`?par`) pour trouver la bonne fonction à utiliser.",
@@ -213,7 +213,7 @@ check_question(
 check_question(
   c("`mar`"),
   options = c("`margin`", "`mar`", "`marge`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! La fonction `mar()` permet de contrôler l'espace autours d'un graphique. (ex.: `par(mar = c(20, 3, 3, 3)); plot(1)`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
