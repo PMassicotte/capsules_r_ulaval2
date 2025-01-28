@@ -258,6 +258,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../capsules/09-capsule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../capsules/10-capsule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Capsule 10</span></a>
   </div>
@@ -347,25 +353,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_99599" onsubmit="return validate_form_99599()" method="post">
+<form name="form_31993" onsubmit="return validate_form_31993()" method="post">
 <fieldset>
 <legend>Quelle fonction devriez-vous utiliser pour calculer la moyenne des valeurs du vecteur suivant <code>x &lt;- c(1, 2, 3)</code></legend>
-<input type="radio" name="answer_99599" id="answer_99599_1" value="`mean(x)`">
+<input type="radio" name="answer_31993" id="answer_31993_1" value="`mean(x)`">
 <label>`mean(x)`</label>
 <br>
-<input type="radio" name="answer_99599" id="answer_99599_2" value="`average(x)`">
+<input type="radio" name="answer_31993" id="answer_31993_2" value="`average(x)`">
 <label>`average(x)`</label>
 <br>
-<input type="radio" name="answer_99599" id="answer_99599_3" value="`moyenne(x)`">
+<input type="radio" name="answer_31993" id="answer_31993_3" value="`moyenne(x)`">
 <label>`moyenne(x)`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_99599"></div>
+<div id="result_31993"></div>
 </fieldset>
 </form>
-<script>function validate_form_99599() {var x, text; var x = document.forms['form_99599']['answer_99599'].value;if (x == '`mean(x)`'){text = '✅ Correct !';} else {text = '❌ Incorrect. Mais vous êtes proche! Les fonctions ont rarement un nom en français.';} document.getElementById('result_99599').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_31993() {var x, text; var x = document.forms['form_31993']['answer_31993'].value;if (x == '`mean(x)`'){text = '✅ Correct !';} else {text = '❌ Incorrect. Mais vous êtes proche! Les fonctions ont rarement un nom en français.';} document.getElementById('result_31993').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_99599').innerText == '✅ Correct !';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_31993').innerText == '✅ Correct !';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -382,20 +388,99 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoieCA8LSBjKDEsIDIsIE5BLCAz
 </script>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Indice
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>?mean</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">3</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 <p>La fonction <code>seq()</code> permet de générer des valeurs séquentielles. Utilisez cette fonction pour créer un vecteur contenant les valeurs suivantes:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  1  3  5  7  9 11 13</code></pre>
 </div>
 </div>
-<div class="cell">
+<div class="cell" data-autorun="false">
 <div>
 <div id="webr-2">
 
 </div>
 <script type="webr-2-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InNlcSgpIn0=
 </script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Indice
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>?seq</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">13</span>, <span class="at">by =</span> <span class="dv">2</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  3  5  7  9 11 13</code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -403,7 +488,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <h3 class="anchored" data-anchor-id="paramètres-des-fonctions">Paramètres des fonctions</h3>
 <p>Dans l’aide de R, on peut voir que la fonction <code>mean()</code> a la structure suivante.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">FALSE</span>, ...)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">FALSE</span>, ...)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="question callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
@@ -411,25 +496,25 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_39621" onsubmit="return validate_form_39621()" method="post">
+<form name="form_76199" onsubmit="return validate_form_76199()" method="post">
 <fieldset>
 <legend>Indiquez les paramètres que l’utilisateur doit obligatoirement fournir à la fonction.</legend>
-<input type="radio" name="answer_39621" id="answer_39621_1" value="`x`">
+<input type="radio" name="answer_76199" id="answer_76199_1" value="`x`">
 <label>`x`</label>
 <br>
-<input type="radio" name="answer_39621" id="answer_39621_2" value="`trim`">
+<input type="radio" name="answer_76199" id="answer_76199_2" value="`trim`">
 <label>`trim`</label>
 <br>
-<input type="radio" name="answer_39621" id="answer_39621_3" value="`na.rm`">
+<input type="radio" name="answer_76199" id="answer_76199_3" value="`na.rm`">
 <label>`na.rm`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_39621"></div>
+<div id="result_76199"></div>
 </fieldset>
 </form>
-<script>function validate_form_39621() {var x, text; var x = document.forms['form_39621']['answer_39621'].value;if (x == '`x`'){text = '✅ Correct !  <code>x</code> est un paramètre obligatoire de la fonction <code>mean()</code> puisque que ce paramètre ne possède pas de valeur par défaut.';} else {text = '❌ Incorrect. Le paramètre <code>trim</code> à une valeur par défaut égale à <code>0</code>. Il n’est pas obligatoire de lui spécifier une valeur. Le paramètre <code>na.rm</code> à une valeur par défaut égale à <code>FALSE</code>. Il n’est pas obligatoire de lui spécifier une valeur.';} document.getElementById('result_39621').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_76199() {var x, text; var x = document.forms['form_76199']['answer_76199'].value;if (x == '`x`'){text = '✅ Correct !  <code>x</code> est un paramètre obligatoire de la fonction <code>mean()</code> puisque que ce paramètre ne possède pas de valeur par défaut.';} else {text = '❌ Incorrect. Le paramètre <code>trim</code> à une valeur par défaut égale à <code>0</code>. Il n’est pas obligatoire de lui spécifier une valeur. Le paramètre <code>na.rm</code> à une valeur par défaut égale à <code>FALSE</code>. Il n’est pas obligatoire de lui spécifier une valeur.';} document.getElementById('result_76199').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_99599').innerText == '✅ Correct !'; res2 = document.getElementById('result_39621').innerText == '✅ Correct !  x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_31993').innerText == '✅ Correct !'; res2 = document.getElementById('result_76199').innerText == '✅ Correct !  x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -441,25 +526,25 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_7455" onsubmit="return validate_form_7455()" method="post">
+<form name="form_74396" onsubmit="return validate_form_74396()" method="post">
 <fieldset>
 <legend>Valeur par défaut de <code>na.rm</code></legend>
-<input type="radio" name="answer_7455" id="answer_7455_1" value="`FALSE`">
+<input type="radio" name="answer_74396" id="answer_74396_1" value="`FALSE`">
 <label>`FALSE`</label>
 <br>
-<input type="radio" name="answer_7455" id="answer_7455_2" value="Il n'y en a pas.">
+<input type="radio" name="answer_74396" id="answer_74396_2" value="Il n'y en a pas.">
 <label>Il n'y en a pas.</label>
 <br>
-<input type="radio" name="answer_7455" id="answer_7455_3" value="Il n'est pas possible de le savoir.">
+<input type="radio" name="answer_74396" id="answer_74396_3" value="Il n'est pas possible de le savoir.">
 <label>Il n'est pas possible de le savoir.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_7455"></div>
+<div id="result_74396"></div>
 </fieldset>
 </form>
-<script>function validate_form_7455() {var x, text; var x = document.forms['form_7455']['answer_7455'].value;if (x == '`FALSE`'){text = '✅ Correct !  La valeur par défaut est <code>FALSE</code> et il serait possible de la changer pour la valeur <code>TRUE</code> si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';} else {text = '❌ Incorrect.  Utilisez l’aide pour vérifier quelle est la valeur par défaut du paramètre <code>na.rm</code>.';} document.getElementById('result_7455').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_74396() {var x, text; var x = document.forms['form_74396']['answer_74396'].value;if (x == '`FALSE`'){text = '✅ Correct !  La valeur par défaut est <code>FALSE</code> et il serait possible de la changer pour la valeur <code>TRUE</code> si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';} else {text = '❌ Incorrect.  Utilisez l’aide pour vérifier quelle est la valeur par défaut du paramètre <code>na.rm</code>.';} document.getElementById('result_74396').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_99599').innerText == '✅ Correct !'; res2 = document.getElementById('result_39621').innerText == '✅ Correct !  x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_7455').innerText == '✅ Correct !  La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_31993').innerText == '✅ Correct !'; res2 = document.getElementById('result_76199').innerText == '✅ Correct !  x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_74396').innerText == '✅ Correct !  La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -467,7 +552,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 </div>
 <p>La fonction <code>rnorm()</code> permet de générer aléatoirement une séquence de nombres suivant une loi de distribution Normale. Dans l’aide de R, on peut voir que la fonction a la structure suivante.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="question callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
@@ -475,31 +560,31 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_2570" onsubmit="return validate_form_2570()" method="post">
+<form name="form_57858" onsubmit="return validate_form_57858()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lesquels permettent techniquement de générer une séquence de 100 nombres ayant un écart-type de 2 et une moyenne de 50?</legend>
-<input type="checkbox" id="answer_2570_1" value="rnorm(100, 50, 2)">
+<input type="checkbox" id="answer_57858_1" value="rnorm(100, 50, 2)">
 <label>rnorm(100, 50, 2)</label>
 <br>
-<input type="checkbox" id="answer_2570_2" value="rnorm(sd = 2, mean = 50, 100)">
+<input type="checkbox" id="answer_57858_2" value="rnorm(sd = 2, mean = 50, 100)">
 <label>rnorm(sd = 2, mean = 50, 100)</label>
 <br>
-<input type="checkbox" id="answer_2570_3" value="rnorm(sd = 2, mean = 50, n = 100)">
+<input type="checkbox" id="answer_57858_3" value="rnorm(sd = 2, mean = 50, n = 100)">
 <label>rnorm(sd = 2, mean = 50, n = 100)</label>
 <br>
-<input type="checkbox" id="answer_2570_4" value="rnorm(x = 100, sd = 2, mean = 50)">
+<input type="checkbox" id="answer_57858_4" value="rnorm(x = 100, sd = 2, mean = 50)">
 <label>rnorm(x = 100, sd = 2, mean = 50)</label>
 <br>
-<input type="checkbox" id="answer_2570_5" value="rnorm(100, mean = 50, sd = 2)">
+<input type="checkbox" id="answer_57858_5" value="rnorm(100, mean = 50, sd = 2)">
 <label>rnorm(100, mean = 50, sd = 2)</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_2570"></div>
+<div id="result_57858"></div>
 </fieldset>
 </form>
-<script>function validate_form_2570() {var text; var x1 = document.getElementById('answer_2570_1'); var x2 = document.getElementById('answer_2570_2'); var x3 = document.getElementById('answer_2570_3'); var x4 = document.getElementById('answer_2570_4'); var x5 = document.getElementById('answer_2570_5'); if (x1.checked == true&x2.checked == true&x3.checked == true&x4.checked == false&x5.checked == true){text = '✅ Correct !  <code>rnorm(100, 50, 2)</code> est équivalent à <code>rnorm(n = 100, mean = 50, sd = 2)</code>.';} else {text = '<strong>Incorrect</strong> Le paramètre <code>x</code> ne fait pas partie de la liste des paramètres utilisables avec la fonction <code>rnorm()</code>.';} document.getElementById('result_2570').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_57858() {var text; var x1 = document.getElementById('answer_57858_1'); var x2 = document.getElementById('answer_57858_2'); var x3 = document.getElementById('answer_57858_3'); var x4 = document.getElementById('answer_57858_4'); var x5 = document.getElementById('answer_57858_5'); if (x1.checked == true&x2.checked == true&x3.checked == true&x4.checked == false&x5.checked == true){text = '✅ Correct !  <code>rnorm(100, 50, 2)</code> est équivalent à <code>rnorm(n = 100, mean = 50, sd = 2)</code>.';} else {text = '<strong>Incorrect</strong> Le paramètre <code>x</code> ne fait pas partie de la liste des paramètres utilisables avec la fonction <code>rnorm()</code>.';} document.getElementById('result_57858').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_99599').innerText == '✅ Correct !'; res2 = document.getElementById('result_39621').innerText == '✅ Correct !  x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_7455').innerText == '✅ Correct !  La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.'; res4 = document.getElementById('result_2570').innerText == '✅ Correct !  rnorm(100, 50, 2) est équivalent à rnorm(n = 100, mean = 50, sd = 2).';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_31993').innerText == '✅ Correct !'; res2 = document.getElementById('result_76199').innerText == '✅ Correct !  x est un paramètre obligatoire de la fonction mean() puisque que ce paramètre ne possède pas de valeur par défaut.'; res3 = document.getElementById('result_74396').innerText == '✅ Correct !  La valeur par défaut est FALSE et il serait possible de la changer pour la valeur TRUE si l’on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.'; res4 = document.getElementById('result_57858').innerText == '✅ Correct !  rnorm(100, 50, 2) est équivalent à rnorm(n = 100, mean = 50, sd = 2).';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -524,52 +609,52 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <h3 class="anchored" data-anchor-id="fonctions-de-base">Fonctions de base</h3>
 <p>Il y a plusieurs fonctions de base que vous devriez connaître par coeur. Pour les démonstrations suivantes, nous utiliserons la fonction <code>c()</code> pour créer un vecteur <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <code>v</code> contenant les valeurs de 1 à 6.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># La fonction c() veut dire "combine"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>v</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># La fonction c() veut dire "combine"</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>v</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1 2 3 4 5 6</code></pre>
 </div>
 </div>
 <p>Les fonctions suivantes retournent une seule valeur.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(v) <span class="co"># Valeur minimum du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(v) <span class="co"># Valeur minimum du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(v) <span class="co"># Valeur maximum du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(v) <span class="co"># Valeur maximum du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 6</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v) <span class="co"># Valeur moyenne du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v) <span class="co"># Valeur moyenne du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(v) <span class="co"># Valeur médiane du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(v) <span class="co"># Valeur médiane du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(v) <span class="co"># Variance du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(v) <span class="co"># Variance du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(v) <span class="co"># Écart-type du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(v) <span class="co"># Écart-type du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.870829</code></pre>
 </div>
 </div>
 <p>Les fonctions suivantes retournent un vecteur de valeurs.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(v) <span class="co"># Étendu des valeurs du vecteur</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cos</span>(v) <span class="co"># Cosinus des valeurs du vecteur</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span>(v) <span class="co"># Le logarithme naturel (base e) du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(v) <span class="co"># Étendu des valeurs du vecteur</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cos</span>(v) <span class="co"># Cosinus des valeurs du vecteur</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span>(v) <span class="co"># Le logarithme naturel (base e) du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Finalement, les fonctions suivantes sont utilisées pour l’action qu’elles accomplissent. Elles retournent aussi une valeur qui contient beaucoup d’information et que vous serez souvent appelés à utiliser pour des traitements de données un peu plus complexes.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(v) <span class="co"># Graphique à partir des valeurs du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(v) <span class="co"># Graphique à partir des valeurs du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(v, <span class="at">file =</span> <span class="st">"monvecteur.csv"</span>) <span class="co"># Sauvegarde les valeurs du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(v, <span class="at">file =</span> <span class="st">"monvecteur.csv"</span>) <span class="co"># Sauvegarde les valeurs du vecteur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="paramètres-des-fonctions-1" class="level3">
@@ -595,23 +680,23 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 <p>Par exemple, dans la fonction <code>mean()</code>, <code>x</code> est un paramètre obligatoire et <code>na.rm = FALSE</code> est un paramètre optionnel.</p>
 <p>Dans l’exemple suivant, on crée un vecteur <code>v</code> contenant une valeur manquante à la position 3.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">3</span>)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">3</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA</code></pre>
 </div>
 </div>
 <p>Comme on le constate, R n’est pas capable de calculer spontanément la moyenne, car il y a une valeur manquante. Basé sur notre lecture de l’aide, on peut modifier la valeur du paramètre <code>na.rm</code> pour indiquer à la fonction <code>mean()</code> de supprimer les valeurs manquantes avant le calcul.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">3</span>)</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">3</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
 <p>Le calcul revient donc à faire l’opération suivante:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span>) <span class="sc">/</span> <span class="dv">3</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span>) <span class="sc">/</span> <span class="dv">3</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
@@ -626,24 +711,34 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2VxKCkifQ==
 </ol>
 <p>Si on revient à la fonction <code>mean()</code>, l’ordre des paramètres est <code>x</code>, <code>trim</code> et <code>na.rm</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">FALSE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">FALSE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>L’appel de la fonction en utilisant les paramètres nommés veut simplement dire que nous sommes spécifiques sur les noms des paramètres utilisés. Dans ce cas, l’ordre des paramètres n’a pas d’importance. Dans l’exemple suivant, tous les appels de la fonction <code>mean()</code> sont équivalents. Notez qu’il est quand même recommandé de suivre l’ordre des paramètres présenté dans l’aide par souci de clarté du code.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">x =</span> v, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">x =</span> v, <span class="at">na.rm =</span> <span class="cn">FALSE</span>, <span class="at">trim =</span> <span class="dv">0</span>)</span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">na.rm =</span> <span class="cn">FALSE</span>, <span class="at">x =</span> v, <span class="at">trim =</span> <span class="dv">0</span>)</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">na.rm =</span> <span class="cn">FALSE</span>, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">x =</span> v)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">x =</span> v, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">x =</span> v, <span class="at">na.rm =</span> <span class="cn">FALSE</span>, <span class="at">trim =</span> <span class="dv">0</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">na.rm =</span> <span class="cn">FALSE</span>, <span class="at">x =</span> v, <span class="at">trim =</span> <span class="dv">0</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="at">na.rm =</span> <span class="cn">FALSE</span>, <span class="at">trim =</span> <span class="dv">0</span>, <span class="at">x =</span> v)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Avec la méthode des paramètres non nommés, il est possible d’omettre le nom des paramètres. Par exemple:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v, <span class="dv">0</span>, <span class="cn">FALSE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v, <span class="dv">0</span>, <span class="cn">FALSE</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Dans ce cas, il est obligatoire que l’ordre des paramètres suive celle de la signature de la fonction qui est spécifiée dans l’aide (i.e.&nbsp;<code>mean(x, trim = 0, na.rm = FALSE)</code>).</p>
-<div class="alert alert-info">
-<p><strong>Info!</strong> Bien que l’appel d’une fonction avec des paramètres non nommés soit techniquement valide, il est recommandé d’utiliser des paramètres nommés, car cela rend le code plus clair et plus explicite.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Astuce
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bien que l’appel d’une fonction avec des paramètres non nommés soit techniquement valide, il est recommandé d’utiliser des paramètres nommés, car cela rend le code plus clair et plus explicite.</p>
+</div>
 </div>
 </section>
 <section id="téléchargement" class="level3">

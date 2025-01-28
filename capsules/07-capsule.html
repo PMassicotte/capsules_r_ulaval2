@@ -258,6 +258,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../capsules/09-capsule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capsule 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../capsules/10-capsule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Capsule 10</span></a>
   </div>
@@ -362,28 +368,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_90614" onsubmit="return validate_form_90614()" method="post">
+<form name="form_7588" onsubmit="return validate_form_7588()" method="post">
 <fieldset>
 <legend>Dans un graphique R, quel est le paramètre à utiliser pour ajuster la taille des points?</legend>
-<input type="checkbox" id="answer_90614_1" value="`lty`">
+<input type="radio" name="answer_7588" id="answer_7588_1" value="`lty`">
 <label>`lty`</label>
 <br>
-<input type="checkbox" id="answer_90614_2" value="`bty`">
+<input type="radio" name="answer_7588" id="answer_7588_2" value="`bty`">
 <label>`bty`</label>
 <br>
-<input type="checkbox" id="answer_90614_3" value="`cex`">
+<input type="radio" name="answer_7588" id="answer_7588_3" value="`cex`">
 <label>`cex`</label>
 <br>
-<input type="checkbox" id="answer_90614_4" value="`size`">
+<input type="radio" name="answer_7588" id="answer_7588_4" value="`size`">
 <label>`size`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_90614"></div>
+<div id="result_7588"></div>
 </fieldset>
 </form>
-<script>function validate_form_90614() {var text; var x1 = document.getElementById('answer_90614_1'); var x2 = document.getElementById('answer_90614_2'); var x3 = document.getElementById('answer_90614_3'); var x4 = document.getElementById('answer_90614_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = '✅ Correct ! Le paramètre numérique <code>cex</code> permet de changer la taille des points (ex.: <code>plot(1, cex = 12)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_90614').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_7588() {var x, text; var x = document.forms['form_7588']['answer_7588'].value;if (x == '`cex`'){text = '✅ Correct ! Le paramètre numérique <code>cex</code> permet de changer la taille des points (ex.: <code>plot(1, cex = 12)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_7588').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -395,28 +401,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_77255" onsubmit="return validate_form_77255()" method="post">
+<form name="form_94321" onsubmit="return validate_form_94321()" method="post">
 <fieldset>
 <legend>Dans un graphique R, quel est le paramètre à utiliser pour changer le symbole des points?</legend>
-<input type="checkbox" id="answer_77255_1" value="`lty`">
+<input type="radio" name="answer_94321" id="answer_94321_1" value="`lty`">
 <label>`lty`</label>
 <br>
-<input type="checkbox" id="answer_77255_2" value="`bty`">
+<input type="radio" name="answer_94321" id="answer_94321_2" value="`bty`">
 <label>`bty`</label>
 <br>
-<input type="checkbox" id="answer_77255_3" value="`pch`">
+<input type="radio" name="answer_94321" id="answer_94321_3" value="`pch`">
 <label>`pch`</label>
 <br>
-<input type="checkbox" id="answer_77255_4" value="`shape`">
+<input type="radio" name="answer_94321" id="answer_94321_4" value="`shape`">
 <label>`shape`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_77255"></div>
+<div id="result_94321"></div>
 </fieldset>
 </form>
-<script>function validate_form_77255() {var text; var x1 = document.getElementById('answer_77255_1'); var x2 = document.getElementById('answer_77255_2'); var x3 = document.getElementById('answer_77255_3'); var x4 = document.getElementById('answer_77255_4'); if (x1.checked == false&x2.checked == false&x3.checked == false&x4.checked == false){text = '✅ Correct ! Le paramètre numérique <code>pch</code> permet de changer le symbole des points (ex.: <code>plot(1, pch = 22)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_77255').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_94321() {var x, text; var x = document.forms['form_94321']['answer_94321'].value;if (x == 'pch'){text = '✅ Correct ! Le paramètre numérique <code>pch</code> permet de changer le symbole des points (ex.: <code>plot(1, pch = 22)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_94321').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -428,28 +434,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_29767" onsubmit="return validate_form_29767()" method="post">
+<form name="form_17650" onsubmit="return validate_form_17650()" method="post">
 <fieldset>
 <legend>Dans un histogramme, quel paramètre doit-on utiliser pour changer la couleur de remplissage des barres?</legend>
-<input type="checkbox" id="answer_29767_1" value="`color`">
+<input type="radio" name="answer_17650" id="answer_17650_1" value="`color`">
 <label>`color`</label>
 <br>
-<input type="checkbox" id="answer_29767_2" value="`col`">
+<input type="radio" name="answer_17650" id="answer_17650_2" value="`col`">
 <label>`col`</label>
 <br>
-<input type="checkbox" id="answer_29767_3" value="fill`">
+<input type="radio" name="answer_17650" id="answer_17650_3" value="fill`">
 <label>fill`</label>
 <br>
-<input type="checkbox" id="answer_29767_4" value="`colour`">
+<input type="radio" name="answer_17650" id="answer_17650_4" value="`colour`">
 <label>`colour`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_29767"></div>
+<div id="result_17650"></div>
 </fieldset>
 </form>
-<script>function validate_form_29767() {var text; var x1 = document.getElementById('answer_29767_1'); var x2 = document.getElementById('answer_29767_2'); var x3 = document.getElementById('answer_29767_3'); var x4 = document.getElementById('answer_29767_4'); if (x1.checked == false&x2.checked == true&x3.checked == false&x4.checked == false){text = '✅ Correct ! Le paramètre <code>col</code> permet de changer la couleur de remplissage des barres (ex.: <code>barplot(1, col = 'red')</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_29767').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_17650() {var x, text; var x = document.forms['form_17650']['answer_17650'].value;if (x == '`col`'){text = '✅ Correct ! Le paramètre <code>col</code> permet de changer la couleur de remplissage des barres (ex.: <code>barplot(1, col = 'red')</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_17650').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -461,28 +467,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_52807" onsubmit="return validate_form_52807()" method="post">
+<form name="form_72423" onsubmit="return validate_form_72423()" method="post">
 <fieldset>
 <legend>Quels paramètres peuvent être modifiés pour changer les noms des axes dans un graphique?</legend>
-<input type="checkbox" id="answer_52807_1" value="`xlab`">
+<input type="checkbox" id="answer_72423_1" value="`xlab`">
 <label>`xlab`</label>
 <br>
-<input type="checkbox" id="answer_52807_2" value="`ylab`">
+<input type="checkbox" id="answer_72423_2" value="`ylab`">
 <label>`ylab`</label>
 <br>
-<input type="checkbox" id="answer_52807_3" value="`labels`">
+<input type="checkbox" id="answer_72423_3" value="`labels`">
 <label>`labels`</label>
 <br>
-<input type="checkbox" id="answer_52807_4" value="`labs`">
+<input type="checkbox" id="answer_72423_4" value="`labs`">
 <label>`labs`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_52807"></div>
+<div id="result_72423"></div>
 </fieldset>
 </form>
-<script>function validate_form_52807() {var text; var x1 = document.getElementById('answer_52807_1'); var x2 = document.getElementById('answer_52807_2'); var x3 = document.getElementById('answer_52807_3'); var x4 = document.getElementById('answer_52807_4'); if (x1.checked == true&x2.checked == true&x3.checked == false&x4.checked == false){text = '✅ Correct ! Les paramètres <code>xlab</code> et <code>ylab</code> permettent de changer le nom des axises (ex.: <code>plot(1, xlab = 'yolo', ylab = 'lol')</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_52807').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_72423() {var text; var x1 = document.getElementById('answer_72423_1'); var x2 = document.getElementById('answer_72423_2'); var x3 = document.getElementById('answer_72423_3'); var x4 = document.getElementById('answer_72423_4'); if (x1.checked == true&x2.checked == true&x3.checked == false&x4.checked == false){text = '✅ Correct ! Les paramètres <code>xlab</code> et <code>ylab</code> permettent de changer le nom des axises (ex.: <code>plot(1, xlab = 'yolo', ylab = 'lol')</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_72423').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -494,25 +500,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_63389" onsubmit="return validate_form_63389()" method="post">
+<form name="form_86713" onsubmit="return validate_form_86713()" method="post">
 <fieldset>
 <legend>Quel paramètre doit-on utiliser pour ajouter un titre dans un graphique?</legend>
-<input type="checkbox" id="answer_63389_1" value="`title`">
+<input type="radio" name="answer_86713" id="answer_86713_1" value="`title`">
 <label>`title`</label>
 <br>
-<input type="checkbox" id="answer_63389_2" value="`main`">
+<input type="radio" name="answer_86713" id="answer_86713_2" value="`main`">
 <label>`main`</label>
 <br>
-<input type="checkbox" id="answer_63389_3" value="`titre`">
+<input type="radio" name="answer_86713" id="answer_86713_3" value="`titre`">
 <label>`titre`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_63389"></div>
+<div id="result_86713"></div>
 </fieldset>
 </form>
-<script>function validate_form_63389() {var text; var x1 = document.getElementById('answer_63389_1'); var x2 = document.getElementById('answer_63389_2'); var x3 = document.getElementById('answer_63389_3'); if (x1.checked == false&x2.checked == true&x3.checked == false){text = '✅ Correct ! Le paramètre <code>main</code> permet de changer le titre d’un graphique (ex.: <code>hist(rnorm(100), main = 'Mon super titre')</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_63389').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_86713() {var x, text; var x = document.forms['form_86713']['answer_86713'].value;if (x == '`main`'){text = '✅ Correct ! Le paramètre <code>main</code> permet de changer le titre d’un graphique (ex.: <code>hist(rnorm(100), main = 'Mon super titre')</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_86713').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_63389').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_86713').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -524,28 +530,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_90876" onsubmit="return validate_form_90876()" method="post">
+<form name="form_2232" onsubmit="return validate_form_2232()" method="post">
 <fieldset>
 <legend>Quelle est la fonction qui permet d’ajouter une droite (verticale, horizontale ou de régression) dans un graphique?</legend>
-<input type="checkbox" id="answer_90876_1" value="`line()`">
+<input type="checkbox" id="answer_2232_1" value="`line()`">
 <label>`line()`</label>
 <br>
-<input type="checkbox" id="answer_90876_2" value="`segment()`">
+<input type="checkbox" id="answer_2232_2" value="`segment()`">
 <label>`segment()`</label>
 <br>
-<input type="checkbox" id="answer_90876_3" value="`abline()`">
+<input type="checkbox" id="answer_2232_3" value="`abline()`">
 <label>`abline()`</label>
 <br>
-<input type="checkbox" id="answer_90876_4" value="`path()`">
+<input type="checkbox" id="answer_2232_4" value="`path()`">
 <label>`path()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_90876"></div>
+<div id="result_2232"></div>
 </fieldset>
 </form>
-<script>function validate_form_90876() {var text; var x1 = document.getElementById('answer_90876_1'); var x2 = document.getElementById('answer_90876_2'); var x3 = document.getElementById('answer_90876_3'); var x4 = document.getElementById('answer_90876_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = '✅ Correct ! La fonction <code>abline()</code> permet d’ajouter une droite à un graphique (ex.: <code>plot(1); abline(a = 0, b = 1)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver la bonne fonction à utiliser.';} document.getElementById('result_90876').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_2232() {var text; var x1 = document.getElementById('answer_2232_1'); var x2 = document.getElementById('answer_2232_2'); var x3 = document.getElementById('answer_2232_3'); var x4 = document.getElementById('answer_2232_4'); if (x1.checked == false&x2.checked == false&x3.checked == true&x4.checked == false){text = '✅ Correct ! La fonction <code>abline()</code> permet d’ajouter une droite à un graphique (ex.: <code>plot(1); abline(a = 0, b = 1)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver la bonne fonction à utiliser.';} document.getElementById('result_2232').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_63389').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_90876').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_86713').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_2232').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -557,28 +563,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_37608" onsubmit="return validate_form_37608()" method="post">
+<form name="form_49484" onsubmit="return validate_form_49484()" method="post">
 <fieldset>
 <legend>Quel paramètre permet de changer l’épaisseur d’une ligne dans un graphique?</legend>
-<input type="radio" name="answer_37608" id="answer_37608_1" value="`width`">
+<input type="radio" name="answer_49484" id="answer_49484_1" value="`width`">
 <label>`width`</label>
 <br>
-<input type="radio" name="answer_37608" id="answer_37608_2" value="`lwd`">
+<input type="radio" name="answer_49484" id="answer_49484_2" value="`lwd`">
 <label>`lwd`</label>
 <br>
-<input type="radio" name="answer_37608" id="answer_37608_3" value="`lty`">
+<input type="radio" name="answer_49484" id="answer_49484_3" value="`lty`">
 <label>`lty`</label>
 <br>
-<input type="radio" name="answer_37608" id="answer_37608_4" value="`size`">
+<input type="radio" name="answer_49484" id="answer_49484_4" value="`size`">
 <label>`size`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_37608"></div>
+<div id="result_49484"></div>
 </fieldset>
 </form>
-<script>function validate_form_37608() {var x, text; var x = document.forms['form_37608']['answer_37608'].value;if (x == '`lwd`'){text = '✅ Correct ! Le paramètre <code>lwd</code> (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: <code>plot(1:100, type = 'l', lwd = 10)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_37608').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_49484() {var x, text; var x = document.forms['form_49484']['answer_49484'].value;if (x == '`lwd`'){text = '✅ Correct ! Le paramètre <code>lwd</code> (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: <code>plot(1:100, type = 'l', lwd = 10)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver le bon paramètre à utiliser.';} document.getElementById('result_49484').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_63389').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_90876').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_37608').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_86713').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_2232').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_49484').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -590,31 +596,31 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_641" onsubmit="return validate_form_641()" method="post">
+<form name="form_48299" onsubmit="return validate_form_48299()" method="post">
 <fieldset>
 <legend>Il est possible d’ajouter plusieurs séries de données dans un graphique. Quelle(s) fonction(s) permet(tent) de faire afficher une seconde série de données?</legend>
-<input type="checkbox" id="answer_641_1" value="`point()`">
+<input type="checkbox" id="answer_48299_1" value="`point()`">
 <label>`point()`</label>
 <br>
-<input type="checkbox" id="answer_641_2" value="`points()`">
+<input type="checkbox" id="answer_48299_2" value="`points()`">
 <label>`points()`</label>
 <br>
-<input type="checkbox" id="answer_641_3" value="`lines()`">
+<input type="checkbox" id="answer_48299_3" value="`lines()`">
 <label>`lines()`</label>
 <br>
-<input type="checkbox" id="answer_641_4" value="`line()`">
+<input type="checkbox" id="answer_48299_4" value="`line()`">
 <label>`line()`</label>
 <br>
-<input type="checkbox" id="answer_641_5" value="`add()`">
+<input type="checkbox" id="answer_48299_5" value="`add()`">
 <label>`add()`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_641"></div>
+<div id="result_48299"></div>
 </fieldset>
 </form>
-<script>function validate_form_641() {var text; var x1 = document.getElementById('answer_641_1'); var x2 = document.getElementById('answer_641_2'); var x3 = document.getElementById('answer_641_3'); var x4 = document.getElementById('answer_641_4'); var x5 = document.getElementById('answer_641_5'); if (x1.checked == false&x2.checked == true&x3.checked == true&x4.checked == false&x5.checked == false){text = '✅ Correct ! Les fonctions <code>points()</code> et <code>lines()</code> permettent d’ajouter plusieurs séries de données dans un graphique (ex.: <code>plot(1:10, 1:10); lines(1:10, 1:10*2)</code>).';} else {text = '❌ Incorrect. Regardez les exemples dans l’aide de R (<code>?plot</code>) pour vous aider.';} document.getElementById('result_641').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_48299() {var text; var x1 = document.getElementById('answer_48299_1'); var x2 = document.getElementById('answer_48299_2'); var x3 = document.getElementById('answer_48299_3'); var x4 = document.getElementById('answer_48299_4'); var x5 = document.getElementById('answer_48299_5'); if (x1.checked == false&x2.checked == true&x3.checked == true&x4.checked == false&x5.checked == false){text = '✅ Correct ! Les fonctions <code>points()</code> et <code>lines()</code> permettent d’ajouter plusieurs séries de données dans un graphique (ex.: <code>plot(1:10, 1:10); lines(1:10, 1:10*2)</code>).';} else {text = '❌ Incorrect. Regardez les exemples dans l’aide de R (<code>?plot</code>) pour vous aider.';} document.getElementById('result_48299').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_63389').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_90876').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_37608').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).'; res8 = document.getElementById('result_641').innerText == '✅ Correct ! Les fonctions points() et lines() permettent d’ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_86713').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_2232').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_49484').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).'; res8 = document.getElementById('result_48299').innerText == '✅ Correct ! Les fonctions points() et lines() permettent d’ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -626,25 +632,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_1973" onsubmit="return validate_form_1973()" method="post">
+<form name="form_89696" onsubmit="return validate_form_89696()" method="post">
 <fieldset>
 <legend>Parmi les choix suivants, lequel permet de créer un graphique contenant 6 panneaux distribués selon 3 lignes et 2 colonnes?</legend>
-<input type="radio" name="answer_1973" id="answer_1973_1" value="`par(mfrow = c(6, 1, 2))`">
+<input type="radio" name="answer_89696" id="answer_89696_1" value="`par(mfrow = c(6, 1, 2))`">
 <label>`par(mfrow = c(6, 1, 2))`</label>
 <br>
-<input type="radio" name="answer_1973" id="answer_1973_2" value="`par(mfrow = c(3, 2))`">
+<input type="radio" name="answer_89696" id="answer_89696_2" value="`par(mfrow = c(3, 2))`">
 <label>`par(mfrow = c(3, 2))`</label>
 <br>
-<input type="radio" name="answer_1973" id="answer_1973_3" value="`par(mfrow = c(2, 3))`">
+<input type="radio" name="answer_89696" id="answer_89696_3" value="`par(mfrow = c(2, 3))`">
 <label>`par(mfrow = c(2, 3))`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_1973"></div>
+<div id="result_89696"></div>
 </fieldset>
 </form>
-<script>function validate_form_1973() {var x, text; var x = document.forms['form_1973']['answer_1973'].value;if (x == '`par(mfrow = c(3, 2))`'){text = '✅ Correct ! Les fonctions <code>par()</code> et <code>mfrow()</code> permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.';} else {text = '❌ Incorrect. Utilisez l’aide de R (<code>?par</code>) pour trouver la bonne fonction à utiliser.';} document.getElementById('result_1973').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_89696() {var x, text; var x = document.forms['form_89696']['answer_89696'].value;if (x == '`par(mfrow = c(3, 2))`'){text = '✅ Correct ! Les fonctions <code>par()</code> et <code>mfrow()</code> permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.';} else {text = '❌ Incorrect. Utilisez l’aide de R (<code>?par</code>) pour trouver la bonne fonction à utiliser.';} document.getElementById('result_89696').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_63389').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_90876').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_37608').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).'; res8 = document.getElementById('result_641').innerText == '✅ Correct ! Les fonctions points() et lines() permettent d’ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).'; res9 = document.getElementById('result_1973').innerText == '✅ Correct ! Les fonctions par() et mfrow() permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_86713').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_2232').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_49484').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).'; res8 = document.getElementById('result_48299').innerText == '✅ Correct ! Les fonctions points() et lines() permettent d’ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).'; res9 = document.getElementById('result_89696').innerText == '✅ Correct ! Les fonctions par() et mfrow() permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -656,25 +662,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_63180" onsubmit="return validate_form_63180()" method="post">
+<form name="form_89429" onsubmit="return validate_form_89429()" method="post">
 <fieldset>
 <legend>Quelle fonction permet de contrôler la marge autour des graphiques?</legend>
-<input type="radio" name="answer_63180" id="answer_63180_1" value="`margin`">
+<input type="radio" name="answer_89429" id="answer_89429_1" value="`margin`">
 <label>`margin`</label>
 <br>
-<input type="radio" name="answer_63180" id="answer_63180_2" value="`mar`">
+<input type="radio" name="answer_89429" id="answer_89429_2" value="`mar`">
 <label>`mar`</label>
 <br>
-<input type="radio" name="answer_63180" id="answer_63180_3" value="`marge`">
+<input type="radio" name="answer_89429" id="answer_89429_3" value="`marge`">
 <label>`marge`</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_63180"></div>
+<div id="result_89429"></div>
 </fieldset>
 </form>
-<script>function validate_form_63180() {var x, text; var x = document.forms['form_63180']['answer_63180'].value;if (x == '`mar`'){text = '✅ Correct ! La fonction <code>mar()</code> permet de contrôler l’espace autours d’un graphique. (ex.: <code>par(mar = c(20, 3, 3, 3)); plot(1)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver la bonne fonction à utiliser.';} document.getElementById('result_63180').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_89429() {var x, text; var x = document.forms['form_89429']['answer_89429'].value;if (x == '`mar`'){text = '✅ Correct ! La fonction <code>mar()</code> permet de contrôler l’espace autours d’un graphique. (ex.: <code>par(mar = c(20, 3, 3, 3)); plot(1)</code>).';} else {text = '❌ Incorrect. Utilisez l’aide de R pour trouver la bonne fonction à utiliser.';} document.getElementById('result_89429').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_90614').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_77255').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_29767').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_52807').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_63389').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_90876').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_37608').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).'; res8 = document.getElementById('result_641').innerText == '✅ Correct ! Les fonctions points() et lines() permettent d’ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).'; res9 = document.getElementById('result_1973').innerText == '✅ Correct ! Les fonctions par() et mfrow() permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.'; res10 = document.getElementById('result_63180').innerText == '✅ Correct ! La fonction mar() permet de contrôler l’espace autours d’un graphique. (ex.: par(mar = c(20, 3, 3, 3)); plot(1)).';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_7588').innerText == '✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).'; res2 = document.getElementById('result_94321').innerText == '✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).'; res3 = document.getElementById('result_17650').innerText == '✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).'; res4 = document.getElementById('result_72423').innerText == '✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).'; res5 = document.getElementById('result_86713').innerText == '✅ Correct ! Le paramètre main permet de changer le titre d’un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).'; res6 = document.getElementById('result_2232').innerText == '✅ Correct ! La fonction abline() permet d’ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).'; res7 = document.getElementById('result_49484').innerText == '✅ Correct ! Le paramètre lwd (line width) permet de changer l’épaisseur d’une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).'; res8 = document.getElementById('result_48299').innerText == '✅ Correct ! Les fonctions points() et lines() permettent d’ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).'; res9 = document.getElementById('result_89696').innerText == '✅ Correct ! Les fonctions par() et mfrow() permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.'; res10 = document.getElementById('result_89429').innerText == '✅ Correct ! La fonction mar() permet de contrôler l’espace autours d’un graphique. (ex.: par(mar = c(20, 3, 3, 3)); plot(1)).';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -702,7 +708,7 @@ Note
 </div>
 <p><img src="../images/help_hist.png" class="img-fluid"></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pour connaître les paramètres des graphiques en nuage de points</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pour connaître les paramètres des graphiques en nuage de points</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>?plot</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="../images/help_plot.png" class="img-fluid"></p>
@@ -716,7 +722,7 @@ Note
 <p>On peut donc utiliser <code>col = "darkturquoise"</code> ou <code>col = "darkorange"</code> et sortir des sentiers battus!</p>
 <p>Une façon plus avancée de choisir une palette de couleurs est d’utiliser la librairie <code>RColorBrewer</code>. Si cette option vous intéresse, il faut tout d’abord installer la librairie dans R.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Installer la librairie</span></span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installer la librairie</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"RColorBrewer"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Il faut ensuite la charger dans notre session de R lorsqu’on veut s’en servir.</p>
@@ -756,7 +762,7 @@ Note
 </div>
 <p>Nous allons créer un histogramme pour ensuite le modifier et illustrer les différentes options qui s’offrent à nous.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Construire un histogramme de base avec la taille des arbres</span></span>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Construire un histogramme de base avec la taille des arbres</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Loblolly<span class="sc">$</span>height)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
@@ -779,10 +785,12 @@ Note
 </div>
 <p>Le titre de notre histogramme peut aussi être modifié avec le paramètre <code>main</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Loblolly<span class="sc">$</span>height,</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  Loblolly<span class="sc">$</span>height,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -793,11 +801,13 @@ Note
 </div>
 <p>On peut également ajouter un sous-titre avec le paramètre <code>sub</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Loblolly<span class="sc">$</span>height,</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span>,</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">sub =</span> <span class="st">"Ceci est mon super sous-titre"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  Loblolly<span class="sc">$</span>height,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">sub =</span> <span class="st">"Ceci est mon super sous-titre"</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -808,11 +818,14 @@ Note
 </div>
 <p>On peut ajouter la distribution de chacune des valeurs du jeu de données pour cette variable avec la fonction <code>rug()</code> invoquée après avoir déjà créé l’histogramme.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Loblolly<span class="sc">$</span>height,</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">rug</span>(Loblolly<span class="sc">$</span>height)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  Loblolly<span class="sc">$</span>height,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">rug</span>(Loblolly<span class="sc">$</span>height)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -823,11 +836,14 @@ Note
 </div>
 <p>On peut finalement ajouter la valeur de la médiane à l’aide de la fonction <code>abline()</code>. On peut spécifier la valeur utilisée pour tracer la ligne verticale avec le paramètre <code>v</code>, la couleur de la ligne verticale avec <code>col</code> et sa largeur avec <code>lwd</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Loblolly<span class="sc">$</span>height,</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">median</span>(Loblolly<span class="sc">$</span>height), <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lwd =</span> <span class="dv">4</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  Loblolly<span class="sc">$</span>height,</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Taille en pieds"</span>,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Fréquence"</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Distribution de fréquence des tailles de Pinus taeda"</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">median</span>(Loblolly<span class="sc">$</span>height), <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lwd =</span> <span class="dv">4</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -841,7 +857,7 @@ Note
 <h3 class="anchored" data-anchor-id="les-graphiques-en-nuage-de-points">Les graphiques en nuage de points</h3>
 <p>Comme nous l’avons vu précédemment, les graphiques en nuage de points peuvent servir à voir la relation entre deux variables. Commençons par voir s’il y a une relation entre la taille des arbres et leur âge.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Graphique de la taille (axe des y) en fonction de l’âge (axe des x)</span></span>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Graphique de la taille (axe des y) en fonction de l’âge (axe des x)</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Loblolly<span class="sc">$</span>age, Loblolly<span class="sc">$</span>height)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
@@ -853,7 +869,7 @@ Note
 </div>
 <p>C’est bien, mais pourrait-on modifier l’apparence du symbole des points? C’est possible en utilisant le paramètre <code>pch</code>. On peut avoir des symboles pleins ou vides, ou modifier la forme.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#changer les symboles pour des symboles de cercle pleins noirs</span></span>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># changer les symboles pour des symboles de cercle pleins noirs</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Loblolly<span class="sc">$</span>age, Loblolly<span class="sc">$</span>height, <span class="at">pch =</span> <span class="dv">16</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
@@ -968,7 +984,7 @@ Note
 <span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">horiz =</span> <span class="cn">TRUE</span>, <span class="co"># On veut une légende horizontale</span></span>
 <span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">16</span>, <span class="co"># Symboles à utiliser dans la légende</span></span>
 <span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex =</span> <span class="fl">0.8</span> <span class="co"># Grosseur des symboles</span></span>
-<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1040,7 +1056,7 @@ Note
 <span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">lty =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>),</span>
 <span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">horiz =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">bty =</span> <span class="st">"n"</span></span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1092,16 +1108,16 @@ Note
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Un graphique avec 4 panneaux (2 lignes * 2 colonnes)</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(mtcars<span class="sc">$</span>mpg) <span class="co">#plot 1</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(mtcars<span class="sc">$</span>mpg) <span class="co"># plot 1</span></span>
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="st">"A"</span>, <span class="at">bty =</span> <span class="st">"n"</span>)</span>
 <span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>hp, mtcars<span class="sc">$</span>mpg) <span class="co">#plot 2</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>hp, mtcars<span class="sc">$</span>mpg) <span class="co"># plot 2</span></span>
 <span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="st">"B"</span>, <span class="at">bty =</span> <span class="st">"n"</span>)</span>
 <span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>mpg <span class="sc">~</span> mtcars<span class="sc">$</span>cyl) <span class="co">#plot 3</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>mpg <span class="sc">~</span> mtcars<span class="sc">$</span>cyl) <span class="co"># plot 3</span></span>
 <span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="st">"C"</span>, <span class="at">bty =</span> <span class="st">"n"</span>)</span>
 <span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>hp, <span class="at">main =</span> <span class="st">""</span>) <span class="co">#plot 4</span></span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>hp, <span class="at">main =</span> <span class="st">""</span>) <span class="co"># plot 4</span></span>
 <span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="st">"D"</span>, <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
@@ -1119,10 +1135,12 @@ Note
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">bquote</span>(x <span class="sc">^</span> <span class="dv">2</span>),</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="fu">bquote</span>(<span class="st">"Primary production"</span> <span class="sc">~</span> (mgC <span class="sc">~</span> m <span class="sc">^</span> {<span class="sc">-</span><span class="dv">1</span>})),</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">bquote</span>(phi <span class="sc">==</span> <span class="dv">3</span> <span class="sc">~</span> beta <span class="sc">==</span> <span class="dv">5</span> <span class="sc">~</span> alpha <span class="sc">==</span> <span class="fl">0.4</span>)</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">bquote</span>(x<span class="sc">^</span><span class="dv">2</span>),</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="fu">bquote</span>(<span class="st">"Primary production"</span> <span class="sc">~</span> (mgC <span class="sc">~</span> m<span class="sc">^</span>{</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span><span class="dv">1</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  })),</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">bquote</span>(phi <span class="sc">==</span> <span class="dv">3</span> <span class="sc">~</span> beta <span class="sc">==</span> <span class="dv">5</span> <span class="sc">~</span> alpha <span class="sc">==</span> <span class="fl">0.4</span>)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
