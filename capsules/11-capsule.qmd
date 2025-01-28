@@ -403,7 +403,7 @@ L'analyse de régression linéaire utilise les propriétés mathématiques des d
 
 Nous pouvons illustrer ce principe avec le graphique ci-dessous :
 
-![*Fig. 2. Illustration de la droite des moindres carrés dont les coordonnées correspondent aux coefficients de la régression linéaire entre les variables explicative (x) et réponse (y)*](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Linear_least_squares_example2.svg/489px-Linear_least_squares_example2.svg.png)
+![*Fig. 2. Illustration de la droite des moindres carrés dont les coordonnées correspondent aux coefficients de la régression linéaire entre les variables explicative (x) et réponse (y).* Image de Wikipedia.](../images/regression.png)
 
 Ici la **droite des moindres carrés** (en bleu) est celle qui **minimise les résidus** (en vert), c'est-à-dire la différence entre les observations (en rouge) et la valeur prédite par la droite de régression (en bleu). La méthode mathématique minimise la **somme des carrés des écarts (résidus)**, qu'on appelle aussi **l'erreur**.
 
