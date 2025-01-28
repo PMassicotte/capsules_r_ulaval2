@@ -22,8 +22,6 @@ library(checkdown)
 
 {{< video https://youtu.be/PzMiODIA4VA >}}
 
-[Télécharger le script R de la vidéo](www/capsule_6.R) (Faire bouton droit -> enregistrer sous...)
-
 ## Exercices
 
 ::: {.callout-note}
@@ -591,16 +589,6 @@ dev.off()
 
 ### Téléchargement {#telechargement}
 
-Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
+Vous pouvez aussi télécharger le fichier `BIO1006_H2018_Echantillon.csv` qui contient les données utilisées dans cette capsule.
 
-1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
-2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
-
-Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous…".
-
-- [Télécharger la documentation sous format PDF](www/capsule_6.pdf)
-- [Télécharger la documentation sous format HTML](www/capsule_6.html)
-
-Vous pouvez aussi télécharger le fichier BIO1006_H2018_Echantillon.csv qui contient les données utilisées dans cette capsule.
-
-- [Télécharger le fichier de données sous format CSV](www/BIO1006_H2018_Echantillon.csv)
+- [Télécharger le fichier de données sous format CSV](https://tinyurl.com/bio1006csv)

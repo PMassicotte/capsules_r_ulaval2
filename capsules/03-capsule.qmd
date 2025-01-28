@@ -23,8 +23,6 @@ library(checkdown)
 
 {{< video https://youtu.be/KBkVAx2YW9E >}}
 
-[Télécharger le script R de la vidéo](www/capsule_3.R) (Faire bouton droit -> enregistrer sous...)
-
 ## Exercices
 
 ::: {.callout-note}
@@ -381,15 +379,3 @@ Dans ce cas, il est obligatoire que l'ordre des paramètres suive celle de la si
 ::: {.callout-tip}
 Bien que l'appel d'une fonction avec des paramètres non nommés soit techniquement valide, il est recommandé d'utiliser des paramètres nommés, car cela rend le code plus clair et plus explicite.
 :::
-
-### Téléchargement
-
-Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
-
-1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
-2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
-
-Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir “sauvegarder sous…”.
-
-- [Télécharger la documentation sous format PDF](www/capsule_3.pdf)
-- [Télécharger la documentation sous format HTML](www/capsule_3.html)
