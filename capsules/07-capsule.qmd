@@ -40,11 +40,11 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`cex`"),
-  options = c("`lty`", "`bty`", "`cex`", "`size`"),
+  c("cex"),
+  options = c("lty", "bty", "cex", "size"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre numérique `cex` permet de changer la taille des points (ex.: `plot(1, cex = 12)`).",
+  right = "✅ Correct ! Le paramètre numérique cex permet de changer la taille des points (ex.: plot(1, cex = 12)).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un graphique R, quel est le paramètre à utiliser pour ajuster la taille des points?"
 )
@@ -60,10 +60,10 @@ check_question(
 #| results: "asis"
 check_question(
   c("pch"),
-  options = c("`lty`", "`bty`", "`pch`", "`shape`"),
+  options = c("lty", "bty", "pch", "shape"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre numérique `pch` permet de changer le symbole des points (ex.: `plot(1, pch = 22)`).",
+  right = "✅ Correct ! Le paramètre numérique pch permet de changer le symbole des points (ex.: plot(1, pch = 22)).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un graphique R, quel est le paramètre à utiliser pour changer le symbole des points?"
 )
@@ -78,11 +78,11 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`col`"),
-  options = c("`color`", "`col`", "fill`", "`colour`"),
+  c("col"),
+  options = c("color", "col", "fill", "colour"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre `col` permet de changer la couleur de remplissage des barres (ex.: `barplot(1, col = 'red')`).",
+  right = "✅ Correct ! Le paramètre col permet de changer la couleur de remplissage des barres (ex.: barplot(1, col = 'red')).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Dans un histogramme, quel paramètre doit-on utiliser pour changer la couleur de remplissage des barres?"
 )
@@ -97,11 +97,11 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`xlab`", "`ylab`"),
-  options = c("`xlab`", "`ylab`", "`labels`", "`labs`"),
+  c("xlab", "ylab"),
+  options = c("xlab", "ylab", "labels", "labs"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "✅ Correct ! Les paramètres `xlab` et `ylab` permettent de changer le nom des axises (ex.: `plot(1, xlab = 'yolo', ylab = 'lol')`).",
+  right = "✅ Correct ! Les paramètres xlab et ylab permettent de changer le nom des axises (ex.: plot(1, xlab = 'yolo', ylab = 'lol')).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quels paramètres peuvent être modifiés pour changer les noms des axes dans un graphique?"
 )
@@ -116,11 +116,11 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`main`"),
-  options = c("`title`", "`main`", "`titre`"),
+  c("main"),
+  options = c("title", "main", "titre"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre `main` permet de changer le titre d'un graphique (ex.: `hist(rnorm(100), main = 'Mon super titre')`).",
+  right = "✅ Correct ! Le paramètre main permet de changer le titre d'un graphique (ex.: hist(rnorm(100), main = 'Mon super titre')).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quel paramètre doit-on utiliser pour ajouter un titre dans un graphique?"
 )
@@ -135,11 +135,11 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`abline()`"),
-  options = c("`line()`", "`segment()`", "`abline()`", "`path()`"),
+  c("abline()"),
+  options = c("line()", "segment()", "abline()", "path()"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "✅ Correct ! La fonction `abline()` permet d'ajouter une droite à un graphique (ex.: `plot(1); abline(a = 0, b = 1)`).",
+  right = "✅ Correct ! La fonction abline() permet d'ajouter une droite à un graphique (ex.: plot(1); abline(a = 0, b = 1)).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
   title = "Quelle est la fonction qui permet d’ajouter une droite (verticale, horizontale ou de régression) dans un graphique?"
 )
@@ -154,11 +154,11 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`lwd`"),
-  options = c("`width`", "`lwd`", "`lty`", "`size`"),
+  c("lwd"),
+  options = c("width", "lwd", "lty", "size"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! Le paramètre `lwd` (line width) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: `plot(1:100, type = 'l', lwd = 10)`).",
+  right = "✅ Correct ! Le paramètre lwd (line width) permet de changer l'épaisseur d'une ligne dans un graphique (ex.: plot(1:100, type = 'l', lwd = 10)).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
   title = "Quel paramètre permet de changer l’épaisseur d’une ligne dans un graphique?"
 )
@@ -173,12 +173,12 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`points()`", "`lines()`"),
-  options = c("`point()`", "`points()`", "`lines()`", "`line()`", "`add()`"),
+  c("points()", "lines()"),
+  options = c("point()", "points()", "lines()", "line()", "add()"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "✅ Correct ! Les fonctions `points()` et `lines()` permettent d'ajouter plusieurs séries de données dans un graphique (ex.: `plot(1:10, 1:10); lines(1:10, 1:10*2)`).",
-  wrong = "❌ Incorrect. Regardez les exemples dans l'aide de R (`?plot`) pour vous aider.",
+  right = "✅ Correct ! Les fonctions points() et lines() permettent d'ajouter plusieurs séries de données dans un graphique (ex.: plot(1:10, 1:10); lines(1:10, 1:10*2)).",
+  wrong = "❌ Incorrect. Regardez les exemples dans l'aide de R (?plot) pour vous aider.",
   title = "Il est possible d’ajouter plusieurs séries de données dans un graphique. Quelle(s) fonction(s) permet(tent) de faire afficher une seconde série de données?"
 )
 ```
@@ -192,12 +192,12 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`par(mfrow = c(3, 2))`"),
-  options = c("`par(mfrow = c(6, 1, 2))`", "`par(mfrow = c(3, 2))`", "`par(mfrow = c(2, 3))`"),
+  c("par(mfrow = c(3, 2))"),
+  options = c("par(mfrow = c(6, 1, 2))", "par(mfrow = c(3, 2))", "par(mfrow = c(2, 3))"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! Les fonctions `par()` et `mfrow()` permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.",
-  wrong = "❌ Incorrect. Utilisez l'aide de R (`?par`) pour trouver la bonne fonction à utiliser.",
+  right = "✅ Correct ! Les fonctions par() et mfrow() permettent permettent de contrôler comment plusieurs graphiques sont présentés sur une page.",
+  wrong = "❌ Incorrect. Utilisez l'aide de R (?par) pour trouver la bonne fonction à utiliser.",
   title = "Parmi les choix suivants, lequel permet de créer un graphique contenant 6 panneaux distribués selon 3 lignes et 2 colonnes?"
 )
 ```
@@ -211,11 +211,11 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`mar`"),
-  options = c("`margin`", "`mar`", "`marge`"),
+  c("mar"),
+  options = c("margin", "mar", "marge"),
   type = "radio",
   button_label = "Vérifier",
-  right = "✅ Correct ! La fonction `mar()` permet de contrôler l'espace autours d'un graphique. (ex.: `par(mar = c(20, 3, 3, 3)); plot(1)`).",
+  right = "✅ Correct ! La fonction mar() permet de contrôler l'espace autours d'un graphique. (ex.: par(mar = c(20, 3, 3, 3)); plot(1)).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver la bonne fonction à utiliser.",
   title = "Quelle fonction permet de contrôler la marge autour des graphiques?"
 )
@@ -231,7 +231,7 @@ Une fois que nous avons un graphique, il est souvent avantageux de modifier le f
 
 Ces paramètres qui précisent les options de visualisation doivent être ajoutées à la fonction de base que nous tapons pour obtenir un graphique.
 
-Si on veut modifier le format des symboles d’un graphique à nuage de points, on invoque la fonction de base `plot()` et on y ajoute les options, ici pour la forme des symboles `pch`.
+Si on veut modifier le format des symboles d’un graphique à nuage de points, on invoque la fonction de base plot() et on y ajoute les options, ici pour la forme des symboles pch.
 
 ```{r}
 #| echo: True
@@ -301,13 +301,13 @@ On peut ensuite voir les choix de palette de couleurs et choisir le nom de la pa
 display.brewer.all()
 ```
 
-Utilisez `help(RColorBrewer)` pour en apprendre plus sur son utilisation.
+Utilisez help(RColorBrewer) pour en apprendre plus sur son utilisation.
 
 ### Les histogrammes
 
-Nous allons tester différentes modifications aux graphiques de base en utilisant le jeu de données `Loblolly`, qui est déjà pré-téléchargé dans la version de base de R. Celui-ci contient les données de taille (`height`, en pieds, une variable numérique) et d’âge (`age`, en années, une autre variable numérique) pour des pins (_Pinus taeda_) provenant de différents parents (`Seed`, une variable de type “facteur” où le chiffre représente la paire d’arbres parentaux).
+Nous allons tester différentes modifications aux graphiques de base en utilisant le jeu de données Loblolly, qui est déjà pré-téléchargé dans la version de base de R. Celui-ci contient les données de taille (height, en pieds, une variable numérique) et d’âge (age, en années, une autre variable numérique) pour des pins (_Pinus taeda_) provenant de différents parents (Seed, une variable de type “facteur” où le chiffre représente la paire d’arbres parentaux).
 
-On importe le jeu de données avec la fonction `data()`.
+On importe le jeu de données avec la fonction data().
 
 ```{r}
 #| echo: True
@@ -315,7 +315,7 @@ On importe le jeu de données avec la fonction `data()`.
 data("Loblolly")
 ```
 
-On peut utiliser la fonction `head()` pour vérifier le contenu de notre jeu de données.
+On peut utiliser la fonction head() pour vérifier le contenu de notre jeu de données.
 
 ```{r}
 #| echo: True
@@ -332,7 +332,7 @@ Nous allons créer un histogramme pour ensuite le modifier et illustrer les diff
 hist(Loblolly$height)
 ```
 
-On peut modifier cet histogramme présentant la distribution de fréquence des tailles en améliorant les étiquettes des axes avec les paramètres `xlab` pour l’étiquette des abscisses et `ylab` pour l’étiquette des ordonnées.
+On peut modifier cet histogramme présentant la distribution de fréquence des tailles en améliorant les étiquettes des axes avec les paramètres xlab pour l’étiquette des abscisses et ylab pour l’étiquette des ordonnées.
 
 ```{r}
 #| echo: True
@@ -340,7 +340,7 @@ On peut modifier cet histogramme présentant la distribution de fréquence des t
 hist(Loblolly$height, xlab = "Taille en pieds", ylab = "Fréquence")
 ```
 
-Le titre de notre histogramme peut aussi être modifié avec le paramètre `main`.
+Le titre de notre histogramme peut aussi être modifié avec le paramètre main.
 
 ```{r}
 #| echo: True
@@ -353,7 +353,7 @@ hist(
 )
 ```
 
-On peut également ajouter un sous-titre avec le paramètre `sub`.
+On peut également ajouter un sous-titre avec le paramètre sub.
 
 ```{r}
 #| echo: True
@@ -367,7 +367,7 @@ hist(
 )
 ```
 
-On peut ajouter la distribution de chacune des valeurs du jeu de données pour cette variable avec la fonction `rug()` invoquée après avoir déjà créé l’histogramme.
+On peut ajouter la distribution de chacune des valeurs du jeu de données pour cette variable avec la fonction rug() invoquée après avoir déjà créé l’histogramme.
 
 ```{r}
 #| echo: True
@@ -382,7 +382,7 @@ hist(
 rug(Loblolly$height)
 ```
 
-On peut finalement ajouter la valeur de la médiane à l’aide de la fonction `abline()`. On peut spécifier la valeur utilisée pour tracer la ligne verticale avec le paramètre `v`, la couleur de la ligne verticale avec `col` et sa largeur avec `lwd`.
+On peut finalement ajouter la valeur de la médiane à l’aide de la fonction abline(). On peut spécifier la valeur utilisée pour tracer la ligne verticale avec le paramètre v, la couleur de la ligne verticale avec col et sa largeur avec lwd.
 
 ```{r}
 #| echo: True
@@ -408,7 +408,7 @@ Comme nous l’avons vu précédemment, les graphiques en nuage de points peuven
 plot(Loblolly$age, Loblolly$height)
 ```
 
-C’est bien, mais pourrait-on modifier l’apparence du symbole des points? C’est possible en utilisant le paramètre `pch`. On peut avoir des symboles pleins ou vides, ou modifier la forme.
+C’est bien, mais pourrait-on modifier l’apparence du symbole des points? C’est possible en utilisant le paramètre pch. On peut avoir des symboles pleins ou vides, ou modifier la forme.
 
 ```{r}
 #| echo: True
@@ -513,7 +513,7 @@ axis(
 
 ### Légendes
 
-Supposons ce graphique fait avec les données du _data frame_ `mtcars`. La couleur des points est associée au nombre de cylindres du moteur (`cyl`).
+Supposons ce graphique fait avec les données du _data frame_ mtcars. La couleur des points est associée au nombre de cylindres du moteur (cyl).
 
 ```{r}
 #| echo: True
@@ -521,7 +521,7 @@ Supposons ce graphique fait avec les données du _data frame_ `mtcars`. La coule
 plot(mtcars$hp, mtcars$mpg, pch = 16, col = mtcars$cyl)
 ```
 
-Il serait intéressant de pouvoir ajouter une légende à ce graphique pour identifier à quoi correspondent les couleurs. Pour y arriver, il faut utiliser la fonction `legend()` après la création du graphique. Cette fonction utilise plusieurs paramètres. Prenez le temps d'explorer par vous-même pour bien comprendre.
+Il serait intéressant de pouvoir ajouter une légende à ce graphique pour identifier à quoi correspondent les couleurs. Pour y arriver, il faut utiliser la fonction legend() après la création du graphique. Cette fonction utilise plusieurs paramètres. Prenez le temps d'explorer par vous-même pour bien comprendre.
 
 ```{r}
 #| echo: True
@@ -546,7 +546,7 @@ legend(
 
 ### Droite de régression
 
-Nous avons déjà utilisé la fonction `abline` pour tracer des lignes verticales. On peut également utiliser cette fonction pour tracer des droites de régression. Nous utiliserons les données `iris` pour démontrer comment ajouter une telle droite. Dans le graphique suivant, il semble y avoir une relation linéaire entre les variables `Petal.Width` et `Petal.Length`.
+Nous avons déjà utilisé la fonction abline pour tracer des lignes verticales. On peut également utiliser cette fonction pour tracer des droites de régression. Nous utiliserons les données iris pour démontrer comment ajouter une telle droite. Dans le graphique suivant, il semble y avoir une relation linéaire entre les variables `Petal.Width` et `Petal.Length`.
 
 ```{r}
 #| echo: True
@@ -555,7 +555,7 @@ data(iris)
 plot(iris$Petal.Width, iris$Petal.Length)
 ```
 
-Pour ajouter une droite de régression, il faut d'abord faire un modèle linéaire à l'aide de la fonction `lm` (_linear model_ en anglais). Lorsque le modèle est fait, on peut utiliser la fonction `abline(modele)` pour ajouter la droite de régression [^1].
+Pour ajouter une droite de régression, il faut d'abord faire un modèle linéaire à l'aide de la fonction lm (_linear model_ en anglais). Lorsque le modèle est fait, on peut utiliser la fonction abline(modele) pour ajouter la droite de régression [^1].
 
 [^1]: Voir la capsule statistique portant sur les modèles linéaire.
 
@@ -570,9 +570,9 @@ abline(mod, col = "red")
 
 ### Ajout de courbes
 
-Jusqu'à maintenant, nous avons seulement affiché une série de données dans nos graphiques. Il est souvent intéressant de pouvoir visualiser plusieurs courbes dans un seul graphique. Pour y arriver, il suffit d'utiliser la fonction `lines()` après l'appel de la fonction `plot()`. La fonction `lines()` fonctionne de la même manière que la fonction `plot()`, à la différence qu'elle doit être utilisée une fois le graphique principale créée.
+Jusqu'à maintenant, nous avons seulement affiché une série de données dans nos graphiques. Il est souvent intéressant de pouvoir visualiser plusieurs courbes dans un seul graphique. Pour y arriver, il suffit d'utiliser la fonction lines() après l'appel de la fonction plot(). La fonction lines() fonctionne de la même manière que la fonction plot(), à la différence qu'elle doit être utilisée une fois le graphique principale créée.
 
-Nous allons créer un jeu de données pour montrer comment utiliser la fonction `lines()`.
+Nous allons créer un jeu de données pour montrer comment utiliser la fonction lines().
 
 ```{r}
 #| echo: True
@@ -605,7 +605,7 @@ legend(
 
 ### Modification des axes
 
-Par défaut, R tentera de placer un nombre de marqueurs sur les axes de manière optimale. Cependant, nous pouvons contrôler comment ils apparaissent. La première étape est de dire à R de ne pas afficher les marqueurs sur l'axe des `x` avec le paramètre `xaxt = "n"`. La seconde étape est d'utiliser la fonction `axis()` pour ajouter manuellement l'axe des `x`. Pour l'axe des `x`, il faut spécifier `side = 1`. Par la suite, on utilise le paramètre `at = v` où `v` est un vecteur numérique indiquant la position des marqueurs. Dans le cas suivant, on place un marqueur à chaque valeur de l'âge entre 0 et 25.
+Par défaut, R tentera de placer un nombre de marqueurs sur les axes de manière optimale. Cependant, nous pouvons contrôler comment ils apparaissent. La première étape est de dire à R de ne pas afficher les marqueurs sur l'axe des x avec le paramètre `xaxt = "n"`. La seconde étape est d'utiliser la fonction axis() pour ajouter manuellement l'axe des x. Pour l'axe des x, il faut spécifier `side = 1`. Par la suite, on utilise le paramètre `at = v` où `v` est un vecteur numérique indiquant la position des marqueurs. Dans le cas suivant, on place un marqueur à chaque valeur de l'âge entre 0 et 25.
 
 ```{r}
 #| echo: True
@@ -614,7 +614,7 @@ plot(Loblolly$age, Loblolly$height, pch = 16, xaxt = "n")
 axis(side = 1, at = seq(0, 25, by = 2))
 ```
 
-Finalement, on peut facilement remplacer la valeur des étiquettes en utilisant le paramètre `labels` dans la fonction `axis()`.
+Finalement, on peut facilement remplacer la valeur des étiquettes en utilisant le paramètre labels dans la fonction axis().
 
 ```{r}
 #| echo: True
@@ -624,7 +624,7 @@ axis(side = 1, at = c(5, 15, 25), labels = c("A", "B", "C"))
 
 ### Mise en page de plusieurs graphiques
 
-Dans certains cas, il est peut-être utile de combiner plusieurs graphiques dans un seul. Pour y arriver, il faut utiliser la fonction `par()` avant de faire les graphiques. C'est avec cette fonction qu'il faut définir comment les graphiques seront présentés. Il existe plusieurs paramètres que l'on peut modifier avec cette fonction, mais les plus fréquentes sont `mfrow` et `mar`. Le paramètre `mfrow` (un vecteur numérique de 2 éléments) permet de spécifier combien de ligne et de colonnes le graphique contiendra. Par exemple, `mfrow = c(1, 2)` indique un graphique avec 1 ligne et 2 colonnes. Le paramètre `mar` (un vecteur numérique de 4 éléments) permet de spécifier les marges à utiliser autours de chaque sous-graphiques. Par exemple, `mar = c(1, 1, 1, 1)` indique d'utiliser une valeur de 1 ligne sur chaque coté des graphiques.
+Dans certains cas, il est peut-être utile de combiner plusieurs graphiques dans un seul. Pour y arriver, il faut utiliser la fonction par() avant de faire les graphiques. C'est avec cette fonction qu'il faut définir comment les graphiques seront présentés. Il existe plusieurs paramètres que l'on peut modifier avec cette fonction, mais les plus fréquentes sont mfrow et mar. Le paramètre mfrow (un vecteur numérique de 2 éléments) permet de spécifier combien de ligne et de colonnes le graphique contiendra. Par exemple, mfrow = c(1, 2) indique un graphique avec 1 ligne et 2 colonnes. Le paramètre mar (un vecteur numérique de 4 éléments) permet de spécifier les marges à utiliser autours de chaque sous-graphiques. Par exemple, mar = c(1, 1, 1, 1) indique d'utiliser une valeur de 1 ligne sur chaque coté des graphiques.
 
 Dans l'exemple suivant, on créer un graphique avec 4 sous-graphiques et on ajouter une légende pour identifier les panneaux A, B, C et D.
 
@@ -648,7 +648,7 @@ legend("topright", "D", bty = "n")
 
 ### Notation mathématique
 
-En utilisant la fonction `bquote()` il est possible d'ajouter des symboles mathématiques dans les graphiques. Cette fonction est relativement complexe, on vous invite à consulter l'aide pour bien la comprendre. Voici cependant quelques exemples.
+En utilisant la fonction bquote() il est possible d'ajouter des symboles mathématiques dans les graphiques. Cette fonction est relativement complexe, on vous invite à consulter l'aide pour bien la comprendre. Voici cependant quelques exemples.
 
 ```{r}
 #| echo: True

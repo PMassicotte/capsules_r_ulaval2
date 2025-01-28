@@ -135,7 +135,7 @@ Faites deux histogrammes : des échantillons N1 (débit pour la période 1890-18
 
 ### Indice
 
-Vous pouvez utiliser la fonction `hist()` pour créer des histogrammes.
+Vous pouvez utiliser la fonction hist() pour créer des histogrammes.
 :::
 
 ::: {.callout-warning collapse="true"}
@@ -340,7 +340,7 @@ Le but ici est simplement d'utiliser les équivalents non-paramétriques des tes
 wilcox.test(airquality$Solar.R[M7], mu = 200)
 ```
 
-Vous n'avez bien sûr pas besoin de calculer vous-même les rangs des valeurs échantillonnées pour effectuer ces tests dans R. Le test de Wilcoxon vérifie l'hypothèse nulle que la distribution des valeurs échantillonnées est symétrique par rapport à `mu`, autrement dit qu'il y a autant de valeurs dont le rang est supérieur que de valeurs dont le rang est inférieur à `mu`. Comme le démontre la _p_-value > seuil alpha = 0.05, ici ce test **ne permet pas de rejeter l'hypothèse nulle**.
+Vous n'avez bien sûr pas besoin de calculer vous-même les rangs des valeurs échantillonnées pour effectuer ces tests dans R. Le test de Wilcoxon vérifie l'hypothèse nulle que la distribution des valeurs échantillonnées est symétrique par rapport à mu, autrement dit qu'il y a autant de valeurs dont le rang est supérieur que de valeurs dont le rang est inférieur à mu. Comme le démontre la _p_-value > seuil alpha = 0.05, ici ce test **ne permet pas de rejeter l'hypothèse nulle**.
 
 On peut également utiliser le `wilcoxon.test()` pour comparer les distributions de deux échantillons. On va maintenant comparer la moyenne des valeurs d'insolation aux mois de juillet et août.
 
