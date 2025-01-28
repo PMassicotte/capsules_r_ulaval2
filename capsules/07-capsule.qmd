@@ -42,7 +42,7 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 check_question(
   c("`cex`"),
   options = c("`lty`", "`bty`", "`cex`", "`size`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Le paramètre numérique `cex` permet de changer la taille des points (ex.: `plot(1, cex = 12)`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
@@ -61,7 +61,7 @@ check_question(
 check_question(
   c("pch"),
   options = c("`lty`", "`bty`", "`pch`", "`shape`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Le paramètre numérique `pch` permet de changer le symbole des points (ex.: `plot(1, pch = 22)`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
@@ -80,7 +80,7 @@ check_question(
 check_question(
   c("`col`"),
   options = c("`color`", "`col`", "fill`", "`colour`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Le paramètre `col` permet de changer la couleur de remplissage des barres (ex.: `barplot(1, col = 'red')`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
@@ -97,7 +97,7 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("`xlab`","`ylab`"),
+  c("`xlab`", "`ylab`"),
   options = c("`xlab`", "`ylab`", "`labels`", "`labs`"),
   type = "checkbox",
   button_label = "Vérifier",
@@ -118,7 +118,7 @@ check_question(
 check_question(
   c("`main`"),
   options = c("`title`", "`main`", "`titre`"),
-  type = "checkbox",
+  type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! Le paramètre `main` permet de changer le titre d'un graphique (ex.: `hist(rnorm(100), main = 'Mon super titre')`).",
   wrong = "❌ Incorrect. Utilisez l'aide de R pour trouver le bon paramètre à utiliser.",
@@ -229,7 +229,7 @@ check_question(
 
 Une fois que nous avons un graphique, il est souvent avantageux de modifier le format par défaut, et ce pour plusieurs raisons. Premièrement, nous voulons présenter les données de la façon la plus claire possible, ce qui n’est pas toujours le cas avec les valeurs par défaut. Par exemple, des points peuvent se chevaucher sur un graphique de nuages de points, ou le nombre de classes par défaut d’un histogramme peuvent ne pas présenter adéquatement la distribution de fréquence des données. Deuxièmement, les standards requis pour inclure un graphique dans un travail ou une publication ne sont pas toujours atteints avec les valeurs par défaut. En effet, nous voulons avoir le titre et les axes les plus clairs possibles, sans avoir à faire des changements manuellement plus tard dans un autre logiciel.
 
-Ces paramètres qui précisent les options de visualisation doivent être ajoutées à la fonction de base que nous tapons pour obtenir un graphique. 
+Ces paramètres qui précisent les options de visualisation doivent être ajoutées à la fonction de base que nous tapons pour obtenir un graphique.
 
 Si on veut modifier le format des symboles d’un graphique à nuage de points, on invoque la fonction de base `plot()` et on y ajoute les options, ici pour la forme des symboles `pch`.
 
@@ -260,7 +260,7 @@ Il n'y a pas d’avantage à retenir par coeur toutes les options qui s’offren
 #| echo: True
 #| eval: False
 #| comment: NA
-#Pour connaître les paramètres des graphiques en nuage de points
+# Pour connaître les paramètres des graphiques en nuage de points
 ?plot
 ```
 
@@ -268,7 +268,7 @@ Il n'y a pas d’avantage à retenir par coeur toutes les options qui s’offren
 
 ### Le cas spécial des couleurs
 
-R nous donne la possibilité de choisir parmi un grand nombre de couleurs pour nos graphiques. On utilise l’argument `col = "nom_de_la_couleur"` pour préciser notre choix (en anglais: "blue", "red", etc.). La palette disponible est assez large. Les noms des couleurs possibles sont présentés dans le document *Colors* in R à l’adresse suivante:
+R nous donne la possibilité de choisir parmi un grand nombre de couleurs pour nos graphiques. On utilise l’argument `col = "nom_de_la_couleur"` pour préciser notre choix (en anglais: "blue", "red", etc.). La palette disponible est assez large. Les noms des couleurs possibles sont présentés dans le document _Colors_ in R à l’adresse suivante:
 
 - http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
 
@@ -280,7 +280,7 @@ Une façon plus avancée de choisir une palette de couleurs est d’utiliser la 
 #| echo: True
 #| eval: False
 #| comment: NA
-#Installer la librairie
+# Installer la librairie
 install.packages("RColorBrewer")
 ```
 
@@ -305,7 +305,7 @@ Utilisez `help(RColorBrewer)` pour en apprendre plus sur son utilisation.
 
 ### Les histogrammes
 
-Nous allons tester différentes modifications aux graphiques de base en utilisant le jeu de données `Loblolly`, qui est déjà pré-téléchargé dans la version de base de R. Celui-ci contient les données de taille (`height`, en pieds, une variable numérique) et d’âge (`age`, en années, une autre variable numérique) pour des pins (*Pinus taeda*) provenant de différents parents (`Seed`, une variable de type “facteur” où le chiffre représente la paire d’arbres parentaux).
+Nous allons tester différentes modifications aux graphiques de base en utilisant le jeu de données `Loblolly`, qui est déjà pré-téléchargé dans la version de base de R. Celui-ci contient les données de taille (`height`, en pieds, une variable numérique) et d’âge (`age`, en années, une autre variable numérique) pour des pins (_Pinus taeda_) provenant de différents parents (`Seed`, une variable de type “facteur” où le chiffre représente la paire d’arbres parentaux).
 
 On importe le jeu de données avec la fonction `data()`.
 
@@ -328,7 +328,7 @@ Nous allons créer un histogramme pour ensuite le modifier et illustrer les diff
 ```{r}
 #| echo: True
 #| eval: True
-#Construire un histogramme de base avec la taille des arbres
+# Construire un histogramme de base avec la taille des arbres
 hist(Loblolly$height)
 ```
 
@@ -345,10 +345,12 @@ Le titre de notre histogramme peut aussi être modifié avec le paramètre `main
 ```{r}
 #| echo: True
 #| eval: True
-hist(Loblolly$height,
-     xlab = "Taille en pieds",
-     ylab = "Fréquence",
-     main = "Distribution de fréquence des tailles de Pinus taeda")
+hist(
+  Loblolly$height,
+  xlab = "Taille en pieds",
+  ylab = "Fréquence",
+  main = "Distribution de fréquence des tailles de Pinus taeda"
+)
 ```
 
 On peut également ajouter un sous-titre avec le paramètre `sub`.
@@ -356,11 +358,13 @@ On peut également ajouter un sous-titre avec le paramètre `sub`.
 ```{r}
 #| echo: True
 #| eval: True
-hist(Loblolly$height,
-     xlab = "Taille en pieds",
-     ylab = "Fréquence",
-     main = "Distribution de fréquence des tailles de Pinus taeda",
-     sub = "Ceci est mon super sous-titre")
+hist(
+  Loblolly$height,
+  xlab = "Taille en pieds",
+  ylab = "Fréquence",
+  main = "Distribution de fréquence des tailles de Pinus taeda",
+  sub = "Ceci est mon super sous-titre"
+)
 ```
 
 On peut ajouter la distribution de chacune des valeurs du jeu de données pour cette variable avec la fonction `rug()` invoquée après avoir déjà créé l’histogramme.
@@ -368,22 +372,28 @@ On peut ajouter la distribution de chacune des valeurs du jeu de données pour c
 ```{r}
 #| echo: True
 #| eval: True
-hist(Loblolly$height,
-     xlab = "Taille en pieds",
-     ylab = "Fréquence",
-     main = "Distribution de fréquence des tailles de Pinus taeda")
+hist(
+  Loblolly$height,
+  xlab = "Taille en pieds",
+  ylab = "Fréquence",
+  main = "Distribution de fréquence des tailles de Pinus taeda"
+)
+
 rug(Loblolly$height)
 ```
 
-On peut finalement ajouter la valeur de la médiane à l’aide de la fonction `abline()`. On peut spécifier la valeur utilisée pour tracer la ligne verticale avec le paramètre `v`,  la couleur de la ligne verticale avec `col` et sa largeur avec `lwd`.
+On peut finalement ajouter la valeur de la médiane à l’aide de la fonction `abline()`. On peut spécifier la valeur utilisée pour tracer la ligne verticale avec le paramètre `v`, la couleur de la ligne verticale avec `col` et sa largeur avec `lwd`.
 
 ```{r}
 #| echo: True
 #| eval: True
-hist(Loblolly$height,
-     xlab = "Taille en pieds",
-     ylab = "Fréquence",
-     main = "Distribution de fréquence des tailles de Pinus taeda")
+hist(
+  Loblolly$height,
+  xlab = "Taille en pieds",
+  ylab = "Fréquence",
+  main = "Distribution de fréquence des tailles de Pinus taeda"
+)
+
 abline(v = median(Loblolly$height), col = "red", lwd = 4)
 ```
 
@@ -394,7 +404,7 @@ Comme nous l’avons vu précédemment, les graphiques en nuage de points peuven
 ```{r}
 #| echo: True
 #| eval: True
-#Graphique de la taille (axe des y) en fonction de l’âge (axe des x)
+# Graphique de la taille (axe des y) en fonction de l’âge (axe des x)
 plot(Loblolly$age, Loblolly$height)
 ```
 
@@ -403,7 +413,7 @@ C’est bien, mais pourrait-on modifier l’apparence du symbole des points? C�
 ```{r}
 #| echo: True
 #| eval: True
-#changer les symboles pour des symboles de cercle pleins noirs
+# changer les symboles pour des symboles de cercle pleins noirs
 plot(Loblolly$age, Loblolly$height, pch = 16)
 ```
 
@@ -460,7 +470,7 @@ Voici un graphique aide-mémoire pour vous aider avec les différents paramètre
 #| echo: False
 #| fig.align: 'center'
 
-#initialization
+# initialization
 par(mar = c(3, 3, 3, 3))
 num <- 0
 num1 <- 0
@@ -490,15 +500,20 @@ for (i in seq(1, 20)) {
 }
 
 # add axis
-axis(2,
-  at = c(1, 2, 3, 4, 5, 6), labels = c("pch", "col", "cex", "lty", "type", "lwd"),
-  tick = TRUE, col = "black", las = 1, cex.axis = 0.8
+axis(
+  2,
+  at = c(1, 2, 3, 4, 5, 6),
+  labels = c("pch", "col", "cex", "lty", "type", "lwd"),
+  tick = TRUE,
+  col = "black",
+  las = 1,
+  cex.axis = 0.8
 )
 ```
 
 ### Légendes
 
-Supposons ce graphique fait avec les données du *data frame* `mtcars`. La couleur des points est associée au nombre de cylindres du moteur (`cyl`).
+Supposons ce graphique fait avec les données du _data frame_ `mtcars`. La couleur des points est associée au nombre de cylindres du moteur (`cyl`).
 
 ```{r}
 #| echo: True
@@ -526,7 +541,7 @@ legend(
   horiz = TRUE, # On veut une légende horizontale
   pch = 16, # Symboles à utiliser dans la légende
   cex = 0.8 # Grosseur des symboles
-  )
+)
 ```
 
 ### Droite de régression
@@ -540,7 +555,7 @@ data(iris)
 plot(iris$Petal.Width, iris$Petal.Length)
 ```
 
-Pour ajouter une droite de régression, il faut d'abord faire un modèle linéaire à l'aide de la fonction `lm` (*linear model* en anglais). Lorsque le modèle est fait, on peut utiliser la fonction `abline(modele)` pour ajouter la droite de régression [^1].
+Pour ajouter une droite de régression, il faut d'abord faire un modèle linéaire à l'aide de la fonction `lm` (_linear model_ en anglais). Lorsque le modèle est fait, on peut utiliser la fonction `abline(modele)` pour ajouter la droite de régression [^1].
 
 [^1]: Voir la capsule statistique portant sur les modèles linéaire.
 
@@ -585,7 +600,7 @@ legend(
   lty = c(2, 1),
   horiz = TRUE,
   bty = "n"
-  )
+)
 ```
 
 ### Modification des axes
@@ -618,16 +633,16 @@ Dans l'exemple suivant, on créer un graphique avec 4 sous-graphiques et on ajou
 # Un graphique avec 4 panneaux (2 lignes * 2 colonnes)
 par(mfrow = c(2, 2), mar = c(5, 5, 0, 1))
 
-barplot(mtcars$mpg) #plot 1
+barplot(mtcars$mpg) # plot 1
 legend("topright", "A", bty = "n")
 
-plot(mtcars$hp, mtcars$mpg) #plot 2
+plot(mtcars$hp, mtcars$mpg) # plot 2
 legend("topright", "B", bty = "n")
 
-boxplot(mtcars$mpg ~ mtcars$cyl) #plot 3
+boxplot(mtcars$mpg ~ mtcars$cyl) # plot 3
 legend("topright", "C", bty = "n")
 
-hist(mtcars$hp, main = "") #plot 4
+hist(mtcars$hp, main = "") # plot 4
 legend("topright", "D", bty = "n")
 ```
 
@@ -640,10 +655,12 @@ En utilisant la fonction `bquote()` il est possible d'ajouter des symboles math�
 plot(
   1:10,
   1:10,
-  xlab = bquote(x ^ 2),
-  ylab = bquote("Primary production" ~ (mgC ~ m ^ {-1})),
+  xlab = bquote(x^2),
+  ylab = bquote("Primary production" ~ (mgC ~ m^{
+    -1
+  })),
   main = bquote(phi == 3 ~ beta == 5 ~ alpha == 0.4)
-  )
+)
 ```
 
 ### Téléchargement
