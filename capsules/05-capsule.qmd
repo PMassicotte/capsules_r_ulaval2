@@ -58,8 +58,16 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Garder une trace de ce qui a été fait.", "Assurer la reproductibilité de notre analyse."),
-  options = c("Garder une trace de ce qui a été fait.", "Assurer la reproductibilité de notre analyse.", "Sauvegarder des résultats d’analyses.", "Enregistrer des données à analyser."),
+  c(
+    "Garder une trace de ce qui a été fait.",
+    "Assurer la reproductibilité de notre analyse."
+  ),
+  options = c(
+    "Garder une trace de ce qui a été fait.",
+    "Assurer la reproductibilité de notre analyse.",
+    "Sauvegarder des résultats d’analyses.",
+    "Enregistrer des données à analyser."
+  ),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct !  L'utilité principale d'un script est la reproductibilité des analyses, mais ne se limite pas à ça! Il permet également d'organiser notre travail et de le commenter en détail.",
@@ -96,8 +104,16 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Pour le rendre plus clair.", "Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes."),
-  options = c("Pour le complexifier", "Pour le rendre plus clair.", "Pour que R comprenne exactement ce que l’on veut faire.", "Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes."),
+  c(
+    "Pour le rendre plus clair.",
+    "Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes."
+  ),
+  options = c(
+    "Pour le complexifier",
+    "Pour le rendre plus clair.",
+    "Pour que R comprenne exactement ce que l’on veut faire.",
+    "Justifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes."
+  ),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct !  Clarifier la lecture du code et justifier nos choix sont les deux raisons principales pour commenter notre code. On peut également en profiter pour donner des exemples et des références, entre autres.",
@@ -155,6 +171,28 @@ x <- rnorm(100)
 Calculer la moyenne du vecteur x
 mean(x)
 ```
+
+::: {.callout-tip collapse="true"}
+
+### Indice
+
+Le charactère `#` est utilisé pour commenter du code en R. Les ligne de texte qui suivent un `#` ne seront pas exécutées.
+:::
+
+::: {.callout-warning collapse="true"}
+
+### Solution
+
+```{r}
+#| echo: True
+# Générer 100 nombres aléatoirement
+x <- rnorm(100)
+
+# Calculer la moyenne du vecteur x
+mean(x)
+```
+
+:::
 
 ## Matériel accompagnateur
 
@@ -339,4 +377,3 @@ Pour télécharger le fichier localement sur votre ordinateur, tablette ou tél�
 
 - [Télécharger la documentation sous format PDF](www/capsule_5.pdf)
 - [Télécharger la documentation sous format HTML](www/capsule_5.html)
-
