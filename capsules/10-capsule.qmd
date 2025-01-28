@@ -24,8 +24,6 @@ Les méthodes utilisées dans ce script sont avancées, mais chacune peut être 
 
 {{< video https://youtu.be/E4R5Jh4L3wU >}}
 
-[Télécharger le script R de la vidéo](www/capsule_10.R) (Faire boutton droit -> enregistrer sous...)
-
 ## Exercices
 
 ::: {.callout-note}
@@ -401,17 +399,3 @@ Ce test, tout comme sa contrepartie paramétrique l'ANOVA, n'indique pas **quel(
 :::
 
 Si on veut poursuivre l'analyse, il faut alors faire des tests de comparaisons de moyenne deux à deux non-paramétriques de Wilcoxon avec une **correction de Bonferroni** (par example) de la valeur seuil alpha de rejet de l'hypothèse nulle pour éviter l'inflation de l'erreur de type I (voir capsule #8).
-
-### Téléchargement
-
-Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
-
-1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
-2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
-
-Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous...".
-
-Télécharger la documentation sous format PDF
-
-- [Télécharger la documentation sous format PDF](www/capsule_10.pdf)
-- [Télécharger la documentation sous format HTML](www/capsule_10.html)

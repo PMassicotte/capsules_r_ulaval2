@@ -22,8 +22,6 @@ library(checkdown)
 
 {{< video https://youtu.be/6g4hjo5C8ME >}}
 
-[Télécharger le script R de la vidéo](www/capsule_5.R) (Faire bouton droit -> enregistrer sous...)
-
 ## Exercices
 
 <small>
@@ -365,15 +363,3 @@ summary(res.anova)
 # Vérification visuelle des conditions d'application du test
 plot(res.anova)
 ```
-
-### Téléchargement
-
-Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
-
-1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
-2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
-
-Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous...".
-
-- [Télécharger la documentation sous format PDF](www/capsule_5.pdf)
-- [Télécharger la documentation sous format HTML](www/capsule_5.html)

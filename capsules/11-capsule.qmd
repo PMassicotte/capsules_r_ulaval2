@@ -25,8 +25,6 @@ Les méthodes utilisées dans ce script sont avancées, mais chacune peut être 
 
 {{< video https://youtu.be/yER43DrP4C4 >}}
 
-[Télécharger le script R de la vidéo](www/capsule_11.R) (Faire boutton droit -> enregistrer sous...)
-
 ## Exercices
 
 ::: {.callout-note}
@@ -698,17 +696,3 @@ lines(10^xint, pred1[, 2], lty = 2, lwd = 2, col = "red")
 lines(10^xint, pred1[, 3], lty = 2, lwd = 2, col = "red")
 legend("topleft", legend = "Intervalle de confiance à 95% de la\ndistribution des valeurs individuelles\nd'activité enzymatique", lty = 2, lwd = 2, col = "red", bty = "n")
 ```
-
-### Téléchargement
-
-Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:
-
-1. Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.
-2. Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).
-
-Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir "sauvegarder sous...".
-
-Télécharger la documentation sous format PDF
-
-- [Télécharger la documentation sous format PDF](www/capsule_11.pdf)
-- [Télécharger la documentation sous format HTML](www/capsule_11.html)
