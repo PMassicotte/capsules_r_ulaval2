@@ -4,10 +4,44 @@ title: Capsules R
 
 ## {{< fa chalkboard-user >}} [Capsule 1](01-capsule.qmd)
 
-Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu'est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l'installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l'installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.
+Introduction à R et RStudio, installation et mise à jour des librairies, et premiers pas avec l'interface de RStudio.
 
 ## {{< fa chalkboard-user >}} [Capsule 2](02-capsule.qmd)
 
-Les variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que `numeric`, `character`, `logic`, et `factor`, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction `c()`, permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D'autres classes d'objets, comme `data.frame`, `list`, `lm`, et `date`, sont également couramment utilisées pour des tâches plus complexes.
+Assignation de valeurs aux variables, nomenclature des variables, principales classes de variables, et conversion entre classes.
 
 ## {{< fa chalkboard-user >}} [Capsule 3](03-capsule.qmd)
+
+Comprendre le principe des fonctions dans R, structure des fonctions, utilisation des paramètres et de l'aide en ligne.
+
+## {{< fa chalkboard-user >}} [Capsule 4](04-capsule.qmd)
+
+Comprendre ce qu'est un bon jeu de données, lecture des fichiers .dat, .csv, .txt, utilisation des _data frames_, et exportation des données.
+
+## {{< fa chalkboard-user >}} [Capsule 5](05-capsule.qmd)
+
+Utilisation des scripts dans R, importance de la clarté, organisation et commentaires dans les scripts, et optimisation de l'interface RStudio.
+
+## {{< fa chalkboard-user >}} [Capsule 6](06-capsule.qmd)
+
+Exploration visuelle des données, types de graphiques les plus utilisés, et sauvegarde des graphiques.
+
+## {{< fa chalkboard-user >}} [Capsule 7](07-capsule.qmd)
+
+Personnalisation des graphiques avec des options courantes, ajout de couleurs, lignes, texte, légendes, et combinaison de graphiques.
+
+## {{< fa chalkboard-user >}} [Capsule 8](08-capsule.qmd)
+
+Réalisation de tests statistiques tels que le test de Student et l'ANOVA, et interprétation des résultats.
+
+## {{< fa chalkboard-user >}} [Capsule 9](09-capsule.qmd)
+
+Vérification des conditions d'application des tests statistiques, transformation des données, et utilisation de tests diagnostiques visuels.
+
+## {{< fa chalkboard-user >}} [Capsule 10](10-capsule.qmd)
+
+Compréhension et application des tests non-paramétriques pour la comparaison de moyennes.
+
+## {{< fa chalkboard-user >}} [Capsule 11](11-capsule.qmd)
+
+Introduction à la régression linéaire, utilisation de la fonction lm(), validation des résultats, et calcul des intervalles de confiance.
