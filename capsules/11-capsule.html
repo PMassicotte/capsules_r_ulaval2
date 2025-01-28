@@ -290,10 +290,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#analyse-de-régression-linéaire-simple" id="toc-analyse-de-régression-linéaire-simple" class="nav-link" data-scroll-target="#analyse-de-régression-linéaire-simple">Analyse de régression linéaire simple</a></li>
   <li><a href="#vérifier-a-posteriori-les-conditions-dapplication-de-lanalyse-de-régression-linéaire" id="toc-vérifier-a-posteriori-les-conditions-dapplication-de-lanalyse-de-régression-linéaire" class="nav-link" data-scroll-target="#vérifier-a-posteriori-les-conditions-dapplication-de-lanalyse-de-régression-linéaire">Vérifier <em>a posteriori</em> les conditions d’application de l’analyse de régression linéaire</a></li>
   <li><a href="#prédictions-grâce-à-la-régression-linéaire" id="toc-prédictions-grâce-à-la-régression-linéaire" class="nav-link" data-scroll-target="#prédictions-grâce-à-la-régression-linéaire">Prédictions grâce à la régression linéaire</a></li>
-  <li><a href="#téléchargement" id="toc-téléchargement" class="nav-link" data-scroll-target="#téléchargement">Téléchargement</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/PMassicotte/capsules_r_ulaval2/issues/new" class="toc-action"><i class="bi bi-github"></i>Faire part d'un problème</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/PMassicotte/capsules_r_ulaval2/issues/new" class="toc-action"><i class="bi bi-github"></i>Faire part d'un problème</a></li></ul></div><div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="11-capsule.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -331,7 +330,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="capsule-vidéo" class="level2">
 <h2 class="anchored" data-anchor-id="capsule-vidéo">Capsule vidéo</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/yER43DrP4C4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p><a href="www/capsule_11.R">Télécharger le script R de la vidéo</a> (Faire boutton droit -&gt; enregistrer sous…)</p>
 </section>
 <section id="exercices" class="level2">
 <h2 class="anchored" data-anchor-id="exercices">Exercices</h2>
@@ -354,25 +352,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_1118" onsubmit="return validate_form_1118()" method="post">
+<form name="form_83028" onsubmit="return validate_form_83028()" method="post">
 <fieldset>
 <legend>Choisissez la bonne définition concernant la régression linéaire simple :</legend>
-<input type="radio" name="answer_1118" id="answer_1118_1" value="(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une interaction entre deux variables numériques.">
+<input type="radio" name="answer_83028" id="answer_83028_1" value="(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une interaction entre deux variables numériques.">
 <label>(1) La régression est un test statistique permettant de vérifier l'existence et d’estimer la force d’une interaction entre deux variables numériques.</label>
 <br>
-<input type="radio" name="answer_1118" id="answer_1118_2" value="(2) La régression est un test statistique permettant de vérifier l’existence d’une relation linéaire entre deux variables numériques.">
+<input type="radio" name="answer_83028" id="answer_83028_2" value="(2) La régression est un test statistique permettant de vérifier l’existence d’une relation linéaire entre deux variables numériques.">
 <label>(2) La régression est un test statistique permettant de vérifier l’existence d’une relation linéaire entre deux variables numériques.</label>
 <br>
-<input type="radio" name="answer_1118" id="answer_1118_3" value="(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci.">
+<input type="radio" name="answer_83028" id="answer_83028_3" value="(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci.">
 <label>(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_1118"></div>
+<div id="result_83028"></div>
 </fieldset>
 </form>
-<script>function validate_form_1118() {var x, text; var x = document.forms['form_1118']['answer_1118'].value;if (x == '(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci.'){text = '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.';} else {text = '❌ Incorrect. (1) Cette définition fait plutôt référence à la Corrélation, puisqu’elle ne mentionne pas de relation de causalité (variables réponse et explicative). (2) Il s’agit plutôt d’une condition d’application préalable pour la régression linéaire simple. Il est vrai que lors d’une régression, on teste la significativité de la pente de la droite (est-elle différente de 0 ?).';} document.getElementById('result_1118').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_83028() {var x, text; var x = document.forms['form_83028']['answer_83028'].value;if (x == '(3) La régression est une méthode statistique utilisée pour prédire la valeur moyenne d’une variable numérique Y (réponse) à une variable numérique X (explicative) à l’intérieur des limites observées pour celle-ci.'){text = '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.';} else {text = '❌ Incorrect. (1) Cette définition fait plutôt référence à la Corrélation, puisqu’elle ne mentionne pas de relation de causalité (variables réponse et explicative). (2) Il s’agit plutôt d’une condition d’application préalable pour la régression linéaire simple. Il est vrai que lors d’une régression, on teste la significativité de la pente de la droite (est-elle différente de 0 ?).';} document.getElementById('result_83028').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -384,28 +382,28 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_57042" onsubmit="return validate_form_57042()" method="post">
+<form name="form_61033" onsubmit="return validate_form_61033()" method="post">
 <fieldset>
 <legend>Choisissez l’affirmation FAUSSE concernant la régression linéaire simple</legend>
-<input type="radio" name="answer_57042" id="answer_57042_1" value="Une régression linéaire calcule l’équation d’une droite à travers un nuage de points dont les coordonnées sont les valeurs de la variable explicative en X et de la variable réponse en Y.">
+<input type="radio" name="answer_61033" id="answer_61033_1" value="Une régression linéaire calcule l’équation d’une droite à travers un nuage de points dont les coordonnées sont les valeurs de la variable explicative en X et de la variable réponse en Y.">
 <label>Une régression linéaire calcule l’équation d’une droite à travers un nuage de points dont les coordonnées sont les valeurs de la variable explicative en X et de la variable réponse en Y.</label>
 <br>
-<input type="radio" name="answer_57042" id="answer_57042_2" value="On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.">
+<input type="radio" name="answer_61033" id="answer_61033_2" value="On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.">
 <label>On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.</label>
 <br>
-<input type="radio" name="answer_57042" id="answer_57042_3" value="Les résidus représentent la différence entre la prédiction faite par la droite et les valeurs observées en Y.">
+<input type="radio" name="answer_61033" id="answer_61033_3" value="Les résidus représentent la différence entre la prédiction faite par la droite et les valeurs observées en Y.">
 <label>Les résidus représentent la différence entre la prédiction faite par la droite et les valeurs observées en Y.</label>
 <br>
-<input type="radio" name="answer_57042" id="answer_57042_4" value="L’intervalle de confiance calculé autour de l’estimé de la pente de la droite de régression est basé sur une distribution de Student (t).">
+<input type="radio" name="answer_61033" id="answer_61033_4" value="L’intervalle de confiance calculé autour de l’estimé de la pente de la droite de régression est basé sur une distribution de Student (t).">
 <label>L’intervalle de confiance calculé autour de l’estimé de la pente de la droite de régression est basé sur une distribution de Student (t).</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_57042"></div>
+<div id="result_61033"></div>
 </fieldset>
 </form>
-<script>function validate_form_57042() {var x, text; var x = document.forms['form_57042']['answer_57042'].value;if (x == 'On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.'){text = '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.';} else {text = '❌ Incorrect. La méthode de la régression linéaire permet d’estimer les paramètres d’une droite décrivant mathématiquement la relation entre ces 2 variables quantitatives. L’équation de la droite de régression est celle qui minimise la somme des carrés des résidus. Chaque paramètre de l’équation de la droite est calculé avec un intervalle de confiance, et donc la valeur moyenne prédite aussi.';} document.getElementById('result_57042').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_61033() {var x, text; var x = document.forms['form_61033']['answer_61033'].value;if (x == 'On calcule l’équation de la droite de régression en maximisant la somme des carrés des écarts entre la prédiction faite par la droite et les valeurs observées en Y.'){text = '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.';} else {text = '❌ Incorrect. La méthode de la régression linéaire permet d’estimer les paramètres d’une droite décrivant mathématiquement la relation entre ces 2 variables quantitatives. L’équation de la droite de régression est celle qui minimise la somme des carrés des résidus. Chaque paramètre de l’équation de la droite est calculé avec un intervalle de confiance, et donc la valeur moyenne prédite aussi.';} document.getElementById('result_61033').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -417,25 +415,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_29286" onsubmit="return validate_form_29286()" method="post">
+<form name="form_54015" onsubmit="return validate_form_54015()" method="post">
 <fieldset>
 <legend>Choisissez l’affirmation VRAIE concernant la valeur de R2 associée à la régression linéaire :</legend>
-<input type="radio" name="answer_29286" id="answer_29286_1" value="La valeur de R2 est la pente de la droite de régression.">
+<input type="radio" name="answer_54015" id="answer_54015_1" value="La valeur de R2 est la pente de la droite de régression.">
 <label>La valeur de R2 est la pente de la droite de régression.</label>
 <br>
-<input type="radio" name="answer_29286" id="answer_29286_2" value="La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.">
+<input type="radio" name="answer_54015" id="answer_54015_2" value="La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.">
 <label>La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.</label>
 <br>
-<input type="radio" name="answer_29286" id="answer_29286_3" value="La valeur de R2 permet de rejeter (ou non) l’hypothèse nulle qu’il n’y a pas de relation entre les variables réponse et explicative.">
+<input type="radio" name="answer_54015" id="answer_54015_3" value="La valeur de R2 permet de rejeter (ou non) l’hypothèse nulle qu’il n’y a pas de relation entre les variables réponse et explicative.">
 <label>La valeur de R2 permet de rejeter (ou non) l’hypothèse nulle qu’il n’y a pas de relation entre les variables réponse et explicative.</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_29286"></div>
+<div id="result_54015"></div>
 </fieldset>
 </form>
-<script>function validate_form_29286() {var x, text; var x = document.forms['form_29286']['answer_29286'].value;if (x == 'La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.'){text = '✅ Correct !';} else {text = '❌ Incorrect. La valeur de R2 vous renseigne sur la capacité de la régression à expliquer la variabilité de observations. La troisième solution est la définition correspondant à la p-value du test de significativité de la pente de la droite, qui permet de rejeter (ou non) l’hypothèse nulle que la pente n’est pas différente de 0 (pas de relation entre les variables).';} document.getElementById('result_29286').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_54015() {var x, text; var x = document.forms['form_54015']['answer_54015'].value;if (x == 'La valeur de R2 mesure la proportion de variance des observations qui est expliquée par la relation avec la variable explicative à travers la droite de régression.'){text = '✅ Correct !';} else {text = '❌ Incorrect. La valeur de R2 vous renseigne sur la capacité de la régression à expliquer la variabilité de observations. La troisième solution est la définition correspondant à la p-value du test de significativité de la pente de la droite, qui permet de rejeter (ou non) l’hypothèse nulle que la pente n’est pas différente de 0 (pas de relation entre les variables).';} document.getElementById('result_54015').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -449,25 +447,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_64280" onsubmit="return validate_form_64280()" method="post">
+<form name="form_44957" onsubmit="return validate_form_44957()" method="post">
 <fieldset>
 <legend>Quel graphique démontre un problème d’hétéroscédasticité (la variance de la variable réponse augmente avec la valeur de la variable explicative)?</legend>
-<input type="radio" name="answer_64280" id="answer_64280_1" value="A">
+<input type="radio" name="answer_44957" id="answer_44957_1" value="A">
 <label>A</label>
 <br>
-<input type="radio" name="answer_64280" id="answer_64280_2" value="B">
+<input type="radio" name="answer_44957" id="answer_44957_2" value="B">
 <label>B</label>
 <br>
-<input type="radio" name="answer_64280" id="answer_64280_3" value="C">
+<input type="radio" name="answer_44957" id="answer_44957_3" value="C">
 <label>C</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_64280"></div>
+<div id="result_44957"></div>
 </fieldset>
 </form>
-<script>function validate_form_64280() {var x, text; var x = document.forms['form_64280']['answer_64280'].value;if (x == 'A'){text = '✅ Correct !';} else {text = '❌ Réessayez!';} document.getElementById('result_64280').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_44957() {var x, text; var x = document.forms['form_44957']['answer_44957'].value;if (x == 'A'){text = '✅ Correct !';} else {text = '❌ Réessayez!';} document.getElementById('result_44957').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -479,25 +477,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_52549" onsubmit="return validate_form_52549()" method="post">
+<form name="form_44676" onsubmit="return validate_form_44676()" method="post">
 <fieldset>
 <legend>Quel graphique démontre l’absence de relation linéaire?</legend>
-<input type="radio" name="answer_52549" id="answer_52549_1" value="A">
+<input type="radio" name="answer_44676" id="answer_44676_1" value="A">
 <label>A</label>
 <br>
-<input type="radio" name="answer_52549" id="answer_52549_2" value="B">
+<input type="radio" name="answer_44676" id="answer_44676_2" value="B">
 <label>B</label>
 <br>
-<input type="radio" name="answer_52549" id="answer_52549_3" value="C">
+<input type="radio" name="answer_44676" id="answer_44676_3" value="C">
 <label>C</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_52549"></div>
+<div id="result_44676"></div>
 </fieldset>
 </form>
-<script>function validate_form_52549() {var x, text; var x = document.forms['form_52549']['answer_52549'].value;if (x == 'B'){text = '✅ Correct !';} else {text = '❌ Réessayez!';} document.getElementById('result_52549').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_44676() {var x, text; var x = document.forms['form_44676']['answer_44676'].value;if (x == 'B'){text = '✅ Correct !';} else {text = '❌ Réessayez!';} document.getElementById('result_44676').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -509,25 +507,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_59445" onsubmit="return validate_form_59445()" method="post">
+<form name="form_4997" onsubmit="return validate_form_4997()" method="post">
 <fieldset>
 <legend>Quel graphique démontre un problème avec des valeurs extrêmes (<em>outliers</em>) qui vont influencer fortement la régression linéaire?</legend>
-<input type="radio" name="answer_59445" id="answer_59445_1" value="A">
+<input type="radio" name="answer_4997" id="answer_4997_1" value="A">
 <label>A</label>
 <br>
-<input type="radio" name="answer_59445" id="answer_59445_2" value="B">
+<input type="radio" name="answer_4997" id="answer_4997_2" value="B">
 <label>B</label>
 <br>
-<input type="radio" name="answer_59445" id="answer_59445_3" value="C">
+<input type="radio" name="answer_4997" id="answer_4997_3" value="C">
 <label>C</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_59445"></div>
+<div id="result_4997"></div>
 </fieldset>
 </form>
-<script>function validate_form_59445() {var x, text; var x = document.forms['form_59445']['answer_59445'].value;if (x == 'C'){text = '✅ Correct !';} else {text = '❌ Réessayez!';} document.getElementById('result_59445').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_4997() {var x, text; var x = document.forms['form_4997']['answer_4997'].value;if (x == 'C'){text = '✅ Correct !';} else {text = '❌ Réessayez!';} document.getElementById('result_4997').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !';text = res1 + res2 + res3 + res4 + res5 + res6;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -555,25 +553,25 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_14947" onsubmit="return validate_form_14947()" method="post">
+<form name="form_3514" onsubmit="return validate_form_3514()" method="post">
 <fieldset>
 <legend>Après avoir observé le graphique, choisissez dans la liste ci-dessous TOUTES les caractéristiques de vos données qui vous permettent de penser que ce soit possible :</legend>
-<input type="checkbox" id="answer_14947_1" value="Il existe une relation linéaire entre les variables.">
+<input type="checkbox" id="answer_3514_1" value="Il existe une relation linéaire entre les variables.">
 <label>Il existe une relation linéaire entre les variables.</label>
 <br>
-<input type="checkbox" id="answer_14947_2" value="Il est logique que la consommation d’essence dépende de la masse du véhicule à déplacer.">
+<input type="checkbox" id="answer_3514_2" value="Il est logique que la consommation d’essence dépende de la masse du véhicule à déplacer.">
 <label>Il est logique que la consommation d’essence dépende de la masse du véhicule à déplacer.</label>
 <br>
-<input type="checkbox" id="answer_14947_3" value="Il s’agit de deux variables numériques quantitatives">
+<input type="checkbox" id="answer_3514_3" value="Il s’agit de deux variables numériques quantitatives">
 <label>Il s’agit de deux variables numériques quantitatives</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_14947"></div>
+<div id="result_3514"></div>
 </fieldset>
 </form>
-<script>function validate_form_14947() {var text; var x1 = document.getElementById('answer_14947_1'); var x2 = document.getElementById('answer_14947_2'); var x3 = document.getElementById('answer_14947_3'); if (x1.checked == true&x2.checked == true&x3.checked == true){text = '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.';} else {text = '❌ Réessayez!';} document.getElementById('result_14947').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_3514() {var text; var x1 = document.getElementById('answer_3514_1'); var x2 = document.getElementById('answer_3514_2'); var x3 = document.getElementById('answer_3514_3'); if (x1.checked == true&x2.checked == true&x3.checked == true){text = '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.';} else {text = '❌ Réessayez!';} document.getElementById('result_3514').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -596,22 +594,22 @@ eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiJ9
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_9813" onsubmit="return validate_form_9813()" method="post">
+<form name="form_6476" onsubmit="return validate_form_6476()" method="post">
 <fieldset>
 <legend>Est-ce que la masse suit une loi Normale?</legend>
-<input type="radio" name="answer_9813" id="answer_9813_1" value="Oui">
+<input type="radio" name="answer_6476" id="answer_6476_1" value="Oui">
 <label>Oui</label>
 <br>
-<input type="radio" name="answer_9813" id="answer_9813_2" value="Non">
+<input type="radio" name="answer_6476" id="answer_6476_2" value="Non">
 <label>Non</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_9813"></div>
+<div id="result_6476"></div>
 </fieldset>
 </form>
-<script>function validate_form_9813() {var x, text; var x = document.forms['form_9813']['answer_9813'].value;if (x == 'Oui'){text = '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';} else {text = '❌ Incorrect.';} document.getElementById('result_9813').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_6476() {var x, text; var x = document.forms['form_6476']['answer_6476'].value;if (x == 'Oui'){text = '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';} else {text = '❌ Incorrect.';} document.getElementById('result_6476').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -623,22 +621,22 @@ eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiJ9
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_11155" onsubmit="return validate_form_11155()" method="post">
+<form name="form_68425" onsubmit="return validate_form_68425()" method="post">
 <fieldset>
 <legend>Est-ce que le milage suit une loi Normale?</legend>
-<input type="radio" name="answer_11155" id="answer_11155_1" value="Oui">
+<input type="radio" name="answer_68425" id="answer_68425_1" value="Oui">
 <label>Oui</label>
 <br>
-<input type="radio" name="answer_11155" id="answer_11155_2" value="Non">
+<input type="radio" name="answer_68425" id="answer_68425_2" value="Non">
 <label>Non</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_11155"></div>
+<div id="result_68425"></div>
 </fieldset>
 </form>
-<script>function validate_form_11155() {var x, text; var x = document.forms['form_11155']['answer_11155'].value;if (x == 'Oui'){text = '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';} else {text = '❌ Incorrect.';} document.getElementById('result_11155').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_68425() {var x, text; var x = document.forms['form_68425']['answer_68425'].value;if (x == 'Oui'){text = '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';} else {text = '❌ Incorrect.';} document.getElementById('result_68425').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_11155').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_68425').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -688,25 +686,25 @@ Coefficients:
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_70855" onsubmit="return validate_form_70855()" method="post">
+<form name="form_61744" onsubmit="return validate_form_61744()" method="post">
 <fieldset>
 <legend>À partir des résultats de la régression, indiquez combien de “miles par gallon” sont perdus pour chaque 1000 lbs supplémentaire au véhicule.</legend>
-<input type="radio" name="answer_70855" id="answer_70855_1" value="Environ -12">
+<input type="radio" name="answer_61744" id="answer_61744_1" value="Environ -12">
 <label>Environ -12</label>
 <br>
-<input type="radio" name="answer_70855" id="answer_70855_2" value="Environ -5">
+<input type="radio" name="answer_61744" id="answer_61744_2" value="Environ -5">
 <label>Environ -5</label>
 <br>
-<input type="radio" name="answer_70855" id="answer_70855_3" value="Environ -8">
+<input type="radio" name="answer_61744" id="answer_61744_3" value="Environ -8">
 <label>Environ -8</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_70855"></div>
+<div id="result_61744"></div>
 </fieldset>
 </form>
-<script>function validate_form_70855() {var x, text; var x = document.forms['form_70855']['answer_70855'].value;if (x == 'Environ -5'){text = '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.';} else {text = '❌ Incorrect.';} document.getElementById('result_70855').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_61744() {var x, text; var x = document.forms['form_61744']['answer_61744'].value;if (x == 'Environ -5'){text = '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.';} else {text = '❌ Incorrect.';} document.getElementById('result_61744').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_11155').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_70855').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_68425').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_61744').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -718,25 +716,25 @@ Coefficients:
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_50180" onsubmit="return validate_form_50180()" method="post">
+<form name="form_92934" onsubmit="return validate_form_92934()" method="post">
 <fieldset>
 <legend>À partir des résultats de la régression, indiquez quelle serait la masse prévue par la régression linéaire pour qu’une automobile n’avance plus !</legend>
-<input type="radio" name="answer_50180" id="answer_50180_1" value="Environ 52">
+<input type="radio" name="answer_92934" id="answer_92934_1" value="Environ 52">
 <label>Environ 52</label>
 <br>
-<input type="radio" name="answer_50180" id="answer_50180_2" value="Environ 37">
+<input type="radio" name="answer_92934" id="answer_92934_2" value="Environ 37">
 <label>Environ 37</label>
 <br>
-<input type="radio" name="answer_50180" id="answer_50180_3" value="Environ 23">
+<input type="radio" name="answer_92934" id="answer_92934_3" value="Environ 23">
 <label>Environ 23</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_50180"></div>
+<div id="result_92934"></div>
 </fieldset>
 </form>
-<script>function validate_form_50180() {var x, text; var x = document.forms['form_50180']['answer_50180'].value;if (x == 'Environ 37'){text = '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.';} else {text = '❌ Incorrect.';} document.getElementById('result_50180').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_92934() {var x, text; var x = document.forms['form_92934']['answer_92934'].value;if (x == 'Environ 37'){text = '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.';} else {text = '❌ Incorrect.';} document.getElementById('result_92934').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_11155').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_70855').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_50180').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_68425').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_61744').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_92934').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -748,25 +746,25 @@ Coefficients:
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_59867" onsubmit="return validate_form_59867()" method="post">
+<form name="form_75610" onsubmit="return validate_form_75610()" method="post">
 <fieldset>
 <legend>À partir des résultats de la régression, indiquez la proportion de variabilité dans les valeurs de milage expliquée par la masse des véhicules.</legend>
-<input type="radio" name="answer_59867" id="answer_59867_1" value="Environ 58">
+<input type="radio" name="answer_75610" id="answer_75610_1" value="Environ 58">
 <label>Environ 58</label>
 <br>
-<input type="radio" name="answer_59867" id="answer_59867_2" value="Environ 75%">
+<input type="radio" name="answer_75610" id="answer_75610_2" value="Environ 75%">
 <label>Environ 75%</label>
 <br>
-<input type="radio" name="answer_59867" id="answer_59867_3" value="Environ 89">
+<input type="radio" name="answer_75610" id="answer_75610_3" value="Environ 89">
 <label>Environ 89</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_59867"></div>
+<div id="result_75610"></div>
 </fieldset>
 </form>
-<script>function validate_form_59867() {var x, text; var x = document.forms['form_59867']['answer_59867'].value;if (x == 'Environ 75%'){text = '✅ Correct ! Il s’agit du coefficient de régression R2.';} else {text = '❌ Incorrect.';} document.getElementById('result_59867').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_75610() {var x, text; var x = document.forms['form_75610']['answer_75610'].value;if (x == 'Environ 75%'){text = '✅ Correct ! Il s’agit du coefficient de régression R2.';} else {text = '❌ Incorrect.';} document.getElementById('result_75610').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_11155').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_70855').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_50180').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.'; res12 = document.getElementById('result_59867').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_68425').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_61744').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_92934').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.'; res12 = document.getElementById('result_75610').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -778,25 +776,25 @@ Coefficients:
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_69657" onsubmit="return validate_form_69657()" method="post">
+<form name="form_40071" onsubmit="return validate_form_40071()" method="post">
 <fieldset>
 <legend>À partir des résultats de la régression, donnez l’intervalle de confiance à 95% des valeurs de milage attendues pour un véhicule de 1973-1974 pesant 4750 lbs avec la fonction <code>predict()</code>.</legend>
-<input type="radio" name="answer_69657" id="answer_69657_1" value="Environ 58">
+<input type="radio" name="answer_40071" id="answer_40071_1" value="Environ 58">
 <label>Environ 58</label>
 <br>
-<input type="radio" name="answer_69657" id="answer_69657_2" value="Environ 75%">
+<input type="radio" name="answer_40071" id="answer_40071_2" value="Environ 75%">
 <label>Environ 75%</label>
 <br>
-<input type="radio" name="answer_69657" id="answer_69657_3" value="Environ 89">
+<input type="radio" name="answer_40071" id="answer_40071_3" value="Environ 89">
 <label>Environ 89</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_69657"></div>
+<div id="result_40071"></div>
 </fieldset>
 </form>
-<script>function validate_form_69657() {var x, text; var x = document.forms['form_69657']['answer_69657'].value;if (x == 'Environ 75%'){text = '✅ Correct ! Il s’agit du coefficient de régression R2.';} else {text = '❌ Incorrect.';} document.getElementById('result_69657').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_40071() {var x, text; var x = document.forms['form_40071']['answer_40071'].value;if (x == 'Environ 75%'){text = '✅ Correct ! Il s’agit du coefficient de régression R2.';} else {text = '❌ Incorrect.';} document.getElementById('result_40071').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12, res13;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_11155').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_70855').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_50180').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.'; res12 = document.getElementById('result_59867').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.'; res13 = document.getElementById('result_69657').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12 + res13;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12, res13;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_68425').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_61744').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_92934').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.'; res12 = document.getElementById('result_75610').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.'; res13 = document.getElementById('result_40071').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12 + res13;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -835,25 +833,25 @@ Indice
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<form name="form_11336" onsubmit="return validate_form_11336()" method="post">
+<form name="form_76174" onsubmit="return validate_form_76174()" method="post">
 <fieldset>
 <legend>Quelle est l’intervalle de confiance à 95% des valeurs de milage attendues pour un véhicule de 1973-74 pesant 4750 lbs?</legend>
-<input type="radio" name="answer_11336" id="answer_11336_1" value="Environ 10-12">
+<input type="radio" name="answer_76174" id="answer_76174_1" value="Environ 10-12">
 <label>Environ 10-12</label>
 <br>
-<input type="radio" name="answer_11336" id="answer_11336_2" value="Environ 9-14">
+<input type="radio" name="answer_76174" id="answer_76174_2" value="Environ 9-14">
 <label>Environ 9-14</label>
 <br>
-<input type="radio" name="answer_11336" id="answer_11336_3" value="Environ 15-18">
+<input type="radio" name="answer_76174" id="answer_76174_3" value="Environ 15-18">
 <label>Environ 15-18</label>
 <br>
 <input type="submit" value="Vérifier">
-<div id="result_11336"></div>
+<div id="result_76174"></div>
 </fieldset>
 </form>
-<script>function validate_form_11336() {var x, text; var x = document.forms['form_11336']['answer_11336'].value;if (x == 'Environ 9-14'){text = '✅ Correct ! C’est l’intervalle de confiance à 95%.';} else {text = '❌ Incorrect.';} document.getElementById('result_11336').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_76174() {var x, text; var x = document.forms['form_76174']['answer_76174'].value;if (x == 'Environ 9-14'){text = '✅ Correct ! C’est l’intervalle de confiance à 95%.';} else {text = '❌ Incorrect.';} document.getElementById('result_76174').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12, res13, res14;res1 = document.getElementById('result_1118').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_57042').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_29286').innerText == '✅ Correct !'; res4 = document.getElementById('result_64280').innerText == '✅ Correct !'; res5 = document.getElementById('result_52549').innerText == '✅ Correct !'; res6 = document.getElementById('result_59445').innerText == '✅ Correct !'; res7 = document.getElementById('result_14947').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_9813').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_11155').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_70855').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_50180').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.'; res12 = document.getElementById('result_59867').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.'; res13 = document.getElementById('result_69657').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.'; res14 = document.getElementById('result_11336').innerText == '✅ Correct ! C’est l’intervalle de confiance à 95%.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12 + res13 + res14;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3, res4, res5, res6, res7, res8, res9, res10, res11, res12, res13, res14;res1 = document.getElementById('result_83028').innerText == '✅ Correct ! (3) Si ses conditions d’application sont respectées, la régression linéaire simple permet en effet d’estimer la valeur moyenne que devrait prendre une variable réponse Y à une variable explicative X. La dernière partie de la définition est importante ici : l’estimation est valable seulement pour des valeurs de X comprise à l’intérieur des limites existantes, c’est à dire pour faire de l’interpolation, et non pas de l’extrapolation.'; res2 = document.getElementById('result_61033').innerText == '✅ Correct ! C’est le contraire, l’équation de la droite de régression minimise les écarts entre sa prédiction et les observations.'; res3 = document.getElementById('result_54015').innerText == '✅ Correct !'; res4 = document.getElementById('result_44957').innerText == '✅ Correct !'; res5 = document.getElementById('result_44676').innerText == '✅ Correct !'; res6 = document.getElementById('result_4997').innerText == '✅ Correct !'; res7 = document.getElementById('result_3514').innerText == '✅ Correct ! Vous devez constater toutes ces caractéristiques pour aller de l’avant avec votre analyse de régression linéaire simple.'; res8 = document.getElementById('result_6476').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res9 = document.getElementById('result_68425').innerText == '✅ Correct ! Cette distribution est unimodale, plutôt symétrique, sans valeurs extrêmes… on peut dire qu’elle respecte les conditions de normalité. Un test formel de normalité de Shapiro (shapiro.test()) ne permet pas de rejeter l’hypothèse nulle que la distribution est normalement distribuée.'; res10 = document.getElementById('result_61744').innerText == '✅ Correct ! Il s’agit de l’estimé de la pente de la droite de régression.'; res11 = document.getElementById('result_92934').innerText == '✅ Correct ! Il s’agit de l’ordonnée à l’origine de la droite de régression.'; res12 = document.getElementById('result_75610').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.'; res13 = document.getElementById('result_40071').innerText == '✅ Correct ! Il s’agit du coefficient de régression R2.'; res14 = document.getElementById('result_76174').innerText == '✅ Correct ! C’est l’intervalle de confiance à 95%.';text = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8 + res9 + res10 + res11 + res12 + res13 + res14;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -926,8 +924,8 @@ Important
 <p>Nous pouvons illustrer ce principe avec le graphique ci-dessous :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Regression_lineaire_ordonnees.svg" class="img-fluid figure-img"></p>
-<figcaption><em>Fig. 2. Illustration de la droite des moindres carrés dont les coordonnées correspondent aux coefficients de la régression linéaire entre les variables explicative (x) et réponse (y)</em></figcaption>
+<p><img src="../images/regression.png" class="img-fluid figure-img"></p>
+<figcaption><em>Fig. 2. Illustration de la droite des moindres carrés dont les coordonnées correspondent aux coefficients de la régression linéaire entre les variables explicative (x) et réponse (y).</em> Image de Wikipedia.</figcaption>
 </figure>
 </div>
 <p>Ici la <strong>droite des moindres carrés</strong> (en bleu) est celle qui <strong>minimise les résidus</strong> (en vert), c’est-à-dire la différence entre les observations (en rouge) et la valeur prédite par la droite de régression (en bleu). La méthode mathématique minimise la <strong>somme des carrés des écarts (résidus)</strong>, qu’on appelle aussi <strong>l’erreur</strong>.</p>
@@ -1262,20 +1260,6 @@ Avertissement
 </div>
 </div>
 </div>
-</section>
-<section id="téléchargement" class="level3">
-<h3 class="anchored" data-anchor-id="téléchargement">Téléchargement</h3>
-<p>Le matériel pédagogique utilisé dans cette capsule est disponible pour le téléchargement sous deux formats différents:</p>
-<ol type="1">
-<li>Format PDF standard que vous pouvez consulter et commenter avec Adobe Reader par exemple.</li>
-<li>Format HTML dynamique qui se comporte comme une page web et doit être lu avec votre navigateur préféré (Chrome, Firefox, Edge, Safari, etc.).</li>
-</ol>
-<p>Pour télécharger le fichier localement sur votre ordinateur, tablette ou téléphone portable, il suffit de cliquer sur le lien désiré avec le bouton droit de votre souris et choisir “sauvegarder sous…”.</p>
-<p>Télécharger la documentation sous format PDF</p>
-<ul>
-<li><a href="www/capsule_11.pdf">Télécharger la documentation sous format PDF</a></li>
-<li><a href="www/capsule_11.html">Télécharger la documentation sous format HTML</a></li>
-</ul>
 
 
 <script type="webr-data">
