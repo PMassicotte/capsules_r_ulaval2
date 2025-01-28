@@ -63,8 +63,8 @@ website:
             file: capsules/07-capsule.qmd
           - text: "Capsule 8"
             file: capsules/08-capsule.qmd
-          # - text: "Capsule 9"
-          #   file: capsules/09-capsule.qmd
+          - text: "Capsule 9"
+            file: capsules/09-capsule.qmd
           - text: "Capsule 10"
             file: capsules/10-capsule.qmd
           - text: "Capsule 11"
