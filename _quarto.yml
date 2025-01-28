@@ -12,33 +12,22 @@ format:
 website:
   page-navigation: true
   title: "Capsule R ULAVAL"
+  repo-url: https://github.com/PMassicotte/capsules_r_ulaval2
+  repo-actions: [issue]
   navbar:
     right:
       - href: index.qmd
         text: Accueil
       - text: "Capsules"
         file: capsules/index.qmd
-      - icon: slack
-        href: "TODO"
-        aria-label: "TODO"
       - icon: github
-        href: "TODO"
+        href: "https://github.com/PMassicotte/capsules_r_ulaval2"
         aria-label: "GitHub"
 
   sidebar:
     logo: "https://natalierousseau.ca/wp-content/uploads/2018/03/logo-ulaval-reseaux-sociaux.jpg"
     pinned: true
     align: center
-    # tools:
-    #   # https://icons.getbootstrap.com/
-    #   - icon: "browser-firefox"
-    #     href: https://www.ulaval.ca/
-    #     text: "Site de l'Université Laval"
-    #   - icon: "globe"
-    #     href: https://www.ulaval.ca/
-    #   - icon: "envelope-at"
-    #     href: https://www.ulaval.ca/
-    #     text: "Site de l'Université Laval"
     style: "docked"
     search: true
     contents:
