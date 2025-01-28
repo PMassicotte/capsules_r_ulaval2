@@ -54,8 +54,8 @@ check_question(
   ),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Correct!**",
-  wrong = "Vous êtes proche! Les fonctions ont rarement un nom en français.",
+  right = "✅ Correct !",
+  wrong = "❌ Incorrect. Mais vous êtes proche! Les fonctions ont rarement un nom en français.",
   title = "Quelle fonction devriez-vous utiliser pour calculer la moyenne des valeurs du vecteur suivant `x <- c(1, 2, 3)`"
 )
 ```
@@ -104,8 +104,8 @@ check_question(
   ),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Correct!** `x` est un paramètre obligatoire de la fonction `mean()` puisque que ce paramètre ne possède pas de valeur par défaut.",
-  wrong = "Le paramètre `trim` à une valeur par défaut égale à `0`. Il n'est pas obligatoire de lui spécifier une valeur. Le paramètre `na.rm` à une valeur par défaut égale à `FALSE`. Il n'est pas obligatoire de lui spécifier une valeur.",
+  right = "✅ Correct !  `x` est un paramètre obligatoire de la fonction `mean()` puisque que ce paramètre ne possède pas de valeur par défaut.",
+  wrong = "❌ Incorrect. Le paramètre `trim` à une valeur par défaut égale à `0`. Il n'est pas obligatoire de lui spécifier une valeur. Le paramètre `na.rm` à une valeur par défaut égale à `FALSE`. Il n'est pas obligatoire de lui spécifier une valeur.",
   title = "Indiquez les paramètres que l'utilisateur doit obligatoirement fournir à la fonction."
 )
 ```
@@ -127,8 +127,8 @@ check_question(
   ),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Correct!** La valeur par défaut est `FALSE` et il serait possible de la changer pour la valeur `TRUE` si l'on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.",
-  wrong = "Incorrect! Utilisez l'aide pour vérifier quelle est la valeur par défaut du paramètre `na.rm`.",
+  right = "✅ Correct !  La valeur par défaut est `FALSE` et il serait possible de la changer pour la valeur `TRUE` si l'on souhaite supprimer les valeurs manquantes avant de faire le calcul de la moyenne.",
+  wrong = "❌ Incorrect.  Utilisez l'aide pour vérifier quelle est la valeur par défaut du paramètre `na.rm`.",
   title = "Valeur par défaut de `na.rm`"
 )
 ```
@@ -165,7 +165,7 @@ check_question(
   ),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "**Correct!** `rnorm(100, 50, 2)` est équivalent à `rnorm(n = 100, mean = 50, sd = 2)`.",
+  right = "✅ Correct !  `rnorm(100, 50, 2)` est équivalent à `rnorm(n = 100, mean = 50, sd = 2)`.",
   wrong = "**Incorrect** Le paramètre `x` ne fait pas partie de la liste des paramètres utilisables avec la fonction `rnorm()`.",
   title = "Parmi les choix suivants, lesquels permettent techniquement de générer une séquence de 100 nombres ayant un écart-type de 2 et une moyenne de 50?"
 )

@@ -52,8 +52,8 @@ check_question(
   options = c("Oui", "Non"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Bonne réponse!** Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes `salaire` et `dénombrement` où `salaire` contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne `dénombrement` contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
-  wrong = "**Mauvaise réponse** Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes `salaire` et `dénombrement` où `salaire` contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne `dénombrement` contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
+  right = "✅ Correct !  Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes `salaire` et `dénombrement` où `salaire` contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne `dénombrement` contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
+  wrong = "❌ Incorrect.  Les colonnes '<$10k', '$10-20k', '$20-30k', '$30-40k' représentent des valeurs et non des variables. Il serait préférable de créer deux colonnes `salaire` et `dénombrement` où `salaire` contiendrait les valeurs '<$10k'    '$10-20k'  '$20-30k'  '$30-40k' et la colonne `dénombrement` contiendrait le nombre de répondeurs (27, 34, 60, etc.).",
   title = "Selon vous, est-ce que ce jeu de données est bien structuré?"
 )
 ```
@@ -88,8 +88,8 @@ check_question(
   options = c("`read.table()`", "`read.csv()`", "`read.file()`", "`read.delim()`"),
   type = "checkbox",
   button_label = "Vérifier",
-  right = "**Correct!** Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est `read.table()`.",
-  wrong = "**Attention!** Plusieurs choix peuvent être possibles.",
+  right = "✅ Correct !  Toutes ces fonctions peuvent ouvrir un fichier texte de données. Cependant, la fonction R de base à utiliser pour ouvrir ces fichiers est `read.table()`.",
+  wrong = "❌ Incorrect. Attention! Plusieurs choix peuvent être possibles.",
   title = "Quelle(s) fonction(s) devriez-vous utiliser pour lire un fichier texte de données?"
 )
 ```
@@ -107,8 +107,8 @@ check_question(
   options = c("`skip`", "`sep`", "`header`"),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Correct!** `skip` permet de spécifier le nombre de lignes à sauter/passer au début d'un fichier avant de commencer à lire les données.",
-  wrong = "**Mauvaise réponse** `sep` permet de spécifier le caractère utilisé pour séparer les colonnes de variables. `header` permet de spécifier si la première ligne du fichier correspond aux noms des variables (colonnes).",
+  right = "✅ Correct !  `skip` permet de spécifier le nombre de lignes à sauter/passer au début d'un fichier avant de commencer à lire les données.",
+  wrong = "❌ Incorrect.  `sep` permet de spécifier le caractère utilisé pour séparer les colonnes de variables. `header` permet de spécifier si la première ligne du fichier correspond aux noms des variables (colonnes).",
   title = "Quel paramètre permet de contrôler le nombre de lignes à sauter/passer au début d'un fichier avant de commencer à lire les données?"
 )
 ```
@@ -140,12 +140,12 @@ head()
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Supprime la première colonne (`couleur_yeux`) du *data frame* `sondage_bio1006`."),
-  options = c("Supprime la première ligne du *data frame* `sondage_bio1006`.", "Supprime la première colonne (`couleur_yeux`) du *data frame* `sondage_bio1006`."),
+  c("Supprime la première colonne (`couleur_yeux`) du data frame `sondage_bio1006`."),
+  options = c("Supprime la première ligne du data frame `sondage_bio1006`.", "Supprime la première colonne (`couleur_yeux`) du data frame `sondage_bio1006`."),
   type = "radio",
   button_label = "Vérifier",
-  right = "**Correct!** L'indexation des *data frame* fonctionnent de la même manière que pour les matrices numériques: `M[ligne][colonne]`.",
-  wrong = "**Mauvaise réponse** L'indexation des *data frame* fonctionnent de la même manière que pour les matrices `M[ligne][colonne]`.",
+  right = "✅ Correct !  L'indexation des data frame fonctionnent de la même manière que pour les matrices numériques: `M[ligne][colonne]`.",
+  wrong = "❌ Incorrect. L'indexation des data frame fonctionnent de la même manière que pour les matrices `M[ligne][colonne]`.",
   title = "Que fait la commande suivante? `sondage_bio1006[, -1]`"
 )
 ```
