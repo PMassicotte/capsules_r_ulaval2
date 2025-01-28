@@ -46,11 +46,11 @@ library(checkdown)
 #| echo: false
 #| results: "asis"
 check_question(
-  "`mean(x)`",
+  "mean(x)",
   options = c(
-    "`mean(x)`",
-    "`average(x)`",
-    "`moyenne(x)`"
+    "mean(x)",
+    "average(x)",
+    "moyenne(x)"
   ),
   type = "radio",
   button_label = "Vérifier",
@@ -142,11 +142,11 @@ mean(x, trim = 0, na.rm = FALSE, ...)
 #| echo: false
 #| results: "asis"
 check_question(
-  "`x`",
+  "x",
   options = c(
-    "`x`",
-    "`trim`",
-    "`na.rm`"
+    "x",
+    "trim",
+    "na.rm"
   ),
   type = "radio",
   button_label = "Vérifier",
@@ -165,9 +165,9 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  "`FALSE`",
+  "FALSE",
   options = c(
-    "`FALSE`",
+    "FALSE",
     "Il n'y en a pas.",
     "Il n'est pas possible de le savoir."
   ),

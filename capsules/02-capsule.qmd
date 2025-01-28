@@ -41,8 +41,8 @@ Veuillez noter qu'il est possible d'avoir plus d'une bonne réponse par question
 #| echo: false
 #| results: "asis"
 check_question(
-  c("'banane'", "'3.1415'"),
-  options = c("12.34", "'banane'", "'3.1415'"),
+  c("banane", "3.1415"),
+  options = c("12.34", "banane", "3.1415"),
   type = "checkbox",
   button_label = "Vérifier",
   right = "✅ Correct ! Les valeurs de 'banane' et de '3.1415' sont entourées de guillemets ce qui indique des valeurs de type caractère.",
@@ -79,8 +79,8 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  "`class(x)`",
-  options = c("`class(x)`", "`Class(x)`", "`type(x)`"),
+  "class(x)",
+  options = c("class(x)", "Class(x)", "type(x)"),
   type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct ! `class()` est une fonction de base de R pour déterminer la classe d'une variable.",
@@ -205,8 +205,8 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  "`c(TRUE, FALSE)`",
-  options = c("`c(TRUE, FALSE)`", "`c(VRAI, FAUX)`", "`c(0, 1)`"),
+  "c(TRUE, FALSE)",
+  options = c("c(TRUE, FALSE)", "c(VRAI, FAUX)", "c(0, 1)"),
   type = "radio",
   button_label = "Vérifier",
   right = "✅ Correct !  R n'utilise généralement pas des noms français.",
