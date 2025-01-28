@@ -138,7 +138,7 @@
     "href": "capsules/index.html",
     "title": "Capsules R",
     "section": "",
-    "text": "Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
+    "text": "Introduction à R et RStudio, installation et mise à jour des librairies, et premiers pas avec l’interface de RStudio.",
     "crumbs": [
       "Accueil",
       "À propos",
@@ -150,7 +150,7 @@
     "href": "capsules/index.html#capsule-1",
     "title": "Capsules R",
     "section": "",
-    "text": "Cette capsule vous guide à travers les étapes essentielles pour débuter avec R et RStudio. Vous apprendrez ce qu’est R, pourquoi il est largement utilisé dans le domaine de la science des données, et comment l’installer ainsi que RStudio. La capsule inclut également des instructions détaillées sur l’installation et la mise à jour des librairies, qui sont des composants cruciaux pour étendre les fonctionnalités de R. En suivant cette capsule, vous serez prêt à commencer à travailler avec des données dans un environnement RStudio convivial et efficace.",
+    "text": "Introduction à R et RStudio, installation et mise à jour des librairies, et premiers pas avec l’interface de RStudio.",
     "crumbs": [
       "Accueil",
       "À propos",
@@ -162,7 +162,7 @@
     "href": "capsules/index.html#capsule-2",
     "title": "Capsules R",
     "section": " Capsule 2",
-    "text": "Capsule 2\nLes variables dans R sont essentielles pour stocker et manipuler des données. Elles peuvent être de différentes classes, telles que numeric, character, logic, et factor, chacune ayant des utilisations spécifiques. Les noms de variables doivent être descriptifs et éviter les conflits avec les fonctions de base de R. Les vecteurs, créés avec la fonction c(), permettent de stocker des séquences de valeurs et de réaliser des opérations arithmétiques. D’autres classes d’objets, comme data.frame, list, lm, et date, sont également couramment utilisées pour des tâches plus complexes.",
+    "text": "Capsule 2\nAssignation de valeurs aux variables, nomenclature des variables, principales classes de variables, et conversion entre classes.",
     "crumbs": [
       "Accueil",
       "À propos",
@@ -174,7 +174,103 @@
     "href": "capsules/index.html#capsule-3",
     "title": "Capsules R",
     "section": " Capsule 3",
-    "text": "Capsule 3",
+    "text": "Capsule 3\nComprendre le principe des fonctions dans R, structure des fonctions, utilisation des paramètres et de l’aide en ligne.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-4",
+    "href": "capsules/index.html#capsule-4",
+    "title": "Capsules R",
+    "section": " Capsule 4",
+    "text": "Capsule 4\nComprendre ce qu’est un bon jeu de données, lecture des fichiers .dat, .csv, .txt, utilisation des data frames, et exportation des données.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-5",
+    "href": "capsules/index.html#capsule-5",
+    "title": "Capsules R",
+    "section": " Capsule 5",
+    "text": "Capsule 5\nUtilisation des scripts dans R, importance de la clarté, organisation et commentaires dans les scripts, et optimisation de l’interface RStudio.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-6",
+    "href": "capsules/index.html#capsule-6",
+    "title": "Capsules R",
+    "section": " Capsule 6",
+    "text": "Capsule 6\nExploration visuelle des données, types de graphiques les plus utilisés, et sauvegarde des graphiques.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-7",
+    "href": "capsules/index.html#capsule-7",
+    "title": "Capsules R",
+    "section": " Capsule 7",
+    "text": "Capsule 7\nPersonnalisation des graphiques avec des options courantes, ajout de couleurs, lignes, texte, légendes, et combinaison de graphiques.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-8",
+    "href": "capsules/index.html#capsule-8",
+    "title": "Capsules R",
+    "section": " Capsule 8",
+    "text": "Capsule 8\nRéalisation de tests statistiques tels que le test de Student et l’ANOVA, et interprétation des résultats.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-9",
+    "href": "capsules/index.html#capsule-9",
+    "title": "Capsules R",
+    "section": " Capsule 9",
+    "text": "Capsule 9\nVérification des conditions d’application des tests statistiques, transformation des données, et utilisation de tests diagnostiques visuels.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-10",
+    "href": "capsules/index.html#capsule-10",
+    "title": "Capsules R",
+    "section": " Capsule 10",
+    "text": "Capsule 10\nCompréhension et application des tests non-paramétriques pour la comparaison de moyennes.",
+    "crumbs": [
+      "Accueil",
+      "À propos",
+      "Capsules R"
+    ]
+  },
+  {
+    "objectID": "capsules/index.html#capsule-11",
+    "href": "capsules/index.html#capsule-11",
+    "title": "Capsules R",
+    "section": " Capsule 11",
+    "text": "Capsule 11\nIntroduction à la régression linéaire, utilisation de la fonction lm(), validation des résultats, et calcul des intervalles de confiance.",
     "crumbs": [
       "Accueil",
       "À propos",
@@ -546,7 +642,7 @@
     "href": "capsules/05-capsule.html#exercices",
     "title": "Capsule 5",
     "section": "Exercices",
-    "text": "Exercices\n Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint”” est là pour être utilisé! \n\nLes scripts dans R\n\n\n\n\n\n\n\n\nQuel est le bon signe à utiliser pour commenter du code en R?\n\n#\n\n\n//\n\n\n$\n\n\n%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelles sont les utilités d’un script R?\n\nGarder une trace de ce qui a été fait.\n\n\nAssurer la reproductibilité de notre analyse.\n\n\nSauvegarder des résultats d’analyses.\n\n\nEnregistrer des données à analyser.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle extension de fichier est généralement préférée pour sauvegarder les scripts R?\n\n.R\n\n\n.r\n\n\n.txt\n\n\n.script\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi est-il important de commenter son code?\n\nPour le complexifier\n\n\nPour le rendre plus clair.\n\n\nPour que R comprenne exactement ce que l’on veut faire.\n\n\nJustifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPeut-on récupérer facilement des lignes d’instructions déjà exécutées et les ajouter à un script dans RStudio?\n\nOui\n\n\nNon\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDans RStudio, quel est le raccourci clavier par défaut qui permet d’indenter automatiquement un bloc de code?\n\nCtrl + Shift + A\n\n\nCtrl + C\n\n\nAlt + Ctrl + D\n\n\n\n\n\n\n\n\n\nModifier le code suivant pour qu’il fonctionne correctement.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndice\n\n\n\n\n\nLe charactère # est utilisé pour commenter du code en R. Les ligne de texte qui suivent un # ne seront pas exécutées.\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\n# Générer 100 nombres aléatoirement\nx &lt;- rnorm(100)\n\n# Calculer la moyenne du vecteur x\nmean(x)\n\n[1] -0.04887322",
+    "text": "Exercices\n Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par question. Vous pouvez reprendre chaque exercice grâce aux boutons “Start Over” ou “Try Again” Le bouton “hint”” est là pour être utilisé! \n\nLes scripts dans R\n\n\n\n\n\n\n\n\nQuel est le bon signe à utiliser pour commenter du code en R?\n\n#\n\n\n//\n\n\n$\n\n\n%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelles sont les utilités d’un script R?\n\nGarder une trace de ce qui a été fait.\n\n\nAssurer la reproductibilité de notre analyse.\n\n\nSauvegarder des résultats d’analyses.\n\n\nEnregistrer des données à analyser.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuelle extension de fichier est généralement préférée pour sauvegarder les scripts R?\n\n.R\n\n\n.r\n\n\n.txt\n\n\n.script\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPourquoi est-il important de commenter son code?\n\nPour le complexifier\n\n\nPour le rendre plus clair.\n\n\nPour que R comprenne exactement ce que l’on veut faire.\n\n\nJustifier certains choix qui ne seraient pas évidents (ex.: suppression de valeurs aberrantes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPeut-on récupérer facilement des lignes d’instructions déjà exécutées et les ajouter à un script dans RStudio?\n\nOui\n\n\nNon\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDans RStudio, quel est le raccourci clavier par défaut qui permet d’indenter automatiquement un bloc de code?\n\nCtrl + Shift + A\n\n\nCtrl + C\n\n\nAlt + Ctrl + D\n\n\n\n\n\n\n\n\n\nModifier le code suivant pour qu’il fonctionne correctement.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndice\n\n\n\n\n\nLe charactère # est utilisé pour commenter du code en R. Les ligne de texte qui suivent un # ne seront pas exécutées.\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\n# Générer 100 nombres aléatoirement\nx &lt;- rnorm(100)\n\n# Calculer la moyenne du vecteur x\nmean(x)\n\n[1] -0.0624652",
     "crumbs": [
       "Accueil",
       "Capsules",
