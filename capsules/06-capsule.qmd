@@ -454,11 +454,12 @@ La librairie languageR n'est pas installée dans la version de base de R. Vous d
 
 ```{r}
 #| echo: true
+#| warning: false
 # Charger la librairie dans R pour l’utiliser
 library(languageR)
 
 # Faire un graphique de type "paire" avec cette librairie
-pairscor.fnc(iris[-5], col.points = cols[iris$Species])
+pairscor.fnc(iris[, -5], col.points = cols[iris$Species])
 ```
 
 #### Les diagrammes à bâtons

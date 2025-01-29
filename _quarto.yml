@@ -5,7 +5,9 @@ project:
 format:
   html:
     df-print: paged
-    theme: ./capsules/styles.scss
+    theme:
+      light: ./capsules/styles_light.scss
+      dark: ./capsules/styles_dark.scss
     toc: true
     lang: fr
 

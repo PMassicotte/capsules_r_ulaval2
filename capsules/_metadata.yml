@@ -1,7 +1,10 @@
 format:
   live-html:
     toc-depth: 4
-    theme: ././styles.scss
+    theme:
+      light: ././styles_light.scss
+      dark: ././styles_dark.scss
+    highlight-style: a11y
     toc: true
     lang: fr
     df-print: paged
