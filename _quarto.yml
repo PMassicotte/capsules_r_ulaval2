@@ -15,7 +15,7 @@ website:
   page-navigation: true
   repo-url: https://github.com/PMassicotte/capsules_r_ulaval2
   repo-actions: [issue]
-  title: "Capsule R ULAVAL"
+  title: "Capsules R ULAVAL"
   navbar:
     right:
       - href: index.qmd
