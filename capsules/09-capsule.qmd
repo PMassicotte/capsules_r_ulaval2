@@ -37,7 +37,9 @@ Veuillez noter qu’il est possible d’avoir plus d’une bonne réponse par qu
 # FIX: Need to find a way to use ' in the answer. At the moment it crashes when
 # there is a ' in the answer. Should report this to the package maintainer.
 check_question(
-  c("Lorsque les valeurs ne respectent pas toutes les conditions d application, il n y a rien à faire et le test ne peut pas être effectué."),
+  c(
+    "Lorsque les valeurs ne respectent pas toutes les conditions d application, il n y a rien à faire et le test ne peut pas être effectué."
+  ),
   options = c(
     "Dans la grande majorité des tests statistiques, les échantillons doivent être indépendants et aléatoires.",
     "Les tests paramétriques imposent des conditions précises quant à la distribution de fréquences des données.",
@@ -84,7 +86,9 @@ check_question(
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Utiliser un test non-paramétrique pour vérifier si la distribution des valeurs diffère significativement d une distribution uniforme."),
+  c(
+    "Utiliser un test non-paramétrique pour vérifier si la distribution des valeurs diffère significativement d une distribution uniforme."
+  ),
   options = c(
     "Utiliser un test non-paramétrique pour vérifier si la distribution des valeurs diffère significativement d une distribution uniforme.",
     "Utiliser un test de t pour comparer la moyenne de vos mesures à la valeur arbitraire de 180 degrés."
@@ -114,7 +118,9 @@ plot(test, which = 1)
 #| echo: false
 #| results: "asis"
 check_question(
-  c("Il y a un problème d hétéroscédasticité (homogénéité des variances) : plus la valeur prédite par le modèle statistique est grande, plus la variabilité de la variable réponse est grande."),
+  c(
+    "Il y a un problème d hétéroscédasticité (homogénéité des variances) : plus la valeur prédite par le modèle statistique est grande, plus la variabilité de la variable réponse est grande."
+  ),
   options = c(
     "Il y a un biais dans l'échantillonnage qui se reflète sur la relation entre les variables explicative (temps) et réponse (orientation des tortues).",
     "Nous n'avons pas fait assez de mesures pour pouvoir conclure notre test statistique.",
@@ -133,7 +139,12 @@ check_question(
 Les valeurs de la variable réponse (dépendante) utilisée dans ce test suivent cette distribution de fréquence :
 
 ```{r echo=TRUE, eval=TRUE}
-hist(ChickWeight$weight, xlab = "Masse (g)", ylab = "Fréquence", main = "Masse des poussins")
+hist(
+  ChickWeight$weight,
+  xlab = "Masse (g)",
+  ylab = "Fréquence",
+  main = "Masse des poussins"
+)
 ```
 
 ::: {.callout-note appearance="simple" icon=false .question}
@@ -187,9 +198,11 @@ Voici un _boxplot_ de groupes de valeurs dont vous voulez comparer les moyennes 
 
 ```{r echo=TRUE, eval=TRUE}
 data("PlantGrowth")
-boxplot(PlantGrowth$weight ~ PlantGrowth$group,
+boxplot(
+  PlantGrowth$weight ~ PlantGrowth$group,
   main = "",
-  ylab = "Masse sèche des plantes (g) ", col = "lightgray"
+  ylab = "Masse sèche des plantes (g) ",
+  col = "lightgray"
 )
 ```
 
@@ -342,7 +355,11 @@ N'oubliez pas de transformer toutes les valeurs de la même façon (pour chaque 
 Encore une fois, on peut se fier à l'allure des distributions de valeurs (d'après l'étendue des valeurs d'un boxplot, par exemple).
 
 ```{r, echo=TRUE, eval=TRUE}
-boxplot(InsectSprays$logCount ~ InsectSprays$spray, xlab = "Traitement", ylab = "Nombres d'insectes par parcelle")
+boxplot(
+  InsectSprays$logCount ~ InsectSprays$spray,
+  xlab = "Traitement",
+  ylab = "Nombres d'insectes par parcelle"
+)
 ```
 
 On remarque sur ces boxplots que les distributions des valeurs semblent effectivement plus symétriques (Normales) après transformation, même s'il reste un _outlier_ dans le groupe D. De plus l'étendue des distributions de valeurs transformées semble plutôt similaire entre les groupes. Mais on peut également faire un test formel d'homogénéité des variances :
@@ -359,11 +376,15 @@ Ici on veut faire le test de comparaison de moyennes de façon appropriée. Il f
 
 ```r
 ## Default S3 method:
-t.test(x,
+t.test(
+  x,
   y = NULL,
   alternative = c("two.sided", "less", "greater"),
-  mu = 0, paired = FALSE, var.equal = FALSE,
-  conf.level = 0.95, ...
+  mu = 0,
+  paired = FALSE,
+  var.equal = FALSE,
+  conf.level = 0.95,
+  ...
 )
 ```
 
